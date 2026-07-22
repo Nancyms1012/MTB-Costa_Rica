@@ -214,27 +214,39 @@
                 </div>
             </div>
 
-            <h3 class="subsection-title">Categorías por Edad</h3>
+            <h3 class="subsection-title">Categorías Copa Nacional MTB 2026</h3>
+            <p class="table-note">Edad al 31 de diciembre de 2026</p>
             <div class="categories-table-wrapper">
                 <table class="categories-table">
                     <thead>
                         <tr>
                             <th>Categoría</th>
                             <th>Edad</th>
-                            <th>Modalidades</th>
+                            <th>Nacidos en</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td>Pre-Infantil</td><td>6-8 años</td><td>XCO</td></tr>
-                        <tr><td>Infantil A</td><td>9-10 años</td><td>XCO</td></tr>
-                        <tr><td>Infantil B</td><td>11-12 años</td><td>XCO, XCC</td></tr>
-                        <tr><td>Juvenil A</td><td>13-14 años</td><td>XCO, XCC, XCE</td></tr>
-                        <tr><td>Juvenil B</td><td>15-16 años</td><td>XCO, XCC, XCE</td></tr>
-                        <tr><td>Sub-23</td><td>17-22 años</td><td>XCO, XCC, XCE</td></tr>
-                        <tr><td>Élite</td><td>23+ años</td><td>XCO, XCC, XCE</td></tr>
-                        <tr><td>Máster A</td><td>30-39 años</td><td>XCO, XCC</td></tr>
-                        <tr><td>Máster B</td><td>40-49 años</td><td>XCO, XCC</td></tr>
-                        <tr><td>Máster C</td><td>50+ años</td><td>XCO</td></tr>
+                        <tr class="table-section-header"><td colspan="3">Menores</td></tr>
+                        <tr><td>Preinfantil Masculino / Femenino</td><td>11-12</td><td>2014-2015</td></tr>
+                        <tr><td>Infantil Masculino / Femenino</td><td>13-14</td><td>2012-2013</td></tr>
+                        <tr><td>Prejuvenil Masculino / Femenino</td><td>15-16</td><td>2010-2011</td></tr>
+                        <tr><td>Juvenil Masculino / Femenino</td><td>17-18</td><td>2008-2009</td></tr>
+                        <tr class="table-section-header"><td colspan="3">Élite</td></tr>
+                        <tr><td>Élite Masculino / Femenino</td><td>19+</td><td>2007 o antes</td></tr>
+                        <tr><td>Sub-23 Masculino / Femenino</td><td>19-22</td><td>2004-2007</td></tr>
+                        <tr class="table-section-header"><td colspan="3">Máster</td></tr>
+                        <tr><td>Máster A Masculino</td><td>30-34</td><td>1992-1996</td></tr>
+                        <tr><td>Máster B Masculino</td><td>35-39</td><td>1987-1991</td></tr>
+                        <tr><td>Máster C Masculino</td><td>40-44</td><td>1982-1986</td></tr>
+                        <tr><td>Máster D Masculino</td><td>45-49</td><td>1977-1981</td></tr>
+                        <tr><td>Máster E Masculino</td><td>50+</td><td>1976 o antes</td></tr>
+                        <tr><td>Máster A Femenino</td><td>30-39</td><td>1987-1996</td></tr>
+                        <tr><td>Máster B Femenino</td><td>40+</td><td>1986 o antes</td></tr>
+                        <tr class="table-section-header"><td colspan="3">Otras categorías</td></tr>
+                        <tr><td>Open Masculino / Femenino</td><td>18+</td><td>2008 o antes</td></tr>
+                        <tr><td>E-Bike Masculino / Femenino</td><td>18+</td><td>2008 o antes</td></tr>
+                        <tr><td>Cyclocross Masculino / Femenino</td><td>17+</td><td>2009 o antes</td></tr>
+                        <tr><td>Pasados de Línea</td><td>18+</td><td>2008 o antes</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -433,16 +445,40 @@
                             <label for="categoria">Categoría *</label>
                             <select id="categoria" name="categoria" required>
                                 <option value="">Seleccione...</option>
-                                <option value="pre-infantil">Pre-Infantil (6-8)</option>
-                                <option value="infantil-a">Infantil A (9-10)</option>
-                                <option value="infantil-b">Infantil B (11-12)</option>
-                                <option value="juvenil-a">Juvenil A (13-14)</option>
-                                <option value="juvenil-b">Juvenil B (15-16)</option>
-                                <option value="sub23">Sub-23 (17-22)</option>
-                                <option value="elite">Élite (23+)</option>
-                                <option value="master-a">Máster A (30-39)</option>
-                                <option value="master-b">Máster B (40-49)</option>
-                                <option value="master-c">Máster C (50+)</option>
+                                <optgroup label="Menores">
+                                    <option value="preinfantil-m">Preinfantil Masculino (11-12)</option>
+                                    <option value="preinfantil-f">Preinfantil Femenino (11-12)</option>
+                                    <option value="infantil-m">Infantil Masculino (13-14)</option>
+                                    <option value="infantil-f">Infantil Femenino (13-14)</option>
+                                    <option value="prejuvenil-m">Prejuvenil Masculino (15-16)</option>
+                                    <option value="prejuvenil-f">Prejuvenil Femenino (15-16)</option>
+                                    <option value="juvenil-m">Juvenil Masculino (17-18)</option>
+                                    <option value="juvenil-f">Juvenil Femenino (17-18)</option>
+                                </optgroup>
+                                <optgroup label="Élite">
+                                    <option value="elite-m">Élite Masculino (19+)</option>
+                                    <option value="elite-f">Élite Femenino (19+)</option>
+                                    <option value="sub23-m">Sub-23 Masculino (19-22)</option>
+                                    <option value="sub23-f">Sub-23 Femenino (19-22)</option>
+                                </optgroup>
+                                <optgroup label="Máster">
+                                    <option value="master-a-m">Máster A Masculino (30-34)</option>
+                                    <option value="master-b-m">Máster B Masculino (35-39)</option>
+                                    <option value="master-c-m">Máster C Masculino (40-44)</option>
+                                    <option value="master-d-m">Máster D Masculino (45-49)</option>
+                                    <option value="master-e-m">Máster E Masculino (50+)</option>
+                                    <option value="master-a-f">Máster A Femenino (30-39)</option>
+                                    <option value="master-b-f">Máster B Femenino (40+)</option>
+                                </optgroup>
+                                <optgroup label="Otras">
+                                    <option value="open-m">Open Masculino (18+)</option>
+                                    <option value="open-f">Open Femenino (18+)</option>
+                                    <option value="ebike-m">E-Bike Masculino (18+)</option>
+                                    <option value="ebike-f">E-Bike Femenino (18+)</option>
+                                    <option value="cyclocross-m">Cyclocross Masculino (17+)</option>
+                                    <option value="cyclocross-f">Cyclocross Femenino (17+)</option>
+                                    <option value="pasados">Pasados de Línea (18+)</option>
+                                </optgroup>
                             </select>
                         </div>
                     </div>

@@ -351,3 +351,16 @@ img { max-width: 100%; height: auto; }
 .kids-cta h3 { color: var(--primary); margin-bottom: 10px; font-size: 1.4rem; }
 .kids-cta p { color: var(--gray-600); margin-bottom: 20px; font-size: 1rem; }
 .kids-cta-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+
+
+/* ============ TABLE EXTRAS ============ */
+.table-note {
+    text-align: center; font-size: 0.9rem; color: var(--gray-600);
+    font-style: italic; margin-bottom: 20px;
+}
+.table-section-header td {
+    background: var(--primary) !important; color: var(--white) !important;
+    font-weight: 700; font-family: var(--font-heading);
+    font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;
+    padding: 10px 20px !important;
+}
