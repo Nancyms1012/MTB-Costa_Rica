@@ -1,130 +1,51 @@
 /* ============================================
-   ANCM - Asociación Nacional de Ciclismo de Montaña
-   JavaScript Principal
+   ANCM - SPA Navigation
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // ============ NAVBAR ============
-    const navbar = document.getElementById('navbar');
+
+    // ============ SPA NAVIGATION ============
+    const pages = document.querySelectorAll('.page');
+    const navLinks = document.querySelectorAll('.nav-link');
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
-    const navLinks = document.querySelectorAll('.nav-link');
 
-    // Scroll effect
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
+    function navigateTo(pageId) {
+        // Hide all pages
+        pages.forEach(page => page.classList.remove('active'));
+        // Show target page
+        const target = document.getElementById('page-' + pageId);
+        if (target) {
+            target.classList.add('active');
         }
-        updateBackToTop();
-        animateOnScroll();
+        // Update nav links
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('data-page') === pageId) {
+                link.classList.add('active');
+            }
+        });
+        // Scroll to top
+        window.scrollTo(0, 0);
+        // Close mobile menu
+        navToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+    }
+
+    // Handle all clicks with data-page attribute
+    document.addEventListener('click', (e) => {
+        const link = e.target.closest('[data-page]');
+        if (link) {
+            e.preventDefault();
+            const pageId = link.getAttribute('data-page');
+            navigateTo(pageId);
+        }
     });
 
     // Mobile menu toggle
     navToggle.addEventListener('click', () => {
         navToggle.classList.toggle('active');
         navMenu.classList.toggle('active');
-    });
-
-    // Close mobile menu on link click
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navToggle.classList.remove('active');
-            navMenu.classList.remove('active');
-            // Update active link
-            navLinks.forEach(l => l.classList.remove('active'));
-            link.classList.add('active');
-        });
-    });
-
-    // Active nav link on scroll
-    const sections = document.querySelectorAll('section[id]');
-    window.addEventListener('scroll', () => {
-        const scrollY = window.pageYOffset;
-        sections.forEach(section => {
-            const sectionHeight = section.offsetHeight;
-            const sectionTop = section.offsetTop - 100;
-            const sectionId = section.getAttribute('id');
-            const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
-            if (navLink) {
-                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                    navLinks.forEach(l => l.classList.remove('active'));
-                    navLink.classList.add('active');
-                }
-            }
-        });
-    });
-
-
-    // ============ BACK TO TOP ============
-    const backToTop = document.getElementById('back-to-top');
-    
-    function updateBackToTop() {
-        if (window.scrollY > 300) {
-            backToTop.classList.add('visible');
-        } else {
-            backToTop.classList.remove('visible');
-        }
-    }
-
-    backToTop.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // ============ STATS COUNTER ============
-    const statNumbers = document.querySelectorAll('.stat-number');
-    let statsAnimated = false;
-
-    function animateCounters() {
-        statNumbers.forEach(stat => {
-            const target = parseInt(stat.getAttribute('data-target'));
-            const duration = 2000;
-            const step = target / (duration / 16);
-            let current = 0;
-
-            const counter = setInterval(() => {
-                current += step;
-                if (current >= target) {
-                    stat.textContent = target;
-                    clearInterval(counter);
-                } else {
-                    stat.textContent = Math.floor(current);
-                }
-            }, 16);
-        });
-    }
-
-    // ============ SCROLL ANIMATIONS ============
-    function animateOnScroll() {
-        // Stats counter
-        if (!statsAnimated) {
-            const statsSection = document.querySelector('.stats-row');
-            if (statsSection) {
-                const rect = statsSection.getBoundingClientRect();
-                if (rect.top < window.innerHeight * 0.8) {
-                    statsAnimated = true;
-                    animateCounters();
-                }
-            }
-        }
-
-        // Reveal elements
-        const revealElements = document.querySelectorAll('.about-card, .modality-card, .event-card');
-        revealElements.forEach(el => {
-            const rect = el.getBoundingClientRect();
-            if (rect.top < window.innerHeight * 0.85) {
-                el.style.opacity = '1';
-                el.style.transform = 'translateY(0)';
-            }
-        });
-    }
-
-    // Initial styles for animation
-    document.querySelectorAll('.about-card, .modality-card, .event-card').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     });
 
 
@@ -170,7 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderResults(category) {
         const data = resultsData[category] || [];
         resultsBody.innerHTML = '';
-        
         data.forEach(row => {
             const podiumClass = row.pos <= 3 ? `podium-${row.pos}` : '';
             const tr = document.createElement('tr');
@@ -194,7 +114,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Initial render
     renderResults('elite-m');
 
 
@@ -206,11 +125,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        
-        // Basic validation
         const requiredFields = form.querySelectorAll('[required]');
         let valid = true;
-        
+
         requiredFields.forEach(field => {
             if (!field.value.trim() && field.type !== 'checkbox') {
                 field.style.borderColor = 'var(--secondary)';
@@ -223,25 +140,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (valid) {
-            // Collect form data
-            const formData = new FormData(form);
-            const data = {};
-            formData.forEach((value, key) => { data[key] = value; });
-            
-            console.log('Inscripción enviada:', data);
-            
-            // Show success modal
             modal.classList.add('active');
             form.reset();
         }
     });
 
-    // Form field validation on input
     form.querySelectorAll('input, select').forEach(field => {
         field.addEventListener('input', () => {
-            if (field.value.trim()) {
-                field.style.borderColor = 'var(--accent)';
-            }
+            if (field.value.trim()) field.style.borderColor = 'var(--accent)';
         });
         field.addEventListener('blur', () => {
             if (!field.value.trim() && field.hasAttribute('required')) {
@@ -252,39 +158,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Close modal
-    function closeModal() {
-        modal.classList.remove('active');
-    }
+    function closeModal() { modal.classList.remove('active'); }
     modalClose.addEventListener('click', closeModal);
     modalOk.addEventListener('click', closeModal);
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) closeModal();
-    });
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
 
-    // ============ COUNTDOWN TO NEXT EVENT ============
-    // Next event: July 18, 2026
-    const nextEvent = new Date('2026-07-18T08:00:00');
-    
-    function updateCountdown() {
-        const now = new Date();
-        const diff = nextEvent - now;
-        
-        if (diff <= 0) return;
-        
-        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        
-        const activeCard = document.querySelector('.event-card.active .event-badge.badge-active');
-        if (activeCard && days > 0) {
-            activeCard.textContent = `Faltan ${days} días`;
-        } else if (activeCard && days === 0) {
-            activeCard.textContent = `¡Hoy!`;
-        }
-    }
-
-    updateCountdown();
-
-    // Trigger initial scroll check
-    animateOnScroll();
 });
