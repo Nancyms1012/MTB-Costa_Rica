@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // ============ COUNTDOWN ============
-    const nextEvent = new Date('2026-07-18T08:00:00');
+    const nextEvent = new Date('2026-09-13T08:00:00');
 
     function updateCountdown() {
         const now = new Date();
