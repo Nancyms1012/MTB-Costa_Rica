@@ -16,8 +16,11 @@
     --gray-900: #212529;
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Open Sans', sans-serif;
+    --font-display: 'Orbitron', sans-serif;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
+    --glow-red: 0 0 20px rgba(230, 57, 70, 0.5), 0 0 40px rgba(230, 57, 70, 0.3);
+    --glow-green: 0 0 20px rgba(45, 138, 78, 0.5), 0 0 40px rgba(45, 138, 78, 0.3);
     --radius: 8px;
     --transition: all 0.3s ease;
 }
@@ -92,11 +95,18 @@ img { max-width: 100%; height: auto; }
 .page {
     display: none;
     min-height: calc(100vh - 70px);
-    margin-top: 70px;
-    animation: fadeIn 0.4s ease;
+    margin-top: 108px;
 }
 .page.active { display: block; }
+.page.active .animate-in { animation: slideInUp 0.6s ease forwards; }
+.page.active .animate-in-delay-1 { animation: slideInUp 0.6s 0.15s ease forwards; opacity: 0; }
+.page.active .animate-in-delay-2 { animation: slideInUp 0.6s 0.3s ease forwards; opacity: 0; }
+.page.active .animate-in-delay-3 { animation: slideInUp 0.6s 0.45s ease forwards; opacity: 0; }
+#page-inicio { margin-top: 108px; }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideInUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideInLeft { from { opacity: 0; transform: translateX(-40px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes slideInRight { from { opacity: 0; transform: translateX(40px); } to { opacity: 1; transform: translateX(0); } }
 
 /* Page Headers */
 .page-header {
@@ -115,22 +125,40 @@ img { max-width: 100%; height: auto; }
 
 /* ============ HERO ============ */
 .hero {
-    height: calc(100vh - 70px); display: flex; align-items: center; justify-content: center;
+    height: calc(100vh - 108px); display: flex; align-items: center; justify-content: center;
     text-align: center; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 50%, var(--accent) 100%);
     position: relative; overflow: hidden;
 }
+.hero-particles { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
 .hero-overlay {
     position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-    background: radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.3) 100%);
+    background: radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.3) 100%); z-index: 1;
 }
 .hero-content { position: relative; z-index: 2; max-width: 800px; padding: 0 20px; }
 .hero-logo {
     width: 150px; height: auto; margin-bottom: 20px; border-radius: 50%;
     background: rgba(255,255,255,0.95); padding: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    animation: floatLogo 3s ease-in-out infinite;
 }
+@keyframes floatLogo { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+.hero-title-anim { font-size: 3rem; color: var(--white); margin-bottom: 15px; font-weight: 900; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); animation: slideInUp 0.8s ease; }
 .hero h1 { font-size: 3rem; color: var(--white); margin-bottom: 15px; font-weight: 900; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
-.hero-subtitle { font-size: 1.2rem; color: rgba(255,255,255,0.9); margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto; }
-.hero-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+.hero-subtitle { font-size: 1.2rem; color: rgba(255,255,255,0.9); margin-bottom: 25px; max-width: 600px; margin-left: auto; margin-right: auto; animation: slideInUp 0.8s 0.2s ease both; }
+.hero-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; animation: slideInUp 0.8s 0.6s ease both; }
+
+/* Countdown */
+.countdown { display: flex; gap: 15px; justify-content: center; margin-bottom: 10px; animation: slideInUp 0.8s 0.4s ease both; }
+.countdown-item { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 12px 18px; min-width: 70px; }
+.countdown-number { font-family: var(--font-display); font-size: 2rem; font-weight: 900; color: var(--white); display: block; line-height: 1; }
+.countdown-label { font-size: 0.7rem; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 1px; }
+.countdown-event-label { font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-bottom: 25px; animation: slideInUp 0.8s 0.5s ease both; }
+
+/* Glow Buttons */
+.btn-glow { position: relative; overflow: hidden; }
+.btn-glow::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%); opacity: 0; transition: opacity 0.3s; }
+.btn-glow:hover::before { opacity: 1; }
+.btn-primary.btn-glow:hover { box-shadow: var(--glow-red); }
+.btn-secondary.btn-glow:hover { box-shadow: 0 0 20px rgba(255,255,255,0.4); }
 
 
 /* ============ ABOUT ============ */
@@ -363,4 +391,59 @@ img { max-width: 100%; height: auto; }
     font-weight: 700; font-family: var(--font-heading);
     font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;
     padding: 10px 20px !important;
+}
+
+
+/* ============ STICKY BANNER ============ */
+.sticky-banner {
+    position: fixed; top: 70px; left: 0; width: 100%; z-index: 999;
+    background: linear-gradient(90deg, var(--secondary) 0%, #ff6b6b 100%);
+    padding: 8px 20px; overflow: hidden;
+}
+.banner-content {
+    display: flex; align-items: center; justify-content: center; gap: 15px;
+    max-width: 1200px; margin: 0 auto; flex-wrap: wrap;
+}
+.banner-pulse {
+    width: 10px; height: 10px; background: var(--white); border-radius: 50%;
+    animation: bannerPulse 1.5s infinite;
+}
+@keyframes bannerPulse { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(1.5); } }
+.banner-text { color: var(--white); font-size: 0.85rem; font-weight: 500; }
+.banner-btn {
+    background: var(--white); color: var(--secondary); padding: 5px 15px;
+    border-radius: 50px; font-size: 0.8rem; font-weight: 700; transition: var(--transition);
+}
+.banner-btn:hover { background: var(--primary); color: var(--white); transform: scale(1.05); }
+
+/* ============ ENHANCED HOVER EFFECTS ============ */
+.about-card:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 15px 40px rgba(0,0,0,0.12); }
+.modality-card:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 15px 40px rgba(45,138,78,0.15); border-top-color: var(--secondary); }
+.contact-card:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 15px 40px rgba(0,0,0,0.12); }
+.kids-feature-card:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 15px 40px rgba(45,138,78,0.15); }
+.btn-primary:hover { background: #c62f3a; transform: translateY(-3px); box-shadow: var(--glow-red); }
+.btn-outline-dark:hover { background: var(--primary); color: var(--white); transform: translateY(-3px); box-shadow: 0 8px 25px rgba(13,27,62,0.3); }
+.social-btn:hover { background: var(--secondary); transform: translateY(-4px); box-shadow: var(--glow-red); }
+.event-card:hover { background: var(--gray-200); transform: translateX(8px); box-shadow: var(--shadow); }
+.filter-btn:hover, .filter-btn.active { background: var(--secondary); border-color: var(--secondary); color: var(--white); transform: translateY(-2px); box-shadow: var(--glow-red); }
+
+/* ============ DISPLAY FONT FOR TITLES ============ */
+.hero-title-anim, .page-title { letter-spacing: -1px; }
+.countdown-number { font-family: var(--font-display); }
+
+@media (max-width: 768px) {
+    .sticky-banner { top: 70px; }
+    .banner-text { font-size: 0.75rem; }
+    .banner-btn { font-size: 0.7rem; padding: 4px 12px; }
+    .countdown { gap: 8px; }
+    .countdown-item { padding: 8px 12px; min-width: 55px; }
+    .countdown-number { font-size: 1.4rem; }
+    .hero-title-anim { font-size: 1.8rem; }
+    .hero { height: calc(100vh - 108px); }
+}
+@media (max-width: 480px) {
+    .banner-content { flex-direction: column; gap: 5px; }
+    .countdown-item { padding: 6px 10px; min-width: 50px; }
+    .countdown-number { font-size: 1.2rem; }
+    .hero-title-anim { font-size: 1.5rem; }
 }

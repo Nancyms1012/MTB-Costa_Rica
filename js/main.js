@@ -1,5 +1,5 @@
 /* ============================================
-   ANCM - SPA Navigation
+   ANCM - SPA + Visual Effects
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -11,42 +11,142 @@ document.addEventListener('DOMContentLoaded', () => {
     const navMenu = document.getElementById('nav-menu');
 
     function navigateTo(pageId) {
-        // Hide all pages
         pages.forEach(page => page.classList.remove('active'));
-        // Show target page
         const target = document.getElementById('page-' + pageId);
         if (target) {
             target.classList.add('active');
+            // Trigger entrance animations
+            const animElements = target.querySelectorAll('.animate-in, .animate-in-delay-1, .animate-in-delay-2, .animate-in-delay-3');
+            animElements.forEach(el => {
+                el.style.animation = 'none';
+                el.offsetHeight; // force reflow
+                el.style.animation = '';
+            });
         }
-        // Update nav links
         navLinks.forEach(link => {
             link.classList.remove('active');
             if (link.getAttribute('data-page') === pageId) {
                 link.classList.add('active');
             }
         });
-        // Scroll to top
         window.scrollTo(0, 0);
-        // Close mobile menu
         navToggle.classList.remove('active');
         navMenu.classList.remove('active');
     }
 
-    // Handle all clicks with data-page attribute
     document.addEventListener('click', (e) => {
         const link = e.target.closest('[data-page]');
         if (link) {
             e.preventDefault();
-            const pageId = link.getAttribute('data-page');
-            navigateTo(pageId);
+            navigateTo(link.getAttribute('data-page'));
         }
     });
 
-    // Mobile menu toggle
     navToggle.addEventListener('click', () => {
         navToggle.classList.toggle('active');
         navMenu.classList.toggle('active');
     });
+
+
+    // ============ COUNTDOWN ============
+    const nextEvent = new Date('2026-07-18T08:00:00');
+
+    function updateCountdown() {
+        const now = new Date();
+        const diff = nextEvent - now;
+
+        if (diff <= 0) {
+            document.getElementById('cd-days').textContent = '00';
+            document.getElementById('cd-hours').textContent = '00';
+            document.getElementById('cd-minutes').textContent = '00';
+            document.getElementById('cd-seconds').textContent = '00';
+            return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
+        document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('cd-minutes').textContent = String(minutes).padStart(2, '0');
+        document.getElementById('cd-seconds').textContent = String(seconds).padStart(2, '0');
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // ============ PARTICLES ============
+    const canvas = document.getElementById('particles-canvas');
+    if (canvas) {
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        const particleCount = 60;
+
+        function resizeCanvas() {
+            canvas.width = canvas.offsetWidth;
+            canvas.height = canvas.offsetHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 3 + 1;
+                this.speedX = (Math.random() - 0.5) * 0.8;
+                this.speedY = (Math.random() - 0.5) * 0.8;
+                this.opacity = Math.random() * 0.5 + 0.2;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(255, 255, 255, ${this.opacity})`;
+                ctx.fill();
+            }
+        }
+
+        for (let i = 0; i < particleCount; i++) {
+            particles.push(new Particle());
+        }
+
+        function connectParticles() {
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < 120) {
+                        ctx.beginPath();
+                        ctx.strokeStyle = `rgba(255, 255, 255, ${0.1 * (1 - dist / 120)})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => { p.update(); p.draw(); });
+            connectParticles();
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+    }
 
 
     // ============ RESULTS TABLE ============
@@ -130,12 +230,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         requiredFields.forEach(field => {
             if (!field.value.trim() && field.type !== 'checkbox') {
-                field.style.borderColor = 'var(--secondary)';
+                field.style.borderColor = '#e63946';
                 valid = false;
             } else if (field.type === 'checkbox' && !field.checked) {
                 valid = false;
             } else {
-                field.style.borderColor = 'var(--gray-200)';
+                field.style.borderColor = '#e9ecef';
             }
         });
 
@@ -147,13 +247,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.querySelectorAll('input, select').forEach(field => {
         field.addEventListener('input', () => {
-            if (field.value.trim()) field.style.borderColor = 'var(--accent)';
+            if (field.value.trim()) field.style.borderColor = '#2d8a4e';
         });
         field.addEventListener('blur', () => {
             if (!field.value.trim() && field.hasAttribute('required')) {
-                field.style.borderColor = 'var(--secondary)';
+                field.style.borderColor = '#e63946';
             } else {
-                field.style.borderColor = 'var(--gray-200)';
+                field.style.borderColor = '#e9ecef';
             }
         });
     });

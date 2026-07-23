@@ -7,9 +7,18 @@
     <meta name="description" content="Asociación Nacional de Ciclismo de Montaña de Costa Rica. Copa Nacional MTB, Copa Kids, XCO, XCC, XCE.">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;600&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Banner Sticky - Próximo Evento -->
+    <div class="sticky-banner" id="sticky-banner">
+        <div class="banner-content">
+            <span class="banner-pulse"></span>
+            <span class="banner-text"><strong>V Fecha - Campeonato Nacional XCO, XCC, XCE</strong> | 18-19 Julio | Oikoumene</span>
+            <a href="#" class="banner-btn" data-page="inscripciones">Inscribirse <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
     <!-- Navegación -->
     <nav class="navbar">
         <div class="nav-container">
@@ -39,13 +48,33 @@
     <section class="page active" id="page-inicio">
         <div class="hero">
             <div class="hero-overlay"></div>
+            <canvas id="particles-canvas" class="hero-particles"></canvas>
             <div class="hero-content">
                 <img src="img/ANCM.png" alt="ANCM" class="hero-logo">
-                <h1>Asociación Nacional de<br>Ciclismo de Montaña</h1>
+                <h1 class="hero-title-anim">Asociación Nacional de<br>Ciclismo de Montaña</h1>
                 <p class="hero-subtitle">Promoviendo el ciclismo de montaña en Costa Rica desde las categorías infantiles hasta la élite</p>
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="cd-days">00</span>
+                        <span class="countdown-label">Días</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="cd-hours">00</span>
+                        <span class="countdown-label">Horas</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="cd-minutes">00</span>
+                        <span class="countdown-label">Min</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="cd-seconds">00</span>
+                        <span class="countdown-label">Seg</span>
+                    </div>
+                </div>
+                <p class="countdown-event-label">para la V Fecha - Campeonato Nacional</p>
                 <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary" data-page="eventos">Próximos Eventos</a>
-                    <a href="#" class="btn btn-secondary" data-page="inscripciones">Inscribirse</a>
+                    <a href="#" class="btn btn-primary btn-glow" data-page="eventos">Próximos Eventos</a>
+                    <a href="#" class="btn btn-secondary btn-glow" data-page="inscripciones">Inscribirse</a>
                 </div>
             </div>
         </div>
@@ -59,17 +88,17 @@
         </div>
         <div class="container">
             <div class="about-grid">
-                <div class="about-card">
+                <div class="about-card animate-in">
                     <div class="about-icon"><i class="fas fa-bullseye"></i></div>
                     <h3>Misión</h3>
                     <p>Promover, desarrollar y organizar el ciclismo de montaña en Costa Rica, fomentando la práctica deportiva desde edades tempranas con valores de disciplina, respeto y superación.</p>
                 </div>
-                <div class="about-card">
+                <div class="about-card animate-in-delay-1">
                     <div class="about-icon"><i class="fas fa-eye"></i></div>
                     <h3>Visión</h3>
                     <p>Ser la organización líder en el desarrollo del ciclismo de montaña en Centroamérica, formando atletas competitivos a nivel internacional desde las categorías infantiles.</p>
                 </div>
-                <div class="about-card">
+                <div class="about-card animate-in-delay-2">
                     <div class="about-icon"><i class="fas fa-heart"></i></div>
                     <h3>Valores</h3>
                     <p>Trabajo en equipo, fair play, inclusión, desarrollo integral del atleta y compromiso con el deporte como herramienta de transformación social.</p>
@@ -194,19 +223,19 @@
         </div>
         <div class="container">
             <div class="modalities-grid">
-                <div class="modality-card">
+                <div class="modality-card animate-in">
                     <div class="modality-icon"><i class="fas fa-bolt"></i></div>
                     <h3>XCC</h3>
                     <h4>Cross-Country Short Track</h4>
                     <p>Carreras cortas e intensas en circuitos reducidos. Alta velocidad y espectacularidad. Duración aproximada de 20-30 minutos.</p>
                 </div>
-                <div class="modality-card">
+                <div class="modality-card animate-in-delay-1">
                     <div class="modality-icon"><i class="fas fa-mountain"></i></div>
                     <h3>XCO</h3>
                     <h4>Cross-Country Olympic</h4>
                     <p>La modalidad olímpica del MTB. Circuitos técnicos con ascensos y descensos exigentes. La prueba reina del ciclismo de montaña.</p>
                 </div>
-                <div class="modality-card">
+                <div class="modality-card animate-in-delay-2">
                     <div class="modality-icon"><i class="fas fa-flag-checkered"></i></div>
                     <h3>XCE</h3>
                     <h4>Cross-Country Eliminator</h4>
