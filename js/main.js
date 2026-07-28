@@ -323,23 +323,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const filterBtns = document.querySelectorAll('.filter-btn');
     const resultsBodyXco = document.getElementById('results-body-xco');
-    const resultsBodyXcc = document.getElementById('results-body-xcc');
-    const fechaBtns = document.querySelectorAll('.fecha-btn');
-    const fechaInfo = document.getElementById('fecha-info');
-
-    const fechasInfo = {
-        1: 'I Fecha - Por definir',
-        2: 'II Fecha - Por definir',
-        3: 'III Fecha - America Series La Copa | Adventure Park, Barva de Heredia | 16-17 Mayo',
-        4: 'IV Fecha - Por definir',
-        5: 'V Fecha - Campeonato Nacional | Oikoumene | 18-19 Julio',
-        6: 'VI Fecha - Por definir | 13-14 Septiembre',
-    };
 
     function renderResults(category, targetBody) {
         const data = resultsData[category] || [];
         if (!targetBody) return;
         targetBody.innerHTML = '';
+        if (data.length === 0) {
+            targetBody.innerHTML = '<tr><td colspan="4" style="text-align:center; padding:20px; color:#6c757d;">Sin datos disponibles</td></tr>';
+            return;
+        }
         data.forEach(row => {
             const podiumClass = row.pos <= 3 ? `podium-${row.pos}` : '';
             const tr = document.createElement('tr');
@@ -363,26 +355,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // XCC filters
-    document.querySelectorAll('#filters-xcc .filter-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            document.querySelectorAll('#filters-xcc .filter-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            renderResults(btn.getAttribute('data-filter'), resultsBodyXcc);
-        });
-    });
-
-    // Fecha selector
-    fechaBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            fechaBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            const fecha = btn.getAttribute('data-fecha');
-            if (fechaInfo) fechaInfo.textContent = fechasInfo[fecha] || '';
-        });
-    });
-
-    // Initial render
+    // Initial render XCO
     renderResults('master-a', resultsBodyXco);
 
 

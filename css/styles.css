@@ -571,27 +571,28 @@ img { max-width: 100%; height: auto; }
 
 /* ============ RESULTS REDESIGN ============ */
 .fecha-selector { text-align: center; padding: 30px 0 20px; }
-.fecha-selector h4 { color: var(--primary); margin-bottom: 12px; font-size: 1rem; }
-.fecha-buttons { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
-.fecha-btn { padding: 8px 18px; border: 2px solid var(--primary); background: transparent; color: var(--primary); border-radius: 50px; font-family: var(--font-heading); font-weight: 600; font-size: 0.8rem; cursor: pointer; transition: var(--transition); }
-.fecha-btn:hover, .fecha-btn.active { background: var(--primary); color: var(--white); }
-.fecha-btn.active { box-shadow: 0 4px 12px rgba(13,27,62,0.3); }
-.fecha-info { font-size: 0.85rem; color: var(--gray-600); font-style: italic; }
+.fecha-selector label { display: block; font-weight: 700; color: var(--primary); margin-bottom: 10px; font-size: 1rem; font-family: var(--font-heading); }
+.fecha-select { padding: 12px 20px; border: 2px solid var(--primary); border-radius: var(--radius); font-size: 0.95rem; font-family: var(--font-body); color: var(--primary); background: var(--white); cursor: pointer; min-width: 300px; max-width: 100%; appearance: auto; }
+.fecha-select:focus { outline: none; border-color: var(--secondary); box-shadow: 0 0 0 3px rgba(230,57,70,0.1); }
 
-.results-cards { display: grid; grid-template-columns: 1fr; gap: 30px; padding: 20px 0 40px; }
-.results-card { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); background: var(--white); }
-.results-card-header { background: linear-gradient(135deg, var(--primary), var(--accent)); color: var(--white); padding: 20px 30px; display: flex; align-items: center; gap: 12px; }
-.results-card-header-xcc { background: linear-gradient(135deg, var(--secondary), #ff6b6b); }
-.results-card-header i { font-size: 1.5rem; }
-.results-card-header h3 { font-size: 1.2rem; margin: 0; }
-.results-card-body { padding: 25px; }
-.results-card-body .results-filters { justify-content: flex-start; padding: 0 0 20px; }
-.results-pending { text-align: center; color: var(--gray-600); font-style: italic; padding: 20px; }
+.results-select-title { text-align: center; color: var(--primary); font-size: 1.3rem; margin: 30px 0 25px; }
+
+.event-cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; padding: 0 0 50px; max-width: 900px; margin: 0 auto; }
+.event-result-card { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow-lg); padding: 40px 25px; text-align: center; transition: var(--transition); border: 2px solid transparent; }
+.event-result-card:hover { transform: translateY(-8px); box-shadow: 0 15px 40px rgba(0,0,0,0.15); border-color: var(--primary); }
+.event-result-icon { width: 90px; height: 90px; margin: 0 auto 18px; border-radius: 50%; background: linear-gradient(135deg, var(--primary), var(--accent)); display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--white); }
+.event-result-icon-xcc { background: linear-gradient(135deg, var(--secondary), #ff6b6b); }
+.event-result-icon-xce { background: linear-gradient(135deg, #ff9800, #f57c00); }
+.event-result-card h4 { font-size: 1.4rem; color: var(--primary); margin-bottom: 5px; }
+.event-result-card p { font-size: 0.85rem; color: var(--gray-600); margin-bottom: 18px; }
+
+.btn-back { display: inline-flex; align-items: center; gap: 8px; color: var(--primary); font-weight: 600; font-size: 0.9rem; margin: 25px 0 20px; padding: 8px 0; transition: var(--transition); }
+.btn-back:hover { color: var(--secondary); gap: 12px; }
+.results-pending { text-align: center; color: var(--gray-600); font-style: italic; padding: 40px 20px; font-size: 1rem; }
 
 @media (max-width: 768px) {
-    .fecha-buttons { gap: 5px; }
-    .fecha-btn { padding: 6px 12px; font-size: 0.7rem; }
-    .results-card-body { padding: 15px; }
+    .event-cards-grid { grid-template-columns: 1fr; max-width: 350px; }
+    .fecha-select { min-width: auto; width: 100%; }
     .results-card-body .results-filters { gap: 5px; }
     .results-card-body .filter-btn { padding: 5px 10px; font-size: 0.7rem; }
 }
