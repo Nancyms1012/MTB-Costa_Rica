@@ -211,37 +211,113 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // ============ RESULTS TABLE ============
+    // ============ RESULTS TABLE - III Fecha XCO Adventure Park, Barva de Heredia ============
     const resultsData = {
-        'elite-m': [
-            { pos: 1, name: 'Atleta Ejemplo 1', team: 'Team A', scores: [100, 95, 100, 90, '-', '-'], total: 385 },
-            { pos: 2, name: 'Atleta Ejemplo 2', team: 'Team B', scores: [90, 100, 85, 95, '-', '-'], total: 370 },
-            { pos: 3, name: 'Atleta Ejemplo 3', team: 'Team C', scores: [85, 85, 90, 100, '-', '-'], total: 360 },
+        'master-a': [
+            { pos: 1, name: 'MARTÍNEZ Andrés', team: 'NOSOTROS DOTA - PASION MX', time: '00:45:36' },
+            { pos: 2, name: 'MORALES Allan', team: 'TEAM INNOVABIKES SKOLER UH', time: '00:47:22' },
+            { pos: 3, name: 'ARTAVIA Enrique', team: 'BOBBYS CYCLING TEAM', time: '00:47:52' },
+            { pos: 4, name: 'MORA Juan Manuel', team: 'N/A', time: '00:48:41' },
+            { pos: 5, name: 'SANDOVAL Alberto', team: 'ALGO RITMO DEVELOMET', time: '00:49:06' },
+            { pos: 6, name: 'CALDERÓN Edwin', team: 'CAPOS MOBI BIKE TEAM', time: '00:49:55' },
+            { pos: 7, name: 'ALPIZAR Roberto', team: 'TEAM GOCHA', time: '00:51:15' },
+            { pos: 8, name: 'CAMPOS Diego', team: 'GOCHA CYCLING TEAM', time: '00:53:57' },
+            { pos: 9, name: 'ARIAS Kibeth', team: 'VEINTE24 CYCLING', time: '00:54:36' },
+            { pos: 10, name: 'BENAVIDES Kenneth', team: 'BELÉN TEAM', time: '00:55:44' },
         ],
-        'elite-f': [
-            { pos: 1, name: 'Atleta Femenina 1', team: 'Team A', scores: [100, 100, 95, 100, '-', '-'], total: 395 },
-            { pos: 2, name: 'Atleta Femenina 2', team: 'Team B', scores: [95, 90, 100, 90, '-', '-'], total: 375 },
-            { pos: 3, name: 'Atleta Femenina 3', team: 'Team C', scores: [90, 85, 90, 85, '-', '-'], total: 350 },
+        'master-b': [
+            { pos: 1, name: 'RAMÍREZ Federico', team: 'SEVEN CARD WILLIER', time: '00:47:28' },
+            { pos: 2, name: 'HERRERA Elber', team: 'BOBBYS CYCLING TEAM', time: '00:49:33' },
+            { pos: 3, name: 'SANABRIA Kenneth', team: 'TREK BIKE STORE', time: '00:50:04' },
+            { pos: 4, name: 'MOLINA Hairo', team: 'CCDRESCAZU', time: '00:51:05' },
+            { pos: 5, name: 'CORTES Jerry', team: 'BUF, DRASANVI, ECOTIENDA', time: '00:51:38' },
+            { pos: 6, name: 'RODRÍGUEZ Julián', team: 'BELÉN TEAM', time: '00:53:05' },
+            { pos: 7, name: 'BARRANTES Richard', team: 'VEINTE24', time: '00:55:00' },
+            { pos: 8, name: 'GAMBOA Andrés', team: 'NUMU COACHING', time: '00:56:35' },
         ],
-        'sub23': [
-            { pos: 1, name: 'Sub-23 Atleta 1', team: 'Team A', scores: [100, 95, 100, 95, '-', '-'], total: 390 },
-            { pos: 2, name: 'Sub-23 Atleta 2', team: 'Team B', scores: [95, 100, 90, 90, '-', '-'], total: 375 },
-            { pos: 3, name: 'Sub-23 Atleta 3', team: 'Team C', scores: [85, 90, 85, 85, '-', '-'], total: 345 },
+        'master-c': [
+            { pos: 1, name: 'CHACÓN Gonzalo', team: 'TEAM GOCHA', time: '00:48:01' },
+            { pos: 2, name: 'AZOFEIFA Marcos', team: 'BOBBYS CYCLING TEAM', time: '00:50:28' },
+            { pos: 3, name: 'MÉNDEZ Diego', team: 'ULTIMATE TEAM', time: '00:52:29' },
+            { pos: 4, name: 'LOPEZ Jose', team: 'TEAM GOCHA', time: '00:54:51' },
+            { pos: 5, name: 'GARCIA Jorge', team: 'WATIOS CYCLING PERFORMANCE', time: '00:55:34' },
+            { pos: 6, name: 'PEREZ Hector', team: 'GW ERCO SPORTFITNESS', time: '00:55:42' },
+            { pos: 7, name: 'VILLALOBOS Steven', team: 'CALLE NIÑO SANO', time: '00:56:57' },
+            { pos: 8, name: 'EL SEMAANI Jean Paul', team: 'HATOVIEJO - MOMIA TS', time: '00:57:37' },
         ],
-        'juvenil': [
-            { pos: 1, name: 'Juvenil Atleta 1', team: 'Escuela MTB', scores: [100, 100, 95, 100, '-', '-'], total: 395 },
-            { pos: 2, name: 'Juvenil Atleta 2', team: 'Club Junior', scores: [90, 95, 100, 90, '-', '-'], total: 375 },
-            { pos: 3, name: 'Juvenil Atleta 3', team: 'Team Kids', scores: [85, 85, 90, 95, '-', '-'], total: 355 },
+        'master-d': [
+            { pos: 1, name: 'GONZALEZ Victor', team: 'EPIC BIKE ATENAS', time: '00:52:42' },
+            { pos: 2, name: 'CARVAJAL Jonathan', team: 'BOBBYS CYCLING TEAM', time: '00:52:47' },
+            { pos: 3, name: 'GÓMEZ José Antonio', team: 'BPT', time: '00:53:27' },
+            { pos: 4, name: 'BELTRAN Pablo', team: 'BELPOWER RUGATI', time: '00:58:47' },
+            { pos: 5, name: 'ARAYA Ronald', team: 'X3ME XTREME', time: '00:59:01' },
+            { pos: 6, name: 'BRENES Mario', team: 'BDRIFT-MOTORSPORTNUTRITION', time: '00:59:49' },
         ],
-        'master': [
-            { pos: 1, name: 'Master Atleta 1', team: 'Team Master', scores: [100, 95, 100, 100, '-', '-'], total: 395 },
-            { pos: 2, name: 'Master Atleta 2', team: 'Veteranos MTB', scores: [90, 100, 95, 90, '-', '-'], total: 375 },
-            { pos: 3, name: 'Master Atleta 3', team: 'Legends', scores: [85, 90, 85, 85, '-', '-'], total: 345 },
+        'master-e': [
+            { pos: 1, name: 'ROJAS Melvin', team: 'BOBBYS CYCLING TEAM', time: '00:53:46' },
+            { pos: 2, name: 'MUÑOZ Germán', team: 'TREK', time: '00:54:38' },
+            { pos: 3, name: 'RODRÍGUEZ Luis Angel', team: 'JONATHAN QUESADA TRAINING', time: '00:58:42' },
+            { pos: 4, name: 'CAMPOS Marvin', team: 'BELEN TEAM', time: '01:00:04' },
+            { pos: 5, name: 'RUBI Luis', team: 'DUROS COMO ROCA', time: '01:04:26' },
         ],
-        'kids': [
-            { pos: 1, name: 'Kids Atleta 1', team: 'Escuela MTB', scores: [100, 100, 100, 95, '-', '-'], total: 395 },
-            { pos: 2, name: 'Kids Atleta 2', team: 'Club Junior', scores: [95, 95, 90, 100, '-', '-'], total: 380 },
-            { pos: 3, name: 'Kids Atleta 3', team: 'Team Peques', scores: [90, 85, 95, 90, '-', '-'], total: 360 },
+        'open': [
+            { pos: 1, name: 'MENESES Jose', team: 'STYM', time: '00:51:45' },
+            { pos: 2, name: 'ZAMORA Jose David', team: 'VEINTE24', time: '00:52:18' },
+            { pos: 3, name: 'SANDI Kendall', team: 'POWERCYCLING', time: '00:52:55' },
+            { pos: 4, name: 'MORENO Carlos', team: 'NUMUCOACHING', time: '00:56:42' },
+            { pos: 5, name: 'RIVERA Jackdanny', team: 'VEINTE24 CYCLING', time: '00:57:51' },
+            { pos: 6, name: 'ARAYA Bryan', team: 'BPT/ CYCLINGLAB', time: '00:58:03' },
+        ],
+        'open-f': [
+            { pos: 1, name: 'TRETTI Caterina', team: 'VEINTE24', time: '00:45:56' },
+        ],
+        'master-f': [
+            { pos: 1, name: 'ALVARADO Lisbeth', team: 'ROES CENTELA', time: '00:50:40' },
+            { pos: 2, name: 'LORIA Dilcen', team: 'FISIONORTE / QUESADACYCLING', time: '00:52:59' },
+        ],
+        'infantil-m': [
+            { pos: 1, name: 'RODRÍGUEZ Joaquín', team: 'CCDR SAN JOSÉ', time: '00:34:59' },
+            { pos: 2, name: 'VALVERDE Liam', team: 'CCDR TURRIALBA', time: '00:35:53' },
+            { pos: 3, name: 'CORDERO Iker Mattias', team: 'PZ CYCLING TEAM', time: '00:37:18' },
+            { pos: 4, name: 'CARBALLO Abraham', team: 'BIKERS RACING TEAM', time: '00:37:39' },
+            { pos: 5, name: 'ARCE Mathew', team: 'TEAM ARCE', time: '00:38:02' },
+            { pos: 6, name: 'SANDI Derek Ivan', team: 'CCDR ESCAZÚ', time: '00:40:49' },
+            { pos: 7, name: 'GARCÍA Danny Armando', team: 'ROES/COMITÉ CANTONAL ZARCERO', time: '00:40:53' },
+            { pos: 8, name: 'MARÍN Isaac José', team: 'ACISA SARAPIQUI', time: '00:42:36' },
+        ],
+        'infantil-f': [
+            { pos: 1, name: 'CALDERÓN Ariana', team: 'COLONO BIKE STATION KOLBI', time: '00:21:50' },
+            { pos: 2, name: 'TORRES Camila Del Pilar', team: 'CCDRESCAZU', time: '00:24:37' },
+            { pos: 3, name: 'CRUZ Monica', team: 'SCOTT SHIMANO CYCLING TEAM', time: '00:25:26' },
+            { pos: 4, name: 'MARCHENA Shelly', team: 'CCDRESCAZU', time: '00:27:14' },
+        ],
+        'preinfantil-m': [
+            { pos: 1, name: 'ARAYA Emiliano', team: 'CCDR SANTA CRUZ, TEAM COSTA FRUT', time: '00:23:06' },
+            { pos: 2, name: 'CÉSPEDES Anthony Luan', team: 'SKALA MONTEVERDE/CCDR MONTEVERDE', time: '00:25:27' },
+            { pos: 3, name: 'CERDAS Isaac', team: 'CODEA ALAJUELA', time: '00:28:55' },
+            { pos: 4, name: 'HUNTER Ian', team: 'CODEA', time: '00:33:00' },
+            { pos: 5, name: 'HERRERA Mathias', team: 'INDEPENDIENTE', time: '00:37:03' },
+        ],
+        'preinfantil-f': [
+            { pos: 1, name: 'HERNÁNDEZ Maripaz', team: 'SANTA ANA / HDZ TEAM', time: '00:26:55' },
+            { pos: 2, name: 'JIMÉNEZ Mia', team: 'CCDR SAN JOSÉ', time: '00:28:23' },
+            { pos: 3, name: 'MONTEALEGRE María Paula', team: 'CCDR SANTA CRUZ', time: '00:33:41' },
+            { pos: 4, name: 'MORA Valentina', team: 'CODEA ALAJUELA', time: '00:35:04' },
+        ],
+        'prejuvenil-m': [
+            { pos: 1, name: 'PAREDES Miguel', team: 'ASTRANOVA BIKE HOUSE TREK', time: '00:45:44' },
+            { pos: 2, name: 'GARCÍA Miguel', team: 'COLONO BIKE STATION KOLBI', time: '00:49:42' },
+            { pos: 3, name: 'ARIAS Daniel', team: 'CICLISMO BELÉN', time: '00:50:29' },
+            { pos: 4, name: 'ACUÑA Felipe', team: 'CCDR DE NARANJO', time: '00:51:40' },
+            { pos: 5, name: 'HERNANDEZ Walter David', team: 'SCOTT SHIMANO CYCLING TEAM', time: '00:52:05' },
+            { pos: 6, name: 'SABALLOS Joshua', team: 'CICLISMO BELÉN', time: '00:52:38' },
+            { pos: 7, name: 'CARBALLO Bryan', team: 'BIKERS RACING TEAM', time: '00:53:20' },
+            { pos: 8, name: 'AGUILAR Luciano', team: 'CODEA ALAJUELA', time: '00:55:29' },
+        ],
+        'prejuvenil-f': [
+            { pos: 1, name: 'JIMENEZ Briana', team: 'BOBBYS CYCLING TEAM', time: '00:47:23' },
+            { pos: 2, name: 'CÉSPEDES Isabella Jazlene', team: 'SKALA MONTEVERDE/CCDR MONTEVERDE', time: '00:55:02' },
+            { pos: 3, name: 'SOLIS Nathalia', team: 'CODEA ALAJUELA', time: '00:57:16' },
         ],
     };
 
@@ -259,8 +335,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td>${row.pos}</td>
                 <td style="text-align:left; font-weight:600;">${row.name}</td>
                 <td>${row.team}</td>
-                ${row.scores.map(s => `<td>${s}</td>`).join('')}
-                <td style="font-weight:700;">${row.total}</td>
+                <td>${row.time}</td>
             `;
             resultsBody.appendChild(tr);
         });
@@ -273,7 +348,7 @@ document.addEventListener('DOMContentLoaded', () => {
             renderResults(btn.getAttribute('data-filter'));
         });
     });
-    renderResults('elite-m');
+    renderResults('master-a');
 
 
     // ============ INSCRIPTION FORM ============
