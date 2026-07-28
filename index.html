@@ -4,499 +4,542 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ANCM - Asociación Nacional de Ciclismo de Montaña Costa Rica</title>
-    <meta name="description" content="Asociación Nacional de Ciclismo de Montaña de Costa Rica. Copa Nacional MTB, Copa Kids, XCO, XCC, XCE.">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;600&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navegación -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#inicio" class="nav-logo">
-                <img src="img/logo-ancm.svg" alt="ANCM Logo" class="logo-img">
-            </a>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
-                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-                <li><a href="#eventos" class="nav-link">Eventos</a></li>
-                <li><a href="#categorias" class="nav-link">Categorías</a></li>
-                <li><a href="#resultados" class="nav-link">Resultados</a></li>
-                <li><a href="#inscripciones" class="nav-link">Inscripciones</a></li>
-                <li><a href="#galeria" class="nav-link">Galería</a></li>
-                <li><a href="#contacto" class="nav-link">Contacto</a></li>
-            </ul>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Menú">
-                <span class="hamburger"></span>
-            </button>
+
+<!-- Banner -->
+<div class="banner">
+    <span>VI Fecha Copa Nacional MTB 2026 | 13-14 Septiembre</span>
+    <button class="btn btn-sm" data-page="inscripciones">Inscribirse</button>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#" class="nav-logo">
+            <img src="img/ANCM.png" alt="ANCM Logo" class="logo-img">
+        </a>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="#" class="nav-link active" data-page="inicio">Inicio</a></li>
+            <li><a href="#" class="nav-link" data-page="nosotros">Nosotros</a></li>
+            <li><a href="#" class="nav-link" data-page="eventos">Eventos</a></li>
+            <li><a href="#" class="nav-link" data-page="categorias">Categorías</a></li>
+            <li><a href="#" class="nav-link" data-page="copa-kids">Copa Kids</a></li>
+            <li><a href="#" class="nav-link" data-page="resultados">Resultados</a></li>
+            <li><a href="#" class="nav-link" data-page="inscripciones">Inscripciones</a></li>
+            <li><a href="#" class="nav-link" data-page="galeria">Galería</a></li>
+            <li><a href="#" class="nav-link" data-page="contacto">Contacto</a></li>
+        </ul>
+        <button class="nav-toggle" id="nav-toggle">
+            <span class="hamburger"></span>
+        </button>
+    </div>
+</nav>
+
+
+<!-- PAGE: INICIO -->
+<section class="page active" id="page-inicio">
+    <div class="hero">
+        <div class="hero-slideshow">
+            <div class="slide active" style="background-image: url('img/slide1.jpeg')"></div>
+            <div class="slide" style="background-image: url('img/slide2.jpeg')"></div>
+            <div class="slide" style="background-image: url('img/slide3.jpeg')"></div>
+            <div class="slide" style="background-image: url('img/slide4.jpeg')"></div>
+            <div class="slide" style="background-image: url('img/slide5.jpeg')"></div>
+            <div class="slide" style="background-image: url('img/slide6.jpeg')"></div>
+            <div class="slide" style="background-image: url('img/slide7.jpeg')"></div>
+            <div class="slide" style="background-image: url('img/slide8.jpeg')"></div>
+            <div class="slide" style="background-image: url('img/slide9.jpeg')"></div>
+            <div class="slide" style="background-image: url('img/slide10.jpeg')"></div>
+            <div class="slide" style="background-image: url('img/slide11.jpeg')"></div>
         </div>
-    </nav>
-
-
-    <!-- Hero Section -->
-    <section class="hero" id="inicio">
         <div class="hero-overlay"></div>
+        <canvas id="particles-canvas" class="hero-particles"></canvas>
         <div class="hero-content">
-            <img src="img/logo-ancm.svg" alt="ANCM" class="hero-logo animate-fade-in">
-            <h1 class="animate-slide-up">Asociación Nacional de<br>Ciclismo de Montaña</h1>
-            <p class="hero-subtitle animate-slide-up delay-1">Promoviendo el ciclismo de montaña en Costa Rica desde las categorías infantiles hasta la élite</p>
-            <div class="hero-buttons animate-slide-up delay-2">
-                <a href="#eventos" class="btn btn-primary">Próximos Eventos</a>
-                <a href="#inscripciones" class="btn btn-secondary">Inscribirse</a>
+            <img src="img/ANCM.png" alt="ANCM" class="hero-logo">
+            <h1>Asociación Nacional de Ciclismo de Montaña</h1>
+            <p class="hero-subtitle">Somos una organización sin fines de lucro que aporta al desarrollo del ciclismo de montaña</p>
+            <div class="countdown">
+                <div class="countdown-item"><span id="cd-days">00</span><small>Días</small></div>
+                <div class="countdown-item"><span id="cd-hours">00</span><small>Horas</small></div>
+                <div class="countdown-item"><span id="cd-minutes">00</span><small>Minutos</small></div>
+                <div class="countdown-item"><span id="cd-seconds">00</span><small>Segundos</small></div>
+            </div>
+            <p class="countdown-event-label">para la VI Fecha - Copa Nacional MTB</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary" data-page="eventos">Próximos Eventos</a>
+                <a href="#" class="btn btn-secondary" data-page="inscripciones">Inscribirse</a>
             </div>
         </div>
-        <div class="hero-scroll">
-            <a href="#nosotros"><i class="fas fa-chevron-down"></i></a>
-        </div>
-    </section>
+        <div class="slide-indicators" id="slide-indicators"></div>
+    </div>
+</section>
 
-    <!-- Sobre Nosotros -->
-    <section class="section" id="nosotros">
-        <div class="container">
-            <h2 class="section-title">Sobre Nosotros</h2>
-            <p class="section-subtitle">Formando campeones desde la base</p>
-            <div class="about-grid">
-                <div class="about-card">
-                    <div class="about-icon"><i class="fas fa-bullseye"></i></div>
-                    <h3>Misión</h3>
-                    <p>Promover, desarrollar y organizar el ciclismo de montaña en Costa Rica, fomentando la práctica deportiva desde edades tempranas con valores de disciplina, respeto y superación.</p>
-                </div>
-                <div class="about-card">
-                    <div class="about-icon"><i class="fas fa-eye"></i></div>
-                    <h3>Visión</h3>
-                    <p>Ser la organización líder en el desarrollo del ciclismo de montaña en Centroamérica, formando atletas competitivos a nivel internacional desde las categorías infantiles.</p>
-                </div>
-                <div class="about-card">
-                    <div class="about-icon"><i class="fas fa-heart"></i></div>
-                    <h3>Valores</h3>
-                    <p>Trabajo en equipo, fair play, inclusión, desarrollo integral del atleta y compromiso con el deporte como herramienta de transformación social.</p>
-                </div>
+
+<!-- PAGE: NOSOTROS -->
+<section class="page" id="page-nosotros">
+    <div class="page-header">
+        <h2 class="section-title">Sobre Nosotros</h2>
+        <p class="section-subtitle">Conoce nuestra organización</p>
+    </div>
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-card">
+                <div class="about-icon"><i class="fas fa-bullseye"></i></div>
+                <h3>Misión</h3>
+                <p>Somos una organización sin fines de lucro dedicada a fomentar, desarrollar y promover el ciclismo de montaña en Costa Rica a través de competencias de alto nivel.</p>
             </div>
-
-            <div class="stats-row">
-                <div class="stat-item">
-                    <span class="stat-number" data-target="500">0</span>+
-                    <span class="stat-label">Atletas activos</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="6">0</span>
-                    <span class="stat-label">Fechas anuales</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="15">0</span>+
-                    <span class="stat-label">Categorías</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="10">0</span>+
-                    <span class="stat-label">Años de trayectoria</span>
-                </div>
+            <div class="about-card">
+                <div class="about-icon"><i class="fas fa-eye"></i></div>
+                <h3>Visión</h3>
+                <p>Ser la entidad líder en el desarrollo del ciclismo de montaña en Centroamérica, formando atletas competitivos a nivel internacional.</p>
+            </div>
+            <div class="about-card">
+                <div class="about-icon"><i class="fas fa-heart"></i></div>
+                <h3>Valores</h3>
+                <p>Pasión por el deporte, inclusión, integridad, trabajo en equipo, respeto por la naturaleza y compromiso con la excelencia deportiva.</p>
             </div>
         </div>
-    </section>
-
-    <!-- Eventos -->
-    <section class="section section-dark" id="eventos">
-        <div class="container">
-            <h2 class="section-title">Eventos 2026</h2>
-            <p class="section-subtitle">Copa Nacional de Ciclismo de Montaña</p>
-            <div class="events-logos">
-                <img src="img/logo-copa.svg" alt="La Copa" class="event-logo">
-                <img src="img/logo-copa-kids.svg" alt="Copa Kids" class="event-logo">
+        <div class="stats-row">
+            <div class="stat-item">
+                <span class="stat-number" data-target="500">0</span>
+                <span class="stat-label">Atletas activos</span>
             </div>
-
-            <div class="events-grid">
-                <div class="event-card past">
-                    <div class="event-date">
-                        <span class="event-month">FEB</span>
-                        <span class="event-day">15-16</span>
-                    </div>
-                    <div class="event-info">
-                        <h4>I Fecha Copa Nacional MTB 2026</h4>
-                        <p><i class="fas fa-map-marker-alt"></i> Por confirmar</p>
-                        <span class="event-badge badge-completed">Finalizada</span>
-                    </div>
-                </div>
-                <div class="event-card past">
-                    <div class="event-date">
-                        <span class="event-month">MAR</span>
-                        <span class="event-day">22-23</span>
-                    </div>
-                    <div class="event-info">
-                        <h4>II Fecha Copa Nacional MTB 2026</h4>
-                        <p><i class="fas fa-map-marker-alt"></i> Por confirmar</p>
-                        <span class="event-badge badge-completed">Finalizada</span>
-                    </div>
-                </div>
-                <div class="event-card past">
-                    <div class="event-date">
-                        <span class="event-month">ABR</span>
-                        <span class="event-day">26-27</span>
-                    </div>
-                    <div class="event-info">
-                        <h4>III Fecha Copa Nacional MTB 2026</h4>
-                        <p><i class="fas fa-map-marker-alt"></i> Por confirmar</p>
-                        <span class="event-badge badge-completed">Finalizada</span>
-                    </div>
-                </div>
-                <div class="event-card past">
-                    <div class="event-date">
-                        <span class="event-month">JUN</span>
-                        <span class="event-day">14-15</span>
-                    </div>
-                    <div class="event-info">
-                        <h4>IV Fecha Copa Nacional MTB 2026</h4>
-                        <p><i class="fas fa-map-marker-alt"></i> Por confirmar</p>
-                        <span class="event-badge badge-completed">Finalizada</span>
-                    </div>
-                </div>
-
-                <div class="event-card active">
-                    <div class="event-date">
-                        <span class="event-month">JUL</span>
-                        <span class="event-day">18-19</span>
-                    </div>
-                    <div class="event-info">
-                        <h4>V Fecha - Campeonato Nacional XCO, XCC, XCE</h4>
-                        <p><i class="fas fa-map-marker-alt"></i> Oikoumene</p>
-                        <span class="event-badge badge-active">Próximo Evento</span>
-                        <a href="#inscripciones" class="btn btn-sm">Inscribirse</a>
-                    </div>
-                </div>
-                <div class="event-card upcoming">
-                    <div class="event-date">
-                        <span class="event-month">SEP</span>
-                        <span class="event-day">13-14</span>
-                    </div>
-                    <div class="event-info">
-                        <h4>VI Fecha Copa Nacional MTB 2026</h4>
-                        <p><i class="fas fa-map-marker-alt"></i> Por confirmar</p>
-                        <span class="event-badge badge-upcoming">Próximamente</span>
-                    </div>
-                </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="6">0</span>
+                <span class="stat-label">Fechas anuales</span>
             </div>
-            <div class="events-cta">
-                <a href="#" class="btn btn-outline" target="_blank">
-                    <i class="fas fa-file-pdf"></i> Descargar Guía Técnica
-                </a>
+            <div class="stat-item">
+                <span class="stat-number" data-target="15">0</span>
+                <span class="stat-label">Categorías</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="10">0</span>
+                <span class="stat-label">Años de trayectoria</span>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
-    <!-- Categorías -->
-    <section class="section" id="categorias">
-        <div class="container">
-            <h2 class="section-title">Categorías</h2>
-            <p class="section-subtitle">Modalidades y grupos de competencia</p>
-            
-            <div class="modalities-grid">
-                <div class="modality-card">
-                    <div class="modality-icon"><i class="fas fa-bolt"></i></div>
-                    <h3>XCC</h3>
-                    <h4>Cross-Country Short Track</h4>
-                    <p>Carreras cortas e intensas en circuitos reducidos. Alta velocidad y espectacularidad. Duración aproximada de 20-30 minutos.</p>
-                </div>
-                <div class="modality-card">
-                    <div class="modality-icon"><i class="fas fa-mountain"></i></div>
-                    <h3>XCO</h3>
-                    <h4>Cross-Country Olympic</h4>
-                    <p>La modalidad olímpica del MTB. Circuitos técnicos con ascensos y descensos exigentes. La prueba reina del ciclismo de montaña.</p>
-                </div>
-                <div class="modality-card">
-                    <div class="modality-icon"><i class="fas fa-flag-checkered"></i></div>
-                    <h3>XCE</h3>
-                    <h4>Cross-Country Eliminator</h4>
-                    <p>Formato eliminatorio en grupos reducidos. Circuitos cortos con obstáculos técnicos. Emoción y adrenalina en cada ronda.</p>
+<!-- PAGE: EVENTOS -->
+<section class="page" id="page-eventos">
+    <div class="page-header-dark">
+        <h2 class="section-title">Eventos 2026</h2>
+        <p class="section-subtitle">Copa Nacional de Ciclismo de Montaña</p>
+    </div>
+    <div class="container">
+        <div class="events-logos">
+            <img src="img/COPA.webp" alt="Copa Nacional MTB" class="event-logo">
+            <img src="img/KIDS.jpeg" alt="Copa Kids" class="event-logo">
+        </div>
+        <div class="events-grid">
+            <div class="event-card past">
+                <div class="event-date"><span class="event-month">Feb</span><span class="event-day">15-16</span></div>
+                <div class="event-info">
+                    <h4>I Fecha - Copa Nacional MTB</h4>
+                    <p>Sede por confirmar</p>
+                    <span class="event-badge badge-completed">Finalizada</span>
                 </div>
             </div>
-
-            <h3 class="subsection-title">Categorías por Edad</h3>
-            <div class="categories-table-wrapper">
-                <table class="categories-table">
-                    <thead>
-                        <tr>
-                            <th>Categoría</th>
-                            <th>Edad</th>
-                            <th>Modalidades</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>Pre-Infantil</td><td>6-8 años</td><td>XCO</td></tr>
-                        <tr><td>Infantil A</td><td>9-10 años</td><td>XCO</td></tr>
-                        <tr><td>Infantil B</td><td>11-12 años</td><td>XCO, XCC</td></tr>
-                        <tr><td>Juvenil A</td><td>13-14 años</td><td>XCO, XCC, XCE</td></tr>
-                        <tr><td>Juvenil B</td><td>15-16 años</td><td>XCO, XCC, XCE</td></tr>
-                        <tr><td>Sub-23</td><td>17-22 años</td><td>XCO, XCC, XCE</td></tr>
-                        <tr><td>Élite</td><td>23+ años</td><td>XCO, XCC, XCE</td></tr>
-                        <tr><td>Máster A</td><td>30-39 años</td><td>XCO, XCC</td></tr>
-                        <tr><td>Máster B</td><td>40-49 años</td><td>XCO, XCC</td></tr>
-                        <tr><td>Máster C</td><td>50+ años</td><td>XCO</td></tr>
-                    </tbody>
-                </table>
+            <div class="event-card past">
+                <div class="event-date"><span class="event-month">Mar</span><span class="event-day">22-23</span></div>
+                <div class="event-info">
+                    <h4>II Fecha - Copa Nacional MTB</h4>
+                    <p>Sede por confirmar</p>
+                    <span class="event-badge badge-completed">Finalizada</span>
+                </div>
+            </div>
+            <div class="event-card past">
+                <div class="event-date"><span class="event-month">May</span><span class="event-day">17-18</span></div>
+                <div class="event-info">
+                    <h4>III Fecha - Copa Nacional MTB</h4>
+                    <p>Sede por confirmar</p>
+                    <span class="event-badge badge-completed">Finalizada</span>
+                </div>
+            </div>
+            <div class="event-card past">
+                <div class="event-date"><span class="event-month">Jun</span><span class="event-day">21-22</span></div>
+                <div class="event-info">
+                    <h4>IV Fecha - Copa Nacional MTB</h4>
+                    <p>Sede por confirmar</p>
+                    <span class="event-badge badge-completed">Finalizada</span>
+                </div>
+            </div>
+            <div class="event-card past">
+                <div class="event-date"><span class="event-month">Jul</span><span class="event-day">19-20</span></div>
+                <div class="event-info">
+                    <h4>V Fecha - Copa Nacional MTB</h4>
+                    <p>Sede por confirmar</p>
+                    <span class="event-badge badge-completed">Finalizada</span>
+                </div>
+            </div>
+            <div class="event-card active">
+                <div class="event-date"><span class="event-month">Sep</span><span class="event-day">13-14</span></div>
+                <div class="event-info">
+                    <h4>VI Fecha - Copa Nacional MTB</h4>
+                    <p>Sede por confirmar</p>
+                    <span class="event-badge badge-active">Próximo Evento</span>
+                    <a href="#" class="btn btn-sm" data-page="inscripciones">Inscribirse</a>
+                </div>
             </div>
         </div>
-    </section>
+        <div class="events-cta">
+            <a href="#" class="btn btn-outline">Descargar Guía Técnica</a>
+        </div>
+    </div>
+</section>
 
 
-    <!-- Resultados -->
-    <section class="section section-dark" id="resultados">
-        <div class="container">
-            <h2 class="section-title">Resultados & Clasificación</h2>
-            <p class="section-subtitle">Clasificación General Copa Nacional MTB 2026</p>
-            
-            <div class="results-filters">
-                <button class="filter-btn active" data-filter="elite-m">Élite Masculino</button>
-                <button class="filter-btn" data-filter="elite-f">Élite Femenino</button>
-                <button class="filter-btn" data-filter="sub23">Sub-23</button>
-                <button class="filter-btn" data-filter="juvenil">Juvenil</button>
-                <button class="filter-btn" data-filter="master">Máster</button>
-                <button class="filter-btn" data-filter="kids">Kids</button>
+<!-- PAGE: CATEGORIAS -->
+<section class="page" id="page-categorias">
+    <div class="page-header">
+        <h2 class="section-title">Categorías</h2>
+        <p class="section-subtitle">Modalidades y categorías oficiales</p>
+    </div>
+    <div class="container">
+        <div class="modalities-grid">
+            <div class="modality-card">
+                <div class="modality-icon"><i class="fas fa-bolt"></i></div>
+                <h3>XCC</h3>
+                <h4>Cross Country Short Track</h4>
+                <p>Carreras cortas e intensas en circuitos reducidos. Alta velocidad y espectacularidad para los espectadores.</p>
             </div>
-
-            <div class="results-table-wrapper">
-                <table class="results-table" id="results-table">
-                    <thead>
-                        <tr>
-                            <th>Pos</th>
-                            <th>Atleta</th>
-                            <th>Equipo</th>
-                            <th>I</th>
-                            <th>II</th>
-                            <th>III</th>
-                            <th>IV</th>
-                            <th>V</th>
-                            <th>VI</th>
-                            <th>Total</th>
-                        </tr>
-                    </thead>
-                    <tbody id="results-body">
-                        <!-- Populated by JavaScript -->
-                    </tbody>
-                </table>
+            <div class="modality-card">
+                <div class="modality-icon"><i class="fas fa-mountain"></i></div>
+                <h3>XCO</h3>
+                <h4>Cross Country Olympic</h4>
+                <p>La modalidad olímpica del MTB. Circuitos técnicos con subidas y bajadas desafiantes.</p>
             </div>
-            <div class="results-cta">
-                <a href="#" class="btn btn-outline" target="_blank">
-                    <i class="fas fa-download"></i> Descargar Clasificación Completa
-                </a>
+            <div class="modality-card">
+                <div class="modality-icon"><i class="fas fa-flag-checkered"></i></div>
+                <h3>XCE</h3>
+                <h4>Cross Country Eliminator</h4>
+                <p>Formato de eliminación directa con carreras cortas entre pequeños grupos de ciclistas.</p>
             </div>
         </div>
-    </section>
+
+        <h3 class="subsection-title">Categorías Oficiales</h3>
+        <div class="categories-table-wrapper">
+            <table class="categories-table">
+                <thead>
+                    <tr>
+                        <th>Grupo</th>
+                        <th>Categoría</th>
+                        <th>Edades</th>
+                        <th>Género</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td rowspan="4"><strong>Menores</strong></td><td>Preinfantil</td><td>11-12 años</td><td>Masc / Fem</td></tr>
+                    <tr><td>Infantil</td><td>13-14 años</td><td>Masc / Fem</td></tr>
+                    <tr><td>Prejuvenil</td><td>15-16 años</td><td>Masc / Fem</td></tr>
+                    <tr><td>Juvenil</td><td>17-18 años</td><td>Masc / Fem</td></tr>
+                    <tr><td rowspan="2"><strong>Élite</strong></td><td>Élite</td><td>19+ años</td><td>Masc / Fem</td></tr>
+                    <tr><td>Sub-23</td><td>19-22 años</td><td>Masc / Fem</td></tr>
+                    <tr><td rowspan="7"><strong>Máster</strong></td><td>Máster A Masc</td><td>30-34 años</td><td>Masculino</td></tr>
+                    <tr><td>Máster B Masc</td><td>35-39 años</td><td>Masculino</td></tr>
+                    <tr><td>Máster C Masc</td><td>40-44 años</td><td>Masculino</td></tr>
+                    <tr><td>Máster D Masc</td><td>45-49 años</td><td>Masculino</td></tr>
+                    <tr><td>Máster E Masc</td><td>50+ años</td><td>Masculino</td></tr>
+                    <tr><td>Máster A Fem</td><td>30-39 años</td><td>Femenino</td></tr>
+                    <tr><td>Máster B Fem</td><td>40+ años</td><td>Femenino</td></tr>
+                    <tr><td rowspan="4"><strong>Otras</strong></td><td>Open</td><td>Todas</td><td>Mixto</td></tr>
+                    <tr><td>E-Bike</td><td>Todas</td><td>Mixto</td></tr>
+                    <tr><td>Cyclocross</td><td>Todas</td><td>Mixto</td></tr>
+                    <tr><td>Pasados</td><td>Todas</td><td>Mixto</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
 
 
-    <!-- Inscripciones -->
-    <section class="section" id="inscripciones">
-        <div class="container">
-            <h2 class="section-title">Inscripciones</h2>
-            <p class="section-subtitle">Regístrate para la próxima fecha de la Copa Nacional MTB 2026</p>
+<!-- PAGE: COPA KIDS -->
+<section class="page" id="page-copa-kids">
+    <div class="page-header-kids">
+        <img src="img/KIDS.jpeg" alt="Copa Kids" class="kids-logo">
+        <h2 class="section-title">Copa Kids MTB</h2>
+        <p class="section-subtitle">Formando los campeones del futuro</p>
+    </div>
+    <div class="container">
+        <div class="kids-intro">
+            <p>La Copa Kids MTB es nuestra competencia diseñada especialmente para los más pequeños. Un espacio seguro y divertido donde niños y niñas pueden descubrir su pasión por el ciclismo de montaña.</p>
+        </div>
+        <div class="kids-features">
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h4>Seguridad</h4>
+                <p>Circuitos diseñados para garantizar la seguridad de los participantes</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-trophy"></i>
+                <h4>Premiación</h4>
+                <p>Todos los participantes reciben medalla y reconocimiento</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h4>Inclusión</h4>
+                <p>Categorías para todas las edades y niveles de experiencia</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-star"></i>
+                <h4>Diversión</h4>
+                <p>Ambiente festivo con actividades recreativas para toda la familia</p>
+            </div>
+        </div>
 
-            <div class="inscription-container">
-                <div class="inscription-info">
-                    <h3><i class="fas fa-info-circle"></i> Información Importante</h3>
-                    <ul>
-                        <li><i class="fas fa-check"></i> Las inscripciones cierran 48 horas antes del evento</li>
-                        <li><i class="fas fa-check"></i> Menores de edad requieren autorización del padre/tutor</li>
-                        <li><i class="fas fa-check"></i> Es obligatorio el uso de casco homologado</li>
-                        <li><i class="fas fa-check"></i> Cada participante debe tener licencia vigente</li>
-                        <li><i class="fas fa-check"></i> El seguro médico es requisito indispensable</li>
-                    </ul>
-                    <div class="inscription-event-highlight">
-                        <h4>Próximo Evento</h4>
-                        <p class="event-highlight-name">V Fecha - Campeonato Nacional XCO, XCC, XCE</p>
-                        <p class="event-highlight-date"><i class="fas fa-calendar"></i> 18-19 Julio, 2026</p>
-                        <p class="event-highlight-location"><i class="fas fa-map-marker-alt"></i> Oikoumene</p>
-                    </div>
+        <h3 class="subsection-title">Categorías Copa Kids</h3>
+        <div class="categories-table-wrapper">
+            <table class="categories-table">
+                <thead>
+                    <tr>
+                        <th>Categoría</th>
+                        <th>Edades</th>
+                        <th>Género</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Principiantes</td><td>4-5 años</td><td>Mixto</td></tr>
+                    <tr><td>Pre-Infantil</td><td>6-7 años</td><td>Masc / Fem</td></tr>
+                    <tr><td>Infantil A</td><td>8-9 años</td><td>Masc / Fem</td></tr>
+                    <tr><td>Infantil B</td><td>10-11 años</td><td>Masc / Fem</td></tr>
+                    <tr><td>Juvenil Kids</td><td>12-13 años</td><td>Masc / Fem</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="kids-cta">
+            <a href="#" class="btn btn-primary" data-page="inscripciones">Inscribir a mi hijo(a)</a>
+            <a href="#" class="btn btn-outline-dark" data-page="contacto">Más información</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- PAGE: RESULTADOS -->
+<section class="page" id="page-resultados">
+    <div class="page-header-dark">
+        <h2 class="section-title">Resultados</h2>
+        <p class="section-subtitle">Clasificación General Copa Nacional MTB 2026</p>
+    </div>
+    <div class="container">
+        <div class="results-filters">
+            <button class="filter-btn active" data-filter="elite-m">Élite Masc</button>
+            <button class="filter-btn" data-filter="elite-f">Élite Fem</button>
+            <button class="filter-btn" data-filter="sub23">Sub-23</button>
+            <button class="filter-btn" data-filter="juvenil">Juvenil</button>
+            <button class="filter-btn" data-filter="master">Máster</button>
+            <button class="filter-btn" data-filter="kids">Kids</button>
+        </div>
+        <div class="results-table-wrapper">
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th>Pos</th>
+                        <th>Atleta</th>
+                        <th>Equipo</th>
+                        <th>I</th>
+                        <th>II</th>
+                        <th>III</th>
+                        <th>IV</th>
+                        <th>V</th>
+                        <th>VI</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="results-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+
+<!-- PAGE: INSCRIPCIONES -->
+<section class="page" id="page-inscripciones">
+    <div class="page-header">
+        <h2 class="section-title">Inscripciones</h2>
+        <p class="section-subtitle">Formulario de inscripción Copa Nacional MTB 2026</p>
+    </div>
+    <div class="container">
+        <div class="inscription-container">
+            <div class="inscription-info">
+                <h3>Requisitos de Inscripción</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Ser miembro activo de la ANCM</li>
+                    <li><i class="fas fa-check-circle"></i> Presentar certificado médico vigente</li>
+                    <li><i class="fas fa-check-circle"></i> Contar con licencia deportiva al día</li>
+                    <li><i class="fas fa-check-circle"></i> Equipo de protección obligatorio (casco)</li>
+                    <li><i class="fas fa-check-circle"></i> Bicicleta en condiciones mecánicas óptimas</li>
+                </ul>
+                <div class="inscription-event-highlight">
+                    <h4>Próximo Evento</h4>
+                    <p class="event-highlight-name">VI Fecha - Copa Nacional MTB</p>
+                    <p class="event-highlight-date"><i class="fas fa-calendar"></i> 13-14 Septiembre, 2026</p>
+                    <p class="event-highlight-location"><i class="fas fa-map-marker-alt"></i> Sede por confirmar</p>
                 </div>
-
-                <form class="inscription-form" id="inscription-form">
-                    <h3>Formulario de Inscripción</h3>
+            </div>
+            <div class="inscription-form">
+                <h3>Formulario de Inscripción</h3>
+                <form id="inscription-form">
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="nombre">Nombre completo *</label>
+                            <label for="nombre">Nombre Completo</label>
                             <input type="text" id="nombre" name="nombre" required>
                         </div>
                         <div class="form-group">
-                            <label for="cedula">Cédula / Pasaporte *</label>
+                            <label for="cedula">Cédula</label>
                             <input type="text" id="cedula" name="cedula" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="email">Correo electrónico *</label>
+                            <label for="email">Email</label>
                             <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="telefono">Teléfono *</label>
+                            <label for="telefono">Teléfono</label>
                             <input type="tel" id="telefono" name="telefono" required>
                         </div>
                     </div>
-
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="fecha-nacimiento">Fecha de nacimiento *</label>
+                            <label for="fecha-nacimiento">Fecha de Nacimiento</label>
                             <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
                         </div>
                         <div class="form-group">
-                            <label for="categoria">Categoría *</label>
+                            <label for="categoria">Categoría</label>
                             <select id="categoria" name="categoria" required>
-                                <option value="">Seleccione...</option>
-                                <option value="pre-infantil">Pre-Infantil (6-8)</option>
-                                <option value="infantil-a">Infantil A (9-10)</option>
-                                <option value="infantil-b">Infantil B (11-12)</option>
-                                <option value="juvenil-a">Juvenil A (13-14)</option>
-                                <option value="juvenil-b">Juvenil B (15-16)</option>
-                                <option value="sub23">Sub-23 (17-22)</option>
-                                <option value="elite">Élite (23+)</option>
-                                <option value="master-a">Máster A (30-39)</option>
-                                <option value="master-b">Máster B (40-49)</option>
-                                <option value="master-c">Máster C (50+)</option>
+                                <option value="">Seleccionar categoría</option>
+                                <optgroup label="Menores">
+                                    <option value="preinfantil">Preinfantil (11-12)</option>
+                                    <option value="infantil">Infantil (13-14)</option>
+                                    <option value="prejuvenil">Prejuvenil (15-16)</option>
+                                    <option value="juvenil">Juvenil (17-18)</option>
+                                </optgroup>
+                                <optgroup label="Élite">
+                                    <option value="elite">Élite (19+)</option>
+                                    <option value="sub23">Sub-23 (19-22)</option>
+                                </optgroup>
+                                <optgroup label="Máster">
+                                    <option value="master-a">Máster A</option>
+                                    <option value="master-b">Máster B</option>
+                                    <option value="master-c">Máster C</option>
+                                    <option value="master-d">Máster D</option>
+                                    <option value="master-e">Máster E</option>
+                                </optgroup>
+                                <optgroup label="Otras">
+                                    <option value="open">Open</option>
+                                    <option value="ebike">E-Bike</option>
+                                </optgroup>
                             </select>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="modalidad">Modalidad *</label>
+                            <label for="modalidad">Modalidad</label>
                             <select id="modalidad" name="modalidad" required>
-                                <option value="">Seleccione...</option>
-                                <option value="xco">XCO - Cross-Country Olympic</option>
+                                <option value="">Seleccionar modalidad</option>
                                 <option value="xcc">XCC - Short Track</option>
+                                <option value="xco">XCO - Olympic</option>
                                 <option value="xce">XCE - Eliminator</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="equipo">Equipo / Club</label>
-                            <input type="text" id="equipo" name="equipo" placeholder="Independiente si no aplica">
+                            <label for="equipo">Equipo</label>
+                            <input type="text" id="equipo" name="equipo">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="contacto-emergencia">Contacto de emergencia *</label>
-                        <input type="text" id="contacto-emergencia" name="contacto-emergencia" placeholder="Nombre y teléfono" required>
+                        <label for="contacto-emergencia">Contacto de Emergencia</label>
+                        <input type="text" id="contacto-emergencia" name="contacto-emergencia" required>
                     </div>
                     <div class="form-group checkbox-group">
-                        <input type="checkbox" id="acepto" name="acepto" required>
-                        <label for="acepto">Acepto el reglamento de competencia y las condiciones de participación *</label>
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos">Acepto los términos y condiciones, el reglamento de competencia y asumo la responsabilidad de mi participación.</label>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-full">
-                        <i class="fas fa-paper-plane"></i> Enviar Inscripción
-                    </button>
+                    <button type="submit" class="btn btn-primary btn-full">Enviar Inscripción</button>
                 </form>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
-    <!-- Galería -->
-    <section class="section section-dark" id="galeria">
-        <div class="container">
-            <h2 class="section-title">Galería</h2>
-            <p class="section-subtitle">Los mejores momentos de la Copa Nacional MTB</p>
-            
-            <div class="gallery-grid">
-                <div class="gallery-item" data-category="xco">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-mountain"></i>
-                        <span>XCO Race</span>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="xcc">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-bolt"></i>
-                        <span>XCC Short Track</span>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="kids">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-child"></i>
-                        <span>Copa Kids</span>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="xco">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-trophy"></i>
-                        <span>Premiación</span>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="xce">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-flag-checkered"></i>
-                        <span>XCE Eliminator</span>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="kids">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-bicycle"></i>
-                        <span>Escuela MTB</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Footer / Contacto -->
-    <footer class="footer" id="contacto">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <img src="img/logo-ancm.svg" alt="ANCM" class="footer-logo">
-                    <p>Asociación Nacional de Ciclismo de Montaña de Costa Rica. Promoviendo el MTB desde la base.</p>
-                    <div class="footer-social">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Enlaces Rápidos</h4>
-                    <ul>
-                        <li><a href="#nosotros">Sobre Nosotros</a></li>
-                        <li><a href="#eventos">Calendario</a></li>
-                        <li><a href="#categorias">Categorías</a></li>
-                        <li><a href="#resultados">Resultados</a></li>
-                        <li><a href="#inscripciones">Inscripciones</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Competencias</h4>
-                    <ul>
-                        <li><a href="#eventos">Copa Nacional MTB</a></li>
-                        <li><a href="#eventos">Copa Kids</a></li>
-                        <li><a href="#categorias">XCO</a></li>
-                        <li><a href="#categorias">XCC</a></li>
-                        <li><a href="#categorias">XCE</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contacto</h4>
-                    <ul class="contact-info">
-                        <li><i class="fas fa-envelope"></i> info@mtbcostarica.org</li>
-                        <li><i class="fas fa-phone"></i> +506 0000-0000</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Costa Rica</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Asociación Nacional de Ciclismo de Montaña de Costa Rica. Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to top -->
-    <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Modal para inscripción exitosa -->
-    <div class="modal" id="success-modal">
-        <div class="modal-content">
-            <span class="modal-close" id="modal-close">&times;</span>
-            <i class="fas fa-check-circle modal-icon"></i>
-            <h3>¡Inscripción Enviada!</h3>
-            <p>Tu inscripción ha sido recibida correctamente. Te enviaremos un correo de confirmación.</p>
-            <button class="btn btn-primary" id="modal-ok">Aceptar</button>
+<!-- PAGE: GALERIA -->
+<section class="page" id="page-galeria">
+    <div class="page-header-dark">
+        <h2 class="section-title">Galería</h2>
+        <p class="section-subtitle">Momentos de la Copa Nacional MTB</p>
+    </div>
+    <div class="container">
+        <div class="gallery-grid">
+            <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-image"></i><span>Foto 1</span></div></div>
+            <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-image"></i><span>Foto 2</span></div></div>
+            <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-image"></i><span>Foto 3</span></div></div>
+            <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-image"></i><span>Foto 4</span></div></div>
+            <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-image"></i><span>Foto 5</span></div></div>
+            <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-image"></i><span>Foto 6</span></div></div>
         </div>
     </div>
+</section>
 
-    <script src="js/main.js"></script>
+<!-- PAGE: CONTACTO -->
+<section class="page" id="page-contacto">
+    <div class="page-header">
+        <h2 class="section-title">Contacto</h2>
+        <p class="section-subtitle">Estamos para ayudarte</p>
+    </div>
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p>info@ancm.cr</p>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-phone"></i>
+                <h4>Teléfono</h4>
+                <p>+506 8888-8888</p>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Ubicación</h4>
+                <p>San José, Costa Rica</p>
+            </div>
+        </div>
+        <div class="social-section">
+            <h3>Síguenos en redes sociales</h3>
+            <div class="social-buttons">
+                <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#" class="social-btn youtube"><i class="fab fa-youtube"></i> YouTube</a>
+                <a href="#" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ANCM - Asociación Nacional de Ciclismo de Montaña Costa Rica. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal" id="success-modal">
+    <div class="modal-content">
+        <span class="modal-close" id="modal-close">&times;</span>
+        <div class="modal-icon"><i class="fas fa-check-circle"></i></div>
+        <h3>¡Inscripción Enviada!</h3>
+        <p>Tu inscripción ha sido recibida exitosamente. Te contactaremos pronto con los detalles.</p>
+        <button class="btn btn-primary" id="modal-ok">Aceptar</button>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
