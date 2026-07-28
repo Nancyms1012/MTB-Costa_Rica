@@ -322,11 +322,24 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const filterBtns = document.querySelectorAll('.filter-btn');
-    const resultsBody = document.getElementById('results-body');
+    const resultsBodyXco = document.getElementById('results-body-xco');
+    const resultsBodyXcc = document.getElementById('results-body-xcc');
+    const fechaBtns = document.querySelectorAll('.fecha-btn');
+    const fechaInfo = document.getElementById('fecha-info');
 
-    function renderResults(category) {
+    const fechasInfo = {
+        1: 'I Fecha - Por definir',
+        2: 'II Fecha - Por definir',
+        3: 'III Fecha - America Series La Copa | Adventure Park, Barva de Heredia | 16-17 Mayo',
+        4: 'IV Fecha - Por definir',
+        5: 'V Fecha - Campeonato Nacional | Oikoumene | 18-19 Julio',
+        6: 'VI Fecha - Por definir | 13-14 Septiembre',
+    };
+
+    function renderResults(category, targetBody) {
         const data = resultsData[category] || [];
-        resultsBody.innerHTML = '';
+        if (!targetBody) return;
+        targetBody.innerHTML = '';
         data.forEach(row => {
             const podiumClass = row.pos <= 3 ? `podium-${row.pos}` : '';
             const tr = document.createElement('tr');
@@ -337,18 +350,40 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td>${row.team}</td>
                 <td>${row.time}</td>
             `;
-            resultsBody.appendChild(tr);
+            targetBody.appendChild(tr);
         });
     }
 
-    filterBtns.forEach(btn => {
+    // XCO filters
+    document.querySelectorAll('#filters-xco .filter-btn').forEach(btn => {
         btn.addEventListener('click', () => {
-            filterBtns.forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('#filters-xco .filter-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-            renderResults(btn.getAttribute('data-filter'));
+            renderResults(btn.getAttribute('data-filter'), resultsBodyXco);
         });
     });
-    renderResults('master-a');
+
+    // XCC filters
+    document.querySelectorAll('#filters-xcc .filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('#filters-xcc .filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            renderResults(btn.getAttribute('data-filter'), resultsBodyXcc);
+        });
+    });
+
+    // Fecha selector
+    fechaBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            fechaBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const fecha = btn.getAttribute('data-fecha');
+            if (fechaInfo) fechaInfo.textContent = fechasInfo[fecha] || '';
+        });
+    });
+
+    // Initial render
+    renderResults('master-a', resultsBodyXco);
 
 
     // ============ INSCRIPTION FORM ============

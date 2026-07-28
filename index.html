@@ -324,40 +324,81 @@
 
 <!-- PAGE: RESULTADOS -->
 <section class="page" id="page-resultados">
-    <div class="page-header-dark">
-        <h2 class="section-title">Resultados III Fecha XCO</h2>
-        <p class="section-subtitle">America Series - La Copa 2026 | Adventure Park, Barva de Heredia | 16-17 Mayo</p>
+    <div class="page-header page-header-dark">
+        <h2 class="page-title">Resultados</h2>
+        <p class="page-subtitle">Copa Nacional de Ciclismo de Montaña 2026</p>
     </div>
     <div class="container">
-        <div class="results-filters">
-            <button class="filter-btn active" data-filter="master-a">Máster A</button>
-            <button class="filter-btn" data-filter="master-b">Máster B</button>
-            <button class="filter-btn" data-filter="master-c">Máster C</button>
-            <button class="filter-btn" data-filter="master-d">Máster D</button>
-            <button class="filter-btn" data-filter="master-e">Máster E</button>
-            <button class="filter-btn" data-filter="master-f">Máster Fem</button>
-            <button class="filter-btn" data-filter="open">Open</button>
-            <button class="filter-btn" data-filter="open-f">Open Fem</button>
-            <button class="filter-btn" data-filter="prejuvenil-m">Prejuv M</button>
-            <button class="filter-btn" data-filter="prejuvenil-f">Prejuv F</button>
-            <button class="filter-btn" data-filter="infantil-m">Infantil M</button>
-            <button class="filter-btn" data-filter="infantil-f">Infantil F</button>
-            <button class="filter-btn" data-filter="preinfantil-m">Preinf M</button>
-            <button class="filter-btn" data-filter="preinfantil-f">Preinf F</button>
+        <!-- Filtro por Fecha -->
+        <div class="fecha-selector">
+            <h4>Seleccionar Fecha:</h4>
+            <div class="fecha-buttons">
+                <button class="fecha-btn" data-fecha="1">I Fecha</button>
+                <button class="fecha-btn" data-fecha="2">II Fecha</button>
+                <button class="fecha-btn active" data-fecha="3">III Fecha</button>
+                <button class="fecha-btn" data-fecha="4">IV Fecha</button>
+                <button class="fecha-btn" data-fecha="5">V Fecha</button>
+                <button class="fecha-btn" data-fecha="6">VI Fecha</button>
+            </div>
+            <p class="fecha-info" id="fecha-info">III Fecha - America Series La Copa | Adventure Park, Barva de Heredia | 16-17 Mayo</p>
         </div>
-        <div class="results-table-wrapper">
-            <table class="results-table">
-                <thead>
-                    <tr>
-                        <th>Pos</th>
-                        <th>Atleta</th>
-                        <th>Equipo</th>
-                        <th>Tiempo</th>
-                    </tr>
-                </thead>
-                <tbody id="results-body">
-                </tbody>
-            </table>
+
+        <!-- Dos cuadros: XCO y XCC -->
+        <div class="results-cards">
+            <!-- XCO Card -->
+            <div class="results-card" id="results-xco">
+                <div class="results-card-header">
+                    <i class="fas fa-mountain"></i>
+                    <h3>XCO - Cross Country Olympic</h3>
+                </div>
+                <div class="results-card-body">
+                    <div class="results-filters" id="filters-xco">
+                        <button class="filter-btn active" data-filter="master-a" data-mode="xco">Máster A</button>
+                        <button class="filter-btn" data-filter="master-b" data-mode="xco">Máster B</button>
+                        <button class="filter-btn" data-filter="master-c" data-mode="xco">Máster C</button>
+                        <button class="filter-btn" data-filter="master-d" data-mode="xco">Máster D</button>
+                        <button class="filter-btn" data-filter="master-e" data-mode="xco">Máster E</button>
+                        <button class="filter-btn" data-filter="master-f" data-mode="xco">Máster Fem</button>
+                        <button class="filter-btn" data-filter="open" data-mode="xco">Open</button>
+                        <button class="filter-btn" data-filter="open-f" data-mode="xco">Open Fem</button>
+                        <button class="filter-btn" data-filter="prejuvenil-m" data-mode="xco">Prejuv M</button>
+                        <button class="filter-btn" data-filter="prejuvenil-f" data-mode="xco">Prejuv F</button>
+                        <button class="filter-btn" data-filter="infantil-m" data-mode="xco">Infantil M</button>
+                        <button class="filter-btn" data-filter="infantil-f" data-mode="xco">Infantil F</button>
+                        <button class="filter-btn" data-filter="preinfantil-m" data-mode="xco">Preinf M</button>
+                        <button class="filter-btn" data-filter="preinfantil-f" data-mode="xco">Preinf F</button>
+                    </div>
+                    <div class="results-table-wrapper">
+                        <table class="results-table">
+                            <thead><tr><th>Pos</th><th>Atleta</th><th>Equipo</th><th>Tiempo</th></tr></thead>
+                            <tbody id="results-body-xco"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- XCC Card -->
+            <div class="results-card" id="results-xcc">
+                <div class="results-card-header results-card-header-xcc">
+                    <i class="fas fa-bolt"></i>
+                    <h3>XCC - Short Track</h3>
+                </div>
+                <div class="results-card-body">
+                    <div class="results-filters" id="filters-xcc">
+                        <button class="filter-btn active" data-filter="xcc-elite-m" data-mode="xcc">Élite M</button>
+                        <button class="filter-btn" data-filter="xcc-elite-f" data-mode="xcc">Élite F</button>
+                        <button class="filter-btn" data-filter="xcc-sub23" data-mode="xcc">Sub-23</button>
+                        <button class="filter-btn" data-filter="xcc-juvenil" data-mode="xcc">Juvenil</button>
+                    </div>
+                    <div class="results-table-wrapper">
+                        <table class="results-table">
+                            <thead><tr><th>Pos</th><th>Atleta</th><th>Equipo</th><th>Tiempo</th></tr></thead>
+                            <tbody id="results-body-xcc"></tbody>
+                        </table>
+                    </div>
+                    <p class="results-pending">Resultados pendientes de carga</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
