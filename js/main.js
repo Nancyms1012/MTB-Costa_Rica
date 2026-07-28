@@ -48,6 +48,40 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
+    // ============ HERO SLIDESHOW ============
+    const slides = document.querySelectorAll('.hero-slideshow .slide');
+    const indicatorsContainer = document.getElementById('slide-indicators');
+    let currentSlide = 0;
+    let slideInterval;
+
+    // Create indicator dots
+    if (indicatorsContainer && slides.length > 0) {
+        slides.forEach((_, i) => {
+            const dot = document.createElement('span');
+            dot.className = 'dot' + (i === 0 ? ' active' : '');
+            dot.addEventListener('click', () => goToSlide(i));
+            indicatorsContainer.appendChild(dot);
+        });
+    }
+
+    function goToSlide(index) {
+        slides[currentSlide].classList.remove('active');
+        const dots = document.querySelectorAll('.slide-indicators .dot');
+        if (dots[currentSlide]) dots[currentSlide].classList.remove('active');
+        currentSlide = index;
+        slides[currentSlide].classList.add('active');
+        if (dots[currentSlide]) dots[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+        const next = (currentSlide + 1) % slides.length;
+        goToSlide(next);
+    }
+
+    if (slides.length > 0) {
+        slideInterval = setInterval(nextSlide, 4000);
+    }
+
     // ============ COUNTDOWN ============
     const nextEvent = new Date('2026-09-13T08:00:00');
 
