@@ -454,6 +454,9 @@ img { max-width: 100%; height: auto; }
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin-top: 15px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .categories-card {
     background: var(--white);
@@ -461,11 +464,16 @@ img { max-width: 100%; height: auto; }
     box-shadow: var(--shadow);
     overflow: hidden;
 }
+.categories-card .categories-table th,
+.categories-card .categories-table td {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+}
 .cat-card-title {
     background: var(--primary);
     color: var(--white);
-    padding: 12px 20px;
-    font-size: 0.95rem;
+    padding: 10px 15px;
+    font-size: 0.9rem;
     text-align: center;
 }
 
@@ -641,6 +649,7 @@ img { max-width: 100%; height: auto; }
     .about-grid { grid-template-columns: 1fr; }
     .modalities-grid { grid-template-columns: 1fr; }
     .categories-two-col { grid-template-columns: 1fr; }
+    .kids-features { grid-template-columns: repeat(2, 1fr); }
     .gallery-grid { grid-template-columns: repeat(2, 1fr); }
     .form-row { grid-template-columns: 1fr; }
     .events-logos { gap: 20px; }
