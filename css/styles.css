@@ -207,41 +207,47 @@ img { max-width: 100%; height: auto; }
 }
 .hero-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
 
-/* Countdown */
+/* Countdown - esquina superior derecha */
+.hero-countdown-corner {
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    z-index: 4;
+    text-align: center;
+}
 .countdown {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 10px;
+    gap: 8px;
+    margin-bottom: 6px;
 }
 .countdown-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgba(255,255,255,0.1);
+    background: rgba(0,0,0,0.5);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: var(--radius);
-    padding: 15px 20px;
-    min-width: 80px;
+    padding: 10px 12px;
+    min-width: 55px;
 }
 .countdown-item span {
     font-family: var(--font-countdown);
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 900;
     color: var(--white);
 }
 .countdown-item small {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     color: rgba(255,255,255,0.7);
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-top: 4px;
+    margin-top: 2px;
 }
 .countdown-event-label {
-    color: rgba(255,255,255,0.8);
-    font-size: 0.9rem;
-    margin-bottom: 25px;
+    color: rgba(255,255,255,0.85);
+    font-size: 0.75rem;
+    font-weight: 600;
 }
 
 /* ============ PAGE HEADERS ============ */
@@ -518,9 +524,11 @@ img { max-width: 100%; height: auto; }
     .hero h1 { font-size: 1.8rem; }
     .hero-subtitle { font-size: 1rem; }
     .hero-logo { width: 90px; height: 90px; }
-    .countdown { gap: 10px; }
-    .countdown-item { padding: 10px 14px; min-width: 60px; }
-    .countdown-item span { font-size: 1.5rem; }
+    .countdown { gap: 5px; }
+    .countdown-item { padding: 6px 8px; min-width: 45px; }
+    .countdown-item span { font-size: 1rem; }
+    .hero-countdown-corner { top: 80px; right: 10px; }
+    .countdown-event-label { font-size: 0.65rem; }
     .about-grid { grid-template-columns: 1fr; }
     .modalities-grid { grid-template-columns: 1fr; }
     .gallery-grid { grid-template-columns: repeat(2, 1fr); }
