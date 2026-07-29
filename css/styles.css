@@ -155,11 +155,11 @@ img { max-width: 100%; height: auto; }
     height: 75vh;
     min-height: 500px;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    padding-bottom: 40px;
+    padding-top: 120px;
 }
 .hero-bg {
     position: absolute;
@@ -189,10 +189,9 @@ img { max-width: 100%; height: auto; }
     padding: 0 20px;
 }
 .hero-logo {
-    width: 120px; height: 120px; object-fit: contain;
-    margin-bottom: 20px;
+    width: 100px; height: 100px; object-fit: contain;
+    margin-bottom: 10px;
     filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
-    animation: float 3s ease-in-out infinite;
 }
 @keyframes float {
     0%,100% { transform: translateY(0); }
