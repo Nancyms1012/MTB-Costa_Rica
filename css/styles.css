@@ -101,7 +101,7 @@ img { max-width: 100%; height: auto; }
 /* ============ NAVBAR ============ */
 .navbar {
     position: fixed;
-    top: 36px;
+    top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
@@ -159,7 +159,7 @@ img { max-width: 100%; height: auto; }
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    padding-top: 120px;
+    padding-top: 90px;
 }
 .hero-bg {
     position: absolute;
@@ -200,7 +200,7 @@ img { max-width: 100%; height: auto; }
 /* Countdown - esquina superior derecha */
 .hero-countdown-corner {
     position: absolute;
-    top: 100px;
+    top: 80px;
     right: 30px;
     z-index: 4;
     text-align: center;
@@ -244,13 +244,13 @@ img { max-width: 100%; height: auto; }
 .page-header {
     background: linear-gradient(135deg, var(--primary), var(--primary-light));
     color: var(--white);
-    padding: 120px 20px 60px;
+    padding: 90px 20px 50px;
     text-align: center;
 }
 .page-header-dark {
     background: var(--primary);
     color: var(--white);
-    padding: 120px 20px 60px;
+    padding: 90px 20px 50px;
     text-align: center;
 }
 .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 10px; }
@@ -453,7 +453,7 @@ img { max-width: 100%; height: auto; }
 .page-header-kids {
     background: linear-gradient(135deg, var(--accent), #1b5e20);
     color: var(--white);
-    padding: 90px 20px 30px;
+    padding: 80px 20px 25px;
     text-align: center;
 }
 .page-header-kids .kids-logo {
