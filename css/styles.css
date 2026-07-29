@@ -207,11 +207,11 @@ img { max-width: 100%; height: auto; }
 }
 .hero-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
 
-/* Countdown - esquina superior derecha */
+/* Countdown - esquina superior izquierda */
 .hero-countdown-corner {
     position: absolute;
     top: 100px;
-    right: 30px;
+    left: 30px;
     z-index: 4;
     text-align: center;
 }
@@ -527,7 +527,7 @@ img { max-width: 100%; height: auto; }
     .countdown { gap: 5px; }
     .countdown-item { padding: 6px 8px; min-width: 45px; }
     .countdown-item span { font-size: 1rem; }
-    .hero-countdown-corner { top: 80px; right: 10px; }
+    .hero-countdown-corner { top: 80px; left: 10px; }
     .countdown-event-label { font-size: 0.65rem; }
     .about-grid { grid-template-columns: 1fr; }
     .modalities-grid { grid-template-columns: 1fr; }
