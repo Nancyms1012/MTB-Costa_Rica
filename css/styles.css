@@ -149,7 +149,7 @@ img { max-width: 100%; height: auto; }
 .page.active { display: block; }
 
 
-/* ============ HERO & SLIDESHOW ============ */
+/* ============ HERO (STATIC BACKGROUND) ============ */
 .hero {
     position: relative;
     height: 100vh;
@@ -160,24 +160,19 @@ img { max-width: 100%; height: auto; }
     text-align: center;
     overflow: hidden;
 }
-.hero-slideshow {
+.hero-bg {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    z-index: 0;
-}
-.hero-slideshow .slide {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: url('../img/hero-bg.jpg');
     background-size: cover;
     background-position: center;
-    opacity: 0;
-    transition: opacity 1.5s ease-in-out;
+    background-repeat: no-repeat;
+    z-index: 0;
 }
-.hero-slideshow .slide.active { opacity: 1; }
 .hero-overlay {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(13, 27, 62, 0.6);
+    background: rgba(13, 27, 62, 0.55);
     z-index: 1;
 }
 .hero-particles {
@@ -248,29 +243,6 @@ img { max-width: 100%; height: auto; }
     font-size: 0.9rem;
     margin-bottom: 25px;
 }
-
-/* Slide Indicators */
-.slide-indicators {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 4;
-    display: flex;
-    gap: 8px;
-}
-.slide-indicators .indicator {
-    width: 10px; height: 10px;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.4);
-    cursor: pointer;
-    transition: var(--transition);
-}
-.slide-indicators .indicator.active {
-    background: var(--white);
-    transform: scale(1.3);
-}
-
 
 /* ============ PAGE HEADERS ============ */
 .page-header {

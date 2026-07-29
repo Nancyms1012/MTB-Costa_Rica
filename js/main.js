@@ -52,40 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // ============ HERO SLIDESHOW ============
-    const slides = document.querySelectorAll('.hero-slideshow .slide');
-    const indicatorsContainer = document.getElementById('slide-indicators');
-    let currentSlide = 0;
-    let slideInterval;
-
-    // Create indicators
-    slides.forEach((_, i) => {
-        const dot = document.createElement('div');
-        dot.classList.add('indicator');
-        if (i === 0) dot.classList.add('active');
-        dot.addEventListener('click', () => goToSlide(i));
-        indicatorsContainer.appendChild(dot);
-    });
-
-    function goToSlide(index) {
-        slides[currentSlide].classList.remove('active');
-        indicatorsContainer.children[currentSlide].classList.remove('active');
-        currentSlide = index;
-        slides[currentSlide].classList.add('active');
-        indicatorsContainer.children[currentSlide].classList.add('active');
-    }
-
-    function nextSlide() {
-        const next = (currentSlide + 1) % slides.length;
-        goToSlide(next);
-    }
-
-    function startSlideshow() {
-        slideInterval = setInterval(nextSlide, 5000);
-    }
-
-    startSlideshow();
-
     // ============ PARTICLES ============
     const canvas = document.getElementById('particles-canvas');
     if (canvas) {
