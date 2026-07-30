@@ -374,4 +374,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Trigger initial scroll check
     animateOnScroll();
+
+    // ============ FORMAT TABS (Eventos) ============
+    document.querySelectorAll('.format-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            document.querySelectorAll('.format-tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.format-calendar').forEach(c => c.classList.remove('active'));
+            tab.classList.add('active');
+            const format = tab.getAttribute('data-format');
+            document.getElementById('cal-' + format).classList.add('active');
+        });
+    });
 });

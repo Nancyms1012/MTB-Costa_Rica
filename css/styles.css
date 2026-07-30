@@ -325,6 +325,41 @@ img { max-width: 100%; height: auto; }
 
 
 /* ============ EVENTS ============ */
+/* Format tabs - estilo UCI */
+.format-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 25px 0 20px;
+    border-bottom: 1px solid var(--gray-200);
+    margin-bottom: 25px;
+}
+.format-tab {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: none;
+    background: transparent;
+    color: var(--gray-600);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: var(--transition);
+}
+.format-tab:hover { color: var(--primary); background: var(--gray-100); }
+.format-tab.active { background: var(--primary); color: var(--white); }
+.format-tab-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+}
+.dot-xco { background: var(--accent); }
+.dot-xcc { background: var(--secondary); }
+.dot-kids { background: #ff9800; }
+.format-calendar { display: none; }
+.format-calendar.active { display: block; }
+
 .events-logos {
     display: flex; justify-content: center; gap: 40px;
     margin: 40px 0; align-items: center;
