@@ -340,7 +340,7 @@ img { max-width: 100%; height: auto; }
 }
 .page.active { display: block; }
 .page:not(#page-inicio) {
-    padding-top: 60px;
+    padding-top: 70px;
     background: var(--white);
 }
 .page:not(#page-inicio) .breadcrumb-bar {
