@@ -340,12 +340,12 @@ img { max-width: 100%; height: auto; }
 }
 .page.active { display: block; }
 .page:not(#page-inicio) {
-    padding-top: 90px;
+    padding-top: 0;
     background: var(--white);
 }
 .page:not(#page-inicio) .breadcrumb-bar {
     background: linear-gradient(180deg, #0f1b2d, #132238);
-    padding-top: 20px;
+    padding-top: 90px;
     padding-bottom: 20px;
 }
 
