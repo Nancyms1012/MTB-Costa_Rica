@@ -385,4 +385,27 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('cal-' + format).classList.add('active');
         });
     });
+
+    // Mega dropdown links - navigate to eventos and activate format tab
+    document.querySelectorAll('.mega-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const page = link.getAttribute('data-page');
+            const format = link.getAttribute('data-format');
+            if (page) navigateTo(page);
+            if (format) {
+                setTimeout(() => {
+                    document.querySelectorAll('.format-tab').forEach(t => t.classList.remove('active'));
+                    document.querySelectorAll('.format-calendar').forEach(c => c.classList.remove('active'));
+                    const tab = document.querySelector(`.format-tab[data-format="${format}"]`);
+                    if (tab) tab.classList.add('active');
+                    const cal = document.getElementById('cal-' + format);
+                    if (cal) cal.classList.add('active');
+                }, 100);
+            }
+            // Close mobile menu
+            navToggle.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
 });

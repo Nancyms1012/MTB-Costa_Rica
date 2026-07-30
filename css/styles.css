@@ -134,43 +134,53 @@ img { max-width: 100%; height: auto; }
 .nav-link:hover, .nav-link.active { background: rgba(255,255,255,0.15); }
 .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 10px; }
 
-/* Dropdown menu */
+/* Mega dropdown - estilo UCI */
 .nav-dropdown { position: relative; }
-.nav-dropdown > .nav-link i { font-size: 0.6rem; margin-left: 3px; }
-.dropdown-menu {
+.mega-dropdown {
     position: absolute;
     top: 100%;
     left: 0;
-    background: #1a1a1a;
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 6px;
-    padding: 8px 0;
-    min-width: 240px;
+    background: #1a1a2e;
+    border-top: 2px solid var(--secondary);
+    padding: 15px 0;
+    min-width: 280px;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(10px);
+    transform: translateY(5px);
     transition: var(--transition);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    list-style: none;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
 }
-.nav-dropdown:hover .dropdown-menu {
+.nav-dropdown:hover .mega-dropdown {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
-.dropdown-link {
-    display: block;
-    padding: 10px 20px;
+.mega-dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.mega-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 25px;
     color: rgba(255,255,255,0.8);
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-family: var(--font-heading);
     font-weight: 600;
     transition: var(--transition);
     cursor: pointer;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }
-.dropdown-link:hover {
-    background: rgba(255,255,255,0.08);
+.mega-link:last-child { border-bottom: none; }
+.mega-link:hover {
+    background: rgba(255,255,255,0.05);
     color: var(--white);
+}
+.mega-link i {
+    font-size: 0.65rem;
+    opacity: 0.5;
 }
 .hamburger, .hamburger::before, .hamburger::after {
     display: block; width: 25px; height: 3px; background: var(--white); border-radius: 3px; transition: var(--transition);
@@ -761,7 +771,7 @@ img { max-width: 100%; height: auto; }
     }
     .nav-menu.active { right: 0; }
     .nav-link { font-size: 1rem; padding: 12px 15px; border-radius: 8px; }
-    .dropdown-menu {
+    .mega-dropdown {
         position: static;
         opacity: 1;
         visibility: visible;
@@ -772,7 +782,7 @@ img { max-width: 100%; height: auto; }
         padding: 0 0 0 15px;
         min-width: auto;
     }
-    .dropdown-link { padding: 8px 15px; font-size: 0.85rem; }
+    .mega-link { padding: 10px 15px; font-size: 0.85rem; }
     .hero h1 { font-size: 1.8rem; }
     .hero-subtitle { font-size: 1rem; }
     .hero-logo { width: 90px; height: 90px; }
