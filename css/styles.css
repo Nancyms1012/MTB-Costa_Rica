@@ -355,9 +355,7 @@ img { max-width: 100%; height: auto; }
 }
 /* But keep eventos header visible for the title */
 #page-eventos .page-header-dark {
-    display: block;
-    background: linear-gradient(180deg, #0f1b2d, #132238);
-    padding: 10px 20px 15px;
+    display: none;
 }
 .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 10px; }
 .section-title::after {
@@ -401,23 +399,18 @@ img { max-width: 100%; height: auto; }
     gap: 5px;
     padding: 20px 0;
     border-bottom: none;
-    margin-bottom: 0;
-    background: #132238;
-    margin-left: -20px;
-    margin-right: -20px;
-    margin-top: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 25px;
+    background: transparent;
+    margin-top: 15px;
 }
 .format-tab {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 10px 20px;
-    border: none;
+    padding: 8px 18px;
+    border: 2px solid var(--gray-300);
     background: transparent;
-    color: rgba(255,255,255,0.6);
+    color: var(--gray-800);
     font-family: var(--font-heading);
     font-weight: 600;
     font-size: 0.8rem;
@@ -425,8 +418,8 @@ img { max-width: 100%; height: auto; }
     border-radius: 50px;
     transition: var(--transition);
 }
-.format-tab:hover { color: var(--white); background: rgba(255,255,255,0.08); }
-.format-tab.active { background: rgba(255,255,255,0.12); color: var(--white); }
+.format-tab:hover { color: var(--primary); border-color: var(--primary); }
+.format-tab.active { background: var(--primary); border-color: var(--primary); color: var(--white); }
 .format-tab-dot {
     width: 8px; height: 8px; border-radius: 50%;
 }
