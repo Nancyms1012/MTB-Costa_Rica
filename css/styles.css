@@ -156,11 +156,11 @@ img { max-width: 100%; height: auto; }
 }
 .next-event-banner {
     background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-    padding: 50px 40px;
+    padding: 35px 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 .next-event-banner-content {
@@ -171,28 +171,28 @@ img { max-width: 100%; height: auto; }
     display: inline-block;
     background: var(--secondary);
     color: var(--white);
-    padding: 5px 14px;
+    padding: 4px 10px;
     border-radius: 4px;
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .next-event-title {
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: var(--white);
     font-weight: 900;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 .next-event-location,
 .next-event-date-text {
     color: rgba(255,255,255,0.7);
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 .next-event-countdown {
     flex-shrink: 0;
@@ -208,21 +208,21 @@ img { max-width: 100%; height: auto; }
     background: rgba(255,255,255,0.08);
     border: 1px solid rgba(255,255,255,0.15);
     border-radius: 8px;
-    padding: 14px 16px;
-    min-width: 70px;
+    padding: 10px 12px;
+    min-width: 55px;
 }
 .countdown-item span {
     font-family: var(--font-countdown);
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: 900;
     color: var(--white);
 }
 .countdown-item small {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     color: rgba(255,255,255,0.6);
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-top: 4px;
+    margin-top: 3px;
 }
 
 /* ============ PAGE HEADERS ============ */
