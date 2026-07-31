@@ -378,6 +378,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // ============ FORMAT TABS (Eventos) ============
     document.querySelectorAll('.format-tab').forEach(tab => {
         tab.addEventListener('click', () => {
+            // If tab has data-page, navigate to separate page
+            const page = tab.getAttribute('data-page');
+            if (page) {
+                navigateTo(page);
+                return;
+            }
             document.querySelectorAll('.format-tab').forEach(t => t.classList.remove('active'));
             document.querySelectorAll('.format-calendar').forEach(c => c.classList.remove('active'));
             tab.classList.add('active');
