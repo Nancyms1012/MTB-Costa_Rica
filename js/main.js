@@ -372,6 +372,44 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modalOk) modalOk.addEventListener('click', closeModal);
     if (modal) modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
 
+    // ============ CAMPEONES DESDE JSON ============
+    fetch('data/campeones.json')
+        .then(res => res.json())
+        .then(campeones => {
+            renderCampeones(campeones, 'XCC', document.querySelector('#page-format-xcc .champions-grid'));
+            renderCampeones(campeones, 'XCO', document.querySelector('#page-format-xco .champions-grid'));
+        })
+        .catch(err => console.log('Error cargando campeones:', err));
+
+    function renderCampeones(data, modalidad, container) {
+        if (!container) return;
+        const mujeres = data.filter(c => c.modalidad === modalidad && c.genero === 'F');
+        const hombres = data.filter(c => c.modalidad === modalidad && c.genero === 'M');
+
+        container.innerHTML = `
+            <div class="champions-col">
+                <h3 class="champions-gender">MUJERES</h3>
+                ${mujeres.map(c => `
+                    <div class="champion-card">
+                        <span class="champion-category">${c.categoria}</span>
+                        <span class="champion-name">${c.nombre} <strong>${c.apellido}</strong></span>
+                        <span class="champion-team">${c.equipo}</span>
+                    </div>
+                `).join('')}
+            </div>
+            <div class="champions-col">
+                <h3 class="champions-gender">HOMBRES</h3>
+                ${hombres.map(c => `
+                    <div class="champion-card">
+                        <span class="champion-category">${c.categoria}</span>
+                        <span class="champion-name">${c.nombre} <strong>${c.apellido}</strong></span>
+                        <span class="champion-team">${c.equipo}</span>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+    }
+
     // Trigger initial scroll check
     animateOnScroll();
 
