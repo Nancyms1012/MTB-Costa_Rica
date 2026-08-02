@@ -639,6 +639,18 @@ img { max-width: 100%; height: auto; }
     margin-top: 3px;
 }
 
+/* Format page calendar section */
+.format-page-calendar {
+    padding: 40px 0;
+    background: var(--white);
+}
+.format-calendar-title {
+    font-size: 1.3rem;
+    color: var(--primary);
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
 .events-logos {
     display: flex; justify-content: center; gap: 40px;
     margin: 40px 0; align-items: center;
