@@ -534,6 +534,12 @@ img { max-width: 100%; height: auto; }
 }
 
 /* Format stats bar */
+.format-section-title {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: var(--primary);
+    padding: 20px 30px 10px;
+}
 .format-gallery-row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
