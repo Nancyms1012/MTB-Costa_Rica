@@ -518,6 +518,12 @@ img { max-width: 100%; height: auto; }
 }
 #page-format-xcc .breadcrumb-bar { background: transparent; }
 
+#page-format-xco {
+    padding-top: 0;
+    background: var(--white);
+}
+#page-format-xco .breadcrumb-bar { background: transparent; }
+
 .format-hero-text {
     position: absolute;
     bottom: 0;
@@ -550,6 +556,9 @@ img { max-width: 100%; height: auto; }
     height: auto;
     object-fit: contain;
     display: block;
+}
+.format-gallery-single {
+    grid-template-columns: 1fr;
 }
 .format-stats-bar {
     display: grid;
