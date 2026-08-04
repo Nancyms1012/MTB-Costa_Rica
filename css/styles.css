@@ -30,56 +30,48 @@ html { scroll-behavior: smooth; }
 
 /* ============ PORTADA ============ */
 .portada {
-    position: relative;
     width: 100%;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+.portada-hero {
+    width: 100%;
+    height: 60vh;
     overflow: hidden;
 }
-.portada-bg {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    z-index: 0;
-}
-.portada-bg img {
-    width: 100%; height: 100%;
+.portada-hero-img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
-}
-.portada-overlay {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(11, 17, 32, 0.75);
-    z-index: 1;
+    display: block;
 }
 .portada-content {
-    position: relative;
-    z-index: 2;
+    background: linear-gradient(180deg, #0b1120, #0f1b2d, #132238);
     text-align: center;
-    max-width: 800px;
-    padding: 40px 30px;
+    padding: 40px 30px 50px;
+    max-width: 100%;
 }
 .portada-logo-ancm {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     filter: drop-shadow(0 4px 15px rgba(0,0,0,0.4));
 }
 .portada-title {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: var(--white);
     font-weight: 900;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 .portada-text {
-    color: rgba(255,255,255,0.85);
+    color: rgba(255,255,255,0.8);
     font-size: 0.9rem;
     line-height: 1.7;
     margin-bottom: 15px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .portada-logos {
     display: flex;
@@ -119,11 +111,12 @@ html { scroll-behavior: smooth; }
 }
 
 @media (max-width: 768px) {
-    .portada-title { font-size: 1.6rem; }
+    .portada-hero { height: 40vh; }
+    .portada-title { font-size: 1.4rem; }
     .portada-text { font-size: 0.8rem; }
     .portada-logos { gap: 30px; }
     .portada-logo { width: 90px; height: 90px; }
-    .portada-logo-ancm { width: 90px; height: 90px; }
+    .portada-logo-ancm { width: 80px; height: 80px; }
 }
 body {
     font-family: var(--font-body);
