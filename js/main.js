@@ -4,6 +4,29 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    // ============ PORTADA ============
+    const portada = document.getElementById('portada');
+    const sitioPrincipal = document.getElementById('sitio-principal');
+    const enterCopa = document.getElementById('enter-copa');
+    const enterKids = document.getElementById('enter-kids');
+
+    if (enterCopa) {
+        enterCopa.addEventListener('click', (e) => {
+            e.preventDefault();
+            portada.style.display = 'none';
+            sitioPrincipal.style.display = 'block';
+            navigateTo('inicio');
+        });
+    }
+    if (enterKids) {
+        enterKids.addEventListener('click', (e) => {
+            e.preventDefault();
+            portada.style.display = 'none';
+            sitioPrincipal.style.display = 'block';
+            navigateTo('copa-kids');
+        });
+    }
+
     // ============ SPA NAVIGATION ============
     const pages = document.querySelectorAll('.page');
     const navLinks = document.querySelectorAll('.nav-link');
