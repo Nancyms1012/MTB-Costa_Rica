@@ -27,6 +27,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Volver a portada desde el logo
+    const btnVolverPortada = document.getElementById('btn-volver-portada');
+    if (btnVolverPortada) {
+        btnVolverPortada.addEventListener('click', (e) => {
+            e.preventDefault();
+            sitioPrincipal.style.display = 'none';
+            portada.style.display = 'block';
+            window.scrollTo({ top: 0 });
+        });
+    }
+
     // ============ SPA NAVIGATION ============
     const pages = document.querySelectorAll('.page');
     const navLinks = document.querySelectorAll('.nav-link');
