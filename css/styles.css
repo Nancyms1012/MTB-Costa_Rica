@@ -31,11 +31,9 @@ html { scroll-behavior: smooth; }
 /* ============ PORTADA ============ */
 .portada {
     width: 100%;
-    min-height: 100vh;
 }
 .portada-hero {
     width: 100%;
-    overflow: hidden;
 }
 .portada-hero-img {
     width: 100%;
