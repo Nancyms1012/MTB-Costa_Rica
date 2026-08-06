@@ -395,13 +395,10 @@ img { max-width: 100%; height: auto; }
 /* Hero photo below banner */
 .inicio-hero-photo {
     width: 100%;
-    overflow: hidden;
 }
 .inicio-hero-photo img {
     width: 100%;
-    height: calc(100vh - 170px);
-    object-fit: cover;
-    object-position: top center;
+    height: auto;
     display: block;
 }
 
