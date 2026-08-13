@@ -599,107 +599,49 @@
     </div>
     <div class="page-header">
         <h2 class="section-title">Inscripciones</h2>
-        <p class="section-subtitle">Formulario de inscripción Copa Nacional MTB 2026</p>
+        <p class="section-subtitle">VI Fecha - Copa Nacional MTB 2026</p>
     </div>
     <div class="container">
         <div class="inscription-container">
             <div class="inscription-info">
-                <h3>Requisitos de Inscripción</h3>
-                <ul>
-                    <li><i class="fas fa-check-circle"></i> Ser miembro activo de la ANCM</li>
-                    <li><i class="fas fa-check-circle"></i> Presentar certificado médico vigente</li>
-                    <li><i class="fas fa-check-circle"></i> Contar con licencia deportiva al día</li>
-                    <li><i class="fas fa-check-circle"></i> Equipo de protección obligatorio (casco)</li>
-                    <li><i class="fas fa-check-circle"></i> Bicicleta en condiciones mecánicas óptimas</li>
-                </ul>
-                <div class="inscription-event-highlight">
-                    <h4>Próximo Evento</h4>
-                    <p class="event-highlight-name">VI Fecha - Copa Nacional MTB</p>
-                    <p class="event-highlight-date"><i class="fas fa-calendar"></i> 13-14 Septiembre, 2026</p>
-                    <p class="event-highlight-location"><i class="fas fa-map-marker-alt"></i> Sede por confirmar</p>
+                <div class="inscription-deadline">
+                    <h3><i class="fas fa-clock"></i> Cierre de inscripciones</h3>
+                    <p class="deadline-date">10 de setiembre 2026, media noche</p>
+                </div>
+
+                <div class="inscription-payment">
+                    <h3><i class="fas fa-university"></i> Pago por depósito bancario</h3>
+                    <ul class="payment-details">
+                        <li><strong>Banco:</strong> Banco Nacional de Costa Rica</li>
+                        <li><strong>Cuenta:</strong> Asociación Nacional de Ciclismo de Montaña</li>
+                        <li><strong>Cédula jurídica:</strong> 3-002-172466</li>
+                        <li><strong>Cuenta corriente:</strong> 100-1-054-000890-9</li>
+                        <li><strong>IBAN (SINPE):</strong> CR15015105410010008900</li>
+                    </ul>
+                </div>
+
+                <div class="inscription-sinpe">
+                    <h3><i class="fas fa-mobile-alt"></i> Pago por Sinpe Móvil</h3>
+                    <p class="sinpe-tel">Tel: <strong>6349-0950</strong></p>
                 </div>
             </div>
-            <div class="inscription-form">
-                <h3>Formulario de Inscripción</h3>
-                <form id="inscription-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="nombre">Nombre Completo</label>
-                            <input type="text" id="nombre" name="nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="cedula">Cédula</label>
-                            <input type="text" id="cedula" name="cedula" required>
-                        </div>
+
+            <div class="inscription-qr">
+                <h3>Escaneá el código QR para inscribirte</h3>
+                <div class="qr-cards">
+                    <div class="qr-card">
+                        <img src="img/COPA.webp" alt="La Copa" class="qr-logo">
+                        <h4>La Copa</h4>
+                        <p>XCO · XCC · XCE</p>
+                        <a href="https://inscripciones.raceclubhub.com/landing" target="_blank" class="btn btn-primary btn-sm">Inscribirme</a>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="telefono">Teléfono</label>
-                            <input type="tel" id="telefono" name="telefono" required>
-                        </div>
+                    <div class="qr-card">
+                        <img src="img/KIDS.jpeg" alt="Copa Kids" class="qr-logo">
+                        <h4>Copa Kids</h4>
+                        <p>Balance · Niños · Preinfantil</p>
+                        <a href="https://inscripciones.raceclubhub.com/landing" target="_blank" class="btn btn-primary btn-sm">Inscribirme</a>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="fecha-nacimiento">Fecha de Nacimiento</label>
-                            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="categoria">Categoría</label>
-                            <select id="categoria" name="categoria" required>
-                                <option value="">Seleccionar categoría</option>
-                                <optgroup label="Menores">
-                                    <option value="preinfantil">Preinfantil (11-12)</option>
-                                    <option value="infantil">Infantil (13-14)</option>
-                                    <option value="prejuvenil">Prejuvenil (15-16)</option>
-                                    <option value="juvenil">Juvenil (17-18)</option>
-                                </optgroup>
-                                <optgroup label="Élite">
-                                    <option value="elite">Élite (19+)</option>
-                                    <option value="sub23">Sub-23 (19-22)</option>
-                                </optgroup>
-                                <optgroup label="Máster">
-                                    <option value="master-a">Máster A</option>
-                                    <option value="master-b">Máster B</option>
-                                    <option value="master-c">Máster C</option>
-                                    <option value="master-d">Máster D</option>
-                                    <option value="master-e">Máster E</option>
-                                </optgroup>
-                                <optgroup label="Otras">
-                                    <option value="open">Open</option>
-                                    <option value="ebike">E-Bike</option>
-                                </optgroup>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="modalidad">Modalidad</label>
-                            <select id="modalidad" name="modalidad" required>
-                                <option value="">Seleccionar modalidad</option>
-                                <option value="xcc">XCC - Short Track</option>
-                                <option value="xco">XCO - Olympic</option>
-                                <option value="xce">XCE - Eliminator</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="equipo">Equipo</label>
-                            <input type="text" id="equipo" name="equipo">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="contacto-emergencia">Contacto de Emergencia</label>
-                        <input type="text" id="contacto-emergencia" name="contacto-emergencia" required>
-                    </div>
-                    <div class="form-group checkbox-group">
-                        <input type="checkbox" id="terminos" name="terminos" required>
-                        <label for="terminos">Acepto los términos y condiciones, el reglamento de competencia y asumo la responsabilidad de mi participación.</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-full">Enviar Inscripción</button>
-                </form>
+                </div>
             </div>
         </div>
     </div>
