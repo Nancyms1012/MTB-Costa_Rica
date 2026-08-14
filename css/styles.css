@@ -1023,6 +1023,7 @@ img { max-width: 100%; height: auto; }
 }
 .qr-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
 .qr-logo { width: 80px; height: 80px; object-fit: contain; margin-bottom: 12px; border-radius: 8px; }
+.qr-code-img { width: 180px; height: 180px; object-fit: contain; margin-bottom: 15px; }
 .qr-card h4 { font-size: 1rem; color: var(--primary); margin-bottom: 5px; }
 .qr-card p { font-size: 0.8rem; color: var(--gray-600); margin-bottom: 12px; }
 
