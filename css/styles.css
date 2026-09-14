@@ -1240,6 +1240,49 @@ img { max-width: 100%; height: auto; }
 }
 
 
+/* ============ RESULTS BY EVENT (estilo UCI) ============ */
+.results-by-event-title {
+    font-size: 1.4rem; color: var(--primary); font-weight: 900;
+    padding: 30px 0 20px; text-transform: uppercase; letter-spacing: 0.5px;
+}
+.results-event-list { display: flex; flex-direction: column; padding-bottom: 40px; }
+.result-event-row {
+    display: grid;
+    grid-template-columns: 130px 1fr auto auto;
+    align-items: center;
+    gap: 25px;
+    padding: 20px 15px;
+    border-bottom: 1px solid var(--gray-200);
+    transition: var(--transition);
+}
+.result-event-row:hover { background: var(--gray-100); }
+.result-event-date { font-weight: 900; color: var(--primary); font-size: 0.9rem; text-transform: uppercase; }
+.result-event-place { display: flex; align-items: flex-start; gap: 10px; }
+.result-event-place i { color: var(--secondary); margin-top: 3px; }
+.result-event-place span { font-size: 0.9rem; color: var(--gray-800); line-height: 1.4; }
+.result-event-place strong { color: var(--primary); }
+.result-event-mods { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; }
+.mod-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    border: 1px solid var(--gray-300); border-radius: 50px;
+    padding: 4px 12px; font-size: 0.75rem; font-weight: 600; color: var(--gray-800);
+    white-space: nowrap;
+}
+.mod-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.btn-see-results {
+    background: transparent; border: 2px solid var(--primary); color: var(--primary);
+    padding: 10px 20px; border-radius: var(--radius); font-family: var(--font-heading);
+    font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px;
+    cursor: pointer; transition: var(--transition); white-space: nowrap;
+}
+.btn-see-results:hover { background: var(--primary); color: var(--white); }
+
+@media (max-width: 768px) {
+    .result-event-row { grid-template-columns: 1fr; gap: 12px; text-align: left; }
+    .result-event-mods { align-items: flex-start; flex-direction: row; flex-wrap: wrap; }
+    .btn-see-results { justify-self: start; }
+}
+
 /* ============ RESULTS REDESIGN ============ */
 .fecha-selector { text-align: center; padding: 30px 0 20px; }
 .fecha-selector label { display: block; font-weight: 700; color: var(--primary); margin-bottom: 10px; font-size: 1rem; font-family: var(--font-heading); }
