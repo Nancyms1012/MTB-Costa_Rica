@@ -633,9 +633,14 @@ img { max-width: 100%; height: auto; }
 }
 .format-gallery-row img {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
     display: block;
+}
+@media (max-width: 768px) {
+    .format-gallery-row { grid-template-columns: repeat(2, 1fr); }
+    .format-gallery-row img { height: 160px; }
 }
 .format-gallery-single {
     grid-template-columns: 1fr;
