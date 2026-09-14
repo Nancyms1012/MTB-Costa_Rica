@@ -524,147 +524,43 @@
         <p class="page-subtitle">Copa Nacional de Ciclismo de Montaña 2026</p>
     </div>
     <div class="container">
+        <!-- Clasificación General destacada -->
+        <div class="results-general-card" id="btn-general">
+            <div class="results-general-icon"><i class="fas fa-trophy"></i></div>
+            <div class="results-general-text">
+                <h3>Clasificación General</h3>
+                <p>Acumulado del campeonato · hasta V Fecha</p>
+            </div>
+            <span class="btn-see-results">Ver Clasificación</span>
+        </div>
+
         <h3 class="results-by-event-title">Resultados por fecha</h3>
-        <div class="results-event-list">
-            <div class="result-event-row">
-                <div class="result-event-date">21-22 Feb</div>
-                <div class="result-event-place">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span><strong>I Fecha</strong><br>Finca Grupo Orosi, Paraíso</span>
-                </div>
-                <div class="result-event-mods">
-                    <span class="mod-badge">Cross-Country <span class="mod-dot dot-xco"></span></span>
-                    <span class="mod-badge">Short Track <span class="mod-dot dot-xcc"></span></span>
-                </div>
-                <a href="#" class="btn-see-results" data-page="resultados-xco">Ver Resultados</a>
-            </div>
-            <div class="result-event-row">
-                <div class="result-event-date">22-23 Mar</div>
-                <div class="result-event-place">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span><strong>II Fecha</strong><br>Parque La Libertad, Desamparados</span>
-                </div>
-                <div class="result-event-mods">
-                    <span class="mod-badge">Cross-Country <span class="mod-dot dot-xco"></span></span>
-                    <span class="mod-badge">Short Track <span class="mod-dot dot-xcc"></span></span>
-                </div>
-                <a href="#" class="btn-see-results" data-page="resultados-xco">Ver Resultados</a>
-            </div>
-            <div class="result-event-row">
-                <div class="result-event-date">16-17 May</div>
-                <div class="result-event-place">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span><strong>III Fecha</strong><br>Adventure Park, Barva de Heredia</span>
-                </div>
-                <div class="result-event-mods">
-                    <span class="mod-badge">Cross-Country <span class="mod-dot dot-xco"></span></span>
-                    <span class="mod-badge">Short Track <span class="mod-dot dot-xcc"></span></span>
-                </div>
-                <a href="#" class="btn-see-results" data-page="resultados-xco">Ver Resultados</a>
-            </div>
-            <div class="result-event-row">
-                <div class="result-event-date">21-22 Jun</div>
-                <div class="result-event-place">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span><strong>IV Fecha</strong><br>Sede por confirmar</span>
-                </div>
-                <div class="result-event-mods">
-                    <span class="mod-badge">Cross-Country <span class="mod-dot dot-xco"></span></span>
-                    <span class="mod-badge">Short Track <span class="mod-dot dot-xcc"></span></span>
-                </div>
-                <a href="#" class="btn-see-results" data-page="resultados-xco">Ver Resultados</a>
-            </div>
-            <div class="result-event-row">
-                <div class="result-event-date">18-19 Jul</div>
-                <div class="result-event-place">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span><strong>V Fecha</strong> - Campeonato Nacional<br>Oikoumene</span>
-                </div>
-                <div class="result-event-mods">
-                    <span class="mod-badge">Cross-Country <span class="mod-dot dot-xco"></span></span>
-                    <span class="mod-badge">Short Track <span class="mod-dot dot-xcc"></span></span>
-                </div>
-                <a href="#" class="btn-see-results" data-page="resultados-xco">Ver Resultados</a>
-            </div>
-            <div class="result-event-row">
-                <div class="result-event-date">13-14 Sep</div>
-                <div class="result-event-place">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span><strong>VI Fecha</strong><br>Sede por confirmar</span>
-                </div>
-                <div class="result-event-mods">
-                    <span class="mod-badge">Cross-Country <span class="mod-dot dot-xco"></span></span>
-                    <span class="mod-badge">Short Track <span class="mod-dot dot-xcc"></span></span>
-                </div>
-                <a href="#" class="btn-see-results" data-page="resultados-xco">Ver Resultados</a>
-            </div>
-            <div class="result-event-row">
-                <div class="result-event-date">31 Oct - 01 Nov</div>
-                <div class="result-event-place">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span><strong>VII Fecha</strong> - Gran Final<br>Finca Grupo Orosi, Paraíso</span>
-                </div>
-                <div class="result-event-mods">
-                    <span class="mod-badge">Cross-Country <span class="mod-dot dot-xco"></span></span>
-                    <span class="mod-badge">Short Track <span class="mod-dot dot-xcc"></span></span>
-                </div>
-                <a href="#" class="btn-see-results" data-page="resultados-xco">Ver Resultados</a>
-            </div>
-        </div>
+        <div class="results-event-list" id="results-event-list"></div>
     </div>
 </section>
 
-<!-- SUB-PAGE: RESULTADOS XCO -->
-<section class="page" id="page-resultados-xco">
+<!-- SUB-PAGE: DETALLE RESULTADOS POR FECHA (dinámico) -->
+<section class="page" id="page-resultado-detalle">
     <div class="page-header page-header-dark">
-        <h2 class="page-title">Resultados XCO</h2>
-        <p class="page-subtitle" id="xco-fecha-label">III Fecha - Adventure Park, Barva de Heredia | 16-17 Mayo</p>
+        <h2 class="page-title">Resultados</h2>
+        <p class="page-subtitle" id="detalle-fecha-label"></p>
     </div>
     <div class="container">
         <a href="#" class="btn-back" data-page="resultados"><i class="fas fa-arrow-left"></i> Volver a Resultados</a>
-        <div class="results-filters" id="filters-xco">
-            <button class="filter-btn active" data-filter="master-a">Máster A</button>
-            <button class="filter-btn" data-filter="master-b">Máster B</button>
-            <button class="filter-btn" data-filter="master-c">Máster C</button>
-            <button class="filter-btn" data-filter="master-d">Máster D</button>
-            <button class="filter-btn" data-filter="master-e">Máster E</button>
-            <button class="filter-btn" data-filter="master-f">Máster Fem</button>
-            <button class="filter-btn" data-filter="open">Open</button>
-            <button class="filter-btn" data-filter="open-f">Open Fem</button>
-            <button class="filter-btn" data-filter="prejuvenil-m">Prejuv M</button>
-            <button class="filter-btn" data-filter="prejuvenil-f">Prejuv F</button>
-            <button class="filter-btn" data-filter="infantil-m">Infantil M</button>
-            <button class="filter-btn" data-filter="infantil-f">Infantil F</button>
-            <button class="filter-btn" data-filter="preinfantil-m">Preinf M</button>
-            <button class="filter-btn" data-filter="preinfantil-f">Preinf F</button>
-        </div>
-        <div class="results-table-wrapper">
-            <table class="results-table"><thead><tr><th>Pos</th><th>Atleta</th><th>Equipo</th><th>Tiempo</th></tr></thead><tbody id="results-body-xco"></tbody></table>
-        </div>
+        <div class="modalidad-tabs" id="detalle-mod-tabs"></div>
+        <div id="detalle-content"></div>
     </div>
 </section>
 
-<!-- SUB-PAGE: RESULTADOS XCC -->
-<section class="page" id="page-resultados-xcc">
-    <div class="page-header" style="background: linear-gradient(135deg, var(--secondary), #ff6b6b); color: white; border-bottom: 3px solid var(--secondary);">
-        <h2 class="page-title" style="color:white;">Resultados XCC</h2>
-        <p class="page-subtitle" style="color:rgba(255,255,255,0.8);">Short Track</p>
+<!-- SUB-PAGE: DETALLE CLASIFICACIÓN GENERAL (dinámico) -->
+<section class="page" id="page-general-detalle">
+    <div class="page-header page-header-dark">
+        <h2 class="page-title">Clasificación General</h2>
+        <p class="page-subtitle" id="general-sub"></p>
     </div>
     <div class="container">
         <a href="#" class="btn-back" data-page="resultados"><i class="fas fa-arrow-left"></i> Volver a Resultados</a>
-        <p class="results-pending">Resultados pendientes de carga. Envía los PDFs para integrarlos.</p>
-    </div>
-</section>
-
-<!-- SUB-PAGE: RESULTADOS XCE -->
-<section class="page" id="page-resultados-xce">
-    <div class="page-header" style="background: linear-gradient(135deg, #ff9800, #f57c00); color: white; border-bottom: 3px solid #ff9800;">
-        <h2 class="page-title" style="color:white;">Resultados XCE</h2>
-        <p class="page-subtitle" style="color:rgba(255,255,255,0.8);">Eliminator</p>
-    </div>
-    <div class="container">
-        <a href="#" class="btn-back" data-page="resultados"><i class="fas fa-arrow-left"></i> Volver a Resultados</a>
-        <p class="results-pending">Resultados pendientes de carga. Envía los PDFs para integrarlos.</p>
+        <div id="general-content"></div>
     </div>
 </section>
 

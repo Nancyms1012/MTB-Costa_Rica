@@ -211,152 +211,200 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // ============ RESULTS TABLE - III Fecha XCO Adventure Park, Barva de Heredia ============
-    const resultsData = {
-        'master-a': [
-            { pos: 1, name: 'MARTÍNEZ Andrés', team: 'NOSOTROS DOTA - PASION MX', time: '00:45:36' },
-            { pos: 2, name: 'MORALES Allan', team: 'TEAM INNOVABIKES SKOLER UH', time: '00:47:22' },
-            { pos: 3, name: 'ARTAVIA Enrique', team: 'BOBBYS CYCLING TEAM', time: '00:47:52' },
-            { pos: 4, name: 'MORA Juan Manuel', team: 'N/A', time: '00:48:41' },
-            { pos: 5, name: 'SANDOVAL Alberto', team: 'ALGO RITMO DEVELOMET', time: '00:49:06' },
-            { pos: 6, name: 'CALDERÓN Edwin', team: 'CAPOS MOBI BIKE TEAM', time: '00:49:55' },
-            { pos: 7, name: 'ALPIZAR Roberto', team: 'TEAM GOCHA', time: '00:51:15' },
-            { pos: 8, name: 'CAMPOS Diego', team: 'GOCHA CYCLING TEAM', time: '00:53:57' },
-            { pos: 9, name: 'ARIAS Kibeth', team: 'VEINTE24 CYCLING', time: '00:54:36' },
-            { pos: 10, name: 'BENAVIDES Kenneth', team: 'BELÉN TEAM', time: '00:55:44' },
-        ],
-        'master-b': [
-            { pos: 1, name: 'RAMÍREZ Federico', team: 'SEVEN CARD WILLIER', time: '00:47:28' },
-            { pos: 2, name: 'HERRERA Elber', team: 'BOBBYS CYCLING TEAM', time: '00:49:33' },
-            { pos: 3, name: 'SANABRIA Kenneth', team: 'TREK BIKE STORE', time: '00:50:04' },
-            { pos: 4, name: 'MOLINA Hairo', team: 'CCDRESCAZU', time: '00:51:05' },
-            { pos: 5, name: 'CORTES Jerry', team: 'BUF, DRASANVI, ECOTIENDA', time: '00:51:38' },
-            { pos: 6, name: 'RODRÍGUEZ Julián', team: 'BELÉN TEAM', time: '00:53:05' },
-            { pos: 7, name: 'BARRANTES Richard', team: 'VEINTE24', time: '00:55:00' },
-            { pos: 8, name: 'GAMBOA Andrés', team: 'NUMU COACHING', time: '00:56:35' },
-        ],
-        'master-c': [
-            { pos: 1, name: 'CHACÓN Gonzalo', team: 'TEAM GOCHA', time: '00:48:01' },
-            { pos: 2, name: 'AZOFEIFA Marcos', team: 'BOBBYS CYCLING TEAM', time: '00:50:28' },
-            { pos: 3, name: 'MÉNDEZ Diego', team: 'ULTIMATE TEAM', time: '00:52:29' },
-            { pos: 4, name: 'LOPEZ Jose', team: 'TEAM GOCHA', time: '00:54:51' },
-            { pos: 5, name: 'GARCIA Jorge', team: 'WATIOS CYCLING PERFORMANCE', time: '00:55:34' },
-            { pos: 6, name: 'PEREZ Hector', team: 'GW ERCO SPORTFITNESS', time: '00:55:42' },
-            { pos: 7, name: 'VILLALOBOS Steven', team: 'CALLE NIÑO SANO', time: '00:56:57' },
-            { pos: 8, name: 'EL SEMAANI Jean Paul', team: 'HATOVIEJO - MOMIA TS', time: '00:57:37' },
-        ],
-        'master-d': [
-            { pos: 1, name: 'GONZALEZ Victor', team: 'EPIC BIKE ATENAS', time: '00:52:42' },
-            { pos: 2, name: 'CARVAJAL Jonathan', team: 'BOBBYS CYCLING TEAM', time: '00:52:47' },
-            { pos: 3, name: 'GÓMEZ José Antonio', team: 'BPT', time: '00:53:27' },
-            { pos: 4, name: 'BELTRAN Pablo', team: 'BELPOWER RUGATI', time: '00:58:47' },
-            { pos: 5, name: 'ARAYA Ronald', team: 'X3ME XTREME', time: '00:59:01' },
-            { pos: 6, name: 'BRENES Mario', team: 'BDRIFT-MOTORSPORTNUTRITION', time: '00:59:49' },
-        ],
-        'master-e': [
-            { pos: 1, name: 'ROJAS Melvin', team: 'BOBBYS CYCLING TEAM', time: '00:53:46' },
-            { pos: 2, name: 'MUÑOZ Germán', team: 'TREK', time: '00:54:38' },
-            { pos: 3, name: 'RODRÍGUEZ Luis Angel', team: 'JONATHAN QUESADA TRAINING', time: '00:58:42' },
-            { pos: 4, name: 'CAMPOS Marvin', team: 'BELEN TEAM', time: '01:00:04' },
-            { pos: 5, name: 'RUBI Luis', team: 'DUROS COMO ROCA', time: '01:04:26' },
-        ],
-        'open': [
-            { pos: 1, name: 'MENESES Jose', team: 'STYM', time: '00:51:45' },
-            { pos: 2, name: 'ZAMORA Jose David', team: 'VEINTE24', time: '00:52:18' },
-            { pos: 3, name: 'SANDI Kendall', team: 'POWERCYCLING', time: '00:52:55' },
-            { pos: 4, name: 'MORENO Carlos', team: 'NUMUCOACHING', time: '00:56:42' },
-            { pos: 5, name: 'RIVERA Jackdanny', team: 'VEINTE24 CYCLING', time: '00:57:51' },
-            { pos: 6, name: 'ARAYA Bryan', team: 'BPT/ CYCLINGLAB', time: '00:58:03' },
-        ],
-        'open-f': [
-            { pos: 1, name: 'TRETTI Caterina', team: 'VEINTE24', time: '00:45:56' },
-        ],
-        'master-f': [
-            { pos: 1, name: 'ALVARADO Lisbeth', team: 'ROES CENTELA', time: '00:50:40' },
-            { pos: 2, name: 'LORIA Dilcen', team: 'FISIONORTE / QUESADACYCLING', time: '00:52:59' },
-        ],
-        'infantil-m': [
-            { pos: 1, name: 'RODRÍGUEZ Joaquín', team: 'CCDR SAN JOSÉ', time: '00:34:59' },
-            { pos: 2, name: 'VALVERDE Liam', team: 'CCDR TURRIALBA', time: '00:35:53' },
-            { pos: 3, name: 'CORDERO Iker Mattias', team: 'PZ CYCLING TEAM', time: '00:37:18' },
-            { pos: 4, name: 'CARBALLO Abraham', team: 'BIKERS RACING TEAM', time: '00:37:39' },
-            { pos: 5, name: 'ARCE Mathew', team: 'TEAM ARCE', time: '00:38:02' },
-            { pos: 6, name: 'SANDI Derek Ivan', team: 'CCDR ESCAZÚ', time: '00:40:49' },
-            { pos: 7, name: 'GARCÍA Danny Armando', team: 'ROES/COMITÉ CANTONAL ZARCERO', time: '00:40:53' },
-            { pos: 8, name: 'MARÍN Isaac José', team: 'ACISA SARAPIQUI', time: '00:42:36' },
-        ],
-        'infantil-f': [
-            { pos: 1, name: 'CALDERÓN Ariana', team: 'COLONO BIKE STATION KOLBI', time: '00:21:50' },
-            { pos: 2, name: 'TORRES Camila Del Pilar', team: 'CCDRESCAZU', time: '00:24:37' },
-            { pos: 3, name: 'CRUZ Monica', team: 'SCOTT SHIMANO CYCLING TEAM', time: '00:25:26' },
-            { pos: 4, name: 'MARCHENA Shelly', team: 'CCDRESCAZU', time: '00:27:14' },
-        ],
-        'preinfantil-m': [
-            { pos: 1, name: 'ARAYA Emiliano', team: 'CCDR SANTA CRUZ, TEAM COSTA FRUT', time: '00:23:06' },
-            { pos: 2, name: 'CÉSPEDES Anthony Luan', team: 'SKALA MONTEVERDE/CCDR MONTEVERDE', time: '00:25:27' },
-            { pos: 3, name: 'CERDAS Isaac', team: 'CODEA ALAJUELA', time: '00:28:55' },
-            { pos: 4, name: 'HUNTER Ian', team: 'CODEA', time: '00:33:00' },
-            { pos: 5, name: 'HERRERA Mathias', team: 'INDEPENDIENTE', time: '00:37:03' },
-        ],
-        'preinfantil-f': [
-            { pos: 1, name: 'HERNÁNDEZ Maripaz', team: 'SANTA ANA / HDZ TEAM', time: '00:26:55' },
-            { pos: 2, name: 'JIMÉNEZ Mia', team: 'CCDR SAN JOSÉ', time: '00:28:23' },
-            { pos: 3, name: 'MONTEALEGRE María Paula', team: 'CCDR SANTA CRUZ', time: '00:33:41' },
-            { pos: 4, name: 'MORA Valentina', team: 'CODEA ALAJUELA', time: '00:35:04' },
-        ],
-        'prejuvenil-m': [
-            { pos: 1, name: 'PAREDES Miguel', team: 'ASTRANOVA BIKE HOUSE TREK', time: '00:45:44' },
-            { pos: 2, name: 'GARCÍA Miguel', team: 'COLONO BIKE STATION KOLBI', time: '00:49:42' },
-            { pos: 3, name: 'ARIAS Daniel', team: 'CICLISMO BELÉN', time: '00:50:29' },
-            { pos: 4, name: 'ACUÑA Felipe', team: 'CCDR DE NARANJO', time: '00:51:40' },
-            { pos: 5, name: 'HERNANDEZ Walter David', team: 'SCOTT SHIMANO CYCLING TEAM', time: '00:52:05' },
-            { pos: 6, name: 'SABALLOS Joshua', team: 'CICLISMO BELÉN', time: '00:52:38' },
-            { pos: 7, name: 'CARBALLO Bryan', team: 'BIKERS RACING TEAM', time: '00:53:20' },
-            { pos: 8, name: 'AGUILAR Luciano', team: 'CODEA ALAJUELA', time: '00:55:29' },
-        ],
-        'prejuvenil-f': [
-            { pos: 1, name: 'JIMENEZ Briana', team: 'BOBBYS CYCLING TEAM', time: '00:47:23' },
-            { pos: 2, name: 'CÉSPEDES Isabella Jazlene', team: 'SKALA MONTEVERDE/CCDR MONTEVERDE', time: '00:55:02' },
-            { pos: 3, name: 'SOLIS Nathalia', team: 'CODEA ALAJUELA', time: '00:57:16' },
-        ],
-    };
+    // ============ RESULTADOS (desde JSON, top 3 M/F a la par + PDF) ============
+    let RESULTADOS = null;   // data/resultados.json
+    let GENERAL = null;      // data/general.json
 
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const resultsBodyXco = document.getElementById('results-body-xco');
-
-    function renderResults(category, targetBody) {
-        const data = resultsData[category] || [];
-        if (!targetBody) return;
-        targetBody.innerHTML = '';
-        if (data.length === 0) {
-            targetBody.innerHTML = '<tr><td colspan="4" style="text-align:center; padding:20px; color:#6c757d;">Sin datos disponibles</td></tr>';
-            return;
-        }
-        data.forEach(row => {
-            const podiumClass = row.pos <= 3 ? `podium-${row.pos}` : '';
-            const tr = document.createElement('tr');
-            tr.className = podiumClass;
-            tr.innerHTML = `
-                <td>${row.pos}</td>
-                <td style="text-align:left; font-weight:600;">${row.name}</td>
-                <td>${row.team}</td>
-                <td>${row.time}</td>
-            `;
-            targetBody.appendChild(tr);
+    // Orden de presentación de categorías
+    const ORDEN_CAT = [
+        'ELITE', 'SUB23', 'OPEN', 'JUVENIL', 'PREJUVENIL', 'INFANTIL', 'PREINFANTIL',
+        'MASTER A', 'MASTER B', 'MASTER C', 'MASTER D', 'MASTER E',
+        'E-BIKE', 'PESO PLUMA', 'CYCLO CROSS'
+    ];
+    function ordenarCategorias(cats) {
+        return Object.keys(cats).sort((a, b) => {
+            let ia = ORDEN_CAT.indexOf(a); let ib = ORDEN_CAT.indexOf(b);
+            if (ia === -1) ia = 999;
+            if (ib === -1) ib = 999;
+            return ia - ib;
         });
     }
 
-    // XCO filters
-    document.querySelectorAll('#filters-xco .filter-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            document.querySelectorAll('#filters-xco .filter-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            renderResults(btn.getAttribute('data-filter'), resultsBodyXco);
+    // Nombres bonitos de fecha en la lista
+    function renderFechaList() {
+        const cont = document.getElementById('results-event-list');
+        if (!cont || !RESULTADOS) return;
+        cont.innerHTML = '';
+        Object.keys(RESULTADOS).forEach(num => {
+            const f = RESULTADOS[num];
+            const partes = (f.label || '').split('·');
+            const titulo = (partes[0] || f.label || '').trim();
+            const lugar = (partes[1] || '').trim();
+            const row = document.createElement('div');
+            row.className = 'result-event-row';
+            row.innerHTML = `
+                <div class="result-event-date">${f.fecha || ''}</div>
+                <div class="result-event-place">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span><strong>${titulo}</strong><br>${lugar}</span>
+                </div>
+                <div class="result-event-mods">
+                    <span class="mod-badge">Cross-Country <span class="mod-dot dot-xco"></span></span>
+                    <span class="mod-badge">Short Track <span class="mod-dot dot-xcc"></span></span>
+                </div>
+                <a href="#" class="btn-see-results">Ver Resultados</a>`;
+            row.querySelector('.btn-see-results').addEventListener('click', (e) => {
+                e.preventDefault();
+                abrirDetalleFecha(num);
+            });
+            cont.appendChild(row);
         });
+    }
+
+    // Etiquetas legibles
+    const MOD_LABEL = { 'XCO': 'Cross-Country Olímpico', 'XCC': 'Short Track' };
+    const MOD_DOT = { 'XCO': 'dot-xco', 'XCC': 'dot-xcc' };
+
+    // Render de un podio (top 3) de un género dentro de una columna
+    function podioColHTML(titulo, clase, rows, tipo) {
+        let inner;
+        if (!rows || rows.length === 0) {
+            inner = `<div class="gender-empty">Sin participantes</div>`;
+        } else {
+            inner = '<table class="podium-table"><tbody>' + rows.map(r => {
+                const meta = tipo === 'general' ? `${r.puntos != null ? r.puntos + ' pts' : ''}` : (r.time || '');
+                return `<tr class="podium-${r.pos}">
+                    <td class="podium-pos">${r.pos}</td>
+                    <td><span class="podium-name">${r.name}</span><span class="podium-team">${r.team || ''}</span></td>
+                    <td class="podium-meta">${meta}</td>
+                </tr>`;
+            }).join('') + '</tbody></table>';
+        }
+        return `<div class="gender-col"><div class="gender-head ${clase}">${titulo}</div>${inner}</div>`;
+    }
+
+    // Render de una categoría con Masculino y Femenino a la par
+    function categoriaHTML(nombreCat, gen, tipo) {
+        // gen puede tener M (masculino), F (femenino), X (mixto/open/general)
+        const hayF = gen.F && gen.F.length;
+        const hayM = gen.M && gen.M.length;
+        const hayX = gen.X && gen.X.length;
+
+        // Categoría puramente mixta (E-Bike, Peso Pluma, Cyclo Cross): una sola columna
+        if (hayX && !hayF && !hayM) {
+            const col = podioColHTML('GENERAL', 'mixto', gen.X, tipo);
+            return `<div class="cat-block">
+                <div class="cat-block-title">${nombreCat}</div>
+                <div class="cat-genders" style="grid-template-columns:1fr; max-width:520px; margin:0 auto;">${col}</div>
+            </div>`;
+        }
+
+        // Columna izquierda = Masculino (o el "Open/General" X si no hay M explícito)
+        let colIzq;
+        if (hayM) {
+            colIzq = podioColHTML('MASCULINO', 'masc', gen.M, tipo);
+        } else if (hayX) {
+            // OPEN: la columna X es la general/masculina
+            colIzq = podioColHTML(nombreCat === 'OPEN' ? 'OPEN' : 'GENERAL', 'masc', gen.X, tipo);
+        } else {
+            colIzq = podioColHTML('MASCULINO', 'masc', [], tipo);
+        }
+        // Columna derecha = Femenino
+        const colDer = podioColHTML('FEMENINO', 'fem', gen.F || [], tipo);
+
+        return `<div class="cat-block">
+            <div class="cat-block-title">${nombreCat}</div>
+            <div class="cat-genders">${colIzq}${colDer}</div>
+        </div>`;
+    }
+
+    // Abrir detalle de una fecha
+    let detalleFechaActual = null;
+    let detalleModActual = 'XCO';
+    function abrirDetalleFecha(num) {
+        detalleFechaActual = num;
+        const f = RESULTADOS[num];
+        if (!f) return;
+        document.getElementById('detalle-fecha-label').textContent =
+            (f.label ? f.label.replace('·', '—') : '') + (f.fecha ? ' | ' + f.fecha : '');
+        // tabs de modalidad presentes
+        const mods = Object.keys(f.modalidades || {});
+        const tabsCont = document.getElementById('detalle-mod-tabs');
+        tabsCont.innerHTML = '';
+        detalleModActual = mods.includes('XCO') ? 'XCO' : mods[0];
+        mods.forEach(m => {
+            const b = document.createElement('button');
+            b.className = 'modalidad-tab' + (m === detalleModActual ? ' active' : '');
+            b.innerHTML = `<span class="mod-dot ${MOD_DOT[m] || 'dot-xco'}"></span> ${MOD_LABEL[m] || m}`;
+            b.addEventListener('click', () => {
+                detalleModActual = m;
+                tabsCont.querySelectorAll('.modalidad-tab').forEach(t => t.classList.remove('active'));
+                b.classList.add('active');
+                renderDetalleContenido();
+            });
+            tabsCont.appendChild(b);
+        });
+        renderDetalleContenido();
+        navigateTo('resultado-detalle');
+    }
+
+    function renderDetalleContenido() {
+        const cont = document.getElementById('detalle-content');
+        const f = RESULTADOS[detalleFechaActual];
+        const mod = f.modalidades[detalleModActual];
+        if (!mod) { cont.innerHTML = '<p class="results-pending">Sin datos.</p>'; return; }
+        let html = '';
+        // botones PDF
+        if (mod.pdfs && mod.pdfs.length) {
+            html += '<div class="pdf-links">';
+            mod.pdfs.forEach((p, i) => {
+                let etiqueta = 'Ver resultados completos (PDF)';
+                if (mod.pdfs.length > 1) {
+                    etiqueta = /sabado/i.test(p) ? 'Resultados completos · Sábado (PDF)'
+                             : /domingo/i.test(p) ? 'Resultados completos · Domingo (PDF)'
+                             : `Resultados completos ${i + 1} (PDF)`;
+                }
+                html += `<a class="btn-pdf" href="${p}" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> ${etiqueta}</a>`;
+            });
+            html += '</div>';
+        }
+        // categorías
+        const cats = mod.categorias || {};
+        ordenarCategorias(cats).forEach(cat => {
+            html += categoriaHTML(cat, cats[cat], 'fecha');
+        });
+        cont.innerHTML = html;
+    }
+
+    // Abrir Clasificación General
+    function abrirGeneral() {
+        if (!GENERAL) return;
+        document.getElementById('general-sub').textContent = GENERAL.sub || '';
+        const cont = document.getElementById('general-content');
+        let html = '';
+        if (GENERAL.xlsx) {
+            html += `<div class="pdf-links"><a class="btn-pdf" href="${GENERAL.xlsx}" target="_blank" rel="noopener"><i class="fas fa-file-excel"></i> Descargar tabla completa (Excel)</a></div>`;
+        }
+        const cats = GENERAL.categorias || {};
+        ordenarCategorias(cats).forEach(cat => {
+            html += categoriaHTML(cat, cats[cat], 'general');
+        });
+        cont.innerHTML = html;
+        navigateTo('general-detalle');
+    }
+
+    // Cargar los JSON y enganchar la lista + botón general
+    Promise.all([
+        fetch('data/resultados.json').then(r => r.json()).catch(() => null),
+        fetch('data/general.json').then(r => r.json()).catch(() => null)
+    ]).then(([res, gen]) => {
+        RESULTADOS = res; GENERAL = gen;
+        renderFechaList();
+        const btnGen = document.getElementById('btn-general');
+        if (btnGen) btnGen.addEventListener('click', abrirGeneral);
     });
 
-    // Initial render XCO
-    renderResults('master-a', resultsBodyXco);
+    // (Los filtros antiguos por botón fueron reemplazados por el render JSON de arriba.)
 
 
     // ============ INSCRIPTION FORM ============
