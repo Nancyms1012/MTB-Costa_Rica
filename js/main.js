@@ -416,7 +416,24 @@ document.addEventListener('DOMContentLoaded', () => {
         renderFechaList();
         const btnGen = document.getElementById('btn-general');
         if (btnGen) btnGen.addEventListener('click', abrirGeneral);
+        engancharBotonesVerFecha();
     });
+
+    // Botones "Ver Resultados" en los calendarios de Eventos (data-fecha)
+    function engancharBotonesVerFecha() {
+        document.querySelectorAll('.btn-ver-fecha').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const num = btn.getAttribute('data-fecha');
+                if (RESULTADOS && RESULTADOS[num]) {
+                    abrirDetalleFecha(num);
+                } else {
+                    // Fecha sin resultados cargados aún -> ir al listado de Resultados
+                    navigateTo('resultados');
+                }
+            });
+        });
+    }
 
     // (Los filtros antiguos por botón fueron reemplazados por el render JSON de arriba.)
 
