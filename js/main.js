@@ -217,12 +217,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Orden de presentación de categorías (según indicación de Nancy)
     const ORDEN_CAT = [
-        'ELITE', 'OPEN',
+        'ELITE', 'SUB23', 'OPEN',
         'MASTER A', 'MASTER B', 'MASTER C', 'MASTER D', 'MASTER E',
         'JUVENIL', 'PREJUVENIL', 'INFANTIL', 'PREINFANTIL',
         'E-BIKE', 'PESO PLUMA',
-        // Estas no estaban en la lista pero existen en algunos datos; van al final:
-        'SUB23', 'CYCLO CROSS'
+        // No estaba en la lista pero existe en algunos datos; va al final:
+        'CYCLO CROSS'
     ];
     function ordenarCategorias(cats) {
         return Object.keys(cats).sort((a, b) => {
@@ -376,7 +376,13 @@ document.addEventListener('DOMContentLoaded', () => {
         ordenarCategorias(cats).forEach(cat => {
             html += categoriaHTML(cat, cats[cat], 'fecha');
         });
+        // Botón para volver a todas las fechas (al final)
+        html += `<div class="volver-todos-wrap">
+            <a href="#" class="btn-volver-todos" id="btn-volver-todos"><i class="fas fa-list"></i> Volver a todos los resultados</a>
+        </div>`;
         cont.innerHTML = html;
+        const btnVolver = document.getElementById('btn-volver-todos');
+        if (btnVolver) btnVolver.addEventListener('click', (e) => { e.preventDefault(); navigateTo('resultados'); });
     }
 
     // Abrir Clasificación General
@@ -392,7 +398,12 @@ document.addEventListener('DOMContentLoaded', () => {
         ordenarCategorias(cats).forEach(cat => {
             html += categoriaHTML(cat, cats[cat], 'general');
         });
+        html += `<div class="volver-todos-wrap">
+            <a href="#" class="btn-volver-todos" id="btn-volver-todos-gen"><i class="fas fa-list"></i> Volver a todos los resultados</a>
+        </div>`;
         cont.innerHTML = html;
+        const btnVolverG = document.getElementById('btn-volver-todos-gen');
+        if (btnVolverG) btnVolverG.addEventListener('click', (e) => { e.preventDefault(); navigateTo('resultados'); });
         navigateTo('general-detalle');
     }
 
