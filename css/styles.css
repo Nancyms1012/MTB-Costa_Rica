@@ -883,7 +883,7 @@ img { max-width: 100%; height: auto; }
 .events-grid { display: flex; flex-direction: column; max-width: 900px; margin: 0 auto; }
 .event-card {
     display: grid;
-    grid-template-columns: 90px 1fr;
+    grid-template-columns: 90px 1fr auto;
     align-items: center;
     gap: 25px;
     padding: 18px 15px;
@@ -1231,6 +1231,8 @@ img { max-width: 100%; height: auto; }
         min-width: auto;
     }
     .mega-link { padding: 10px 15px; font-size: 0.85rem; }
+    .event-card { grid-template-columns: 70px 1fr; gap: 15px; }
+    .event-card .btn-see-results { grid-column: 1 / -1; justify-self: start; }
     .hero h1 { font-size: 1.8rem; }
     .hero-subtitle { font-size: 1rem; }
     .hero-logo { width: 90px; height: 90px; }
