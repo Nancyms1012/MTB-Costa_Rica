@@ -215,11 +215,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let RESULTADOS = null;   // data/resultados.json
     let GENERAL = null;      // data/general.json
 
-    // Orden de presentación de categorías
+    // Orden de presentación de categorías (según indicación de Nancy)
     const ORDEN_CAT = [
-        'ELITE', 'SUB23', 'OPEN', 'JUVENIL', 'PREJUVENIL', 'INFANTIL', 'PREINFANTIL',
+        'ELITE', 'OPEN',
         'MASTER A', 'MASTER B', 'MASTER C', 'MASTER D', 'MASTER E',
-        'E-BIKE', 'PESO PLUMA', 'CYCLO CROSS'
+        'JUVENIL', 'PREJUVENIL', 'INFANTIL', 'PREINFANTIL',
+        'E-BIKE', 'PESO PLUMA',
+        // Estas no estaban en la lista pero existen en algunos datos; van al final:
+        'SUB23', 'CYCLO CROSS'
     ];
     function ordenarCategorias(cats) {
         return Object.keys(cats).sort((a, b) => {

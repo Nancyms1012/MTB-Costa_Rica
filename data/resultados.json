@@ -365,6 +365,44 @@
                 "time": "01:28:42"
               }
             ]
+          },
+          "E-BIKE": {
+            "M": [
+              {
+                "pos": 1,
+                "name": "GUZMÁN Alex",
+                "team": "ACISA",
+                "time": "00:47:40"
+              },
+              {
+                "pos": 2,
+                "name": "GUZMAN Aaaron",
+                "team": "ACISA",
+                "time": "00:47:40"
+              }
+            ]
+          },
+          "PESO PLUMA": {
+            "M": [
+              {
+                "pos": 1,
+                "name": "MORA Leonardo",
+                "team": "GALERÍA DEPORTIVA",
+                "time": "00:46:10"
+              },
+              {
+                "pos": 2,
+                "name": "LEIVA Kenneth",
+                "team": "—",
+                "time": "00:49:18"
+              },
+              {
+                "pos": 3,
+                "name": "MATA Jefrey Alexander",
+                "team": "GRUPETA 5AM",
+                "time": "00:49:57"
+              }
+            ]
           }
         }
       },
@@ -708,44 +746,6 @@
                 "name": "ESPINOZA Cristel",
                 "team": "ASFALTOS CBZ - DEKRA - SECNET",
                 "time": "00:18:38"
-              }
-            ]
-          },
-          "E-BIKE": {
-            "M": [
-              {
-                "pos": 1,
-                "name": "GUZMÁN Alex",
-                "team": "ACISA",
-                "time": "00:47:40"
-              },
-              {
-                "pos": 2,
-                "name": "GUZMAN Aaaron",
-                "team": "ACISA",
-                "time": "00:47:40"
-              }
-            ]
-          },
-          "PESO PLUMA": {
-            "M": [
-              {
-                "pos": 1,
-                "name": "MORA Leonardo",
-                "team": "GALERÍA DEPORTIVA",
-                "time": "00:46:10"
-              },
-              {
-                "pos": 2,
-                "name": "LEIVA Kenneth",
-                "team": "—",
-                "time": "00:49:18"
-              },
-              {
-                "pos": 3,
-                "name": "MATA Jefrey Alexander",
-                "team": "GRUPETA 5AM",
-                "time": "00:49:57"
               }
             ]
           },
@@ -1159,6 +1159,50 @@
                 "time": "00:47:51"
               }
             ]
+          },
+          "E-BIKE": {
+            "M": [
+              {
+                "pos": 1,
+                "name": "GUZMAN Aaaron",
+                "team": "ACISA",
+                "time": "00:35:06"
+              },
+              {
+                "pos": 2,
+                "name": "TENORIO Carlos Alberto",
+                "team": "ACISA SARAPIQUI",
+                "time": "00:36:26"
+              },
+              {
+                "pos": 3,
+                "name": "SALAS Mauricio",
+                "team": "AUTOS SALAS",
+                "time": "00:37:06"
+              }
+            ]
+          },
+          "PESO PLUMA": {
+            "M": [
+              {
+                "pos": 1,
+                "name": "ALFARO Dany",
+                "team": "SERVICIO AUTOMOTRIZ DANY",
+                "time": "00:34:05"
+              },
+              {
+                "pos": 2,
+                "name": "CISNEROS Cristofer",
+                "team": "TEAM CQ PZ",
+                "time": "00:42:41"
+              },
+              {
+                "pos": 3,
+                "name": "VARGAS Omar",
+                "team": "ACM-EL COMI CASI ENDURERO",
+                "time": "-1 LAP"
+              }
+            ]
           }
         }
       },
@@ -1530,50 +1574,6 @@
                 "name": "MONGE Andres",
                 "team": "POWERCYCLING STORE",
                 "time": "00:39:45"
-              }
-            ]
-          },
-          "E-BIKE": {
-            "M": [
-              {
-                "pos": 1,
-                "name": "GUZMAN Aaaron",
-                "team": "ACISA",
-                "time": "00:35:06"
-              },
-              {
-                "pos": 2,
-                "name": "TENORIO Carlos Alberto",
-                "team": "ACISA SARAPIQUI",
-                "time": "00:36:26"
-              },
-              {
-                "pos": 3,
-                "name": "SALAS Mauricio",
-                "team": "AUTOS SALAS",
-                "time": "00:37:06"
-              }
-            ]
-          },
-          "PESO PLUMA": {
-            "M": [
-              {
-                "pos": 1,
-                "name": "ALFARO Dany",
-                "team": "SERVICIO AUTOMOTRIZ DANY",
-                "time": "00:34:05"
-              },
-              {
-                "pos": 2,
-                "name": "CISNEROS Cristofer",
-                "team": "TEAM CQ PZ",
-                "time": "00:42:41"
-              },
-              {
-                "pos": 3,
-                "name": "VARGAS Omar",
-                "team": "ACM-EL COMI CASI ENDURERO",
-                "time": "-1 LAP"
               }
             ]
           }
