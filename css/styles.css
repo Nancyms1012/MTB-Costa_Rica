@@ -1450,3 +1450,14 @@ img { max-width: 100%; height: auto; }
 
 /* Botón volver arriba del detalle */
 .volver-arriba { text-align: left; margin: 25px 0 5px; }
+
+
+/* Contador de visitas (footer) */
+.visitas-contador {
+    display: flex; align-items: center; justify-content: center;
+    gap: 10px; flex-wrap: wrap; margin-bottom: 14px;
+    font-size: 0.85rem; opacity: 0.85;
+}
+.visitas-contador i { margin-right: 4px; }
+.contador-img { height: 26px; vertical-align: middle; border-radius: 4px; }
+.contador-fallback strong { font-size: 1rem; letter-spacing: 1px; }

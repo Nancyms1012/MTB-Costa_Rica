@@ -565,4 +565,27 @@ document.addEventListener('DOMContentLoaded', () => {
             navMenu.classList.remove('active');
         });
     });
+
+
+    // ============ CONTADOR DE VISITAS ============
+    // Usa un contador de imagen gratuito y sin registro (Moe Counter).
+    // Si la imagen no carga, muestra un respaldo local con localStorage.
+    (function contadorVisitas() {
+        const img = document.getElementById('contador-img');
+        const fallback = document.getElementById('contador-fallback');
+        const num = document.getElementById('contador-visitas');
+        if (!img) return;
+
+        img.addEventListener('error', () => {
+            // El servicio de imagen no respondió: usar respaldo local
+            img.style.display = 'none';
+            if (fallback && num) {
+                let n = parseInt(localStorage.getItem('visitasMTB') || '0', 10) + 1;
+                localStorage.setItem('visitasMTB', String(n));
+                try { num.textContent = Number(n).toLocaleString('es-CR'); }
+                catch (e) { num.textContent = n; }
+                fallback.style.display = 'inline';
+            }
+        });
+    })();
 });

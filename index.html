@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ANCM - Asociación Nacional de Ciclismo de Montaña Costa Rica</title>
-    <link rel="stylesheet" href="css/styles.css?v=5">
+    <link rel="stylesheet" href="css/styles.css?v=6">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,10 +27,12 @@
                 <img src="img/COPA.webp" alt="La Copa" class="portada-logo">
                 <span>La Copa</span>
             </a>
+            <!-- Copa Kids oculto temporalmente (se trabajara esa pagina)
             <a href="#" class="portada-logo-link" id="enter-kids">
                 <img src="img/KIDS.jpeg" alt="Copa Kids" class="portada-logo">
                 <span>Copa Kids</span>
             </a>
+            -->
         </div>
     </div>
 </div>
@@ -830,6 +832,15 @@
             </div>
         </div>
         <div class="footer-bottom">
+            <div class="visitas-contador">
+                <span><i class="fas fa-eye"></i> Visitas</span>
+                <img id="contador-img"
+                     src="https://count.getloli.com/get/@mtbcostarica?theme=moebooru"
+                     alt="Contador de visitas" class="contador-img">
+                <span id="contador-fallback" class="contador-fallback" style="display:none;">
+                    <strong id="contador-visitas">…</strong>
+                </span>
+            </div>
             <p>&copy; 2026 ANCM - Asociación Nacional de Ciclismo de Montaña Costa Rica. Todos los derechos reservados.</p>
         </div>
     </div>
@@ -848,6 +859,6 @@
 
 </div><!-- /sitio-principal -->
 
-<script src="js/main.js?v=5"></script>
+<script src="js/main.js?v=6"></script>
 </body>
 </html>
