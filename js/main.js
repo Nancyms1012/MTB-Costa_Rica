@@ -302,18 +302,20 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>`;
         }
 
-        // Columna izquierda = Masculino (o el "Open/General" X si no hay M explícito)
+        // Columna izquierda = Masculino (o la general X del Open si no hay M explícito)
         let colIzq;
         if (hayM) {
             colIzq = podioColHTML('MASCULINO', 'masc', gen.M, tipo);
         } else if (hayX) {
-            // OPEN: la columna X es la general/masculina
-            colIzq = podioColHTML(nombreCat === 'OPEN' ? 'OPEN' : 'GENERAL', 'masc', gen.X, tipo);
+            // OPEN u otras: la columna X es la masculina/general
+            colIzq = podioColHTML('MASCULINO', 'masc', gen.X, tipo);
         } else {
             colIzq = podioColHTML('MASCULINO', 'masc', [], tipo);
         }
-        // Columna derecha = Femenino
-        const colDer = podioColHTML('FEMENINO', 'fem', gen.F || [], tipo);
+        // Columna derecha = Femenino. Si no hay, columna EN BLANCO (sin recuadro)
+        const colDer = hayF
+            ? podioColHTML('FEMENINO', 'fem', gen.F, tipo)
+            : '<div class="gender-col-empty"></div>';
 
         return `<div class="cat-block">
             <div class="cat-block-title">${nombreCat}</div>
@@ -391,9 +393,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('general-sub').textContent = GENERAL.sub || '';
         const cont = document.getElementById('general-content');
         let html = '';
-        if (GENERAL.xlsx) {
-            html += `<div class="pdf-links"><a class="btn-pdf" href="${GENERAL.xlsx}" target="_blank" rel="noopener"><i class="fas fa-file-excel"></i> Descargar tabla completa (Excel)</a></div>`;
-        }
+        // (Botón de descargar Excel quitado por ahora — el archivo es Excel)
         const cats = GENERAL.categorias || {};
         ordenarCategorias(cats).forEach(cat => {
             html += categoriaHTML(cat, cats[cat], 'general');
