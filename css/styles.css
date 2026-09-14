@@ -1434,3 +1434,19 @@ img { max-width: 100%; height: auto; }
 
 /* Columna femenina vacía: en blanco, sin recuadro */
 .gender-col-empty { background: transparent; border: none; box-shadow: none; }
+
+
+/* Aviso inscripciones próximamente */
+.inscription-soon {
+    text-align: center; background: var(--gray-100); border: 2px dashed var(--gray-300);
+    border-radius: var(--radius); padding: 30px 24px; margin: 30px 0;
+}
+.inscription-soon i { font-size: 2.4rem; color: var(--secondary); margin-bottom: 12px; }
+.inscription-soon h3 { color: var(--primary); font-size: 1.4rem; margin-bottom: 8px; }
+.inscription-soon p { color: var(--gray-800); font-size: 0.95rem; line-height: 1.6; margin: 0; }
+.inscription-soon-big { padding: 55px 24px; margin: 40px auto; max-width: 640px; }
+.inscription-soon-big i { font-size: 3.2rem; }
+.inscription-soon-big h3 { font-size: 1.8rem; }
+
+/* Botón volver arriba del detalle */
+.volver-arriba { text-align: left; margin: 25px 0 5px; }

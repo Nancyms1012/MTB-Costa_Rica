@@ -47,7 +47,9 @@
         <ul class="nav-menu" id="nav-menu">
             <li><a href="#" class="nav-link active" data-page="inicio">Inicio</a></li>
             <li><a href="#" class="nav-link" data-page="nosotros">Nosotros</a></li>
+            <!-- Noticias oculto temporalmente (los enlaces de podcast van a la pagina vieja)
             <li><a href="#" class="nav-link" data-page="noticias">Noticias</a></li>
+            -->
             <li class="nav-dropdown">
                 <a href="#" class="nav-link" data-page="eventos">Eventos</a>
                 <div class="mega-dropdown">
@@ -61,7 +63,9 @@
             <li><a href="#" class="nav-link" data-page="categorias">Categorías</a></li>
             <li><a href="#" class="nav-link" data-page="resultados">Resultados</a></li>
             <li><a href="#" class="nav-link" data-page="inscripciones">Inscripciones</a></li>
+            <!-- Galeria oculta temporalmente
             <li><a href="#" class="nav-link" data-page="galeria">Galería</a></li>
+            -->
             <li><a href="#" class="nav-link" data-page="contacto">Contacto</a></li>
         </ul>
         <button class="nav-toggle" id="nav-toggle">
@@ -546,7 +550,9 @@
         <p class="page-subtitle" id="detalle-fecha-label"></p>
     </div>
     <div class="container">
-        <a href="#" class="btn-back" data-page="resultados"><i class="fas fa-arrow-left"></i> Volver a Resultados</a>
+        <div class="volver-todos-wrap volver-arriba">
+            <a href="#" class="btn-volver-todos" data-page="resultados"><i class="fas fa-list"></i> Volver a todos los resultados</a>
+        </div>
         <div class="modalidad-tabs" id="detalle-mod-tabs"></div>
         <div id="detalle-content"></div>
     </div>
@@ -559,7 +565,9 @@
         <p class="page-subtitle" id="general-sub"></p>
     </div>
     <div class="container">
-        <a href="#" class="btn-back" data-page="resultados"><i class="fas fa-arrow-left"></i> Volver a Resultados</a>
+        <div class="volver-todos-wrap volver-arriba">
+            <a href="#" class="btn-volver-todos" data-page="resultados"><i class="fas fa-list"></i> Volver a todos los resultados</a>
+        </div>
         <div id="general-content"></div>
     </div>
 </section>
@@ -574,16 +582,18 @@
     </div>
     <div class="page-header">
         <h2 class="section-title">Inscripciones</h2>
-        <p class="section-subtitle">VII Fecha - Gran Final - Copa Nacional MTB 2026</p>
+        <p class="section-subtitle">Copa Nacional de Ciclismo de Montaña 2026</p>
     </div>
     <div class="container">
+        <!-- Aviso: inscripciones próximamente -->
+        <div class="inscription-soon">
+            <i class="fas fa-hourglass-half"></i>
+            <h3>Inscripciones próximamente</h3>
+            <p>Muy pronto abriremos las inscripciones para la próxima fecha. ¡Mantente atento a nuestras redes sociales!</p>
+        </div>
+
         <div class="inscription-container">
             <div class="inscription-info">
-                <div class="inscription-deadline">
-                    <h3><i class="fas fa-clock"></i> Cierre de inscripciones</h3>
-                    <p class="deadline-date">10 de setiembre 2026, media noche</p>
-                </div>
-
                 <div class="inscription-payment">
                     <h3><i class="fas fa-university"></i> Pago por depósito bancario</h3>
                     <ul class="payment-details">
@@ -602,17 +612,32 @@
             </div>
 
             <div class="inscription-qr">
-                <h3>Escaneá el código QR para inscribirte</h3>
                 <div class="qr-cards">
                     <div class="qr-card">
-                        <img src="img/QR_COPA.png" alt="QR La Copa" class="qr-code-img">
                         <img src="img/COPA.webp" alt="La Copa" class="qr-logo">
                         <h4>La Copa</h4>
                         <p>XCO · XCC · XCE</p>
-                        <a href="https://inscripciones.raceclubhub.com/landing" target="_blank" class="btn btn-primary btn-sm">Inscribirme</a>
+                        <a href="#" class="btn btn-primary btn-sm" data-page="inscripciones-proximamente">Inscribirme</a>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- SUB-PAGE: INSCRIPCIONES PRÓXIMAMENTE -->
+<section class="page" id="page-inscripciones-proximamente">
+    <div class="page-header page-header-dark">
+        <h2 class="page-title">Inscripciones</h2>
+        <p class="page-subtitle">Copa Nacional de Ciclismo de Montaña 2026</p>
+    </div>
+    <div class="container">
+        <a href="#" class="btn-back" data-page="inscripciones"><i class="fas fa-arrow-left"></i> Volver</a>
+        <div class="inscription-soon inscription-soon-big">
+            <i class="fas fa-hourglass-half"></i>
+            <h3>Próximamente</h3>
+            <p>Las inscripciones para la próxima fecha se abrirán pronto.<br>Mantente atento a nuestras redes sociales para no perderte la fecha de apertura.</p>
         </div>
     </div>
 </section>
