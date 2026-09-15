@@ -277,6 +277,32 @@
             ]
           },
           "PREINFANTIL": {
+            "M": [
+              {
+                "pos": 1,
+                "name": "CESPEDES Santiago",
+                "team": "ACCIPAL PALMARES",
+                "time": "00:47:33",
+                "gap": "-",
+                "points": 200
+              },
+              {
+                "pos": 2,
+                "name": "CÉSPEDES Anthony Luan",
+                "team": "SKALA/ CCDR MONTEVERDE",
+                "time": "00:53:49",
+                "gap": "+00:06:16",
+                "points": 150
+              },
+              {
+                "pos": 3,
+                "name": "ARAYA Emiliano",
+                "team": "CCDR SANTA CRUZ",
+                "time": "01:01:33",
+                "gap": "+00:14:00",
+                "points": 120
+              }
+            ],
             "F": [
               {
                 "pos": 1,
@@ -522,6 +548,32 @@
         ],
         "categorias": {
           "PREINFANTIL": {
+            "M": [
+              {
+                "pos": 1,
+                "name": "ARAYA Emiliano",
+                "team": "CCDR SANTA CRUZ",
+                "time": "00:12:25",
+                "gap": "-",
+                "points": 10
+              },
+              {
+                "pos": 2,
+                "name": "CESPEDES Santiago",
+                "team": "ACCIPAL PALMARES",
+                "time": "00:14:40",
+                "gap": "+00:02:15",
+                "points": 9
+              },
+              {
+                "pos": 3,
+                "name": "CÉSPEDES Anthony Luan",
+                "team": "SKALA/ CCDR MONTEVERDE",
+                "time": "00:15:08",
+                "gap": "+00:02:43",
+                "points": 8
+              }
+            ],
             "F": [
               {
                 "pos": 1,
@@ -1287,6 +1339,32 @@
             ]
           },
           "PREINFANTIL": {
+            "M": [
+              {
+                "pos": 1,
+                "name": "CESPEDES Santiago",
+                "team": "ACCIPAL CMS",
+                "time": "00:33:59",
+                "gap": "-",
+                "points": 200
+              },
+              {
+                "pos": 2,
+                "name": "ARAYA Emiliano",
+                "team": "CCDR SANTA CRUZ, TEAM COSTA FRUT",
+                "time": "00:34:18",
+                "gap": "+00:00:19",
+                "points": 150
+              },
+              {
+                "pos": 3,
+                "name": "SOJO Nathan",
+                "team": "TURRIALBA",
+                "time": "00:41:21",
+                "gap": "+00:07:22",
+                "points": 120
+              }
+            ],
             "F": [
               {
                 "pos": 1,
@@ -1540,6 +1618,32 @@
         ],
         "categorias": {
           "PREINFANTIL": {
+            "M": [
+              {
+                "pos": 1,
+                "name": "ARAYA Emiliano",
+                "team": "CCDR SANTA CRUZ, TEAM COSTA FRUT",
+                "time": "00:14:39",
+                "gap": "-",
+                "points": 10
+              },
+              {
+                "pos": 2,
+                "name": "CESPEDES Santiago",
+                "team": "ACCIPAL CMS",
+                "time": "00:14:46",
+                "gap": "+00:00:07",
+                "points": 9
+              },
+              {
+                "pos": 3,
+                "name": "CÉSPEDES Anthony",
+                "team": "SKALA/CCDR MONTEVERDE",
+                "time": "00:15:34",
+                "gap": "+00:00:55",
+                "points": 8
+              }
+            ],
             "F": [
               {
                 "pos": 1,
@@ -2282,6 +2386,32 @@
             ]
           },
           "PREINFANTIL": {
+            "M": [
+              {
+                "pos": 1,
+                "name": "ARAYA Emiliano",
+                "team": "CCDR SANTA CRUZ, TEAM COSTA FRUT",
+                "time": "00:23:06",
+                "gap": "-",
+                "points": 200
+              },
+              {
+                "pos": 2,
+                "name": "CÉSPEDES Anthony Luan",
+                "team": "SKALA MONTEVERDE/CCDR MONTEVERDE",
+                "time": "00:25:27",
+                "gap": "+00:02:21",
+                "points": 150
+              },
+              {
+                "pos": 3,
+                "name": "CERDAS Isaac",
+                "team": "7500 CRC CODEA ALAJUELA",
+                "time": "00:28:55",
+                "gap": "+00:05:49",
+                "points": 120
+              }
+            ],
             "F": [
               {
                 "pos": 1,
@@ -2868,6 +2998,32 @@
             ]
           },
           "PREINFANTIL": {
+            "M": [
+              {
+                "pos": 1,
+                "name": "ARAYA Emiliano",
+                "team": "25485564 CRC CCDR SANTA CRUZ- TEAM COSTA FRUT",
+                "time": "00:23:30",
+                "gap": "-",
+                "points": 200
+              },
+              {
+                "pos": 2,
+                "name": "CÉSPEDES Anthony Luan",
+                "team": "SKALA/CCDR MONTEVERDE",
+                "time": "00:30:38",
+                "gap": "+00:07:08",
+                "points": 150
+              },
+              {
+                "pos": 3,
+                "name": "FLORES Eytham",
+                "team": "TEAM ARCE",
+                "time": "00:34:19",
+                "gap": "+00:10:49",
+                "points": 120
+              }
+            ],
             "F": [
               {
                 "pos": 1,
@@ -3105,6 +3261,32 @@
         ],
         "categorias": {
           "PREINFANTIL": {
+            "M": [
+              {
+                "pos": 1,
+                "name": "ARAYA Emiliano",
+                "team": "25485564 CRC CCDR SANTA CRUZ- TEAM COSTA FRUT",
+                "time": "00:15:21",
+                "gap": "-",
+                "points": 10
+              },
+              {
+                "pos": 2,
+                "name": "CÉSPEDES Anthony Luan",
+                "team": "SKALA/CCDR MONTEVERDE",
+                "time": "00:19:06",
+                "gap": "+00:03:45",
+                "points": 9
+              },
+              {
+                "pos": 3,
+                "name": "FLORES Eytham",
+                "team": "TEAM ARCE",
+                "time": "-1 LAP",
+                "gap": "",
+                "points": 8
+              }
+            ],
             "F": [
               {
                 "pos": 1,
@@ -3818,6 +4000,32 @@
             ]
           },
           "PREINFANTIL": {
+            "M": [
+              {
+                "pos": 1,
+                "name": "CESPEDES Santiago",
+                "team": "13280 CRC ACCIPAL CMS",
+                "time": "00:18:46",
+                "gap": "-",
+                "points": 200
+              },
+              {
+                "pos": 2,
+                "name": "ARAYA Emiliano",
+                "team": "CCDR SANTA CRUZ/ TEAM COSTA FRUT",
+                "time": "00:19:08",
+                "gap": "+00:00:22",
+                "points": 150
+              },
+              {
+                "pos": 3,
+                "name": "GÓMEZ James",
+                "team": "PZ CYCLING TEAM",
+                "time": "00:20:33",
+                "gap": "+00:01:47",
+                "points": 120
+              }
+            ],
             "F": [
               {
                 "pos": 1,
@@ -4293,6 +4501,32 @@
             ]
           },
           "PREINFANTIL": {
+            "M": [
+              {
+                "pos": 1,
+                "name": "CESPEDES Santiago",
+                "team": "13280 CRC ACCIPAL CMS",
+                "time": "00:14:23",
+                "gap": "-",
+                "points": 25
+              },
+              {
+                "pos": 2,
+                "name": "ARAYA Emiliano",
+                "team": "CCDR SANTA CRUZ/ TEAM COSTA FRUT",
+                "time": "00:14:31",
+                "gap": "+00:00:08",
+                "points": 20
+              },
+              {
+                "pos": 3,
+                "name": "GÓMEZ James",
+                "team": "PZ CYCLING TEAM",
+                "time": "00:15:18",
+                "gap": "+00:00:55",
+                "points": 16
+              }
+            ],
             "F": [
               {
                 "pos": 1,
@@ -4757,6 +4991,29 @@
             ]
           },
           "PREINFANTIL": {
+            "M": [
+              {
+                "pos": 1,
+                "name": "ARAYA Emiliano",
+                "team": "CCDR Santa Cruz- Team Costa Frut",
+                "time": "00:19:55",
+                "gap": "-"
+              },
+              {
+                "pos": 2,
+                "name": "SOLANO Diego Andrés",
+                "team": "Guacimo",
+                "time": "00:21:03",
+                "gap": "+00:01:08"
+              },
+              {
+                "pos": 3,
+                "name": "CÉSPEDES Anthony Luan",
+                "team": "Skala Monteverde/CCDR Monteverde",
+                "time": "00:21:03",
+                "gap": "+00:01:08"
+              }
+            ],
             "F": [
               {
                 "pos": 1,
@@ -5128,6 +5385,29 @@
             ]
           },
           "PREINFANTIL": {
+            "M": [
+              {
+                "pos": 1,
+                "name": "ARAYA Emiliano",
+                "team": "CCDR Santa Cruz- Team Costa Frut",
+                "time": "00:14:48",
+                "gap": "-"
+              },
+              {
+                "pos": 2,
+                "name": "ORTIZ Luis Diego",
+                "team": "CCDR Santa Cruz / Kids Team Villarreal",
+                "time": "00:16:21",
+                "gap": "+00:01:33"
+              },
+              {
+                "pos": 3,
+                "name": "HUNTER Ian",
+                "team": "CODEA",
+                "time": "00:16:45",
+                "gap": "+00:01:57"
+              }
+            ],
             "F": [
               {
                 "pos": 1,
