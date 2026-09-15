@@ -1392,39 +1392,63 @@ img { max-width: 100%; height: auto; }
 .btn-pdf i { font-size: 1rem; }
 
 /* Bloque de una categoría */
-.cat-block { margin-bottom: 34px; }
-.cat-block-title {
-    text-align: center; color: var(--primary); font-family: var(--font-heading);
-    font-size: 1.15rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1px;
-    margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid var(--gray-200);
-}
+.cat-block { margin-bottom: 30px; }
 /* Masculino y Femenino a la par, separados con gap */
-.cat-genders { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
-.gender-col { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
-.gender-head {
-    text-align: center; font-family: var(--font-heading); font-weight: 800;
-    font-size: 0.8rem; letter-spacing: 1.5px; text-transform: uppercase;
-    padding: 10px; color: var(--white);
-}
-.gender-head.masc { background: var(--primary); }
-.gender-head.fem { background: var(--secondary); }
-.gender-head.mixto { background: var(--accent); }
-.podium-table { width: 100%; border-collapse: collapse; }
-.podium-table td { padding: 11px 12px; border-bottom: 1px solid var(--gray-200); font-size: 0.85rem; vertical-align: middle; }
-.podium-table tr:last-child td { border-bottom: none; }
-.podium-pos { font-weight: 900; font-size: 1.1rem; width: 34px; text-align: center; }
-.podium-1 .podium-pos { color: #d4af37; }
-.podium-2 .podium-pos { color: #9ca3af; }
-.podium-3 .podium-pos { color: #cd7f32; }
-.podium-name { font-weight: 700; color: var(--gray-900); }
-.podium-team { display: block; font-weight: 400; font-size: 0.72rem; color: var(--gray-600); margin-top: 2px; }
-.podium-meta { text-align: right; font-weight: 700; color: var(--primary); white-space: nowrap; font-size: 0.8rem; }
-.gender-empty { padding: 22px 12px; text-align: center; color: var(--gray-600); font-style: italic; font-size: 0.8rem; }
+.cat-genders { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
 
-@media (max-width: 640px) {
-    .cat-genders { grid-template-columns: 1fr; gap: 16px; }
+/* ===== Estilo UCI ===== */
+.uci-block { width: 100%; }
+.uci-block-head {
+    display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;
+    border-bottom: 2px solid var(--gray-900);
+    padding-bottom: 6px; margin-bottom: 4px;
+}
+.uci-cat {
+    font-family: var(--font-heading); font-weight: 900; text-transform: uppercase;
+    font-size: 0.95rem; color: var(--gray-900); letter-spacing: 0.3px;
+}
+.uci-cat-mod { font-weight: 700; color: var(--gray-600); font-size: 0.8rem; }
+.uci-sub {
+    font-family: var(--font-heading); font-weight: 800; text-transform: uppercase;
+    font-size: 0.7rem; letter-spacing: 1px; margin-left: auto;
+}
+.uci-sub.masc { color: var(--primary); }
+.uci-sub.fem { color: var(--secondary); }
+.uci-sub.mixto { color: var(--accent); }
+
+.uci-table { width: 100%; border-collapse: collapse; }
+.uci-table thead th {
+    text-align: left; font-family: var(--font-body); font-weight: 600;
+    font-size: 0.68rem; color: var(--gray-600); text-transform: none;
+    padding: 6px 8px; border-bottom: 1px solid var(--gray-200);
+}
+.uci-table th.c-pos { width: 34px; text-align: center; }
+.uci-table th.c-time, .uci-table th.c-gap, .uci-table th.c-pts { text-align: right; white-space: nowrap; }
+.uci-table td { padding: 10px 8px; border-bottom: 1px solid var(--gray-200); font-size: 0.85rem; vertical-align: middle; }
+.uci-row:last-child td { border-bottom: none; }
+
+.uci-table td.c-pos { text-align: center; position: relative; }
+.uci-pos { font-weight: 900; font-size: 1.05rem; color: var(--gray-900); }
+/* Barra de color a la izquierda segun posicion */
+.uci-row td.c-pos::before {
+    content: ""; position: absolute; left: 0; top: 4px; bottom: 4px; width: 4px; border-radius: 2px;
+}
+.uci-row.uci-pos-1 td.c-pos::before { background: linear-gradient(180deg, var(--primary), var(--secondary)); }
+.uci-row.uci-pos-2 td.c-pos::before { background: #9ca3af; }
+.uci-row.uci-pos-3 td.c-pos::before { background: #7b3fa0; }
+
+.uci-name { font-weight: 700; color: var(--gray-900); }
+.uci-team { display: block; font-weight: 400; font-size: 0.7rem; color: var(--gray-600); margin-top: 2px; text-transform: uppercase; letter-spacing: 0.3px; }
+.uci-table td.c-time { text-align: right; font-weight: 700; color: var(--gray-900); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.uci-table td.c-gap { text-align: right; color: var(--gray-600); white-space: nowrap; font-size: 0.8rem; font-variant-numeric: tabular-nums; }
+.uci-table td.c-pts { text-align: right; font-weight: 900; color: var(--primary); white-space: nowrap; }
+.uci-empty { padding: 20px 8px; text-align: center; color: var(--gray-600); font-style: italic; font-size: 0.8rem; }
+
+@media (max-width: 700px) {
+    .cat-genders { grid-template-columns: 1fr; gap: 22px; }
     .results-general-card { flex-direction: column; text-align: center; }
-    .podium-table td { padding: 9px 8px; font-size: 0.8rem; }
+    .uci-table td, .uci-table thead th { padding: 8px 5px; font-size: 0.8rem; }
+    .uci-cat { font-size: 0.85rem; }
 }
 
 

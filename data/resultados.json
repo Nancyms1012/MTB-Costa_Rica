@@ -14,19 +14,25 @@
                 "pos": 1,
                 "name": "MARTÍNEZ Andrés",
                 "team": "NOSOTROS DOTA",
-                "time": "00:52:45"
+                "time": "00:52:45",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "CALDERON Edwin",
                 "team": "SCOTT SHIMANO CYCLING TEAM",
-                "time": "00:55:32"
+                "time": "00:55:32",
+                "gap": "+00:02:47",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "MORALES Allan",
                 "team": "TEAM INNOVABIKES",
-                "time": "00:57:00"
+                "time": "00:57:00",
+                "gap": "+00:04:15",
+                "points": 120
               }
             ],
             "F": [
@@ -34,19 +40,25 @@
                 "pos": 1,
                 "name": "HERNÁNDEZ Yuliana",
                 "team": "SAPPHIRE TABA CYCLING TEAM",
-                "time": "00:46:13"
+                "time": "00:46:13",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "ZÚÑIGA Laura",
                 "team": "VEINTE24",
-                "time": "00:49:33"
+                "time": "00:49:33",
+                "gap": "+00:49:33",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "BADILLA Valeria",
                 "team": "FISIOSANA",
-                "time": "00:56:36"
+                "time": "00:56:36",
+                "gap": "+00:56:36",
+                "points": 120
               }
             ]
           },
@@ -56,19 +68,25 @@
                 "pos": 1,
                 "name": "HERRERA Elber",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:56:06"
+                "time": "00:56:06",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "CORTES Jerry",
                 "team": "BUF, DRASANVI, ECOTIENDA...",
-                "time": "00:59:40"
+                "time": "00:59:40",
+                "gap": "+00:03:34",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "MOLINA Hairo",
                 "team": "CCDRESCAZU",
-                "time": "00:59:51"
+                "time": "00:59:51",
+                "gap": "+00:03:45",
+                "points": 120
               }
             ],
             "F": [
@@ -76,7 +94,9 @@
                 "pos": 1,
                 "name": "LORIA Dilcen",
                 "team": "FISIONORTE/ QUESADAJONATHAN.CYCLING",
-                "time": "00:45:23"
+                "time": "00:45:23",
+                "gap": "-",
+                "points": 200
               }
             ]
           },
@@ -86,7 +106,9 @@
                 "pos": 1,
                 "name": "TRETTI Caterina",
                 "team": "VEINTE24",
-                "time": "00:42:07"
+                "time": "00:42:07",
+                "gap": "-",
+                "points": 200
               }
             ],
             "X": [
@@ -94,19 +116,25 @@
                 "pos": 1,
                 "name": "MENESES Jose",
                 "team": "VCC - STYM",
-                "time": "01:02:43"
+                "time": "01:02:43",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "SANDI Kendall",
                 "team": "POWERCYCLING STORE",
-                "time": "01:02:58"
+                "time": "01:02:58",
+                "gap": "+00:00:15",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "CHAVES Jose",
                 "team": "VEINTE24",
-                "time": "01:05:10"
+                "time": "01:05:10",
+                "gap": "+00:02:27",
+                "points": 120
               }
             ]
           },
@@ -116,19 +144,25 @@
                 "pos": 1,
                 "name": "AZOFEIFA Marcos",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:45:07"
+                "time": "00:45:07",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "CAMPOS Sergio",
                 "team": "EL GATO MECANICO",
-                "time": "00:47:50"
+                "time": "00:47:50",
+                "gap": "+00:02:43",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "EL SEMAANI Jean Paul",
                 "team": "HATOVIEJO - MOMIA TS",
-                "time": "00:51:07"
+                "time": "00:51:07",
+                "gap": "+00:06:00",
+                "points": 120
               }
             ]
           },
@@ -138,19 +172,25 @@
                 "pos": 1,
                 "name": "ARCE Alberth Antonio",
                 "team": "TOMATERO",
-                "time": "00:45:00"
+                "time": "00:45:00",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "HERRERA Jeffrey",
                 "team": "TEAM CORECO/MOMENTUM SPORTS",
-                "time": "00:47:21"
+                "time": "00:47:21",
+                "gap": "+00:02:21",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "VEGA Oldemar",
                 "team": "VEGAS TEAM POAS",
-                "time": "00:48:06"
+                "time": "00:48:06",
+                "gap": "+00:03:06",
+                "points": 120
               }
             ]
           },
@@ -160,19 +200,25 @@
                 "pos": 1,
                 "name": "ROJAS Melvin",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:47:25"
+                "time": "00:47:25",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "MUÑOZ German",
                 "team": "TREK",
-                "time": "00:47:52"
+                "time": "00:47:52",
+                "gap": "+00:00:27",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "SOLIS Marco",
                 "team": "CICLO VICTOR VARGAS",
-                "time": "00:52:22"
+                "time": "00:52:22",
+                "gap": "+00:04:57",
+                "points": 120
               }
             ]
           },
@@ -182,19 +228,25 @@
                 "pos": 1,
                 "name": "RODRÍGUEZ Joaquín",
                 "team": "CCDR SAN JOSÉ",
-                "time": "00:57:35"
+                "time": "00:57:35",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "SANDI Derek Ivan",
                 "team": "CCDR ESCAZÚ",
-                "time": "00:58:57"
+                "time": "00:58:57",
+                "gap": "+00:01:22",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "VALVERDE Liam",
                 "team": "CCDR TURRIALBA",
-                "time": "01:01:36"
+                "time": "01:01:36",
+                "gap": "+00:04:01",
+                "points": 120
               }
             ],
             "F": [
@@ -202,19 +254,25 @@
                 "pos": 1,
                 "name": "CALDERÓN Ariana",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:46:37"
+                "time": "00:46:37",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "CRUZ Monica",
                 "team": "SCOTT SHIMANO CYCLING TEAM",
-                "time": "00:50:46"
+                "time": "00:50:46",
+                "gap": "+00:04:09",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "MARCHENA Shelly Yuliana",
                 "team": "CCDRESCAZU",
-                "time": "00:54:14"
+                "time": "00:54:14",
+                "gap": "+00:07:37",
+                "points": 120
               }
             ]
           },
@@ -224,19 +282,25 @@
                 "pos": 1,
                 "name": "MONTEALEGRE Maria Paula",
                 "team": "CCDR SANTA CRUZ",
-                "time": "00:35:58"
+                "time": "00:35:58",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "HERNÁNDEZ Maripaz",
                 "team": "SANTA ANA / HDZ TEAM",
-                "time": "00:38:49"
+                "time": "00:38:49",
+                "gap": "+00:02:51",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "JIMÉNEZ Mia",
                 "team": "—",
-                "time": "00:41:14"
+                "time": "00:41:14",
+                "gap": "+00:05:16",
+                "points": 120
               }
             ]
           },
@@ -246,19 +310,25 @@
                 "pos": 1,
                 "name": "CAMPOS Isaac Eduardo",
                 "team": "TEAM INNOVABIKES-SKOLER",
-                "time": "00:50:57"
+                "time": "00:50:57",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "AGUILAR Luciano",
                 "team": "CCDR GUACIMO",
-                "time": "00:53:11"
+                "time": "00:53:11",
+                "gap": "+00:02:14",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "RODRÍGUEZ Esteban",
                 "team": "SPACE SCENSE-FERROCA-SST CONSULTORES00 -: 5C3C:4D3R SANTA 0C0R:0U2Z:4 6",
-                "time": ""
+                "time": "",
+                "gap": "",
+                "points": 120
               }
             ],
             "F": [
@@ -266,19 +336,25 @@
                 "pos": 1,
                 "name": "JIMENEZ Briana",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:47:53"
+                "time": "00:47:53",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "AZOFEIFA Sofia",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:50:11"
+                "time": "00:50:11",
+                "gap": "+00:02:18",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "LIZANO Nicole",
                 "team": "CICLISMO BELÉN",
-                "time": "00:51:15"
+                "time": "00:51:15",
+                "gap": "+00:03:22",
+                "points": 120
               }
             ]
           },
@@ -288,19 +364,25 @@
                 "pos": 1,
                 "name": "HERRERA Carlos",
                 "team": "PEDREGAL 7C ECONOMY",
-                "time": "01:29:19"
+                "time": "01:29:19",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "GONZALEZ Raymond",
                 "team": "CICLO VÍCTOR VARGAS / BIKESTORE TREK",
-                "time": "01:42:37"
+                "time": "01:42:37",
+                "gap": "+00:13:18",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "GONZÁLEZ Adriano",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "01:44:12"
+                "time": "01:44:12",
+                "gap": "+00:14:53",
+                "points": 120
               }
             ],
             "F": [
@@ -308,19 +390,25 @@
                 "pos": 1,
                 "name": "ROJAS Adriana",
                 "team": "CBZ- DEKRA",
-                "time": "01:27:08"
+                "time": "01:27:08",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "ESPINOZA Cristel",
                 "team": "ASFALTOS CBZ - DEKRA - SECNET",
-                "time": "01:30:34"
+                "time": "01:30:34",
+                "gap": "+00:03:26",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "AVILA Melisa",
                 "team": "MANZATÉ LA SELVA NOVARIX",
-                "time": "01:41:56"
+                "time": "01:41:56",
+                "gap": "+00:14:48",
+                "points": 120
               }
             ]
           },
@@ -330,19 +418,25 @@
                 "pos": 1,
                 "name": "QUIRÓS Neythan Yariel",
                 "team": "TEAM INNOVABIKES-SKOLER",
-                "time": "01:03:26"
+                "time": "01:03:26",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "ULATE Joshua",
                 "team": "MECATRONICS / MCT COMPONENTS",
-                "time": "01:05:21"
+                "time": "01:05:21",
+                "gap": "+00:01:55",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "ACUÑA Alejandro",
                 "team": "TEAM INNOVABIKES-SKOLER",
-                "time": "01:06:10"
+                "time": "01:06:10",
+                "gap": "+00:02:44",
+                "points": 120
               }
             ],
             "F": [
@@ -350,19 +444,25 @@
                 "pos": 1,
                 "name": "MADRIGAL Maidelyn De Los Angeles",
                 "team": "TEAM INNOVABIKES-SKOLER",
-                "time": "01:18:59"
+                "time": "01:18:59",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "ZÁRATE Nazareth",
                 "team": "CICLISMO BELÉN",
-                "time": "01:22:27"
+                "time": "01:22:27",
+                "gap": "+00:03:28",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "ALVARADO Jimena",
                 "team": "CCDR LIMÓN",
-                "time": "01:28:42"
+                "time": "01:28:42",
+                "gap": "+00:09:43",
+                "points": 120
               }
             ]
           },
@@ -372,13 +472,16 @@
                 "pos": 1,
                 "name": "GUZMÁN Alex",
                 "team": "ACISA",
-                "time": "00:47:40"
+                "time": "00:47:40",
+                "gap": "+00:00:00",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "GUZMAN Aaaron",
                 "team": "ACISA",
-                "time": "00:47:40"
+                "time": "00:47:40",
+                "gap": ""
               }
             ]
           },
@@ -388,19 +491,25 @@
                 "pos": 1,
                 "name": "MORA Leonardo",
                 "team": "GALERÍA DEPORTIVA",
-                "time": "00:46:10"
+                "time": "00:46:10",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "LEIVA Kenneth",
                 "team": "—",
-                "time": "00:49:18"
+                "time": "00:49:18",
+                "gap": "+00:03:08",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "MATA Jefrey Alexander",
                 "team": "GRUPETA 5AM",
-                "time": "00:49:57"
+                "time": "00:49:57",
+                "gap": "+00:03:47",
+                "points": 120
               }
             ]
           }
@@ -417,19 +526,25 @@
                 "pos": 1,
                 "name": "HERNÁNDEZ Maripaz",
                 "team": "SANTA ANA / HDZ TEAM",
-                "time": "00:15:09"
+                "time": "00:15:09",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "MORA Valentina",
                 "team": "CODEA",
-                "time": "00:15:11"
+                "time": "00:15:11",
+                "gap": "+00:00:02",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "MONTEALEGRE Maria Paula",
                 "team": "CCDR SANTA CRUZ",
-                "time": "00:15:50"
+                "time": "00:15:50",
+                "gap": "+00:00:41",
+                "points": 8
               }
             ]
           },
@@ -439,19 +554,25 @@
                 "pos": 1,
                 "name": "ARCE Mathew",
                 "team": "CDR CERVANTES",
-                "time": "00:16:06"
+                "time": "00:16:06",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "DURAN Emanuel Anual",
                 "team": "CCDRZ ZARCERO",
-                "time": "00:16:27"
+                "time": "00:16:27",
+                "gap": "+00:00:21",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "SANDI Derek Ivan",
                 "team": "CCDR ESCAZÚ",
-                "time": "00:16:31"
+                "time": "00:16:31",
+                "gap": "+00:00:25",
+                "points": 8
               }
             ],
             "F": [
@@ -459,19 +580,25 @@
                 "pos": 1,
                 "name": "CALDERÓN Ariana",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:14:31"
+                "time": "00:14:31",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "TORRES Camila Del Pilar",
                 "team": "CCDRESCAZU",
-                "time": "00:16:37"
+                "time": "00:16:37",
+                "gap": "+00:02:06",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "MARCHENA Shelly Yuliana",
                 "team": "CCDRESCAZU",
-                "time": "00:17:07"
+                "time": "00:17:07",
+                "gap": "+00:02:36",
+                "points": 8
               }
             ]
           },
@@ -481,19 +608,25 @@
                 "pos": 1,
                 "name": "CAMPOS Isaac Eduardo",
                 "team": "TEAM INNOVABIKES-SKOLER",
-                "time": "00:16:47"
+                "time": "00:16:47",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "GARCÍA Miguel",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:16:51"
+                "time": "00:16:51",
+                "gap": "+00:00:04",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "AGUILAR Luciano",
                 "team": "CCDR GUACIMO",
-                "time": "00:17:51"
+                "time": "00:17:51",
+                "gap": "+00:01:04",
+                "points": 8
               }
             ],
             "F": [
@@ -501,19 +634,25 @@
                 "pos": 1,
                 "name": "JIMENEZ Briana",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:14:48"
+                "time": "00:14:48",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "AZOFEIFA Sofia",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:14:58"
+                "time": "00:14:58",
+                "gap": "+00:00:10",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "CASTRO Camila",
                 "team": "CCDR SANTA ANA",
-                "time": "00:15:11"
+                "time": "00:15:11",
+                "gap": "+00:00:23",
+                "points": 8
               }
             ]
           },
@@ -523,19 +662,25 @@
                 "pos": 1,
                 "name": "CALDERON Edwin",
                 "team": "SCOTT SHIMANO CYCLING TEAM",
-                "time": "00:16:23"
+                "time": "00:16:23",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "MARTÍNEZ Andrés",
                 "team": "NOSOTROS DOTA",
-                "time": "00:16:25"
+                "time": "00:16:25",
+                "gap": "+00:00:02",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "MORALES Allan",
                 "team": "TEAM INNOVABIKES",
-                "time": "00:16:26"
+                "time": "00:16:26",
+                "gap": "+00:00:03",
+                "points": 8
               }
             ],
             "F": [
@@ -543,7 +688,9 @@
                 "pos": 1,
                 "name": "BADILLA Valeria",
                 "team": "FISIOSANA",
-                "time": "00:18:00"
+                "time": "00:18:00",
+                "gap": "-",
+                "points": 10
               }
             ]
           },
@@ -553,19 +700,25 @@
                 "pos": 1,
                 "name": "HERRERA Elber",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:16:21"
+                "time": "00:16:21",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "MORERA Oscar",
                 "team": "GRUPO 86- MAXXIS-GU ENERGY",
-                "time": "00:17:04"
+                "time": "00:17:04",
+                "gap": "+00:00:43",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "MOLINA Hairo",
                 "team": "CCDRESCAZU",
-                "time": "00:17:24"
+                "time": "00:17:24",
+                "gap": "+00:01:03",
+                "points": 8
               }
             ],
             "F": [
@@ -573,7 +726,9 @@
                 "pos": 1,
                 "name": "LORIA Dilcen",
                 "team": "FISIONORTE/ QUESADAJONATHAN.CYCLING",
-                "time": "00:18:41"
+                "time": "00:18:41",
+                "gap": "-",
+                "points": 10
               }
             ]
           },
@@ -583,19 +738,24 @@
                 "pos": 1,
                 "name": "SANDI Kendall",
                 "team": "POWERCYCLING STORE",
-                "time": "00:17:38"
+                "time": "00:17:38",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "SIBAJA Jean Carlo",
                 "team": "—",
-                "time": "00:17:49"
+                "time": "00:17:49",
+                "gap": "+00:00:11",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "RIVERA Jack Dany",
                 "team": "VEINTE24 CYCLING",
-                "time": "00:18:31"
+                "time": "00:18:31",
+                "gap": "+00:00:53"
               }
             ]
           },
@@ -605,19 +765,25 @@
                 "pos": 1,
                 "name": "AZOFEIFA Marcos",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:18:22"
+                "time": "00:18:22",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "CHACON Gonzalo",
                 "team": "TEAM GOCHA",
-                "time": "00:19:01"
+                "time": "00:19:01",
+                "gap": "+00:00:39",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "VILLALOBOS Steven",
                 "team": "CALLE NIÑO SANO",
-                "time": "00:19:54"
+                "time": "00:19:54",
+                "gap": "+00:01:32",
+                "points": 8
               }
             ]
           },
@@ -627,19 +793,25 @@
                 "pos": 1,
                 "name": "ARCE Alberth Antonio",
                 "team": "TOMATERO",
-                "time": "00:18:55"
+                "time": "00:18:55",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "HERRERA Jeffrey",
                 "team": "TEAM CORECO/MOMENTUM SPORTS",
-                "time": "00:18:57"
+                "time": "00:18:57",
+                "gap": "+00:00:02",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "CARVAJAL Jonathan",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:20:06"
+                "time": "00:20:06",
+                "gap": "+00:01:11",
+                "points": 8
               }
             ]
           },
@@ -649,19 +821,25 @@
                 "pos": 1,
                 "name": "MUÑOZ German",
                 "team": "TREK",
-                "time": "00:19:20"
+                "time": "00:19:20",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "RODRÍGUEZ Luis Angel",
                 "team": "FISIONORTE-QUESADAJONATHAN.CYCLING",
-                "time": "00:20:38"
+                "time": "00:20:38",
+                "gap": "+00:01:18",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "RUBI Luis",
                 "team": "DUROS COMO ROCA",
-                "time": "-2 LAP"
+                "time": "-2 LAP",
+                "gap": "",
+                "points": 8
               }
             ]
           },
@@ -671,19 +849,25 @@
                 "pos": 1,
                 "name": "NARANJO Didier",
                 "team": "CODEA",
-                "time": "00:20:35"
+                "time": "00:20:35",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "QUIRÓS Neythan Yariel",
                 "team": "TEAM INNOVABIKES-SKOLER",
-                "time": "00:20:38"
+                "time": "00:20:38",
+                "gap": "+00:00:03",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "ACUÑA Alejandro",
                 "team": "TEAM INNOVABIKES-SKOLER",
-                "time": "00:20:51"
+                "time": "00:20:51",
+                "gap": "+00:00:16",
+                "points": 8
               }
             ],
             "F": [
@@ -691,19 +875,25 @@
                 "pos": 1,
                 "name": "MADRIGAL Maidelyn De Los Angeles",
                 "team": "TEAM INNOVABIKES-SKOLER",
-                "time": "00:20:23"
+                "time": "00:20:23",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "BARQUERO Brenda",
                 "team": "BUENOS AIRES",
-                "time": "00:20:29"
+                "time": "00:20:29",
+                "gap": "+00:00:06",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "ZÁRATE Nazareth",
                 "team": "CICLISMO BELÉN",
-                "time": "-1 LAP"
+                "time": "-1 LAP",
+                "gap": "",
+                "points": 8
               }
             ]
           },
@@ -713,19 +903,25 @@
                 "pos": 1,
                 "name": "MENDEZ Jared",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:23:39"
+                "time": "00:23:39",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "HERRERA Carlos",
                 "team": "PEDREGAL 7C ECONOMY",
-                "time": "00:23:59"
+                "time": "00:23:59",
+                "gap": "+00:00:20",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "AGUILAR Jonathan",
                 "team": "MANZA TÉ LA SELVA SCOTT",
-                "time": "00:24:19"
+                "time": "00:24:19",
+                "gap": "+00:00:40",
+                "points": 16
               }
             ],
             "F": [
@@ -733,19 +929,25 @@
                 "pos": 1,
                 "name": "ROJAS Adriana",
                 "team": "CBZ- DEKRA",
-                "time": "00:17:46"
+                "time": "00:17:46",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "MENA Milagro",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:17:54"
+                "time": "00:17:54",
+                "gap": "+00:00:08",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "ESPINOZA Cristel",
                 "team": "ASFALTOS CBZ - DEKRA - SECNET",
-                "time": "00:18:38"
+                "time": "00:18:38",
+                "gap": "+00:00:52",
+                "points": 16
               }
             ]
           },
@@ -755,19 +957,22 @@
                 "pos": 1,
                 "name": "ROJAS Melvin",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:41:08"
+                "time": "00:41:08",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "HERRERA Jeffrey",
                 "team": "TEAM CORECO/MOMENTUM SPORTS",
-                "time": "00:42:05"
+                "time": "00:42:05",
+                "gap": "+00:00:57"
               },
               {
                 "pos": 3,
                 "name": "BOLAÑOS Jean Carlo",
                 "team": "TEAM BIKE CENTER COSTA RICA",
-                "time": "00:42:19"
+                "time": "00:42:19",
+                "gap": "+00:01:11"
               }
             ]
           }
@@ -790,19 +995,25 @@
                 "pos": 1,
                 "name": "MARTÍNEZ Andrés",
                 "team": "NOSOTROS DOTA",
-                "time": "00:42:42"
+                "time": "00:42:42",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "ARTAVIA Enrique",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:43:18"
+                "time": "00:43:18",
+                "gap": "+00:00:36",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "MORALES Allan",
                 "team": "TEAM INNOVABIKES SKOLER",
-                "time": "00:43:56"
+                "time": "00:43:56",
+                "gap": "+00:01:14",
+                "points": 120
               }
             ],
             "F": [
@@ -810,19 +1021,25 @@
                 "pos": 1,
                 "name": "GONZALEZ Alejandra",
                 "team": "CRC",
-                "time": "00:44:58"
+                "time": "00:44:58",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "HERNÁNDEZ Yuliana",
                 "team": "CRC",
-                "time": "00:48:16"
+                "time": "00:48:16",
+                "gap": "",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "ZÚÑIGA Laura",
                 "team": "CRC",
-                "time": "00:52:50"
+                "time": "00:52:50",
+                "gap": "",
+                "points": 120
               }
             ]
           },
@@ -832,19 +1049,25 @@
                 "pos": 1,
                 "name": "HERRERA Elber",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:43:15"
+                "time": "00:43:15",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "RAMÍREZ Federico",
                 "team": "SEVEN CARD",
-                "time": "00:43:23"
+                "time": "00:43:23",
+                "gap": "+00:00:08",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "MORERA Oscar",
                 "team": "TEAM GOCHA-MAXXIS-GU ENERGY",
-                "time": "00:43:47"
+                "time": "00:43:47",
+                "gap": "+00:00:32",
+                "points": 120
               }
             ],
             "F": [
@@ -852,19 +1075,25 @@
                 "pos": 1,
                 "name": "ALVARADO Lisbeth",
                 "team": "1015 CRC ROES CENTELA",
-                "time": "00:47:13"
+                "time": "00:47:13",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "LORÍA Dilcen",
                 "team": "FISIONORTE/QUESADAJONATHAN.CYCLING",
-                "time": "00:49:49"
+                "time": "00:49:49",
+                "gap": "",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "MORA Odexinia",
                 "team": "DESAMPARADOS BIKE CAFÉ",
-                "time": "01:00:46"
+                "time": "01:00:46",
+                "gap": "",
+                "points": 120
               }
             ]
           },
@@ -874,13 +1103,17 @@
                 "pos": 1,
                 "name": "TRETTI Caterina",
                 "team": "VEINTE24",
-                "time": "00:45:39"
+                "time": "00:45:39",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "SOLÍS Thania Daniela",
                 "team": "INDEPENDIENTE",
-                "time": "01:01:54"
+                "time": "01:01:54",
+                "gap": "+00:16:15",
+                "points": 150
               }
             ],
             "X": [
@@ -888,19 +1121,25 @@
                 "pos": 1,
                 "name": "SANDÍ Kendall",
                 "team": "TEAM POWERCYCLING",
-                "time": "00:47:52"
+                "time": "00:47:52",
+                "gap": "+00:00:00",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "MENESES Jose",
                 "team": "STYM X VIVELO",
-                "time": "00:48:58"
+                "time": "00:48:58",
+                "gap": "",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "MORENO Carlos",
                 "team": "CORREDOR INDIVIDUAL",
-                "time": "00:49:16"
+                "time": "00:49:16",
+                "gap": "+00:01:24",
+                "points": 120
               }
             ]
           },
@@ -910,19 +1149,25 @@
                 "pos": 1,
                 "name": "AZOFEIFA Marcos",
                 "team": "—",
-                "time": "00:44:07"
+                "time": "00:44:07",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "LOPEZ Jose",
                 "team": "TEAM GOCHA",
-                "time": "00:46:43"
+                "time": "00:46:43",
+                "gap": "+00:02:36",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "SANABRIA Carlos Alonso",
                 "team": "BIKE BROS CYCLING",
-                "time": "00:47:58"
+                "time": "00:47:58",
+                "gap": "+00:03:51",
+                "points": 120
               }
             ]
           },
@@ -932,19 +1177,25 @@
                 "pos": 1,
                 "name": "ARCE Alberth",
                 "team": "TOMATERO",
-                "time": "00:45:26"
+                "time": "00:45:26",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "MARIN Alonso",
                 "team": "TEAM GOCHA",
-                "time": "00:46:09"
+                "time": "00:46:09",
+                "gap": "+00:00:43",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "CARVAJAL Jonathan",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:47:51"
+                "time": "00:47:51",
+                "gap": "+00:02:25",
+                "points": 120
               }
             ]
           },
@@ -954,19 +1205,25 @@
                 "pos": 1,
                 "name": "ROJAS Melvin",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:46:22"
+                "time": "00:46:22",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "RODRÍGUEZ Luis Angel",
                 "team": "JONATHAN QUESADA TRAINING/ FISIO NORTE0",
-                "time": "0:50:54"
+                "time": "0:50:54",
+                "gap": "+00:04:32",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "SALAS Mauricio",
                 "team": "AUTOS SALAS",
-                "time": "00:51:27"
+                "time": "00:51:27",
+                "gap": "+00:05:05",
+                "points": 120
               }
             ]
           },
@@ -976,19 +1233,25 @@
                 "pos": 1,
                 "name": "RODRÍGUEZ Joaquín",
                 "team": "CCDR SAN JOSÉ",
-                "time": "00:39:25"
+                "time": "00:39:25",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "VALVERDE Liam",
                 "team": "CCDR TURRIALBA",
-                "time": "00:39:27"
+                "time": "00:39:27",
+                "gap": "+00:00:02",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "ARCE Mathew",
                 "team": "CDR CERVANTES",
-                "time": "00:39:27"
+                "time": "00:39:27",
+                "gap": "+00:00:02",
+                "points": 120
               }
             ],
             "F": [
@@ -996,19 +1259,25 @@
                 "pos": 1,
                 "name": "CALDERÓN Ariana",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:33:27"
+                "time": "00:33:27",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "MARCHENA Shelly",
                 "team": "CCDRESCAZU",
-                "time": "00:35:37"
+                "time": "00:35:37",
+                "gap": "",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "CRUZ Monica",
                 "team": "SCOTT SHIMANO CYCLING TEAM",
-                "time": "00:37:43"
+                "time": "00:37:43",
+                "gap": "",
+                "points": 120
               }
             ]
           },
@@ -1018,19 +1287,25 @@
                 "pos": 1,
                 "name": "JIMÉNEZ Mia",
                 "team": "CCDR SAN JOSÉ",
-                "time": "00:24:46"
+                "time": "00:24:46",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "HERNÁNDEZ Maripaz",
                 "team": "SANTA ANA / HDZ TEAM",
-                "time": "00:26:41"
+                "time": "00:26:41",
+                "gap": "+00:01:55",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "MONTEALEGRE María Paula",
                 "team": "CCDR-SANTA CRUZ",
-                "time": "00:28:58"
+                "time": "00:28:58",
+                "gap": "+00:04:12",
+                "points": 120
               }
             ]
           },
@@ -1040,19 +1315,25 @@
                 "pos": 1,
                 "name": "LOPEZ Luis Enrique",
                 "team": "MEGAMO MANZATÉ LA SELVA",
-                "time": "01:11:06"
+                "time": "01:11:06",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "RAMÍREZ Joseph",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "01:11:33"
+                "time": "01:11:33",
+                "gap": "+00:00:27",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "HERRERA Carlos",
                 "team": "PEDREGAL 7C",
-                "time": "01:12:55"
+                "time": "01:12:55",
+                "gap": "+00:01:49",
+                "points": 120
               }
             ],
             "F": [
@@ -1060,19 +1341,25 @@
                 "pos": 1,
                 "name": "ESPINOZA Cristel",
                 "team": "CBZ ASFALTOS - DEKRA - SECNET",
-                "time": "01:07:48"
+                "time": "01:07:48",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "GARCÍA Isabel",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "01:11:25"
+                "time": "01:11:25",
+                "gap": "+00:03:37",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "GARCÍA Marisol",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "01:13:26"
+                "time": "01:13:26",
+                "gap": "+00:05:38",
+                "points": 120
               }
             ]
           },
@@ -1082,19 +1369,25 @@
                 "pos": 1,
                 "name": "ACUÑA Alejandro",
                 "team": "TEAM INNOVABIKES SKOLER",
-                "time": "00:59:41"
+                "time": "00:59:41",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "NARANJO Didier",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "01:00:43"
+                "time": "01:00:43",
+                "gap": "+00:01:02",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "ULATE Joshua",
                 "team": "MECATRONICS / MCT COMPONENTS",
-                "time": "01:01:15"
+                "time": "01:01:15",
+                "gap": "+00:01:34",
+                "points": 120
               }
             ],
             "F": [
@@ -1102,19 +1395,25 @@
                 "pos": 1,
                 "name": "MADRIGAL Maidelyn De Los Angeles",
                 "team": "TEAM INNOVABIKES SKOLER",
-                "time": "00:54:53"
+                "time": "00:54:53",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "BARQUERO Brenda",
                 "team": "CCDR BUENOS AIRES",
-                "time": "00:55:53"
+                "time": "00:55:53",
+                "gap": "+00:01:00",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "RIVERA Leonor",
                 "team": "CCDR ESCAZÚ",
-                "time": "-2 LAP"
+                "time": "-2 LAP",
+                "gap": "",
+                "points": 120
               }
             ]
           },
@@ -1124,19 +1423,24 @@
                 "pos": 1,
                 "name": "GARCÍA Miguel",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:45:32"
+                "time": "00:45:32",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "CAMPOS Isaac Eduardo",
                 "team": "TEAM INNOVABIKES SKOLER",
-                "time": "00:45:33"
+                "time": "00:45:33",
+                "gap": "+00:00:01",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "SABALLOS Joshua",
                 "team": "CICLISMO BELÉN",
-                "time": "00:46:54"
+                "time": "00:46:54",
+                "gap": "+00:01:22"
               }
             ],
             "F": [
@@ -1144,19 +1448,25 @@
                 "pos": 1,
                 "name": "JIMENEZ Briana",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:45:27"
+                "time": "00:45:27",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "CASTRO Camila",
                 "team": "CCDR SANTA ANA",
-                "time": "00:45:59"
+                "time": "00:45:59",
+                "gap": "+00:00:32",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "AZOFEIFA Sofia",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:47:51"
+                "time": "00:47:51",
+                "gap": "+00:02:24",
+                "points": 120
               }
             ]
           },
@@ -1166,19 +1476,24 @@
                 "pos": 1,
                 "name": "GUZMAN Aaaron",
                 "team": "ACISA",
-                "time": "00:35:06"
+                "time": "00:35:06",
+                "gap": "+00:00:00"
               },
               {
                 "pos": 2,
                 "name": "TENORIO Carlos Alberto",
                 "team": "ACISA SARAPIQUI",
-                "time": "00:36:26"
+                "time": "00:36:26",
+                "gap": "+00:01:20",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "SALAS Mauricio",
                 "team": "AUTOS SALAS",
-                "time": "00:37:06"
+                "time": "00:37:06",
+                "gap": "+00:02:00",
+                "points": 120
               }
             ]
           },
@@ -1188,19 +1503,25 @@
                 "pos": 1,
                 "name": "ALFARO Dany",
                 "team": "SERVICIO AUTOMOTRIZ DANY",
-                "time": "00:34:05"
+                "time": "00:34:05",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "CISNEROS Cristofer",
                 "team": "TEAM CQ PZ",
-                "time": "00:42:41"
+                "time": "00:42:41",
+                "gap": "+00:08:36",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "VARGAS Omar",
                 "team": "ACM-EL COMI CASI ENDURERO",
-                "time": "-1 LAP"
+                "time": "-1 LAP",
+                "gap": "",
+                "points": 120
               }
             ]
           }
@@ -1217,19 +1538,25 @@
                 "pos": 1,
                 "name": "JIMÉNEZ Mia",
                 "team": "CCDR SAN JOSÉ",
-                "time": "00:15:45"
+                "time": "00:15:45",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "HERNÁNDEZ Maripaz",
                 "team": "SANTA ANA / HDZ TEAM",
-                "time": "00:16:09"
+                "time": "00:16:09",
+                "gap": "+00:00:24",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "MORA Valentina",
                 "team": "CODEA ALAJUELA",
-                "time": "00:16:28"
+                "time": "00:16:28",
+                "gap": "+00:00:43",
+                "points": 8
               }
             ]
           },
@@ -1239,19 +1566,25 @@
                 "pos": 1,
                 "name": "RODRÍGUEZ Joaquín",
                 "team": "CCDR SAN JOSÉ",
-                "time": "00:17:22"
+                "time": "00:17:22",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "ARCE Mathew",
                 "team": "CDR CERVANTES",
-                "time": "00:17:22"
+                "time": "00:17:22",
+                "gap": "+00:00:00",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "VALVERDE Liam",
                 "team": "CCDR TURRIALBA",
-                "time": "00:17:23"
+                "time": "00:17:23",
+                "gap": "+00:00:01",
+                "points": 8
               }
             ],
             "F": [
@@ -1259,19 +1592,25 @@
                 "pos": 1,
                 "name": "CALDERÓN Ariana",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:14:35"
+                "time": "00:14:35",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "TORRES Camila Del Pilar",
                 "team": "9879 CRC CCDRESCAZU",
-                "time": "00:15:20"
+                "time": "00:15:20",
+                "gap": "",
+                "points": 0
               },
               {
                 "pos": 3,
                 "name": "CORTES Mariam",
                 "team": "ACISA SARAPIQUI",
-                "time": "00:15:37"
+                "time": "00:15:37",
+                "gap": "",
+                "points": 0
               }
             ]
           },
@@ -1281,19 +1620,24 @@
                 "pos": 1,
                 "name": "CAMPOS Isaac Eduardo",
                 "team": "TEAM INNOVABIKES SKOLER",
-                "time": "00:16:44"
+                "time": "00:16:44",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "SABALLOS Joshua",
                 "team": "CICLISMO BELÉN",
-                "time": "00:17:04"
+                "time": "00:17:04",
+                "gap": "+00:00:20"
               },
               {
                 "pos": 3,
                 "name": "GARCÍA Miguel",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:17:08"
+                "time": "00:17:08",
+                "gap": "+00:00:24",
+                "points": 8
               }
             ],
             "F": [
@@ -1301,19 +1645,25 @@
                 "pos": 1,
                 "name": "JIMENEZ Briana",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:14:00"
+                "time": "00:14:00",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "AZOFEIFA Sofia",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:14:08"
+                "time": "00:14:08",
+                "gap": "+00:00:08",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "CASTRO Camila",
                 "team": "CCDR SANTA ANA",
-                "time": "00:14:11"
+                "time": "00:14:11",
+                "gap": "+00:00:11",
+                "points": 8
               }
             ]
           },
@@ -1323,19 +1673,25 @@
                 "pos": 1,
                 "name": "ARTAVIA Enrique",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:16:24"
+                "time": "00:16:24",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "MARTÍNEZ Andrés",
                 "team": "NOSOTROS DOTA",
-                "time": "00:16:47"
+                "time": "00:16:47",
+                "gap": "+00:00:23",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "ARIAS Kibeth",
                 "team": "VEINTE24",
-                "time": "00:17:12"
+                "time": "00:17:12",
+                "gap": "+00:00:48",
+                "points": 8
               }
             ],
             "F": [
@@ -1343,7 +1699,9 @@
                 "pos": 1,
                 "name": "GONZALEZ Alejandra",
                 "team": "UT",
-                "time": "00:24:14"
+                "time": "00:24:14",
+                "gap": "-",
+                "points": 10
               }
             ]
           },
@@ -1353,19 +1711,25 @@
                 "pos": 1,
                 "name": "HERRERA Elber",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:16:31"
+                "time": "00:16:31",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "MORERA Oscar",
                 "team": "TEAM GOCHA-MAXXIS-GU ENERGY",
-                "time": "00:16:33"
+                "time": "00:16:33",
+                "gap": "+00:00:02",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "SANABRIA Kenneth",
                 "team": "TREK BIKE STORE",
-                "time": "00:16:47"
+                "time": "00:16:47",
+                "gap": "+00:00:16",
+                "points": 8
               }
             ],
             "F": [
@@ -1373,13 +1737,17 @@
                 "pos": 1,
                 "name": "LORÍA Dilcen",
                 "team": "FISIONORTE/QUESADAJONATHAN.CYCLING",
-                "time": "00:24:48"
+                "time": "00:24:48",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "MORA Odexinia",
                 "team": "DESAMPARADOS BIKE CAFÉ",
-                "time": "-1 LAP"
+                "time": "-1 LAP",
+                "gap": "",
+                "points": 9
               }
             ]
           },
@@ -1389,19 +1757,25 @@
                 "pos": 1,
                 "name": "SANTANA Jesús",
                 "team": "ACISA CCDR SARAPIQUI",
-                "time": "00:17:54"
+                "time": "00:17:54",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "RIVERA Jackdanny",
                 "team": "VEINTE24 CYCLING",
-                "time": "00:17:57"
+                "time": "00:17:57",
+                "gap": "+00:00:03",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "MARIN Daniel",
                 "team": "BIKE BROS CYCLING",
-                "time": "00:18:03"
+                "time": "00:18:03",
+                "gap": "+00:00:09",
+                "points": 8
               }
             ]
           },
@@ -1411,19 +1785,25 @@
                 "pos": 1,
                 "name": "LOPEZ Jose",
                 "team": "TEAM GOCHA",
-                "time": "00:16:55"
+                "time": "00:16:55",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "VILLALTA Carlos",
                 "team": "TEAM GOCHA",
-                "time": "00:17:08"
+                "time": "00:17:08",
+                "gap": "+00:00:13",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "SANABRIA Carlos Alonso",
                 "team": "BIKE BROS CYCLING",
-                "time": "00:17:16"
+                "time": "00:17:16",
+                "gap": "+00:00:21",
+                "points": 8
               }
             ]
           },
@@ -1433,19 +1813,25 @@
                 "pos": 1,
                 "name": "CARVAJAL Jonathan",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:16:44"
+                "time": "00:16:44",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "ARCE Alberth",
                 "team": "TOMATERO",
-                "time": "00:16:44"
+                "time": "00:16:44",
+                "gap": "+00:00:00",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "HERRERA Jeffrey",
                 "team": "TEAM CORECO/MOMENTUM SPORTS",
-                "time": "00:16:46"
+                "time": "00:16:46",
+                "gap": "+00:00:02",
+                "points": 8
               }
             ]
           },
@@ -1455,19 +1841,25 @@
                 "pos": 1,
                 "name": "RODRÍGUEZ Luis Angel",
                 "team": "JONATHAN QUESADA TRAINING/ FISIO NORTE0",
-                "time": "0:17:47"
+                "time": "0:17:47",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "SALAS Mauricio",
                 "team": "AUTOS SALAS",
-                "time": "00:17:48"
+                "time": "00:17:48",
+                "gap": "+00:00:01",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "RUBI Luis",
                 "team": "DUROS COMO ROCA",
-                "time": "00:17:55"
+                "time": "00:17:55",
+                "gap": "+00:00:08",
+                "points": 8
               }
             ]
           },
@@ -1477,19 +1869,25 @@
                 "pos": 1,
                 "name": "NARANJO Didier",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:20:08"
+                "time": "00:20:08",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "QUIRÓS Neythan Yariel",
                 "team": "TEAM INNOVABIKES SKOLER",
-                "time": "00:20:16"
+                "time": "00:20:16",
+                "gap": "+00:00:08",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "ACUÑA Alejandro",
                 "team": "TEAM INNOVABIKES SKOLER",
-                "time": "00:20:16"
+                "time": "00:20:16",
+                "gap": "+00:00:08",
+                "points": 8
               }
             ],
             "F": [
@@ -1497,19 +1895,25 @@
                 "pos": 1,
                 "name": "MADRIGAL Maidelyn De Los Angeles",
                 "team": "TEAM INNOVABIKES SKOLER",
-                "time": "00:23:37"
+                "time": "00:23:37",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "BARQUERO Brenda",
                 "team": "CCDR BUENOS AIRES",
-                "time": "00:24:12"
+                "time": "00:24:12",
+                "gap": "+00:00:35",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "ZÁRATE Nazareth",
                 "team": "CICLISMO BELÉN",
-                "time": "00:25:12"
+                "time": "00:25:12",
+                "gap": "+00:01:35",
+                "points": 8
               }
             ]
           },
@@ -1519,19 +1923,25 @@
                 "pos": 1,
                 "name": "LOPEZ Luis Enrique",
                 "team": "MEGAMO MANZATÉ LA SELVA",
-                "time": "00:27:01"
+                "time": "00:27:01",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "HERRERA Carlos",
                 "team": "PEDREGAL 7C",
-                "time": "00:27:16"
+                "time": "00:27:16",
+                "gap": "+00:00:15",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "MENDEZ Jared",
                 "team": "10092456037",
-                "time": "00:27:29"
+                "time": "00:27:29",
+                "gap": "+00:00:28",
+                "points": 16
               }
             ],
             "F": [
@@ -1539,19 +1949,25 @@
                 "pos": 1,
                 "name": "GARCÍA Isabel",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:22:20"
+                "time": "00:22:20",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "GARCÍA Marisol",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:22:42"
+                "time": "00:22:42",
+                "gap": "+00:00:22",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "MARTINEZ Daniela",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:22:49"
+                "time": "00:22:49",
+                "gap": "+00:00:29",
+                "points": 16
               }
             ]
           },
@@ -1561,19 +1977,22 @@
                 "pos": 1,
                 "name": "ROJAS Melvin",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:38:35"
+                "time": "00:38:35",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "DOBLES Chisthpher",
                 "team": "CONGELADOS ADIS / PROTUBE /OKAPI DRINKS00 /: 3T8O:5D0O CR",
-                "time": "00:00:15"
+                "time": "00:00:15",
+                "gap": ""
               },
               {
                 "pos": 3,
                 "name": "MONGE Andres",
                 "team": "POWERCYCLING STORE",
-                "time": "00:39:45"
+                "time": "00:39:45",
+                "gap": "+00:01:10"
               }
             ]
           }
@@ -1597,19 +2016,25 @@
                 "pos": 1,
                 "name": "MARTÍNEZ Andrés",
                 "team": "NOSOTROS DOTA - PASION MX",
-                "time": "00:45:36"
+                "time": "00:45:36",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "MORALES Allan",
                 "team": "TEAM INNOVABIKES SKOLER UH",
-                "time": "00:47:22"
+                "time": "00:47:22",
+                "gap": "+00:01:46",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "ARTAVIA Enrique",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:47:52"
+                "time": "00:47:52",
+                "gap": "+00:02:16",
+                "points": 120
               }
             ],
             "F": [
@@ -1617,7 +2042,9 @@
                 "pos": 1,
                 "name": "GONZALEZ Alejandra",
                 "team": "CRC",
-                "time": "DNS"
+                "time": "DNS",
+                "gap": "-",
+                "points": 0
               }
             ]
           },
@@ -1627,19 +2054,25 @@
                 "pos": 1,
                 "name": "RAMÍREZ Federico",
                 "team": "SEVEN CARD WILLIER",
-                "time": "00:47:28"
+                "time": "00:47:28",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "HERRERA Elber",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:49:33"
+                "time": "00:49:33",
+                "gap": "+00:02:05",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "SANABRIA Kenneth",
                 "team": "TREK BIKE STORE",
-                "time": "00:50:04"
+                "time": "00:50:04",
+                "gap": "+00:02:36",
+                "points": 120
               }
             ],
             "F": [
@@ -1647,13 +2080,17 @@
                 "pos": 1,
                 "name": "ALVARADO Lisbeth",
                 "team": "ROES CENTELA",
-                "time": "00:50:40"
+                "time": "00:50:40",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "LORIA Dilcen",
                 "team": "FISIONORTE / QUESADACYCLING",
-                "time": "00:52:59"
+                "time": "00:52:59",
+                "gap": "",
+                "points": 150
               }
             ]
           },
@@ -1663,7 +2100,9 @@
                 "pos": 1,
                 "name": "TRETTI Caterina",
                 "team": "VEINTE24",
-                "time": "00:45:56"
+                "time": "00:45:56",
+                "gap": "-",
+                "points": 200
               }
             ],
             "X": [
@@ -1671,19 +2110,25 @@
                 "pos": 1,
                 "name": "MENESES Jose",
                 "team": "STYM",
-                "time": "00:51:45"
+                "time": "00:51:45",
+                "gap": "+00:00:00",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "ZAMORA Jose David",
                 "team": "VEINTE24",
-                "time": "00:52:18"
+                "time": "00:52:18",
+                "gap": "+00:00:33",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "SANDI Kendall",
                 "team": "POWERCYCLING",
-                "time": "00:52:55"
+                "time": "00:52:55",
+                "gap": "+00:01:10",
+                "points": 120
               }
             ]
           },
@@ -1693,19 +2138,25 @@
                 "pos": 1,
                 "name": "CHACÓN Gonzalo",
                 "team": "TEAM GOCHA",
-                "time": "00:48:01"
+                "time": "00:48:01",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "AZOFEIFA Marcos",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:50:28"
+                "time": "00:50:28",
+                "gap": "+00:02:27",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "MÉNDEZ Diego",
                 "team": "ULTIMATE TEAM",
-                "time": "00:52:29"
+                "time": "00:52:29",
+                "gap": "+00:04:28",
+                "points": 120
               }
             ]
           },
@@ -1715,19 +2166,25 @@
                 "pos": 1,
                 "name": "GONZALEZ Victor",
                 "team": "EPIC BIKE ATENAS",
-                "time": "00:52:42"
+                "time": "00:52:42",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "CARVAJAL Jonathan",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:52:47"
+                "time": "00:52:47",
+                "gap": "+00:00:05",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "GÓMEZ José Antonio",
                 "team": "BPT",
-                "time": "00:53:27"
+                "time": "00:53:27",
+                "gap": "+00:00:45",
+                "points": 120
               }
             ]
           },
@@ -1737,19 +2194,25 @@
                 "pos": 1,
                 "name": "ROJAS Melvin",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:53:46"
+                "time": "00:53:46",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "MUÑOZ Germán",
                 "team": "TREK",
-                "time": "00:54:38"
+                "time": "00:54:38",
+                "gap": "+00:00:52",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "RODRÍGUEZ Luis Angel",
                 "team": "JONATHAN QUESADA TRAINING/FISIO NORTE",
-                "time": "00:58:42"
+                "time": "00:58:42",
+                "gap": "+00:04:56",
+                "points": 120
               }
             ]
           },
@@ -1759,19 +2222,25 @@
                 "pos": 1,
                 "name": "RODRÍGUEZ Joaquín",
                 "team": "CCDR SAN JOSÉ",
-                "time": "00:34:59"
+                "time": "00:34:59",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "VALVERDE Liam",
                 "team": "CCDR TURRIALBA",
-                "time": "00:35:53"
+                "time": "00:35:53",
+                "gap": "+00:00:54",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "CORDERO Iker Mattias",
                 "team": "PZ CYCLING TEAM",
-                "time": "00:37:18"
+                "time": "00:37:18",
+                "gap": "+00:02:19",
+                "points": 120
               }
             ],
             "F": [
@@ -1779,19 +2248,25 @@
                 "pos": 1,
                 "name": "CALDERÓN Ariana",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:21:50"
+                "time": "00:21:50",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "TORRES Camila Del Pilar",
                 "team": "CCDRESCAZU",
-                "time": "00:24:37"
+                "time": "00:24:37",
+                "gap": "+00:02:47",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "CRUZ Monica",
                 "team": "SCOTT SHIMANO CYCLING TEAM",
-                "time": "00:25:26"
+                "time": "00:25:26",
+                "gap": "+00:03:36",
+                "points": 120
               }
             ]
           },
@@ -1801,19 +2276,25 @@
                 "pos": 1,
                 "name": "HERNÁNDEZ Maripaz",
                 "team": "SANTA ANA / HDZ TEAM",
-                "time": "00:26:55"
+                "time": "00:26:55",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "JIMÉNEZ Mia",
                 "team": "CCDR SAN JOSÉ",
-                "time": "00:28:23"
+                "time": "00:28:23",
+                "gap": "+00:01:28",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "MONTEALEGRE María Paula",
                 "team": "CCDR SANTA CRUZ",
-                "time": "00:33:41"
+                "time": "00:33:41",
+                "gap": "+00:06:46",
+                "points": 120
               }
             ]
           },
@@ -1823,19 +2304,25 @@
                 "pos": 1,
                 "name": "PAREDES Miguel",
                 "team": "ASTRANOVA BIKE HOUSE TREK",
-                "time": "00:45:44"
+                "time": "00:45:44",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "GARCÍA Miguel",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:49:42"
+                "time": "00:49:42",
+                "gap": "+00:03:58",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "ARIAS Daniel",
                 "team": "CICLISMO BELÉN",
-                "time": "00:50:29"
+                "time": "00:50:29",
+                "gap": "+00:04:45",
+                "points": 120
               }
             ],
             "F": [
@@ -1843,19 +2330,25 @@
                 "pos": 1,
                 "name": "JIMENEZ Briana",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:47:23"
+                "time": "00:47:23",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "CÉSPEDES Isabella Jazlene",
                 "team": "SKALA MONTEVERDE/CCDR MONTEVERDE",
-                "time": "00:55:02"
+                "time": "00:55:02",
+                "gap": "+00:07:39",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "SOLIS Nathalia",
                 "team": "CODEA ALAJUELA",
-                "time": "00:57:16"
+                "time": "00:57:16",
+                "gap": "+00:09:53",
+                "points": 120
               }
             ]
           },
@@ -1865,19 +2358,25 @@
                 "pos": 1,
                 "name": "MARQUES José Gabriel",
                 "team": "COD RACING",
-                "time": "01:28:15"
+                "time": "01:28:15",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "BOTERO Jhonnatan",
                 "team": "GW ERCO SPORTFITNESS",
-                "time": "01:31:10"
+                "time": "01:31:10",
+                "gap": "+00:02:55",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "BEDOYA Jeronimo",
                 "team": "GW ERCO SPORTFITNESS",
-                "time": "01:32:53"
+                "time": "01:32:53",
+                "gap": "+00:04:38",
+                "points": 120
               }
             ],
             "F": [
@@ -1885,19 +2384,25 @@
                 "pos": 1,
                 "name": "SALVINI Giuliana",
                 "team": "GEN2RISE",
-                "time": "01:32:48"
+                "time": "01:32:48",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "RODRÍGUEZ Suheily",
                 "team": "SINTESIS DEVELOPMENT TEAM",
-                "time": "01:35:03"
+                "time": "01:35:03",
+                "gap": "+00:02:15",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "ROJAS Adriana",
                 "team": "CBZ ASFALTOS- DEKRA- MAXXIS",
-                "time": "01:38:32"
+                "time": "01:38:32",
+                "gap": "+00:05:44",
+                "points": 120
               }
             ]
           },
@@ -1907,19 +2412,25 @@
                 "pos": 1,
                 "name": "TAILLEFER Tristan",
                 "team": "PIVOT OTE CONTINENTAL",
-                "time": "01:20:30"
+                "time": "01:20:30",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "SAN MARTIN Maximiliano",
                 "team": "ER CICLISMO CHILE.",
-                "time": "01:22:03"
+                "time": "01:22:03",
+                "gap": "+00:01:33",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "RAABE Fabricio",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "01:23:04"
+                "time": "01:23:04",
+                "gap": "+00:02:34",
+                "points": 120
               }
             ],
             "F": [
@@ -1927,19 +2438,24 @@
                 "pos": 1,
                 "name": "GARCÍA Isabel",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "01:24:12"
+                "time": "01:24:12",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "WESTER Isabela Katerina",
                 "team": "DONOVAN RACING",
-                "time": "01:39:02"
+                "time": "01:39:02",
+                "gap": "+00:14:50"
               },
               {
                 "pos": 3,
                 "name": "NUÑEZ Alison",
                 "team": "DESAMPARADOS BIKE CAFÉ FAST&UP",
-                "time": "-2 LAP"
+                "time": "-2 LAP",
+                "gap": "",
+                "points": 120
               }
             ]
           },
@@ -1949,19 +2465,25 @@
                 "pos": 1,
                 "name": "QUINTERO Santiago",
                 "team": "GW ERCO SPORTFITNESS",
-                "time": "00:57:29"
+                "time": "00:57:29",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "ACUÑA Alejandro",
                 "team": "TEAM INNOVABIKES SKOLER UH",
-                "time": "01:00:28"
+                "time": "01:00:28",
+                "gap": "+00:02:59",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "DE JESÚS Yandel",
                 "team": "SPORTSCIENCE RACING & DEVELOPMENT TEAM",
-                "time": "01:03:08"
+                "time": "01:03:08",
+                "gap": "+00:05:39",
+                "points": 120
               }
             ],
             "F": [
@@ -1969,19 +2491,25 @@
                 "pos": 1,
                 "name": "GAVIRIA Daniela",
                 "team": "GW ERCO SPORTFITNESS",
-                "time": "00:53:35"
+                "time": "00:53:35",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "MADRIGAL Maidelyn",
                 "team": "TEAM INNOVABIKES SKOLER UH",
-                "time": "01:05:15"
+                "time": "01:05:15",
+                "gap": "+00:11:40",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "LEDGARD Alice",
                 "team": "GIANT PERÚ SIN FRONTERAS",
-                "time": "01:07:12"
+                "time": "01:07:12",
+                "gap": "+00:13:37",
+                "points": 120
               }
             ]
           }
@@ -1998,19 +2526,25 @@
                 "pos": 1,
                 "name": "MARQUES José Gabriel",
                 "team": "COD RACING",
-                "time": "00:22:01"
+                "time": "00:22:01",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "AGUILAR Ivan",
                 "team": "REGULUS 333",
-                "time": "00:22:03"
+                "time": "00:22:03",
+                "gap": "+00:00:02",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "BEDOYA Jeronimo",
                 "team": "GW ERCO SPORTFITNESS",
-                "time": "00:22:19"
+                "time": "00:22:19",
+                "gap": "+00:00:18",
+                "points": 16
               }
             ],
             "F": [
@@ -2018,19 +2552,25 @@
                 "pos": 1,
                 "name": "RODRÍGUEZ Suheily",
                 "team": "SINTESIS DEVELOPMENT TEAM",
-                "time": "00:22:32"
+                "time": "00:22:32",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "ROJAS Adriana",
                 "team": "CBZ ASFALTOS- DEKRA- MAXXIS",
-                "time": "00:23:29"
+                "time": "00:23:29",
+                "gap": "+00:00:57",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "RODRIGUEZ Erika",
                 "team": "MASSI",
-                "time": "00:23:58"
+                "time": "00:23:58",
+                "gap": "+00:01:26",
+                "points": 16
               }
             ]
           }
@@ -2053,19 +2593,25 @@
                 "pos": 1,
                 "name": "MARTÍNEZ Andrés",
                 "team": "NOSOTROS DOTA",
-                "time": "00:50:59"
+                "time": "00:50:59",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "MORALES Allan",
                 "team": "TEAM INNOVABIKES SKOLER UH",
-                "time": "00:51:44"
+                "time": "00:51:44",
+                "gap": "+00:00:45",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "ARTAVIA Enrique",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:52:40"
+                "time": "00:52:40",
+                "gap": "+00:01:41",
+                "points": 120
               }
             ],
             "F": [
@@ -2073,13 +2619,17 @@
                 "pos": 1,
                 "name": "GONZALEZ Alejandra",
                 "team": "UT- CLETA BOUTIQUE",
-                "time": "00:47:31"
+                "time": "00:47:31",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "BADILLA Valeria",
                 "team": "VEINTE24",
-                "time": "01:00:52"
+                "time": "01:00:52",
+                "gap": "",
+                "points": 150
               }
             ]
           },
@@ -2089,19 +2639,25 @@
                 "pos": 1,
                 "name": "RAMÍREZ Federico",
                 "team": "SEVEN CARD WILLIER",
-                "time": "00:53:26"
+                "time": "00:53:26",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "DURAN Allan",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:54:54"
+                "time": "00:54:54",
+                "gap": "+00:01:28",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "RODRÍGUEZ Julián",
                 "team": "BELÉN TEAM",
-                "time": "00:57:17"
+                "time": "00:57:17",
+                "gap": "+00:03:51",
+                "points": 120
               }
             ],
             "F": [
@@ -2109,7 +2665,9 @@
                 "pos": 1,
                 "name": "LORIA Dilcen",
                 "team": "FISIONORTE / QUESADAJONATHAN.CYCLING",
-                "time": "00:57:57"
+                "time": "00:57:57",
+                "gap": "-",
+                "points": 200
               }
             ]
           },
@@ -2119,13 +2677,17 @@
                 "pos": 1,
                 "name": "TRETTI Caterina",
                 "team": "VEINTE24",
-                "time": "00:47:54"
+                "time": "00:47:54",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "SOLÍS Thania Daniela",
                 "team": "VEINTE24",
-                "time": "-1 LAP"
+                "time": "-1 LAP",
+                "gap": "",
+                "points": 150
               }
             ],
             "X": [
@@ -2133,19 +2695,25 @@
                 "pos": 1,
                 "name": "MENESES Jose",
                 "team": "STICKTOYOURMINDSET - STYM",
-                "time": "00:55:23"
+                "time": "00:55:23",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "ZAMORA José David",
                 "team": "VEINTE24",
-                "time": "00:56:27"
+                "time": "00:56:27",
+                "gap": "+00:01:04",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "SANDÍ Kendall",
                 "team": "TEAM POWERCYCLING",
-                "time": "00:59:38"
+                "time": "00:59:38",
+                "gap": "+00:04:15",
+                "points": 120
               }
             ]
           },
@@ -2155,19 +2723,25 @@
                 "pos": 1,
                 "name": "CHACON Gonzalo",
                 "team": "TEAM GOCHA",
-                "time": "00:51:55"
+                "time": "00:51:55",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "AZOFEIFA Marcos",
                 "team": "BOBBYS CYCLNG TEAM",
-                "time": "00:52:04"
+                "time": "00:52:04",
+                "gap": "+00:00:09",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "MÉNDEZ Diego",
                 "team": "ULTIMATE",
-                "time": "01:00:01"
+                "time": "01:00:01",
+                "gap": "+00:08:06",
+                "points": 120
               }
             ]
           },
@@ -2177,19 +2751,25 @@
                 "pos": 1,
                 "name": "MARÍN Alonso",
                 "team": "TEAM GOCHA",
-                "time": "00:55:57"
+                "time": "00:55:57",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "GONZALEZ Victor",
                 "team": "EPIC BIKE ATENAS",
-                "time": "00:59:01"
+                "time": "00:59:01",
+                "gap": "+00:03:04",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "VEGA Oldemar",
                 "team": "VEGAS TEAM POAS",
-                "time": "01:00:56"
+                "time": "01:00:56",
+                "gap": "+00:04:59",
+                "points": 120
               }
             ]
           },
@@ -2199,19 +2779,25 @@
                 "pos": 1,
                 "name": "CAMPOS Marvin",
                 "team": "BELEN TEAM",
-                "time": "01:03:56"
+                "time": "01:03:56",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "RODRÍGUEZ Luis Angel",
                 "team": "JQUESADA CYCLING/FISIO NORTE",
-                "time": "01:05:40"
+                "time": "01:05:40",
+                "gap": "+00:01:44",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "RUBI Luis",
                 "team": "DUROS COMO ROCA",
-                "time": "01:19:00"
+                "time": "01:19:00",
+                "gap": "+00:15:04",
+                "points": 120
               }
             ]
           },
@@ -2221,19 +2807,25 @@
                 "pos": 1,
                 "name": "DURÁN Emanuel",
                 "team": "13221 CRC BETEL/MOANA/PIZZA EDUS/PRODUCTOS CECI.",
-                "time": "00:40:24"
+                "time": "00:40:24",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "SANDI Derek Ivan",
                 "team": "CCDR ESCAZÚ",
-                "time": "00:41:43"
+                "time": "00:41:43",
+                "gap": "+00:01:19",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "MARÍN Isaac José",
                 "team": "ACISA SARAPIQUI",
-                "time": "00:42:35"
+                "time": "00:42:35",
+                "gap": "+00:02:11",
+                "points": 120
               }
             ],
             "F": [
@@ -2241,19 +2833,25 @@
                 "pos": 1,
                 "name": "CALDERÓN Ariana",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:22:47"
+                "time": "00:22:47",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "MARCHENA Shelly",
                 "team": "CCDRESCAZU",
-                "time": "00:25:29"
+                "time": "00:25:29",
+                "gap": "+00:02:42",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "CRUZ Monica",
                 "team": "SCOTT SHIMANO CYCLING TEAM",
-                "time": "00:26:02"
+                "time": "00:26:02",
+                "gap": "+00:03:15",
+                "points": 120
               }
             ]
           },
@@ -2263,19 +2861,25 @@
                 "pos": 1,
                 "name": "HERNÁNDEZ Maripaz",
                 "team": "HDZTEAM/ SANTA ANA",
-                "time": "00:31:10"
+                "time": "00:31:10",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "JIMÉNEZ Mia",
                 "team": "CCDR SAN JOSÉ",
-                "time": "00:31:51"
+                "time": "00:31:51",
+                "gap": "+00:00:41",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "MONTEALEGRE María Paula",
                 "team": "CCDR-SANTA CRUZ/TEAM COSTAFRUT",
-                "time": "00:38:27"
+                "time": "00:38:27",
+                "gap": "+00:07:17",
+                "points": 120
               }
             ]
           },
@@ -2285,19 +2889,25 @@
                 "pos": 1,
                 "name": "HERRERA Carlos",
                 "team": "PEDREGAL 7C",
-                "time": "01:17:47"
+                "time": "01:17:47",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "LOPEZ Luis Enrique",
                 "team": "MEGAMO MANZATE LA SELVA",
-                "time": "01:22:07"
+                "time": "01:22:07",
+                "gap": "+00:04:20",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "SOLÍS Keiron",
                 "team": "PEDREGAL - 7C",
-                "time": "01:24:03"
+                "time": "01:24:03",
+                "gap": "+00:06:16",
+                "points": 120
               }
             ],
             "F": [
@@ -2305,19 +2915,25 @@
                 "pos": 1,
                 "name": "ROJAS Adriana",
                 "team": "AZFALTOS BCZ- DEKRA- MAXXIS",
-                "time": "01:22:47"
+                "time": "01:22:47",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "GARCÍA Marisol",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "01:25:20"
+                "time": "01:25:20",
+                "gap": "+00:02:33",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "GARCÍA Isabel",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "01:27:33"
+                "time": "01:27:33",
+                "gap": "+00:04:46",
+                "points": 120
               }
             ]
           },
@@ -2327,19 +2943,25 @@
                 "pos": 1,
                 "name": "ARIAS Daniel",
                 "team": "CICLISMO BELEN",
-                "time": "00:56:25"
+                "time": "00:56:25",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "SABALLO Joshua",
                 "team": "CRC",
-                "time": "00:57:52"
+                "time": "00:57:52",
+                "gap": "+00:01:27",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "GARCÍA Miguel",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:59:00"
+                "time": "00:59:00",
+                "gap": "+00:02:35",
+                "points": 120
               }
             ],
             "F": [
@@ -2347,19 +2969,25 @@
                 "pos": 1,
                 "name": "JIMENEZ Briana",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:50:09"
+                "time": "00:50:09",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "AZOFEIFA Sofia",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:54:46"
+                "time": "00:54:46",
+                "gap": "+00:04:37",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "CÉSPEDES Isabella Jazlene",
                 "team": "SKALA/CCDR MONTEVERDE",
-                "time": "00:58:30"
+                "time": "00:58:30",
+                "gap": "+00:08:21",
+                "points": 120
               }
             ]
           },
@@ -2369,19 +2997,25 @@
                 "pos": 1,
                 "name": "ACUÑA Alejandro",
                 "team": "TEAM INNOVABIKES SKOLER UH",
-                "time": "01:06:51"
+                "time": "01:06:51",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "ULATE Joshua",
                 "team": "MECATRONICS / MCT COMPONENTS",
-                "time": "01:09:28"
+                "time": "01:09:28",
+                "gap": "+00:02:37",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "MANZANARES Leandro",
                 "team": "CODEA ALAJUELA",
-                "time": "01:12:28"
+                "time": "01:12:28",
+                "gap": "+00:05:37",
+                "points": 120
               }
             ],
             "F": [
@@ -2389,13 +3023,17 @@
                 "pos": 1,
                 "name": "MADRIGAL Maidelyn",
                 "team": "TEAM INNOVABIKES SKOLER UH",
-                "time": "01:12:27"
+                "time": "01:12:27",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "BARQUERO Brenda",
                 "team": "CCDR BUENOS AIRES",
-                "time": "01:23:01"
+                "time": "01:23:01",
+                "gap": "+00:10:34",
+                "points": 150
               }
             ]
           },
@@ -2405,19 +3043,25 @@
                 "pos": 1,
                 "name": "GUZMAN Aaron",
                 "team": "ACISA",
-                "time": "00:49:11"
+                "time": "00:49:11",
+                "gap": "+00:00:00",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "GUZMAN Alex",
                 "team": "ACISA",
-                "time": "00:56:29"
+                "time": "00:56:29",
+                "gap": "+00:07:18",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "TENORIO Carlos",
                 "team": "ACISA SARAPIQUI",
-                "time": "00:57:12"
+                "time": "00:57:12",
+                "gap": "+00:08:01",
+                "points": 120
               }
             ]
           },
@@ -2427,13 +3071,17 @@
                 "pos": 1,
                 "name": "ALFARO Dany",
                 "team": "SERVICIO AUTOMOTRIZ NEO CICLYNG",
-                "time": "00:50:30"
+                "time": "00:50:30",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "JIMÉNEZ Roylan",
                 "team": "SKALA-TRI-CYC TALLER ROY",
-                "time": "01:15:00"
+                "time": "01:15:00",
+                "gap": "+00:24:30",
+                "points": 150
               }
             ]
           }
@@ -2450,19 +3098,25 @@
                 "pos": 1,
                 "name": "JIMÉNEZ Mia",
                 "team": "CCDR SAN JOSÉ",
-                "time": "00:14:36"
+                "time": "00:14:36",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "MONTEALEGRE María Paula",
                 "team": "CCDR-SANTA CRUZ/TEAM COSTAFRUT",
-                "time": "00:15:07"
+                "time": "00:15:07",
+                "gap": "+00:00:31",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "HERNÁNDEZ Maripaz",
                 "team": "HDZTEAM/ SANTA ANA",
-                "time": "00:15:59"
+                "time": "00:15:59",
+                "gap": "+00:01:23",
+                "points": 8
               }
             ]
           },
@@ -2472,19 +3126,25 @@
                 "pos": 1,
                 "name": "VALVERDE Liam",
                 "team": "CCDR TURRIALBA",
-                "time": "00:16:20"
+                "time": "00:16:20",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "SANDI Derek Ivan",
                 "team": "CCDR ESCAZÚ",
-                "time": "00:16:52"
+                "time": "00:16:52",
+                "gap": "+00:00:32",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "CORDERO Iker Mattias",
                 "team": "PZ CYCLING TEAM",
-                "time": "00:16:56"
+                "time": "00:16:56",
+                "gap": "+00:00:36",
+                "points": 8
               }
             ],
             "F": [
@@ -2492,19 +3152,25 @@
                 "pos": 1,
                 "name": "CALDERÓN Ariana",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:16:00"
+                "time": "00:16:00",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "MARCHENA Shelly",
                 "team": "CCDRESCAZU",
-                "time": "00:16:47"
+                "time": "00:16:47",
+                "gap": "+00:00:47",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "CRUZ Monica",
                 "team": "SCOTT SHIMANO CYCLING TEAM",
-                "time": "00:17:43"
+                "time": "00:17:43",
+                "gap": "+00:01:43",
+                "points": 8
               }
             ]
           },
@@ -2514,19 +3180,25 @@
                 "pos": 1,
                 "name": "GARCÍA Miguel",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:18:36"
+                "time": "00:18:36",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "CAMPOS Isaac Eduardo",
                 "team": "TEAM COLONO BIKESTATION KOLBI",
-                "time": "00:18:53"
+                "time": "00:18:53",
+                "gap": "+00:00:17",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "SABALLO Joshua",
                 "team": "CRC",
-                "time": "00:19:04"
+                "time": "00:19:04",
+                "gap": "+00:00:28",
+                "points": 8
               }
             ],
             "F": [
@@ -2534,19 +3206,25 @@
                 "pos": 1,
                 "name": "JIMENEZ Briana",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:15:26"
+                "time": "00:15:26",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "LIZANO Nicole Daniela",
                 "team": "PZ CYCLING TEAM",
-                "time": "00:17:17"
+                "time": "00:17:17",
+                "gap": "+00:01:51",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "AZOFEIFA Sofia",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:18:04"
+                "time": "00:18:04",
+                "gap": "+00:02:38",
+                "points": 8
               }
             ]
           },
@@ -2556,13 +3234,17 @@
                 "pos": 1,
                 "name": "MARTÍNEZ Andrés",
                 "team": "NOSOTROS DOTA",
-                "time": "00:17:13"
+                "time": "00:17:13",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "ARTAVIA Enrique",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:17:56"
+                "time": "00:17:56",
+                "gap": "+00:00:43",
+                "points": 9
               }
             ]
           },
@@ -2572,19 +3254,25 @@
                 "pos": 1,
                 "name": "MOLINA Hairo",
                 "team": "CCDRESCAZU",
-                "time": "00:18:42"
+                "time": "00:18:42",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "RODRÍGUEZ Julián",
                 "team": "BELÉN TEAM",
-                "time": "00:19:09"
+                "time": "00:19:09",
+                "gap": "+00:00:27",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "BARRANTES Richard",
                 "team": "VEINTE24 CYCLING",
-                "time": "00:20:56"
+                "time": "00:20:56",
+                "gap": "+00:02:14",
+                "points": 8
               }
             ],
             "F": [
@@ -2592,7 +3280,9 @@
                 "pos": 1,
                 "name": "LORIA Dilcen",
                 "team": "FISIONORTE / QUESADAJONATHAN.CYCLING",
-                "time": "00:23:37"
+                "time": "00:23:37",
+                "gap": "-",
+                "points": 10
               }
             ]
           },
@@ -2602,19 +3292,25 @@
                 "pos": 1,
                 "name": "AZOFEIFA Marcos",
                 "team": "BOBBYS CYCLNG TEAM",
-                "time": "00:17:41"
+                "time": "00:17:41",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "MÉNDEZ Diego",
                 "team": "ULTIMATE",
-                "time": "00:20:34"
+                "time": "00:20:34",
+                "gap": "+00:02:53",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "EL SEMAANI Jean Paul",
                 "team": "HATOVIEJO - MOMIA TS",
-                "time": "00:20:51"
+                "time": "00:20:51",
+                "gap": "+00:03:10",
+                "points": 8
               }
             ]
           },
@@ -2624,19 +3320,25 @@
                 "pos": 1,
                 "name": "CARVAJAL Jonathan",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:19:43"
+                "time": "00:19:43",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "VEGA Oldemar",
                 "team": "VEGAS TEAM POAS",
-                "time": "00:19:58"
+                "time": "00:19:58",
+                "gap": "+00:00:15",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "GONZALEZ Victor",
                 "team": "EPIC BIKE ATENAS",
-                "time": "00:20:39"
+                "time": "00:20:39",
+                "gap": "+00:00:56",
+                "points": 8
               }
             ]
           },
@@ -2646,19 +3348,25 @@
                 "pos": 1,
                 "name": "RODRÍGUEZ Luis Angel",
                 "team": "JQUESADA CYCLING/FISIO NORTE",
-                "time": "00:22:54"
+                "time": "00:22:54",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "RUBI Luis",
                 "team": "DUROS COMO ROCA",
-                "time": "-1 LAP"
+                "time": "-1 LAP",
+                "gap": "",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "MONGE Freizer",
                 "team": "HOTEL WHYNDAN GARDEN -MENSAJERIA M-A B-2IC LICALPETA JAVA",
-                "time": ""
+                "time": "",
+                "gap": "",
+                "points": 8
               }
             ]
           },
@@ -2668,7 +3376,9 @@
                 "pos": 1,
                 "name": "SOLÍS Thania Daniela",
                 "team": "VEINTE24",
-                "time": "DNF"
+                "time": "DNF",
+                "gap": "-",
+                "points": 10
               }
             ],
             "X": [
@@ -2676,19 +3386,25 @@
                 "pos": 1,
                 "name": "MENESES Jose",
                 "team": "STICKTOYOURMINDSET - STYM",
-                "time": "00:19:53"
+                "time": "00:19:53",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "SANDÍ Kendall",
                 "team": "TEAM POWERCYCLING",
-                "time": "00:20:40"
+                "time": "00:20:40",
+                "gap": "+00:00:47",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "RIVERA Jackdanny",
                 "team": "VEINTE24",
-                "time": "00:21:56"
+                "time": "00:21:56",
+                "gap": "+00:02:03",
+                "points": 8
               }
             ]
           },
@@ -2698,19 +3414,25 @@
                 "pos": 1,
                 "name": "ACUÑA Alejandro",
                 "team": "TEAM INNOVABIKES SKOLER UH",
-                "time": "00:20:00"
+                "time": "00:20:00",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "ULATE Joshua",
                 "team": "MECATRONICS / MCT COMPONENTS",
-                "time": "00:20:20"
+                "time": "00:20:20",
+                "gap": "+00:00:20",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "QUIRÓS Neythan",
                 "team": "TEAM INNOVABIKES SKOLER UH",
-                "time": "00:20:43"
+                "time": "00:20:43",
+                "gap": "+00:00:43",
+                "points": 8
               }
             ],
             "F": [
@@ -2718,19 +3440,25 @@
                 "pos": 1,
                 "name": "MADRIGAL Maidelyn",
                 "team": "TEAM INNOVABIKES SKOLER UH",
-                "time": "00:20:59"
+                "time": "00:20:59",
+                "gap": "-",
+                "points": 10
               },
               {
                 "pos": 2,
                 "name": "BARQUERO Brenda",
                 "team": "CCDR BUENOS AIRES",
-                "time": "00:24:20"
+                "time": "00:24:20",
+                "gap": "+00:03:21",
+                "points": 9
               },
               {
                 "pos": 3,
                 "name": "RIVERA Leonor Fernanda",
                 "team": "CCDR ESCAZÚ",
-                "time": "-3 LAP"
+                "time": "-3 LAP",
+                "gap": "",
+                "points": 8
               }
             ]
           },
@@ -2740,19 +3468,25 @@
                 "pos": 1,
                 "name": "LOPEZ Luis Enrique",
                 "team": "MEGAMO MANZATE LA SELVA",
-                "time": "00:26:52"
+                "time": "00:26:52",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "HERRERA Carlos",
                 "team": "PEDREGAL 7C",
-                "time": "00:27:20"
+                "time": "00:27:20",
+                "gap": "+00:00:28",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "SOLÍS Keiron",
                 "team": "PEDREGAL - 7C",
-                "time": "00:28:14"
+                "time": "00:28:14",
+                "gap": "+00:01:22",
+                "points": 16
               }
             ],
             "F": [
@@ -2760,19 +3494,25 @@
                 "pos": 1,
                 "name": "ROJAS Adriana",
                 "team": "AZFALTOS BCZ- DEKRA- MAXXIS",
-                "time": "00:19:47"
+                "time": "00:19:47",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "GARCÍA Marisol",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:20:37"
+                "time": "00:20:37",
+                "gap": "+00:00:50",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "GARCÍA Isabel",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:21:08"
+                "time": "00:21:08",
+                "gap": "+00:01:21",
+                "points": 16
               }
             ]
           }
@@ -2795,19 +3535,25 @@
                 "pos": 1,
                 "name": "ARTAVIA Enrique",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:45:38"
+                "time": "00:45:38",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "MORALES Allan",
                 "team": "TEAM INNOVABIKES SKOLER UH",
-                "time": "00:45:41"
+                "time": "00:45:41",
+                "gap": "+00:00:03",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "MARTINEZ Andres",
                 "team": "NOSOTROS DOTA",
-                "time": "00:47:13"
+                "time": "00:47:13",
+                "gap": "+00:01:35",
+                "points": 120
               }
             ],
             "F": [
@@ -2815,19 +3561,25 @@
                 "pos": 1,
                 "name": "GONZALEZ Alejandra",
                 "team": "CLETA BOUTIQUE",
-                "time": "00:41:36"
+                "time": "00:41:36",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "GUERRERO Arlette",
                 "team": "MMR SPORTIVSTORE",
-                "time": "00:42:40"
+                "time": "00:42:40",
+                "gap": "+00:01:04",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "HERNÁNDEZ Yuliana",
                 "team": "SAPPHIRE TABA CYCLING TEAM",
-                "time": "00:44:02"
+                "time": "00:44:02",
+                "gap": "+00:02:26",
+                "points": 120
               }
             ]
           },
@@ -2837,19 +3589,25 @@
                 "pos": 1,
                 "name": "RAMÍREZ Federico",
                 "team": "SEVEN CARD WILLIER",
-                "time": "00:46:29"
+                "time": "00:46:29",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "MORERA Oscar",
                 "team": "TEAM GOCHA-MAXXIS-GRUPO 86",
-                "time": "00:46:47"
+                "time": "00:46:47",
+                "gap": "+00:00:18",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "HERRERA Elber",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:47:42"
+                "time": "00:47:42",
+                "gap": "+00:01:13",
+                "points": 120
               }
             ],
             "F": [
@@ -2857,13 +3615,17 @@
                 "pos": 1,
                 "name": "LORIA Dilcen",
                 "team": "FISIONORTE/ JONATHANQUESADA.CYCLING",
-                "time": "00:45:31"
+                "time": "00:45:31",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "DURÁN Anny",
                 "team": "INDEPENDIENTE",
-                "time": "00:49:17"
+                "time": "00:49:17",
+                "gap": "+00:03:46",
+                "points": 150
               }
             ]
           },
@@ -2873,7 +3635,9 @@
                 "pos": 1,
                 "name": "TRETTI Caterina",
                 "team": "VEINTE24",
-                "time": "00:41:23"
+                "time": "00:41:23",
+                "gap": "-",
+                "points": 200
               }
             ],
             "X": [
@@ -2881,19 +3645,25 @@
                 "pos": 1,
                 "name": "ZAMORA José David",
                 "team": "VEINTE24",
-                "time": "00:49:18"
+                "time": "00:49:18",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "SANDI Kendall",
                 "team": "TEAM POWERCYCLING",
-                "time": "00:50:08"
+                "time": "00:50:08",
+                "gap": "+00:00:50",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "MENESES Jose",
                 "team": "STYM",
-                "time": "00:53:03"
+                "time": "00:53:03",
+                "gap": "+00:03:45",
+                "points": 120
               }
             ]
           },
@@ -2903,19 +3673,25 @@
                 "pos": 1,
                 "name": "CHACON Gonzalo",
                 "team": "TEAM GOCHA",
-                "time": "00:48:48"
+                "time": "00:48:48",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "MENDEZ Diego",
                 "team": "ULTIMATE",
-                "time": "00:49:53"
+                "time": "00:49:53",
+                "gap": "+00:01:05",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "CAMPOS Sergio",
                 "team": "SPOT DETAIL FACTORY TEAM",
-                "time": "00:50:33"
+                "time": "00:50:33",
+                "gap": "+00:01:45",
+                "points": 120
               }
             ]
           },
@@ -2925,19 +3701,25 @@
                 "pos": 1,
                 "name": "MENDOZA Marcos Vinicio",
                 "team": "PROFE REMO TRAINING CLUB",
-                "time": "00:47:04"
+                "time": "00:47:04",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "ARCE Alberth",
                 "team": "TOMATERO",
-                "time": "00:48:37"
+                "time": "00:48:37",
+                "gap": "+00:01:33",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "MARIN Alonso",
                 "team": "TEAM GOCHA",
-                "time": "00:49:12"
+                "time": "00:49:12",
+                "gap": "+00:02:08",
+                "points": 120
               }
             ]
           },
@@ -2947,19 +3729,25 @@
                 "pos": 1,
                 "name": "ROJAS Melvin",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:51:06"
+                "time": "00:51:06",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "MUÑOZ German",
                 "team": "TREK",
-                "time": "00:51:58"
+                "time": "00:51:58",
+                "gap": "+00:00:52",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "SALAS Mauricio",
                 "team": "AUTOS SALAS",
-                "time": "00:54:40"
+                "time": "00:54:40",
+                "gap": "+00:03:34",
+                "points": 120
               }
             ]
           },
@@ -2969,19 +3757,25 @@
                 "pos": 1,
                 "name": "RODRÍGUEZ Joaquín",
                 "team": "CCDR SAN JOSE",
-                "time": "00:33:05"
+                "time": "00:33:05",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "VALVERDE Liam",
                 "team": "ASOCIACIÓN CICLÍSTICA TURRIALBEÑA",
-                "time": "00:34:14"
+                "time": "00:34:14",
+                "gap": "+00:01:09",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "DURAN Emanuel",
                 "team": "ZARCERO BETEL MOANA EDUS PROD CECI",
-                "time": "00:34:34"
+                "time": "00:34:34",
+                "gap": "+00:01:29",
+                "points": 120
               }
             ],
             "F": [
@@ -2989,19 +3783,25 @@
                 "pos": 1,
                 "name": "CALDERÓN Ariana",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:19:39"
+                "time": "00:19:39",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "TORRES Camila",
                 "team": "CCDRESCAZU",
-                "time": "00:20:30"
+                "time": "00:20:30",
+                "gap": "+00:00:51",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "CRUZ Monica",
                 "team": "SCOTT SHIMANO CYCLING TEAM",
-                "time": "00:21:10"
+                "time": "00:21:10",
+                "gap": "+00:01:31",
+                "points": 120
               }
             ]
           },
@@ -3011,19 +3811,25 @@
                 "pos": 1,
                 "name": "MARÍN Abigail",
                 "team": "CCDRSJ",
-                "time": "00:22:24"
+                "time": "00:22:24",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "JIMÉNEZ Mia",
                 "team": "CCDR SAN JOSÉ",
-                "time": "00:24:01"
+                "time": "00:24:01",
+                "gap": "+00:01:37",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "MORA Valentina",
                 "team": "CODEA/ E-VEGA TRAINER",
-                "time": "00:24:42"
+                "time": "00:24:42",
+                "gap": "+00:02:18",
+                "points": 120
               }
             ]
           },
@@ -3033,19 +3839,25 @@
                 "pos": 1,
                 "name": "SOLÍS Keiron",
                 "team": "PEDREGAL -7C",
-                "time": "01:24:23"
+                "time": "01:24:23",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "HERRERA Carlos",
                 "team": "PEDREGAL 7C",
-                "time": "01:24:32"
+                "time": "01:24:32",
+                "gap": "+00:00:09",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "MONTOYA Paolo",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "01:25:39"
+                "time": "01:25:39",
+                "gap": "+00:01:16",
+                "points": 120
               }
             ],
             "F": [
@@ -3053,19 +3865,25 @@
                 "pos": 1,
                 "name": "ESPINOZA Cristel",
                 "team": "ASFALTOS CBZ / DEKRA / MAXXIS",
-                "time": "01:08:31"
+                "time": "01:08:31",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "ROJAS Adriana",
                 "team": "ASFALTOS CBZ- DEKRA- MAXXIS",
-                "time": "01:09:24"
+                "time": "01:09:24",
+                "gap": "+00:00:53",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "GARCÍA Isabel",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "01:13:39"
+                "time": "01:13:39",
+                "gap": "+00:05:08",
+                "points": 120
               }
             ]
           },
@@ -3075,19 +3893,25 @@
                 "pos": 1,
                 "name": "ACUÑA Alejandro",
                 "team": "TEAM INNOVABIKES SKOLER UH",
-                "time": "01:00:54"
+                "time": "01:00:54",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "ULATE Joshua",
                 "team": "MECATRONICS/ MCT COMPONENTS",
-                "time": "01:00:54"
+                "time": "01:00:54",
+                "gap": "+00:00:00",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "QUIRÓS Neythan",
                 "team": "TEAM INNOVABIKES SKOLER UH",
-                "time": "01:03:01"
+                "time": "01:03:01",
+                "gap": "+00:02:07",
+                "points": 120
               }
             ],
             "F": [
@@ -3095,19 +3919,25 @@
                 "pos": 1,
                 "name": "MADRIGAL Maidelyn",
                 "team": "TEAM INNOVABIKES SKOLER UH",
-                "time": "01:00:05"
+                "time": "01:00:05",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "BARQUERO Brenda",
                 "team": "CCDR BUENOS AIRES",
-                "time": "01:02:54"
+                "time": "01:02:54",
+                "gap": "+00:02:49",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "ALVARADO Jimena",
                 "team": "CCDR LIMÓN",
-                "time": "01:07:23"
+                "time": "01:07:23",
+                "gap": "+00:07:18",
+                "points": 120
               }
             ]
           },
@@ -3117,19 +3947,25 @@
                 "pos": 1,
                 "name": "ARIAS Daniel",
                 "team": "CICLISMO BELÉN",
-                "time": "00:47:21"
+                "time": "00:47:21",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "AGUILAR Luciano",
                 "team": "CODEA ALAJUELA",
-                "time": "00:47:55"
+                "time": "00:47:55",
+                "gap": "+00:00:34",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "NUÑEZ Lorenzo",
                 "team": "TEAM- TIERNITICOS- ELKY FERRETERÍA- BIOR0A0C:4E8R:54",
-                "time": "00:01:33"
+                "time": "00:01:33",
+                "gap": "",
+                "points": 120
               }
             ],
             "F": [
@@ -3137,19 +3973,25 @@
                 "pos": 1,
                 "name": "CASTRO Camila",
                 "team": "CCDR SANTA ANA",
-                "time": "00:38:51"
+                "time": "00:38:51",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "JIMENEZ Briana",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:40:01"
+                "time": "00:40:01",
+                "gap": "+00:01:10",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "AZOFEIFA Sofia",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:40:35"
+                "time": "00:40:35",
+                "gap": "+00:01:44",
+                "points": 120
               }
             ]
           },
@@ -3159,19 +4001,25 @@
                 "pos": 1,
                 "name": "GUZMAN Aaron",
                 "team": "ACISA",
-                "time": "00:45:45"
+                "time": "00:45:45",
+                "gap": "+00:00:00",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "TENORIO Carlos",
                 "team": "ASISA SARAPIQUI",
-                "time": "00:50:18"
+                "time": "00:50:18",
+                "gap": "+00:04:33",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "GUZMÁN Alex",
                 "team": "ACISA",
-                "time": "00:53:13"
+                "time": "00:53:13",
+                "gap": "+00:07:28",
+                "points": 120
               }
             ]
           },
@@ -3181,19 +4029,25 @@
                 "pos": 1,
                 "name": "ALFARO Dany",
                 "team": "LD SERVICIO AUTOMOTRIZ NEO CICLYNG",
-                "time": "00:40:06"
+                "time": "00:40:06",
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "VARGAS Omar",
                 "team": "ANCM EL COMI CASI ENDURERO",
-                "time": "00:53:03"
+                "time": "00:53:03",
+                "gap": "+00:12:57",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "JIMÉNEZ Royland",
                 "team": "LD CRC SKALA-TRI-CYC/ CICLO FOFO /TALLER ROY",
-                "time": "00:58:24"
+                "time": "00:58:24",
+                "gap": "+00:18:18",
+                "points": 120
               }
             ]
           }
@@ -3210,19 +4064,25 @@
                 "pos": 1,
                 "name": "MORALES Allan",
                 "team": "TEAM INNOVABIKES SKOLER UH",
-                "time": "00:18:59"
+                "time": "00:18:59",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "ARTAVIA Enrique",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:19:36"
+                "time": "00:19:36",
+                "gap": "+00:00:37",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "MARTINEZ Andres",
                 "team": "NOSOTROS DOTA",
-                "time": "00:20:00"
+                "time": "00:20:00",
+                "gap": "+00:01:01",
+                "points": 16
               }
             ],
             "F": [
@@ -3230,19 +4090,25 @@
                 "pos": 1,
                 "name": "GONZALEZ Alejandra",
                 "team": "CLETA BOUTIQUE",
-                "time": "00:22:08"
+                "time": "00:22:08",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "HERNÁNDEZ Yuliana",
                 "team": "SAPPHIRE TABA CYCLING TEAM",
-                "time": "00:23:04"
+                "time": "00:23:04",
+                "gap": "+00:00:56",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "BADILLA Valeria",
                 "team": "FISIOSANA - VEINTE24",
-                "time": "00:24:50"
+                "time": "00:24:50",
+                "gap": "+00:02:42",
+                "points": 16
               }
             ]
           },
@@ -3252,19 +4118,25 @@
                 "pos": 1,
                 "name": "RAMÍREZ Federico",
                 "team": "SEVEN CARD WILLIER",
-                "time": "00:19:44"
+                "time": "00:19:44",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "DURAN Allan",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:20:05"
+                "time": "00:20:05",
+                "gap": "+00:00:21",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "HERRERA Elber",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:20:12"
+                "time": "00:20:12",
+                "gap": "+00:00:28",
+                "points": 16
               }
             ],
             "F": [
@@ -3272,13 +4144,17 @@
                 "pos": 1,
                 "name": "LORIA Dilcen",
                 "team": "FISIONORTE/ JONATHANQUESADA.CYCLING",
-                "time": "00:23:31"
+                "time": "00:23:31",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "DURÁN Anny",
                 "team": "INDEPENDIENTE",
-                "time": "00:27:51"
+                "time": "00:27:51",
+                "gap": "+00:04:20",
+                "points": 20
               }
             ]
           },
@@ -3288,7 +4164,9 @@
                 "pos": 1,
                 "name": "TRETTI Caterina",
                 "team": "VEINTE24",
-                "time": "DNS"
+                "time": "DNS",
+                "gap": "-",
+                "points": 0
               }
             ],
             "X": [
@@ -3296,19 +4174,25 @@
                 "pos": 1,
                 "name": "ZAMORA José David",
                 "team": "VEINTE24",
-                "time": "00:20:45"
+                "time": "00:20:45",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "MENESES Jose",
                 "team": "STYM",
-                "time": "00:20:59"
+                "time": "00:20:59",
+                "gap": "+00:00:14",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "SANDI Kendall",
                 "team": "TEAM POWERCYCLING",
-                "time": "00:21:00"
+                "time": "00:21:00",
+                "gap": "+00:00:15",
+                "points": 16
               }
             ]
           },
@@ -3318,19 +4202,25 @@
                 "pos": 1,
                 "name": "CHACON Gonzalo",
                 "team": "TEAM GOCHA",
-                "time": "00:17:54"
+                "time": "00:17:54",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "MENDEZ Diego",
                 "team": "ULTIMATE",
-                "time": "00:18:12"
+                "time": "00:18:12",
+                "gap": "+00:00:18",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "CAMPOS Sergio",
                 "team": "SPOT DETAIL FACTORY TEAM",
-                "time": "00:18:14"
+                "time": "00:18:14",
+                "gap": "+00:00:20",
+                "points": 16
               }
             ]
           },
@@ -3340,19 +4230,25 @@
                 "pos": 1,
                 "name": "MENDOZA Marcos Vinicio",
                 "team": "PROFE REMO TRAINING CLUB",
-                "time": "00:17:10"
+                "time": "00:17:10",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "HERRERA Jeffrey",
                 "team": "TEAM CORECO/MOMENTUM SPORTS",
-                "time": "00:17:39"
+                "time": "00:17:39",
+                "gap": "+00:00:29",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "ARCE Alberth",
                 "team": "TOMATERO",
-                "time": "00:17:40"
+                "time": "00:17:40",
+                "gap": "+00:00:30",
+                "points": 16
               }
             ]
           },
@@ -3362,19 +4258,25 @@
                 "pos": 1,
                 "name": "MUÑOZ German",
                 "team": "TREK",
-                "time": "00:18:06"
+                "time": "00:18:06",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "ROJAS Melvin",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:18:13"
+                "time": "00:18:13",
+                "gap": "+00:00:07",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "RODRÍGUEZ Luis Angel",
                 "team": "JONATHAN.CYCLING/FISIO NORTE",
-                "time": "00:19:18"
+                "time": "00:19:18",
+                "gap": "+00:01:12",
+                "points": 16
               }
             ]
           },
@@ -3384,19 +4286,25 @@
                 "pos": 1,
                 "name": "MARÍN Abigail",
                 "team": "CCDRSJ",
-                "time": "00:16:29"
+                "time": "00:16:29",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "HERNÁNDEZ Maripaz",
                 "team": "SANTA ANA / HDZ TEAM",
-                "time": "00:16:57"
+                "time": "00:16:57",
+                "gap": "+00:00:28",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "MORA Valentina",
                 "team": "CODEA/ E-VEGA TRAINER",
-                "time": "00:17:31"
+                "time": "00:17:31",
+                "gap": "+00:01:02",
+                "points": 16
               }
             ]
           },
@@ -3406,19 +4314,25 @@
                 "pos": 1,
                 "name": "RODRÍGUEZ Joaquín",
                 "team": "CCDR SAN JOSE",
-                "time": "00:15:09"
+                "time": "00:15:09",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "VALVERDE Liam",
                 "team": "ASOCIACIÓN CICLÍSTICA TURRIALBEÑA",
-                "time": "00:15:39"
+                "time": "00:15:39",
+                "gap": "+00:00:30",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "MARÍN Isaac José",
                 "team": "ACISA SARAPIQUI",
-                "time": "00:15:39"
+                "time": "00:15:39",
+                "gap": "+00:00:30",
+                "points": 16
               }
             ],
             "F": [
@@ -3426,19 +4340,25 @@
                 "pos": 1,
                 "name": "CALDERÓN Ariana",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:17:44"
+                "time": "00:17:44",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "CRUZ Monica",
                 "team": "SCOTT SHIMANO CYCLING TEAM",
-                "time": "00:20:10"
+                "time": "00:20:10",
+                "gap": "+00:02:26",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "TORRES Camila",
                 "team": "CCDRESCAZU",
-                "time": "00:20:20"
+                "time": "00:20:20",
+                "gap": "+00:02:36",
+                "points": 16
               }
             ]
           },
@@ -3448,19 +4368,25 @@
                 "pos": 1,
                 "name": "GARCÍA Miguel",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:16:47"
+                "time": "00:16:47",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "ARIAS Daniel",
                 "team": "CICLISMO BELÉN",
-                "time": "00:17:25"
+                "time": "00:17:25",
+                "gap": "+00:00:38",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "NUÑEZ Lorenzo",
                 "team": "TEAM- TIERNITICOS- ELKY FERRETERÍA- BIOR0A0C:1E7R:49",
-                "time": "00:01:02"
+                "time": "00:01:02",
+                "gap": "",
+                "points": 16
               }
             ],
             "F": [
@@ -3468,19 +4394,25 @@
                 "pos": 1,
                 "name": "JIMENEZ Briana",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:17:58"
+                "time": "00:17:58",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "AZOFEIFA Sofia",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:18:03"
+                "time": "00:18:03",
+                "gap": "+00:00:05",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "CASTRO Camila",
                 "team": "CCDR SANTA ANA",
-                "time": "00:18:41"
+                "time": "00:18:41",
+                "gap": "+00:00:43",
+                "points": 16
               }
             ]
           },
@@ -3490,19 +4422,25 @@
                 "pos": 1,
                 "name": "NARANJO Didier",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:19:12"
+                "time": "00:19:12",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "ACUÑA Alejandro",
                 "team": "TEAM INNOVABIKES SKOLER UH",
-                "time": "00:19:37"
+                "time": "00:19:37",
+                "gap": "+00:00:25",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "QUIRÓS Neythan",
                 "team": "TEAM INNOVABIKES SKOLER UH",
-                "time": "00:19:52"
+                "time": "00:19:52",
+                "gap": "+00:00:40",
+                "points": 16
               }
             ],
             "F": [
@@ -3510,19 +4448,25 @@
                 "pos": 1,
                 "name": "MADRIGAL Maidelyn",
                 "team": "TEAM INNOVABIKES SKOLER UH",
-                "time": "00:25:13"
+                "time": "00:25:13",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "BARQUERO Brenda",
                 "team": "CCDR BUENOS AIRES",
-                "time": "00:27:18"
+                "time": "00:27:18",
+                "gap": "+00:02:05",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "ALVARADO Jimena",
                 "team": "CCDR LIMÓN",
-                "time": "-1 LAP"
+                "time": "-1 LAP",
+                "gap": "",
+                "points": 16
               }
             ]
           },
@@ -3532,19 +4476,25 @@
                 "pos": 1,
                 "name": "SOLÍS Keiron",
                 "team": "PEDREGAL -7C",
-                "time": "00:25:15"
+                "time": "00:25:15",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "HERRERA Carlos",
                 "team": "PEDREGAL 7C",
-                "time": "00:25:39"
+                "time": "00:25:39",
+                "gap": "+00:00:24",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "MENDEZ Jared",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:26:13"
+                "time": "00:26:13",
+                "gap": "+00:00:58",
+                "points": 16
               }
             ],
             "F": [
@@ -3552,19 +4502,25 @@
                 "pos": 1,
                 "name": "ESPINOZA Cristel",
                 "team": "ASFALTOS CBZ / DEKRA / MAXXIS",
-                "time": "00:21:33"
+                "time": "00:21:33",
+                "gap": "-",
+                "points": 25
               },
               {
                 "pos": 2,
                 "name": "ROJAS Adriana",
                 "team": "ASFALTOS CBZ- DEKRA- MAXXIS",
-                "time": "00:22:52"
+                "time": "00:22:52",
+                "gap": "+00:01:19",
+                "points": 20
               },
               {
                 "pos": 3,
                 "name": "GARCÍA Isabel",
                 "team": "COLONO BIKE STATION KOLBI",
-                "time": "00:24:00"
+                "time": "00:24:00",
+                "gap": "+00:02:27",
+                "points": 16
               }
             ]
           }
@@ -3587,19 +4543,22 @@
                 "pos": 1,
                 "name": "ARTAVIA ENRIQUE",
                 "team": "BOBBYS/FOX/YETTI",
-                "time": "00:40:57"
+                "time": "00:40:57",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "MARTÍNEZ Andrés",
                 "team": "Nosotros Dota",
-                "time": "00:41:37"
+                "time": "00:41:37",
+                "gap": "+00:00:40"
               },
               {
                 "pos": 3,
                 "name": "MORALES Allan",
                 "team": "Grupeta 5am Ciclo Morales",
-                "time": "00:42:54"
+                "time": "00:42:54",
+                "gap": "+00:01:57"
               }
             ]
           },
@@ -3609,19 +4568,22 @@
                 "pos": 1,
                 "name": "RAMÍREZ Federico",
                 "team": "Seven Card Willier",
-                "time": "00:40:53"
+                "time": "00:40:53",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "MOLINA Hairo",
                 "team": "CCDR ESCAZU",
-                "time": "00:42:16"
+                "time": "00:42:16",
+                "gap": "+00:01:23"
               },
               {
                 "pos": 3,
                 "name": "HERRERA ELBER",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:43:10"
+                "time": "00:43:10",
+                "gap": "+00:02:17"
               }
             ],
             "F": [
@@ -3629,7 +4591,8 @@
                 "pos": 1,
                 "name": "LORIA Dilcen",
                 "team": "FISIONORTE/ JONATHANQUESADA.CYCLING",
-                "time": "00:49:04"
+                "time": "00:49:04",
+                "gap": "-"
               }
             ]
           },
@@ -3639,19 +4602,22 @@
                 "pos": 1,
                 "name": "MENESES Jose",
                 "team": "STYM",
-                "time": "00:44:33"
+                "time": "00:44:33",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "URBINA Kevin Team Belsco",
                 "team": "—",
-                "time": "00:46:17"
+                "time": "00:46:17",
+                "gap": "+00:01:44"
               },
               {
                 "pos": 3,
                 "name": "SOTO Juan jose",
                 "team": "Acisa Sarapiquí",
-                "time": "00:47:32"
+                "time": "00:47:32",
+                "gap": "+00:02:59"
               }
             ]
           },
@@ -3661,19 +4627,22 @@
                 "pos": 1,
                 "name": "AZPFEIFA MARCOS",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:44:27"
+                "time": "00:44:27",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "MENDEZ Diego",
                 "team": "UT",
-                "time": "00:51:38"
+                "time": "00:51:38",
+                "gap": "+00:07:11"
               },
               {
                 "pos": 3,
                 "name": "LIZANO Federico",
                 "team": "TEAM LIZANO HERRA",
-                "time": "00:51:58"
+                "time": "00:51:58",
+                "gap": "+00:07:31"
               }
             ]
           },
@@ -3683,19 +4652,22 @@
                 "pos": 1,
                 "name": "ARCE Alberth",
                 "team": "Tomatero",
-                "time": "00:44:29"
+                "time": "00:44:29",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "MARÍN Alonso",
                 "team": "Team Gocha",
-                "time": "00:45:34"
+                "time": "00:45:34",
+                "gap": "+00:01:05"
               },
               {
                 "pos": 3,
                 "name": "HERRERA Jeffrey",
                 "team": "Team CoreCo/Momentum Sports",
-                "time": "00:46:37"
+                "time": "00:46:37",
+                "gap": "+00:02:08"
               }
             ]
           },
@@ -3705,19 +4677,22 @@
                 "pos": 1,
                 "name": "ROJAS MELVIN",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:49:20"
+                "time": "00:49:20",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "RUBI Luis",
                 "team": "Duros Como Roca",
-                "time": "00:51:26"
+                "time": "00:51:26",
+                "gap": "+00:02:06"
               },
               {
                 "pos": 3,
                 "name": "SALAS Mauricio",
                 "team": "Autos Salas",
-                "time": "00:52:24"
+                "time": "00:52:24",
+                "gap": "+00:03:04"
               }
             ]
           },
@@ -3727,19 +4702,22 @@
                 "pos": 1,
                 "name": "RODRÍGUEZ Joaquín",
                 "team": "CCDR SAN JOSÉ",
-                "time": "00:31:33"
+                "time": "00:31:33",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "CORDERO Iker Mattias",
                 "team": "PZ CYCLING TEAM",
-                "time": "00:33:44"
+                "time": "00:33:44",
+                "gap": "+00:02:11"
               },
               {
                 "pos": 3,
                 "name": "VALVERDE Liam",
                 "team": "Asociación Ciclística Turrialbeña",
-                "time": "00:34:00"
+                "time": "00:34:00",
+                "gap": "+00:02:27"
               }
             ],
             "F": [
@@ -3747,19 +4725,22 @@
                 "pos": 1,
                 "name": "CALDERÓN Ariana",
                 "team": "Colono Bike Station Kolbi",
-                "time": "00:19:17"
+                "time": "00:19:17",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "CORTES Mariam",
                 "team": "ACISA SARAPIQUI",
-                "time": "00:21:40"
+                "time": "00:21:40",
+                "gap": "+00:02:23"
               },
               {
                 "pos": 3,
                 "name": "MUÑOZ Amy",
                 "team": "ACISA SARAPIQUI",
-                "time": "00:22:37"
+                "time": "00:22:37",
+                "gap": "+00:03:20"
               }
             ]
           },
@@ -3769,19 +4750,22 @@
                 "pos": 1,
                 "name": "JIMÉNEZ Mia",
                 "team": "CCDR SAN JOSÉ",
-                "time": "00:23:41"
+                "time": "00:23:41",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "HERNÁNDEZ Maripaz",
                 "team": "HDZ / Santa Ana",
-                "time": "00:25:22"
+                "time": "00:25:22",
+                "gap": "+00:01:41"
               },
               {
                 "pos": 3,
                 "name": "MARÍN Abigail",
                 "team": "CCDR San José",
-                "time": "00:25:22"
+                "time": "00:25:22",
+                "gap": "+00:01:41"
               }
             ]
           },
@@ -3791,19 +4775,22 @@
                 "pos": 1,
                 "name": "HERRERA Carlos",
                 "team": "Pedregal 7C",
-                "time": "01:32:52"
+                "time": "01:32:52",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "VARGAS José David",
                 "team": "Colono Bike Station Kolbi",
-                "time": "01:41:12"
+                "time": "01:41:12",
+                "gap": "+00:08:20"
               },
               {
                 "pos": 3,
                 "name": "GONZÁLEZ Adriano",
                 "team": "Colono Bike Station Kolbi",
-                "time": "01:42:48"
+                "time": "01:42:48",
+                "gap": "+00:09:56"
               }
             ],
             "F": [
@@ -3811,19 +4798,22 @@
                 "pos": 1,
                 "name": "ROJAS Adriana Maria",
                 "team": "CBZ Asfaltos-Dekra-secnet- maxxis",
-                "time": "01:20:10"
+                "time": "01:20:10",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "GARCÍA Isabel",
                 "team": "Colono Bike Station Kolbi",
-                "time": "01:33:31"
+                "time": "01:33:31",
+                "gap": "+00:13:21"
               },
               {
                 "pos": 3,
                 "name": "RAHILY DENISE",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "-1 LAP"
+                "time": "-1 LAP",
+                "gap": ""
               }
             ]
           },
@@ -3833,19 +4823,22 @@
                 "pos": 1,
                 "name": "ARIAS Daniel",
                 "team": "Ciclismo Belen",
-                "time": "00:44:32"
+                "time": "00:44:32",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "CAMPOS Isaac",
                 "team": "Colono Bike Station Kolbi",
-                "time": "00:45:20"
+                "time": "00:45:20",
+                "gap": "+00:00:48"
               },
               {
                 "pos": 3,
                 "name": "GARCÍA Miguel",
                 "team": "Colono Bike Station Kolbi",
-                "time": "00:46:41"
+                "time": "00:46:41",
+                "gap": "+00:02:09"
               }
             ],
             "F": [
@@ -3853,19 +4846,22 @@
                 "pos": 1,
                 "name": "JIMÉNEZ Briana",
                 "team": "Bobbys cycling team codea",
-                "time": "00:38:31"
+                "time": "00:38:31",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "CASTRO Camila",
                 "team": "CCDR Santa Ana",
-                "time": "00:38:38"
+                "time": "00:38:38",
+                "gap": "+00:00:07"
               },
               {
                 "pos": 3,
                 "name": "LIZANO Nicole Daniela",
                 "team": "Megamo ManzaTé La Selva",
-                "time": "00:41:35"
+                "time": "00:41:35",
+                "gap": "+00:03:04"
               }
             ]
           },
@@ -3875,19 +4871,22 @@
                 "pos": 1,
                 "name": "AGUILAR Valentino",
                 "team": "CCDR PARAÍSO",
-                "time": "00:52:09"
+                "time": "00:52:09",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "MANZANARES Leandro Du1v0a1n19593506",
                 "team": "CODEA ALAJUELA",
-                "time": "00:54:56"
+                "time": "00:54:56",
+                "gap": "+00:02:47"
               },
               {
                 "pos": 3,
                 "name": "ULATE Joshua",
                 "team": "MECATRONICS / MCT Components",
-                "time": "00:55:35"
+                "time": "00:55:35",
+                "gap": "+00:03:26"
               }
             ],
             "F": [
@@ -3895,19 +4894,22 @@
                 "pos": 1,
                 "name": "MADRIGAL Maidelyn",
                 "team": "ACISA",
-                "time": "00:55:04"
+                "time": "00:55:04",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "ALVARADO Jimena",
                 "team": "CCDR Limon",
-                "time": "01:07:28"
+                "time": "01:07:28",
+                "gap": "+00:12:24"
               },
               {
                 "pos": 3,
                 "name": "MAYORGA Lucía",
                 "team": "Codea alajuela",
-                "time": "01:16:32"
+                "time": "01:16:32",
+                "gap": "+00:21:28"
               }
             ]
           },
@@ -3917,19 +4919,22 @@
                 "pos": 1,
                 "name": "GUZMAN Aaron",
                 "team": "Acisa",
-                "time": "00:39:59"
+                "time": "00:39:59",
+                "gap": "+00:00:00"
               },
               {
                 "pos": 2,
                 "name": "AGUILAR Randy",
                 "team": "Bikestation Riders",
-                "time": "00:41:14"
+                "time": "00:41:14",
+                "gap": "+00:01:15"
               },
               {
                 "pos": 3,
                 "name": "GUZMAN Alex",
                 "team": "Acisa",
-                "time": "00:41:25"
+                "time": "00:41:25",
+                "gap": "+00:01:26"
               }
             ]
           },
@@ -3939,19 +4944,22 @@
                 "pos": 1,
                 "name": "ALFARO Dany",
                 "team": "Servicio automotriz Dany NEO CICLYNG",
-                "time": "00:37:31"
+                "time": "00:37:31",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "JIMÉNEZ Roylan",
                 "team": "Skala-tri-Cyc Ciclo Fofo Taller Roy",
-                "time": "00:54:01"
+                "time": "00:54:01",
+                "gap": "+00:16:30"
               },
               {
                 "pos": 3,
                 "name": "VARGAS Omar",
                 "team": "ANCM-Comi casi Endurero",
-                "time": "00:59:07"
+                "time": "00:59:07",
+                "gap": "+00:21:36"
               }
             ]
           }
@@ -3968,13 +4976,15 @@
                 "pos": 1,
                 "name": "MOLINA Hairo",
                 "team": "CCDR ESCAZU",
-                "time": "00:19:20"
+                "time": "00:19:20",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "RODRÍGUEZ Julián",
                 "team": "Belén Team",
-                "time": "00:19:20"
+                "time": "00:19:20",
+                "gap": "+00:00:00"
               }
             ],
             "F": [
@@ -3982,7 +4992,8 @@
                 "pos": 1,
                 "name": "LORIA Dilcen",
                 "team": "FISIONORTE/ JONATHANQUESADA.CYCLING",
-                "time": "00:26:03"
+                "time": "00:26:03",
+                "gap": "-"
               }
             ]
           },
@@ -3992,13 +5003,15 @@
                 "pos": 1,
                 "name": "ARTAVIA ENRIQUE",
                 "team": "BOBBYS/FOX/YETTI",
-                "time": "00:09:14"
+                "time": "00:09:14",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "MARTÍNEZ Andrés",
                 "team": "Nosotros Dota",
-                "time": "00:19:23"
+                "time": "00:19:23",
+                "gap": "+00:10:09"
               }
             ]
           },
@@ -4008,19 +5021,22 @@
                 "pos": 1,
                 "name": "MENESES Jose",
                 "team": "STYM",
-                "time": "00:19:38"
+                "time": "00:19:38",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "MORENO Carlos",
                 "team": "Numu coaching",
-                "time": "00:21:32"
+                "time": "00:21:32",
+                "gap": "+00:01:54"
               },
               {
                 "pos": 3,
                 "name": "AGUILAR Yaret",
                 "team": "RCA Trailers",
-                "time": "00:22:01"
+                "time": "00:22:01",
+                "gap": "+00:02:23"
               }
             ]
           },
@@ -4030,19 +5046,22 @@
                 "pos": 1,
                 "name": "LIZANO Federico",
                 "team": "TEAM LIZANO HERRA",
-                "time": "00:16:39"
+                "time": "00:16:39",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "ELSEMAANI Jean Paul",
                 "team": "HATOVIEJO - MOMIA TS",
-                "time": "00:16:50"
+                "time": "00:16:50",
+                "gap": "+00:00:11"
               },
               {
                 "pos": 3,
                 "name": "GARCIA Jorge",
                 "team": "Grupeta 5 am",
-                "time": "00:17:00"
+                "time": "00:17:00",
+                "gap": "+00:00:21"
               }
             ]
           },
@@ -4052,19 +5071,22 @@
                 "pos": 1,
                 "name": "HERRERA Jeffrey",
                 "team": "Team CoreCo/Momentum Sports",
-                "time": "00:15:30"
+                "time": "00:15:30",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "ARCE Alberth",
                 "team": "Tomatero",
-                "time": "00:15:37"
+                "time": "00:15:37",
+                "gap": "+00:00:07"
               },
               {
                 "pos": 3,
                 "name": "CARVAJAL JONATHAN",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:15:37"
+                "time": "00:15:37",
+                "gap": "+00:00:07"
               }
             ]
           },
@@ -4074,19 +5096,22 @@
                 "pos": 1,
                 "name": "RODRÍGUEZ Luis Angel",
                 "team": "Quesada Jonathan.Cycling / Fisio Norte",
-                "time": "00:16:12"
+                "time": "00:16:12",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "RUBI Luis",
                 "team": "Duros Como Roca",
-                "time": "00:16:21"
+                "time": "00:16:21",
+                "gap": "+00:00:09"
               },
               {
                 "pos": 3,
                 "name": "SALAS Mauricio",
                 "team": "Autos Salas",
-                "time": "00:17:11"
+                "time": "00:17:11",
+                "gap": "+00:00:59"
               }
             ]
           },
@@ -4096,19 +5121,22 @@
                 "pos": 1,
                 "name": "MARÍN Abigail",
                 "team": "CCDR San José",
-                "time": "00:16:49"
+                "time": "00:16:49",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "HERNÁNDEZ Maripaz",
                 "team": "HDZ / Santa Ana",
-                "time": "00:17:43"
+                "time": "00:17:43",
+                "gap": "+00:00:54"
               },
               {
                 "pos": 3,
                 "name": "JIMÉNEZ Mia",
                 "team": "CCDR SAN JOSÉ",
-                "time": "00:18:10"
+                "time": "00:18:10",
+                "gap": "+00:01:21"
               }
             ]
           },
@@ -4118,19 +5146,22 @@
                 "pos": 1,
                 "name": "ARCE Mathew",
                 "team": "CCDR PARAÍSO",
-                "time": "00:16:52"
+                "time": "00:16:52",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "DURAN Emanuel",
                 "team": "Zarcero Betel Mohana Edus Ceci",
-                "time": "00:16:57"
+                "time": "00:16:57",
+                "gap": "+00:00:05"
               },
               {
                 "pos": 3,
                 "name": "CORDERO Iker Mattias",
                 "team": "PZ CYCLING TEAM",
-                "time": "00:17:01"
+                "time": "00:17:01",
+                "gap": "+00:00:09"
               }
             ],
             "F": [
@@ -4138,19 +5169,22 @@
                 "pos": 1,
                 "name": "CALDERÓN Ariana",
                 "team": "Colono Bike Station Kolbi",
-                "time": "00:14:04"
+                "time": "00:14:04",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "TORRES Camila",
                 "team": "CCDRESCAZU",
-                "time": "00:15:49"
+                "time": "00:15:49",
+                "gap": "+00:01:45"
               },
               {
                 "pos": 3,
                 "name": "CORTES Mariam",
                 "team": "ACISA SARAPIQUI",
-                "time": "00:15:49"
+                "time": "00:15:49",
+                "gap": "+00:01:45"
               }
             ]
           },
@@ -4160,19 +5194,22 @@
                 "pos": 1,
                 "name": "ARIAS Daniel",
                 "team": "Ciclismo Belen",
-                "time": "00:19:32"
+                "time": "00:19:32",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "GARCÍA Miguel",
                 "team": "Colono Bike Station Kolbi",
-                "time": "00:19:46"
+                "time": "00:19:46",
+                "gap": "+00:00:14"
               },
               {
                 "pos": 3,
                 "name": "CAMPOS Isaac",
                 "team": "Colono Bike Station Kolbi",
-                "time": "00:19:55"
+                "time": "00:19:55",
+                "gap": "+00:00:23"
               }
             ],
             "F": [
@@ -4180,19 +5217,22 @@
                 "pos": 1,
                 "name": "JIMÉNEZ Briana",
                 "team": "Bobbys cycling team codea",
-                "time": "00:14:08"
+                "time": "00:14:08",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "AZOFEIFA SOFIA",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:14:27"
+                "time": "00:14:27",
+                "gap": "+00:00:19"
               },
               {
                 "pos": 3,
                 "name": "CASTRO Camila",
                 "team": "CCDR Santa Ana",
-                "time": "00:14:49"
+                "time": "00:14:49",
+                "gap": "+00:00:41"
               }
             ]
           },
@@ -4202,19 +5242,22 @@
                 "pos": 1,
                 "name": "ACUÑA ALEJANDRO",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:22:47"
+                "time": "00:22:47",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "AGUILAR Valentino",
                 "team": "CCDR PARAÍSO",
-                "time": "00:23:10"
+                "time": "00:23:10",
+                "gap": "+00:00:23"
               },
               {
                 "pos": 3,
                 "name": "MANZANARES Leandro Du1v0a1n19593506",
                 "team": "CODEA ALAJUELA",
-                "time": "00:23:20"
+                "time": "00:23:20",
+                "gap": "+00:00:33"
               }
             ],
             "F": [
@@ -4222,13 +5265,15 @@
                 "pos": 1,
                 "name": "MADRIGAL Maidelyn",
                 "team": "ACISA",
-                "time": "00:23:24"
+                "time": "00:23:24",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "ALVARADO Jimena",
                 "team": "CCDR Limon",
-                "time": "00:26:02"
+                "time": "00:26:02",
+                "gap": "+00:02:38"
               }
             ]
           },
@@ -4238,19 +5283,22 @@
                 "pos": 1,
                 "name": "HERRERA Carlos",
                 "team": "Pedregal 7C",
-                "time": "00:24:49"
+                "time": "00:24:49",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "VARGAS José David",
                 "team": "Colono Bike Station Kolbi",
-                "time": "00:25:05"
+                "time": "00:25:05",
+                "gap": "+00:00:16"
               },
               {
                 "pos": 3,
                 "name": "GONZÁLEZ Adriano",
                 "team": "Colono Bike Station Kolbi",
-                "time": "00:25:11"
+                "time": "00:25:11",
+                "gap": "+00:00:22"
               }
             ],
             "F": [
@@ -4258,13 +5306,15 @@
                 "pos": 1,
                 "name": "RAHILY DENISE",
                 "team": "BOBBYS CYCLING TEAM",
-                "time": "00:24:35"
+                "time": "00:24:35",
+                "gap": "-"
               },
               {
                 "pos": 2,
                 "name": "NUÑEZ Alison",
                 "team": "Desamparados bike café",
-                "time": "00:25:14"
+                "time": "00:25:14",
+                "gap": "+00:00:39"
               }
             ]
           }

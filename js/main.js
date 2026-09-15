@@ -267,58 +267,84 @@ document.addEventListener('DOMContentLoaded', () => {
     // Etiquetas legibles
     const MOD_LABEL = { 'XCO': 'Cross-Country Olímpico', 'XCC': 'Short Track' };
     const MOD_DOT = { 'XCO': 'dot-xco', 'XCC': 'dot-xcc' };
+    // Nombre de modalidad para el encabezado estilo UCI
+    const MOD_TITULO = { 'XCO': 'CROSS-COUNTRY OLÍMPICO', 'XCC': 'SHORT TRACK' };
 
-    // Render de un podio (top 3) de un género dentro de una columna
-    function podioColHTML(titulo, clase, rows, tipo) {
-        let inner;
-        if (!rows || rows.length === 0) {
-            inner = `<div class="gender-empty">Sin participantes</div>`;
-        } else {
-            inner = '<table class="podium-table"><tbody>' + rows.map(r => {
-                const meta = tipo === 'general' ? `${r.puntos != null ? r.puntos + ' pts' : ''}` : (r.time || '');
-                return `<tr class="podium-${r.pos}">
-                    <td class="podium-pos">${r.pos}</td>
-                    <td><span class="podium-name">${r.name}</span><span class="podium-team">${r.team || ''}</span></td>
-                    <td class="podium-meta">${meta}</td>
-                </tr>`;
-            }).join('') + '</tbody></table>';
-        }
-        return `<div class="gender-col"><div class="gender-head ${clase}">${titulo}</div>${inner}</div>`;
+    // ¿Alguna fila tiene puntos? (para decidir si mostrar la columna Points)
+    function hayPuntos(rows) {
+        return rows && rows.some(r => r.points != null);
     }
 
-    // Render de una categoría con Masculino y Femenino a la par
-    function categoriaHTML(nombreCat, gen, tipo) {
-        // gen puede tener M (masculino), F (femenino), X (mixto/open/general)
+    // Render de una tabla-podio estilo UCI (# / Rider-Team / Time / Gap / Points)
+    // tipo: 'fecha' (time+gap+points) | 'general' (solo points)
+    function podioTablaHTML(tituloCat, subtitulo, claseColor, rows, tipo) {
+        const esGeneral = tipo === 'general';
+        const mostrarPuntos = esGeneral || hayPuntos(rows);
+
+        if (!rows || rows.length === 0) {
+            return `<div class="uci-block">
+                <div class="uci-block-head"><span class="uci-cat">${tituloCat}</span><span class="uci-sub ${claseColor}">${subtitulo}</span></div>
+                <div class="uci-empty">Sin participantes</div>
+            </div>`;
+        }
+
+        // Encabezado de columnas
+        let cols = '<th class="c-pos">#</th><th class="c-rider">Ciclista / Equipo</th>';
+        if (!esGeneral) cols += '<th class="c-time">Tiempo</th><th class="c-gap">Dif.</th>';
+        if (mostrarPuntos) cols += '<th class="c-pts">Puntos</th>';
+
+        const filas = rows.map(r => {
+            let celdas = `<td class="c-pos"><span class="uci-pos">${r.pos}</span></td>
+                <td class="c-rider"><span class="uci-name">${r.name}</span><span class="uci-team">${r.team || ''}</span></td>`;
+            if (!esGeneral) {
+                celdas += `<td class="c-time">${r.time || ''}</td>`;
+                celdas += `<td class="c-gap">${r.gap && r.gap !== '-' ? r.gap : (r.pos === 1 ? '–' : '')}</td>`;
+            }
+            if (mostrarPuntos) {
+                const pts = r.points != null ? r.points : (esGeneral && r.puntos != null ? r.puntos : '');
+                celdas += `<td class="c-pts">${pts}</td>`;
+            }
+            return `<tr class="uci-row uci-pos-${r.pos}">${celdas}</tr>`;
+        }).join('');
+
+        return `<div class="uci-block">
+            <div class="uci-block-head"><span class="uci-cat">${tituloCat}</span><span class="uci-sub ${claseColor}">${subtitulo}</span></div>
+            <table class="uci-table"><thead><tr>${cols}</tr></thead><tbody>${filas}</tbody></table>
+        </div>`;
+    }
+
+    // Render de una categoría con Masculino y Femenino a la par (estilo UCI)
+    // modalidad: 'XCO' | 'XCC' | null (para general)
+    function categoriaHTML(nombreCat, gen, tipo, modalidad) {
         const hayF = gen.F && gen.F.length;
         const hayM = gen.M && gen.M.length;
         const hayX = gen.X && gen.X.length;
+        const modTxt = modalidad ? MOD_TITULO[modalidad] || '' : '';
+        const sufijoMod = modTxt ? ` <span class="uci-cat-mod">— ${modTxt}</span>` : '';
 
         // Categoría puramente mixta (E-Bike, Peso Pluma, Cyclo Cross): una sola columna
         if (hayX && !hayF && !hayM) {
-            const col = podioColHTML('GENERAL', 'mixto', gen.X, tipo);
+            const col = podioTablaHTML(nombreCat + sufijoMod, 'GENERAL', 'mixto', gen.X, tipo);
             return `<div class="cat-block">
-                <div class="cat-block-title">${nombreCat}</div>
-                <div class="cat-genders" style="grid-template-columns:1fr; max-width:520px; margin:0 auto;">${col}</div>
+                <div class="cat-genders" style="grid-template-columns:1fr; max-width:560px; margin:0 auto;">${col}</div>
             </div>`;
         }
 
         // Columna izquierda = Masculino (o la general X del Open si no hay M explícito)
         let colIzq;
         if (hayM) {
-            colIzq = podioColHTML('MASCULINO', 'masc', gen.M, tipo);
+            colIzq = podioTablaHTML(nombreCat + sufijoMod, 'MASCULINO', 'masc', gen.M, tipo);
         } else if (hayX) {
-            // OPEN u otras: la columna X es la masculina/general
-            colIzq = podioColHTML('MASCULINO', 'masc', gen.X, tipo);
+            colIzq = podioTablaHTML(nombreCat + sufijoMod, 'MASCULINO', 'masc', gen.X, tipo);
         } else {
-            colIzq = podioColHTML('MASCULINO', 'masc', [], tipo);
+            colIzq = podioTablaHTML(nombreCat + sufijoMod, 'MASCULINO', 'masc', [], tipo);
         }
         // Columna derecha = Femenino. Si no hay, columna EN BLANCO (sin recuadro)
         const colDer = hayF
-            ? podioColHTML('FEMENINO', 'fem', gen.F, tipo)
+            ? podioTablaHTML(nombreCat + sufijoMod, 'FEMENINO', 'fem', gen.F, tipo)
             : '<div class="gender-col-empty"></div>';
 
         return `<div class="cat-block">
-            <div class="cat-block-title">${nombreCat}</div>
             <div class="cat-genders">${colIzq}${colDer}</div>
         </div>`;
     }
@@ -376,7 +402,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // categorías
         const cats = mod.categorias || {};
         ordenarCategorias(cats).forEach(cat => {
-            html += categoriaHTML(cat, cats[cat], 'fecha');
+            html += categoriaHTML(cat, cats[cat], 'fecha', detalleModActual);
         });
         // Botón para volver a todas las fechas (al final)
         html += `<div class="volver-todos-wrap">
@@ -396,7 +422,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // (Botón de descargar Excel quitado por ahora — el archivo es Excel)
         const cats = GENERAL.categorias || {};
         ordenarCategorias(cats).forEach(cat => {
-            html += categoriaHTML(cat, cats[cat], 'general');
+            html += categoriaHTML(cat, cats[cat], 'general', null);
         });
         html += `<div class="volver-todos-wrap">
             <a href="#" class="btn-volver-todos" id="btn-volver-todos-gen"><i class="fas fa-list"></i> Volver a todos los resultados</a>
