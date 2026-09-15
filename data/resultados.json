@@ -481,7 +481,8 @@
                 "name": "GUZMAN Aaaron",
                 "team": "ACISA",
                 "time": "00:47:40",
-                "gap": ""
+                "gap": "",
+                "points": 150
               }
             ]
           },
@@ -755,7 +756,8 @@
                 "name": "RIVERA Jack Dany",
                 "team": "VEINTE24 CYCLING",
                 "time": "00:18:31",
-                "gap": "+00:00:53"
+                "gap": "+00:00:53",
+                "points": 8
               }
             ]
           },
@@ -958,21 +960,24 @@
                 "name": "ROJAS Melvin",
                 "team": "BOBBYS CYCLING TEAM",
                 "time": "00:41:08",
-                "gap": "-"
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "HERRERA Jeffrey",
                 "team": "TEAM CORECO/MOMENTUM SPORTS",
                 "time": "00:42:05",
-                "gap": "+00:00:57"
+                "gap": "+00:00:57",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "BOLAÑOS Jean Carlo",
                 "team": "TEAM BIKE CENTER COSTA RICA",
                 "time": "00:42:19",
-                "gap": "+00:01:11"
+                "gap": "+00:01:11",
+                "points": 120
               }
             ]
           }
@@ -1440,7 +1445,8 @@
                 "name": "SABALLOS Joshua",
                 "team": "CICLISMO BELÉN",
                 "time": "00:46:54",
-                "gap": "+00:01:22"
+                "gap": "+00:01:22",
+                "points": 120
               }
             ],
             "F": [
@@ -1477,7 +1483,8 @@
                 "name": "GUZMAN Aaaron",
                 "team": "ACISA",
                 "time": "00:35:06",
-                "gap": "+00:00:00"
+                "gap": "+00:00:00",
+                "points": 200
               },
               {
                 "pos": 2,
@@ -1629,7 +1636,8 @@
                 "name": "SABALLOS Joshua",
                 "team": "CICLISMO BELÉN",
                 "time": "00:17:04",
-                "gap": "+00:00:20"
+                "gap": "+00:00:20",
+                "points": 9
               },
               {
                 "pos": 3,
@@ -1978,21 +1986,24 @@
                 "name": "ROJAS Melvin",
                 "team": "BOBBYS CYCLING TEAM",
                 "time": "00:38:35",
-                "gap": "-"
+                "gap": "-",
+                "points": 200
               },
               {
                 "pos": 2,
                 "name": "DOBLES Chisthpher",
                 "team": "CONGELADOS ADIS / PROTUBE /OKAPI DRINKS00 /: 3T8O:5D0O CR",
                 "time": "00:00:15",
-                "gap": ""
+                "gap": "",
+                "points": 150
               },
               {
                 "pos": 3,
                 "name": "MONGE Andres",
                 "team": "POWERCYCLING STORE",
                 "time": "00:39:45",
-                "gap": "+00:01:10"
+                "gap": "+00:01:10",
+                "points": 120
               }
             ]
           }
@@ -2447,7 +2458,8 @@
                 "name": "WESTER Isabela Katerina",
                 "team": "DONOVAN RACING",
                 "time": "01:39:02",
-                "gap": "+00:14:50"
+                "gap": "+00:14:50",
+                "points": 150
               },
               {
                 "pos": 3,
