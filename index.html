@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ANCM - Asociación Nacional de Ciclismo de Montaña Costa Rica</title>
-    <link rel="stylesheet" href="css/styles.css?v=17">
+    <link rel="stylesheet" href="css/styles.css?v=18">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,6 +79,17 @@
 
 <!-- PAGE: INICIO -->
 <section class="page active" id="page-inicio">
+    <div class="inicio-visitas">
+        <div class="visitas-contador">
+            <span><i class="fas fa-eye"></i> Visitas</span>
+            <img id="contador-img"
+                 src="https://visitor-badge.laobi.icu/badge?page_id=mtbcostarica.org.v2&left_text=totales&left_color=%230d1b3e&right_color=%23e63946"
+                 alt="Contador de visitas" class="contador-img">
+            <span id="contador-fallback" class="contador-fallback" style="display:none;">
+                <strong id="contador-visitas">…</strong>
+            </span>
+        </div>
+    </div>
     <div class="inicio-next-event">
         <div class="next-event-banner">
             <div class="next-event-banner-content">
@@ -832,15 +843,6 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <div class="visitas-contador">
-                <span><i class="fas fa-eye"></i> Visitas</span>
-                <img id="contador-img"
-                     src="https://visitor-badge.laobi.icu/badge?page_id=mtbcostarica.org.visitas&left_text=totales&left_color=%230d1b3e&right_color=%23e63946"
-                     alt="Contador de visitas" class="contador-img">
-                <span id="contador-fallback" class="contador-fallback" style="display:none;">
-                    <strong id="contador-visitas">…</strong>
-                </span>
-            </div>
             <p>&copy; 2026 ANCM - Asociación Nacional de Ciclismo de Montaña Costa Rica. Todos los derechos reservados.</p>
         </div>
     </div>
@@ -859,6 +861,6 @@
 
 </div><!-- /sitio-principal -->
 
-<script src="js/main.js?v=17"></script>
+<script src="js/main.js?v=18"></script>
 </body>
 </html>

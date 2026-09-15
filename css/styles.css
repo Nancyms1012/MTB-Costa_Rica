@@ -1485,12 +1485,14 @@ img { max-width: 100%; height: auto; }
 .volver-arriba { text-align: left; margin: 25px 0 5px; }
 
 
-/* Contador de visitas (footer) */
+/* Contador de visitas */
+.inicio-visitas { display: flex; justify-content: center; padding: 16px 20px 0; }
 .visitas-contador {
-    display: flex; align-items: center; justify-content: center;
-    gap: 10px; flex-wrap: wrap; margin-bottom: 14px;
-    font-size: 0.85rem; opacity: 0.85;
+    display: inline-flex; align-items: center; justify-content: center;
+    gap: 10px; flex-wrap: wrap;
+    font-size: 0.85rem; color: var(--gray-600);
+    font-family: var(--font-heading); font-weight: 600;
 }
-.visitas-contador i { margin-right: 4px; }
+.visitas-contador i { margin-right: 4px; color: var(--secondary); }
 .contador-img { height: 22px; vertical-align: middle; border-radius: 4px; }
-.contador-fallback strong { font-size: 1rem; letter-spacing: 1px; }
+.contador-fallback strong { font-size: 1rem; letter-spacing: 1px; color: var(--primary); }
