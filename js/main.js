@@ -384,10 +384,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const f = RESULTADOS[detalleFechaActual];
         const mod = f.modalidades[detalleModActual];
         if (!mod) { cont.innerHTML = '<p class="results-pending">Sin datos.</p>'; return; }
-        let html = '';
-        // botones PDF
-        if (mod.pdfs && mod.pdfs.length) {
-            html += '<div class="pdf-links">';
+        // Genera los botones "Ver resultados completos (PDF)" de esta modalidad
+        function pdfLinksHTML() {
+            if (!mod.pdfs || !mod.pdfs.length) return '';
+            let h = '<div class="pdf-links">';
             mod.pdfs.forEach((p, i) => {
                 let etiqueta = 'Ver resultados completos (PDF)';
                 if (mod.pdfs.length > 1) {
@@ -395,16 +395,21 @@ document.addEventListener('DOMContentLoaded', () => {
                              : /domingo/i.test(p) ? 'Resultados completos · Domingo (PDF)'
                              : `Resultados completos ${i + 1} (PDF)`;
                 }
-                html += `<a class="btn-pdf" href="${p}" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> ${etiqueta}</a>`;
+                h += `<a class="btn-pdf" href="${p}" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> ${etiqueta}</a>`;
             });
-            html += '</div>';
+            return h + '</div>';
         }
+
+        let html = '';
+        // botones PDF ARRIBA
+        html += pdfLinksHTML();
         // categorías
         const cats = mod.categorias || {};
         ordenarCategorias(cats).forEach(cat => {
             html += categoriaHTML(cat, cats[cat], 'fecha', detalleModActual);
         });
-        // Botón para volver a todas las fechas (al final)
+        // botones PDF + volver ABAJO
+        html += pdfLinksHTML();
         html += `<div class="volver-todos-wrap">
             <a href="#" class="btn-volver-todos" id="btn-volver-todos"><i class="fas fa-list"></i> Volver a todos los resultados</a>
         </div>`;
