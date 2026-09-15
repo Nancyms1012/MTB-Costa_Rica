@@ -322,15 +322,17 @@ document.addEventListener('DOMContentLoaded', () => {
         const modTxt = modalidad ? MOD_TITULO[modalidad] || '' : '';
         const sufijoMod = modTxt ? ` <span class="uci-cat-mod">— ${modTxt}</span>` : '';
 
-        // Categoría puramente mixta (E-Bike, Peso Pluma, Cyclo Cross): una sola columna
-        if (hayX && !hayF && !hayM) {
+        // Categorías realmente mixtas (una sola columna centrada "GENERAL"): E-Bike, Peso Pluma, Cyclo Cross.
+        // OPEN NO entra aquí: su "X" es en realidad masculino y debe alinearse con los demás masculinos.
+        const CATS_MIXTAS = ['E-BIKE', 'PESO PLUMA', 'CYCLO CROSS'];
+        if (hayX && !hayF && !hayM && CATS_MIXTAS.includes(nombreCat)) {
             const col = podioTablaHTML(nombreCat + sufijoMod, 'GENERAL', 'mixto', gen.X, tipo);
             return `<div class="cat-block">
                 <div class="cat-genders" style="grid-template-columns:1fr; max-width:560px; margin:0 auto;">${col}</div>
             </div>`;
         }
 
-        // Columna izquierda = Masculino (o la general X del Open si no hay M explícito)
+        // Columna izquierda = Masculino (o la X del Open, que es masculino)
         let colIzq;
         if (hayM) {
             colIzq = podioTablaHTML(nombreCat + sufijoMod, 'MASCULINO', 'masc', gen.M, tipo);
