@@ -4,37 +4,13 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // ============ PORTADA ============
-    const portada = document.getElementById('portada');
-    const sitioPrincipal = document.getElementById('sitio-principal');
-    const enterCopa = document.getElementById('enter-copa');
-    const enterKids = document.getElementById('enter-kids');
-
-    if (enterCopa) {
-        enterCopa.addEventListener('click', (e) => {
-            e.preventDefault();
-            portada.style.display = 'none';
-            sitioPrincipal.style.display = 'block';
-            navigateTo('inicio');
-        });
-    }
-    if (enterKids) {
-        enterKids.addEventListener('click', (e) => {
-            e.preventDefault();
-            portada.style.display = 'none';
-            sitioPrincipal.style.display = 'block';
-            navigateTo('copa-kids');
-        });
-    }
-
-    // Volver a portada desde el logo
+    // (Portada eliminada: el sitio entra directo al Inicio)
+    // El logo del navbar ahora lleva al Inicio
     const btnVolverPortada = document.getElementById('btn-volver-portada');
     if (btnVolverPortada) {
         btnVolverPortada.addEventListener('click', (e) => {
             e.preventDefault();
-            sitioPrincipal.style.display = 'none';
-            portada.style.display = 'block';
-            window.scrollTo({ top: 0 });
+            navigateTo('inicio');
         });
     }
 
@@ -527,10 +503,25 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(err => console.log('Error cargando campeones:', err));
 
+    // Orden de campeones: menores primero (Preinfantil arriba)
+    const ORDEN_CAMPEONES = [
+        'PREINFANTIL', 'INFANTIL', 'PREJUVENIL', 'JUVENIL', 'SUB 23', 'SUB23', 'ELITE',
+        'MASTER A', 'MASTER B', 'MASTER C', 'MASTER D', 'MASTER E',
+        'OPEN', 'E-BIKE', 'PESO PLUMA', 'CYCLO CROSS'
+    ];
+    function ordenarCampeones(lista) {
+        return lista.slice().sort((a, b) => {
+            let ia = ORDEN_CAMPEONES.indexOf(a.categoria); let ib = ORDEN_CAMPEONES.indexOf(b.categoria);
+            if (ia === -1) ia = 999;
+            if (ib === -1) ib = 999;
+            return ia - ib;
+        });
+    }
+
     function renderCampeones(data, modalidad, container) {
         if (!container) return;
-        const mujeres = data.filter(c => c.modalidad === modalidad && c.genero === 'F');
-        const hombres = data.filter(c => c.modalidad === modalidad && c.genero === 'M');
+        const mujeres = ordenarCampeones(data.filter(c => c.modalidad === modalidad && c.genero === 'F'));
+        const hombres = ordenarCampeones(data.filter(c => c.modalidad === modalidad && c.genero === 'M'));
 
         container.innerHTML = `
             <div class="champions-col">

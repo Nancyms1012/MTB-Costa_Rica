@@ -7,7 +7,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>Asociación de Ciclismo de Montaña CRC</title>
-    <link rel="stylesheet" href="css/styles.css?v=23">
+    <link rel="stylesheet" href="css/styles.css?v=24">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,33 +15,8 @@
 </head>
 <body>
 
-<!-- PORTADA -->
-<div class="portada" id="portada">
-    <div class="portada-hero">
-        <img src="img/PORTADA_COPA.jpg?v=3" alt="La Copa MTB Costa Rica" class="portada-hero-img">
-    </div>
-    <div class="portada-content">
-        <img src="img/ANCM.png" alt="ANCM" class="portada-logo-ancm">
-        <h1 class="portada-title">Asociación de Ciclismo de Montaña CRC</h1>
-        <p class="portada-text">La Asociación de Ciclismo de Montaña CRC tiene su origen en Costa Rica a inicios de la década del 90, con el objetivo principal de fomentar, promocionar y desarrollar el ciclismo de montaña en nuestro país. Los eventos realizados son sin fines de lucro, siendo los principales la Copa Nacional de Ciclismo de Montaña y Campeonato Nacional en el formato Cross Country Olímpico, incluido en el proceso del Ciclo Olímpico.</p>
-        <p class="portada-text">Uno de los atractivos de la Copa Nacional es que promueve altos valores y principios deportivos, de la mano con el disfrute del deporte y la construcción de un espacio sano y familiar, con participación desde niños de 4 años hasta competidores de más de 50 años.</p>
-        <div class="portada-logos">
-            <a href="#" class="portada-logo-link" id="enter-copa">
-                <img src="img/COPA.webp" alt="La Copa" class="portada-logo">
-                <span>La Copa</span>
-            </a>
-            <!-- Copa Kids oculto temporalmente (se trabajara esa pagina)
-            <a href="#" class="portada-logo-link" id="enter-kids">
-                <img src="img/KIDS.jpeg" alt="Copa Kids" class="portada-logo">
-                <span>Copa Kids</span>
-            </a>
-            -->
-        </div>
-    </div>
-</div>
-
-<!-- SITIO PRINCIPAL (oculto hasta seleccionar Copa) -->
-<div class="sitio-principal" id="sitio-principal" style="display:none;">
+<!-- SITIO PRINCIPAL (portada eliminada; entra directo) -->
+<div class="sitio-principal" id="sitio-principal">
 
 <!-- Navbar -->
 <nav class="navbar" id="navbar">
@@ -82,6 +57,8 @@
 
 <!-- PAGE: INICIO -->
 <section class="page active" id="page-inicio">
+    <!-- CONTADOR PAUSADO temporalmente mientras Nancy hace cambios (para no inflar las visitas).
+         Para reactivarlo: descomentar este bloque.
     <div class="inicio-visitas">
         <div class="visitas-contador">
             <span><i class="fas fa-eye"></i> Visitas</span>
@@ -93,6 +70,8 @@
             </span>
         </div>
     </div>
+    -->
+    <div class="inicio-visitas-pausa"></div>
     <div class="inicio-next-event">
         <div class="next-event-banner">
             <div class="next-event-banner-content">
@@ -129,6 +108,10 @@
         <p class="section-subtitle">Conoce nuestra organización</p>
     </div>
     <div class="container">
+        <div class="about-intro">
+            <p>La Asociación de Ciclismo de Montaña CRC tiene su origen en Costa Rica a inicios de la década del 90, con el objetivo principal de fomentar, promocionar y desarrollar el ciclismo de montaña en nuestro país. Los eventos realizados son sin fines de lucro, siendo los principales la Copa Nacional de Ciclismo de Montaña y Campeonato Nacional en el formato Cross Country Olímpico, incluido en el proceso del Ciclo Olímpico.</p>
+            <p>Uno de los atractivos de la Copa Nacional es que promueve altos valores y principios deportivos, de la mano con el disfrute del deporte y la construcción de un espacio sano y familiar, con participación desde niños de 4 años hasta competidores de más de 50 años.</p>
+        </div>
         <div class="about-grid">
             <div class="about-card">
                 <div class="about-icon"><i class="fas fa-bullseye"></i></div>
@@ -864,6 +847,6 @@
 
 </div><!-- /sitio-principal -->
 
-<script src="js/main.js?v=23"></script>
+<script src="js/main.js?v=24"></script>
 </body>
 </html>
