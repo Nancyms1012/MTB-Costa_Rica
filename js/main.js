@@ -430,13 +430,17 @@ document.addEventListener('DOMContentLoaded', () => {
         engancharBotonesVerFecha();
     });
 
-    // Menú de Resultados: 3 tarjetas
+    // Menú de Resultados: 3 tarjetas (dentro de la página)
     const menuFechas = document.getElementById('menu-fechas');
     const menuGeneral = document.getElementById('menu-general');
     const menuCampeones = document.getElementById('menu-campeones');
     if (menuFechas) menuFechas.addEventListener('click', () => navigateTo('resultados-fechas'));
     if (menuGeneral) menuGeneral.addEventListener('click', abrirGeneral);
     if (menuCampeones) menuCampeones.addEventListener('click', () => navigateTo('campeones'));
+
+    // Dropdown del navbar: "Clasificación General" ejecuta abrirGeneral()
+    const megaGeneral = document.getElementById('mega-general');
+    if (megaGeneral) megaGeneral.addEventListener('click', (e) => { e.preventDefault(); abrirGeneral(); });
 
     // Botones "Ver Resultados" en los calendarios de Eventos (data-fecha)
     function engancharBotonesVerFecha() {
