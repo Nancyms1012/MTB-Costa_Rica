@@ -1,7 +1,7 @@
 [
   {"modalidad": "XCC", "genero": "F", "categoria": "PREINFANTIL", "nombre": "Abigail", "apellido": "MARIN", "equipo": "CCDR San José"},
-  {"modalidad": "XCC", "genero": "F", "categoria": "INFANTIL", "nombre": "Ariana", "apellido": "CALDERON", "equipo": "Colono Bike Station Kolbi"},
-  {"modalidad": "XCC", "genero": "F", "categoria": "PREJUVENIL", "nombre": "Briana", "apellido": "JIMENEZ", "equipo": "Bobbys Cycling Team"},
+  {"modalidad": "XCC", "genero": "F", "categoria": "INFANTIL", "nombre": "Ariana", "apellido": "CALDERON", "equipo": "Colono Bike Station Kolbi", "foto": "img/campeona-ariana.png"},
+  {"modalidad": "XCC", "genero": "F", "categoria": "PREJUVENIL", "nombre": "Briana", "apellido": "JIMENEZ", "equipo": "Bobbys Cycling Team", "foto": "img/campeona-brianna.png"},
   {"modalidad": "XCC", "genero": "F", "categoria": "JUVENIL", "nombre": "Maidelyn", "apellido": "MADRIGAL", "equipo": "Team Innovabikes Skoler UH"},
   {"modalidad": "XCC", "genero": "F", "categoria": "SUB 23", "nombre": "Isabel", "apellido": "GARCIA", "equipo": "Colono Bike Station Kolbi"},
   {"modalidad": "XCC", "genero": "F", "categoria": "ELITE", "nombre": "Cristel", "apellido": "ESPINOZA", "equipo": "Asfaltos CBZ Dekra"},
@@ -18,7 +18,7 @@
   {"modalidad": "XCC", "genero": "M", "categoria": "MASTER C", "nombre": "Gonzalo", "apellido": "CHACON", "equipo": "Team Gocha"},
   {"modalidad": "XCC", "genero": "M", "categoria": "MASTER D", "nombre": "Marcos Vinicio", "apellido": "MENDOZA", "equipo": "Profe Remo Training Club"},
   {"modalidad": "XCC", "genero": "M", "categoria": "MASTER E", "nombre": "German", "apellido": "MUÑOZ", "equipo": "Trek"},
-  {"modalidad": "XCO", "genero": "F", "categoria": "INFANTIL", "nombre": "Ariana", "apellido": "CALDERON", "equipo": "Colono Bike Station Kolbi"},
+  {"modalidad": "XCO", "genero": "F", "categoria": "INFANTIL", "nombre": "Ariana", "apellido": "CALDERON", "equipo": "Colono Bike Station Kolbi", "foto": "img/campeona-ariana.png"},
   {"modalidad": "XCO", "genero": "F", "categoria": "PREJUVENIL", "nombre": "Camila", "apellido": "CASTRO", "equipo": "CCDR San José"},
   {"modalidad": "XCO", "genero": "F", "categoria": "JUVENIL", "nombre": "Maidelyn", "apellido": "MADRIGAL", "equipo": "Team Innovabikes Skoler UH"},
   {"modalidad": "XCO", "genero": "F", "categoria": "SUB 23", "nombre": "Isabel", "apellido": "GARCIA", "equipo": "Colono Bike Station Kolbi"},
