@@ -393,7 +393,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>`;
         cont.innerHTML = html;
         const btnVolver = document.getElementById('btn-volver-todos');
-        if (btnVolver) btnVolver.addEventListener('click', (e) => { e.preventDefault(); navigateTo('resultados-fechas'); });
+        if (btnVolver) btnVolver.addEventListener('click', (e) => { e.preventDefault(); navigateTo('resultados'); });
     }
 
     // Abrir Clasificación General
@@ -429,14 +429,6 @@ document.addEventListener('DOMContentLoaded', () => {
         renderFechaList();
         engancharBotonesVerFecha();
     });
-
-    // Menú de Resultados: 3 tarjetas (dentro de la página)
-    const menuFechas = document.getElementById('menu-fechas');
-    const menuGeneral = document.getElementById('menu-general');
-    const menuCampeones = document.getElementById('menu-campeones');
-    if (menuFechas) menuFechas.addEventListener('click', () => navigateTo('resultados-fechas'));
-    if (menuGeneral) menuGeneral.addEventListener('click', abrirGeneral);
-    if (menuCampeones) menuCampeones.addEventListener('click', () => navigateTo('campeones'));
 
     // Dropdown del navbar: "Clasificación General" ejecuta abrirGeneral()
     const megaGeneral = document.getElementById('mega-general');

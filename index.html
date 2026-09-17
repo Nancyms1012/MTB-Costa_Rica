@@ -7,7 +7,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>Asociación de Ciclismo de Montaña CRC</title>
-    <link rel="stylesheet" href="css/styles.css?v=43">
+    <link rel="stylesheet" href="css/styles.css?v=44">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +45,7 @@
                 <a href="#" class="nav-link" data-page="resultados">Resultados</a>
                 <div class="mega-dropdown">
                     <ul class="mega-dropdown-list">
-                        <li><a href="#" class="mega-link" data-page="resultados-fechas">Resultados por Fecha <i class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="#" class="mega-link" data-page="resultados">Resultados por Fecha <i class="fas fa-chevron-right"></i></a></li>
                         <li><a href="#" class="mega-link" id="mega-general">Clasificación General <i class="fas fa-chevron-right"></i></a></li>
                         <li><a href="#" class="mega-link" data-page="campeones">Campeones 2026 <i class="fas fa-chevron-right"></i></a></li>
                     </ul>
@@ -522,40 +522,7 @@
         <p class="page-subtitle">Copa Nacional de Ciclismo de Montaña 2026</p>
     </div>
     <div class="container">
-        <!-- Menú de Resultados: 3 tarjetas -->
-        <div class="results-menu">
-            <div class="results-menu-card" id="menu-fechas">
-                <div class="results-menu-icon"><i class="fas fa-calendar-day"></i></div>
-                <h3>Resultados por Fecha</h3>
-                <p>Podio de cada fecha del campeonato</p>
-                <span class="btn-see-results">Ver</span>
-            </div>
-            <div class="results-menu-card" id="menu-general">
-                <div class="results-menu-icon"><i class="fas fa-trophy"></i></div>
-                <h3>Clasificación General</h3>
-                <p>Acumulado del campeonato · hasta VI Fecha</p>
-                <span class="btn-see-results">Ver</span>
-            </div>
-            <div class="results-menu-card" id="menu-campeones">
-                <div class="results-menu-icon"><i class="fas fa-medal"></i></div>
-                <h3>Campeones 2026</h3>
-                <p>Campeones Nacionales por categoría</p>
-                <span class="btn-see-results">Ver</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- SUB-PAGE: RESULTADOS POR FECHA (lista) -->
-<section class="page" id="page-resultados-fechas">
-    <div class="page-header page-header-dark">
-        <h2 class="page-title">Resultados por Fecha</h2>
-        <p class="page-subtitle">Copa Nacional de Ciclismo de Montaña 2026</p>
-    </div>
-    <div class="container">
-        <div class="volver-todos-wrap volver-arriba">
-            <a href="#" class="btn-volver-todos" data-page="resultados"><i class="fas fa-arrow-left"></i> Volver a Resultados</a>
-        </div>
+        <h3 class="results-by-event-title">Resultados por fecha</h3>
         <div class="results-event-list" id="results-event-list"></div>
     </div>
 </section>
@@ -586,7 +553,7 @@
     </div>
     <div class="container">
         <div class="volver-todos-wrap volver-arriba">
-            <a href="#" class="btn-volver-todos" data-page="resultados-fechas"><i class="fas fa-list"></i> Volver a las fechas</a>
+            <a href="#" class="btn-volver-todos" data-page="resultados"><i class="fas fa-list"></i> Volver a las fechas</a>
         </div>
         <div class="modalidad-tabs" id="detalle-mod-tabs"></div>
         <div id="detalle-content"></div>
@@ -883,6 +850,6 @@
 
 </div><!-- /sitio-principal -->
 
-<script src="js/main.js?v=43"></script>
+<script src="js/main.js?v=44"></script>
 </body>
 </html>
