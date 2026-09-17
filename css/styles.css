@@ -1543,3 +1543,41 @@ img { max-width: 100%; height: auto; }
 .about-intro { max-width: 900px; margin: 0 auto 35px; }
 .about-intro p { color: var(--gray-800); font-size: 1rem; line-height: 1.8; margin-bottom: 16px; text-align: justify; }
 .about-intro p:last-child { margin-bottom: 0; }
+
+
+/* ============ MENÚ DE RESULTADOS (3 tarjetas) ============ */
+.results-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 900px;
+    margin: 40px auto;
+}
+.results-menu-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: var(--white);
+    border-radius: var(--radius);
+    padding: 34px 22px;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow-lg);
+}
+.results-menu-card:hover { transform: translateY(-5px); }
+.results-menu-icon { font-size: 2.4rem; color: #ffd700; margin-bottom: 6px; }
+.results-menu-card h3 { font-size: 1.15rem; color: var(--white); margin: 0; }
+.results-menu-card p { font-size: 0.82rem; opacity: 0.8; margin: 0; line-height: 1.4; }
+.results-menu-card .btn-see-results {
+    margin-top: 8px; background: var(--white); color: var(--primary); border: none;
+}
+@media (max-width: 768px) {
+    .results-menu { grid-template-columns: 1fr; max-width: 380px; gap: 16px; }
+    .results-menu-card { flex-direction: row; text-align: left; padding: 20px; }
+    .results-menu-icon { font-size: 1.8rem; margin: 0; }
+    .results-menu-card > div:not(.results-menu-icon), .results-menu-card h3 { text-align: left; }
+    .results-menu-card p { flex: 1; }
+}

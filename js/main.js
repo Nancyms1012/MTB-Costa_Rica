@@ -389,11 +389,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // botones PDF + volver ABAJO
         html += pdfLinksHTML();
         html += `<div class="volver-todos-wrap">
-            <a href="#" class="btn-volver-todos" id="btn-volver-todos"><i class="fas fa-list"></i> Volver a todos los resultados</a>
+            <a href="#" class="btn-volver-todos" id="btn-volver-todos"><i class="fas fa-list"></i> Volver a las fechas</a>
         </div>`;
         cont.innerHTML = html;
         const btnVolver = document.getElementById('btn-volver-todos');
-        if (btnVolver) btnVolver.addEventListener('click', (e) => { e.preventDefault(); navigateTo('resultados'); });
+        if (btnVolver) btnVolver.addEventListener('click', (e) => { e.preventDefault(); navigateTo('resultados-fechas'); });
     }
 
     // Abrir Clasificación General
@@ -412,7 +412,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         html += pdfBtn;
         html += `<div class="volver-todos-wrap">
-            <a href="#" class="btn-volver-todos" id="btn-volver-todos-gen"><i class="fas fa-list"></i> Volver a todos los resultados</a>
+            <a href="#" class="btn-volver-todos" id="btn-volver-todos-gen"><i class="fas fa-arrow-left"></i> Volver a Resultados</a>
         </div>`;
         cont.innerHTML = html;
         const btnVolverG = document.getElementById('btn-volver-todos-gen');
@@ -427,10 +427,16 @@ document.addEventListener('DOMContentLoaded', () => {
     ]).then(([res, gen]) => {
         RESULTADOS = res; GENERAL = gen;
         renderFechaList();
-        const btnGen = document.getElementById('btn-general');
-        if (btnGen) btnGen.addEventListener('click', abrirGeneral);
         engancharBotonesVerFecha();
     });
+
+    // Menú de Resultados: 3 tarjetas
+    const menuFechas = document.getElementById('menu-fechas');
+    const menuGeneral = document.getElementById('menu-general');
+    const menuCampeones = document.getElementById('menu-campeones');
+    if (menuFechas) menuFechas.addEventListener('click', () => navigateTo('resultados-fechas'));
+    if (menuGeneral) menuGeneral.addEventListener('click', abrirGeneral);
+    if (menuCampeones) menuCampeones.addEventListener('click', () => navigateTo('campeones'));
 
     // Botones "Ver Resultados" en los calendarios de Eventos (data-fecha)
     function engancharBotonesVerFecha() {
@@ -498,14 +504,33 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modalOk) modalOk.addEventListener('click', closeModal);
     if (modal) modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
 
-    // ============ CAMPEONES DESDE JSON ============
+    // ============ CAMPEONES DESDE JSON (página Campeones 2026 con selector XCO/XCC) ============
+    let CAMPEONES = null;
+    let campeonesModActual = 'XCO';
+    const campeonesGrid = document.getElementById('campeones-grid');
+
+    function renderCampeonesActual() {
+        if (!CAMPEONES || !campeonesGrid) return;
+        renderCampeones(CAMPEONES, campeonesModActual, campeonesGrid);
+    }
+
     fetch('data/campeones.json')
         .then(res => res.json())
         .then(campeones => {
-            renderCampeones(campeones, 'XCC', document.querySelector('#page-format-xcc .champions-grid'));
-            renderCampeones(campeones, 'XCO', document.querySelector('#page-format-xco .champions-grid'));
+            CAMPEONES = campeones;
+            renderCampeonesActual();
         })
         .catch(err => console.log('Error cargando campeones:', err));
+
+    // tabs XCO / Short Track de la página Campeones
+    document.querySelectorAll('#campeones-mod-tabs .modalidad-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            document.querySelectorAll('#campeones-mod-tabs .modalidad-tab').forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            campeonesModActual = tab.getAttribute('data-modc');
+            renderCampeonesActual();
+        });
+    });
 
     // Orden de campeones: menores primero (Preinfantil arriba)
     const ORDEN_CAMPEONES = [
