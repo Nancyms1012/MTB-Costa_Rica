@@ -728,33 +728,30 @@ img { max-width: 100%; height: auto; }
 }
 .champion-card {
     display: flex;
-    flex-direction: column;
-    background: rgba(255,255,255,0.06);
-    border-radius: 8px;
-    padding: 14px 16px;
-    border: 1px solid rgba(255,255,255,0.08);
-}
-
-/* Tarjeta de campeón CON foto (estilo UCI: barra izquierda + datos + foto derecha) */
-.champion-card-foto {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 12px;
+    background: transparent;
+    border-radius: 8px;
+    padding: 12px 16px 12px 20px;
+    border: 1px solid rgba(255,255,255,0.12);
     position: relative;
-    padding: 14px 16px 14px 20px;
-    min-height: 90px;
     overflow: hidden;
+    min-height: 84px;
 }
-.champion-card-foto::before {
+.champion-card .champion-info {
+    display: flex; flex-direction: column; flex: 1; min-width: 0;
+}
+/* barra de color a la izquierda en TODAS las tarjetas */
+.champion-card::before {
     content: "";
     position: absolute; left: 0; top: 0; bottom: 0;
     width: 5px;
     background: linear-gradient(180deg, var(--primary), var(--secondary));
 }
-.champion-card-foto .champion-info {
-    display: flex; flex-direction: column; flex: 1; min-width: 0;
-}
+
+/* (La tarjeta con foto usa el mismo layout base .champion-card) */
 .champion-foto {
     flex-shrink: 0;
     width: 72px; height: 72px;
