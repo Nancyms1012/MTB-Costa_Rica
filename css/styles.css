@@ -325,18 +325,45 @@ img { max-width: 100%; height: auto; }
     padding-top: 60px;
     background: linear-gradient(90deg, #0b1120, #162a45, #1a3355);
 }
+
+/* Banner de inicio con imagen + logo en la esquina */
+.inicio-banner {
+    position: relative;
+    width: 100%;
+    line-height: 0;
+}
+.inicio-banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.inicio-banner-logo {
+    position: absolute;
+    top: 14px;
+    left: 22px;
+    width: 130px;
+    height: auto;
+    z-index: 2;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.45));
+}
+
 .next-event-banner {
     background: transparent;
-    padding: 35px 40px;
+    padding: 30px 40px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    text-align: center;
 }
 .next-event-banner-content {
-    flex: 1;
     min-width: 280px;
+    text-align: center;
+}
+.next-event-location,
+.next-event-date-text {
+    justify-content: center;
 }
 .next-event-badge-label {
     display: inline-block;
@@ -1580,4 +1607,11 @@ img { max-width: 100%; height: auto; }
     .results-menu-icon { font-size: 1.8rem; margin: 0; }
     .results-menu-card > div:not(.results-menu-icon), .results-menu-card h3 { text-align: left; }
     .results-menu-card p { flex: 1; }
+}
+
+
+/* Banner de inicio en móvil: logo más pequeño */
+@media (max-width: 768px) {
+    .inicio-banner-logo { width: 72px; top: 8px; left: 10px; }
+    .next-event-banner { padding: 24px 18px; }
 }
