@@ -540,11 +540,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         container.innerHTML = `
             <div class="champions-col">
-                <h3 class="champions-gender">MUJERES</h3>
+                <h3 class="champions-gender">FEMENINO</h3>
                 ${mujeres.map(cardHTML).join('')}
             </div>
             <div class="champions-col">
-                <h3 class="champions-gender">HOMBRES</h3>
+                <h3 class="champions-gender">MASCULINO</h3>
                 ${hombres.map(cardHTML).join('')}
             </div>
         `;
