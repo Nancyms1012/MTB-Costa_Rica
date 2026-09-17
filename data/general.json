@@ -2,6 +2,7 @@
   "label": "Clasificación General",
   "sub": "Acumulado hasta VI Fecha · Finca Grupo Orosi",
   "xlsx": "resultados-pdf/general-vi-fecha.xlsx",
+  "pdf": "resultados-pdf/general-vi-fecha.pdf",
   "categorias": {
     "ELITE": {
       "M": [

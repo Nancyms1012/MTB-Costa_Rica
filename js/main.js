@@ -401,12 +401,16 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!GENERAL) return;
         document.getElementById('general-sub').textContent = GENERAL.sub || '';
         const cont = document.getElementById('general-content');
-        let html = '';
-        // (Botón de descargar Excel quitado por ahora — el archivo es Excel)
+        // botón para ver el PDF completo de la clasificación general
+        const pdfBtn = GENERAL.pdf
+            ? `<div class="pdf-links"><a class="btn-pdf" href="${GENERAL.pdf}" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> Ver clasificación completa (PDF)</a></div>`
+            : '';
+        let html = pdfBtn;
         const cats = GENERAL.categorias || {};
         ordenarCategorias(cats).forEach(cat => {
             html += categoriaHTML(cat, cats[cat], 'general', null);
         });
+        html += pdfBtn;
         html += `<div class="volver-todos-wrap">
             <a href="#" class="btn-volver-todos" id="btn-volver-todos-gen"><i class="fas fa-list"></i> Volver a todos los resultados</a>
         </div>`;
