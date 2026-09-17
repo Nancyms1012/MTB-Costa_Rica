@@ -707,6 +707,8 @@ img { max-width: 100%; height: auto; }
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    max-width: 820px;
+    margin: 0 auto;
 }
 .champions-col {
     background: transparent;
@@ -731,15 +733,15 @@ img { max-width: 100%; height: auto; }
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 12px;
+    gap: 14px;
     background: var(--white);
     border-radius: 8px;
-    padding: 12px 16px 12px 20px;
+    padding: 16px 18px 16px 22px;
     border: 1px solid var(--gray-200);
     box-shadow: var(--shadow);
     position: relative;
     overflow: hidden;
-    min-height: 84px;
+    min-height: 120px;
 }
 .champion-card .champion-info {
     display: flex; flex-direction: column; flex: 1; min-width: 0;
@@ -755,11 +757,11 @@ img { max-width: 100%; height: auto; }
 /* (La tarjeta con foto usa el mismo layout base .champion-card) */
 .champion-foto {
     flex-shrink: 0;
-    width: 72px; height: 72px;
+    width: 96px; height: 96px;
     border-radius: 50%;
     overflow: hidden;
-    border: 2px solid var(--secondary);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    border: 3px solid var(--secondary);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
 }
 .champion-foto img {
     width: 100%; height: 100%;
