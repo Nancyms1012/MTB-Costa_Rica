@@ -196,7 +196,7 @@ img { max-width: 100%; height: auto; }
     width: 100%;
     z-index: 1000;
     padding: 12px 0;
-    background: linear-gradient(90deg, #0b1120, #162a45, #1a3355);
+    background: linear-gradient(180deg, rgba(11,17,32,0.85), rgba(11,17,32,0.15) 70%, transparent);
     border-bottom: none;
 }
 .navbar.scrolled { background: linear-gradient(180deg, #0b1120, #0f1b2d); padding: 10px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.5); }
@@ -322,13 +322,12 @@ img { max-width: 100%; height: auto; }
 }
 
 #page-inicio {
-    padding-top: 60px;
+    padding-top: 0;
     background: linear-gradient(90deg, #0b1120, #162a45, #1a3355);
 }
 
-/* Banner de inicio con imagen + logo en la esquina */
+/* Banner de inicio: imagen de fondo (el menú fijo va encima) */
 .inicio-banner {
-    position: relative;
     width: 100%;
     line-height: 0;
 }
@@ -337,28 +336,18 @@ img { max-width: 100%; height: auto; }
     height: auto;
     display: block;
 }
-.inicio-banner-logo {
-    position: absolute;
-    top: 14px;
-    left: 22px;
-    width: 130px;
-    height: auto;
-    z-index: 2;
-    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.45));
-}
 
+/* Info del proximo evento + crono en la misma linea, centrados */
 .next-event-banner {
     background: transparent;
     padding: 30px 40px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 18px;
-    text-align: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 .next-event-banner-content {
-    min-width: 280px;
     text-align: center;
 }
 .next-event-location,
@@ -1610,8 +1599,7 @@ img { max-width: 100%; height: auto; }
 }
 
 
-/* Banner de inicio en móvil: logo más pequeño */
+/* Banner de inicio en móvil */
 @media (max-width: 768px) {
-    .inicio-banner-logo { width: 72px; top: 8px; left: 10px; }
-    .next-event-banner { padding: 24px 18px; }
+    .next-event-banner { padding: 24px 18px; gap: 22px; }
 }
