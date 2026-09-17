@@ -731,6 +731,36 @@ img { max-width: 100%; height: auto; }
     border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 .champion-card:last-child { border-bottom: none; }
+
+/* Tarjeta de campeón CON foto (estilo UCI: barra izquierda + datos + foto derecha) */
+.champion-card-foto {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    position: relative;
+    padding: 14px 0 14px 16px;
+    min-height: 90px;
+}
+.champion-card-foto::before {
+    content: "";
+    position: absolute; left: 0; top: 10px; bottom: 10px;
+    width: 5px; border-radius: 3px;
+    background: linear-gradient(180deg, var(--primary), var(--secondary));
+}
+.champion-card-foto .champion-info {
+    display: flex; flex-direction: column; flex: 1; min-width: 0;
+}
+.champion-foto {
+    flex-shrink: 0;
+    width: 90px; height: 90px;
+    display: flex; align-items: flex-end; justify-content: center;
+    overflow: hidden;
+}
+.champion-foto img {
+    max-height: 100%; max-width: 100%;
+    object-fit: contain; object-position: bottom;
+}
 .champion-category {
     font-size: 0.65rem;
     color: var(--secondary);

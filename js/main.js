@@ -523,26 +523,29 @@ document.addEventListener('DOMContentLoaded', () => {
         const mujeres = ordenarCampeones(data.filter(c => c.modalidad === modalidad && c.genero === 'F'));
         const hombres = ordenarCampeones(data.filter(c => c.modalidad === modalidad && c.genero === 'M'));
 
+        function cardHTML(c) {
+            const conFoto = c.foto ? ' champion-card-foto' : '';
+            const foto = c.foto
+                ? `<div class="champion-foto"><img src="${c.foto}" alt="${c.nombre} ${c.apellido}" loading="lazy"></div>`
+                : '';
+            return `
+                <div class="champion-card${conFoto}">
+                    <div class="champion-info">
+                        <span class="champion-category">${c.categoria}</span>
+                        <span class="champion-name">${c.nombre} <strong>${c.apellido}</strong></span>
+                        <span class="champion-team">${c.equipo}</span>
+                    </div>
+                    ${foto}
+                </div>`;
+        }
         container.innerHTML = `
             <div class="champions-col">
                 <h3 class="champions-gender">MUJERES</h3>
-                ${mujeres.map(c => `
-                    <div class="champion-card">
-                        <span class="champion-category">${c.categoria}</span>
-                        <span class="champion-name">${c.nombre} <strong>${c.apellido}</strong></span>
-                        <span class="champion-team">${c.equipo}</span>
-                    </div>
-                `).join('')}
+                ${mujeres.map(cardHTML).join('')}
             </div>
             <div class="champions-col">
                 <h3 class="champions-gender">HOMBRES</h3>
-                ${hombres.map(c => `
-                    <div class="champion-card">
-                        <span class="champion-category">${c.categoria}</span>
-                        <span class="champion-name">${c.nombre} <strong>${c.apellido}</strong></span>
-                        <span class="champion-team">${c.equipo}</span>
-                    </div>
-                `).join('')}
+                ${hombres.map(cardHTML).join('')}
             </div>
         `;
     }
