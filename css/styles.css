@@ -631,7 +631,6 @@ body.en-inicio .navbar {
 .format-page-hero {
     position: relative;
     width: 100%;
-    overflow: hidden;
 }
 .format-page-hero-img {
     width: 100%;
