@@ -1675,5 +1675,6 @@ body.en-inicio .navbar {
     }
     .format-hero-text p { font-size: 0.9rem; }
     .format-page-breadcrumb { padding-top: 10px !important; }
-    .format-page-hero-img { max-height: 42vh; object-fit: cover; object-position: center; }
+    /* Mostrar la foto COMPLETA (sin recortar) en móvil */
+    .format-page-hero-img { max-height: none; height: auto; object-fit: contain; width: 100%; }
 }
