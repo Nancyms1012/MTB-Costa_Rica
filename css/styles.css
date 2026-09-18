@@ -1631,7 +1631,8 @@ img { max-width: 100%; height: auto; }
 
 /* Banner de inicio en móvil: overlay más compacto */
 @media (max-width: 768px) {
-    .nav-logo .logo-img { height: 64px; margin: -12px 0; display: block; }
+    .nav-logo { display: flex; align-items: center; }
+    .nav-logo .logo-img { height: 52px; margin: 0; display: block; }
     /* En celular: logo SOLO en el navbar (el grande del banner se oculta para no tapar) */
     body.en-inicio .nav-logo .logo-img { display: block; }
     .inicio-banner-logo { display: none; }
