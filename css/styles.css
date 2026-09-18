@@ -210,9 +210,14 @@ img { max-width: 100%; height: auto; }
 }
 .nav-logo { position: relative; z-index: 1001; }
 .nav-logo .logo-img {
-    height: 110px; width: auto;
-    margin: -34px 0;          /* sobresale sin agrandar la barra del menú */
+    height: 64px; width: auto;
+    margin: -10px 0;
     filter: drop-shadow(0 4px 12px rgba(0,0,0,0.45));
+}
+/* En desktop y en Inicio, el logo del navbar se oculta (se usa el logo grande sobre el banner).
+   En otras páginas el logo del navbar sí se muestra normal. */
+@media (min-width: 769px) {
+    body.en-inicio .nav-logo .logo-img { display: none; }
 }
 .nav-menu { display: flex; list-style: none; gap: 5px; }
 .nav-link {
@@ -341,6 +346,17 @@ img { max-width: 100%; height: auto; }
     width: 100%;
     height: auto;
     display: block;
+}
+/* Logo grande sobre el banner, a la izquierda, centrado a la altura de "LA COPA" (solo desktop) */
+.inicio-banner-logo {
+    position: absolute;
+    left: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 45%;
+    width: auto;
+    z-index: 3;
+    filter: drop-shadow(0 4px 14px rgba(0,0,0,0.5));
 }
 /* Capa con info del evento (arriba) + crono (abajo), a la derecha, DENTRO de la imagen */
 .next-event-overlay {
@@ -1616,6 +1632,7 @@ img { max-width: 100%; height: auto; }
 /* Banner de inicio en móvil: overlay más compacto */
 @media (max-width: 768px) {
     .nav-logo .logo-img { height: 64px; margin: -12px 0; }
+    .inicio-banner-logo { display: none; }  /* en celular queda solo el logo del navbar */
     /* En celular el overlay NO va sobre la imagen: se apila DEBAJO */
     .next-event-overlay {
         position: static;

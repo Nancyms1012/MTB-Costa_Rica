@@ -29,6 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.forEach(l => l.classList.remove('active'));
         const activeNav = document.querySelector(`.nav-link[data-page="${pageName}"]`);
         if (activeNav) activeNav.classList.add('active');
+        // marca si estamos en Inicio (para el logo grande del banner)
+        document.body.classList.toggle('en-inicio', pageName === 'inicio');
     }
 
     allPageLinks.forEach(link => {
