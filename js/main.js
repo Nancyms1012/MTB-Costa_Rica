@@ -380,22 +380,29 @@ document.addEventListener('DOMContentLoaded', () => {
             return h + '</div>';
         }
 
+        // Fila de acciones: botón Volver + botón(es) PDF, juntos
+        const volverBtn = `<a href="#" class="btn-volver-todos btn-volver-inline" id="btn-volver-top"><i class="fas fa-arrow-left"></i> Volver a las fechas</a>`;
+        function accionesHTML() {
+            const pdfs = pdfLinksHTML();
+            // insertar el botón volver dentro del contenedor .pdf-links (para que queden en la misma línea)
+            if (pdfs) return pdfs.replace('<div class="pdf-links">', `<div class="pdf-links">${volverBtn}`);
+            return `<div class="pdf-links">${volverBtn}</div>`;
+        }
+
         let html = '';
-        // botones PDF ARRIBA
-        html += pdfLinksHTML();
+        // Acciones ARRIBA (Volver + PDF)
+        html += accionesHTML();
         // categorías
         const cats = mod.categorias || {};
         ordenarCategorias(cats).forEach(cat => {
             html += categoriaHTML(cat, cats[cat], 'fecha', detalleModActual);
         });
-        // botones PDF + volver ABAJO
-        html += pdfLinksHTML();
-        html += `<div class="volver-todos-wrap">
-            <a href="#" class="btn-volver-todos" id="btn-volver-todos"><i class="fas fa-list"></i> Volver a las fechas</a>
-        </div>`;
+        // Acciones ABAJO (Volver + PDF)
+        html += accionesHTML().replace('id="btn-volver-top"', 'id="btn-volver-bottom"');
         cont.innerHTML = html;
-        const btnVolver = document.getElementById('btn-volver-todos');
-        if (btnVolver) btnVolver.addEventListener('click', (e) => { e.preventDefault(); navigateTo('resultados'); });
+        cont.querySelectorAll('#btn-volver-top, #btn-volver-bottom').forEach(b => {
+            b.addEventListener('click', (e) => { e.preventDefault(); navigateTo('resultados'); });
+        });
     }
 
     // Abrir Clasificación General

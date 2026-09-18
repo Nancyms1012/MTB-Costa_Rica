@@ -1658,3 +1658,11 @@ body.en-inicio .navbar {
     .countdown-item { min-width: 48px; padding: 8px 10px; }
     .countdown-item span { font-size: 1.2rem; }
 }
+
+
+/* Botón "Volver a las fechas" en línea, al lado del botón PDF */
+.btn-volver-inline {
+    padding: 11px 22px;
+    font-size: 0.85rem;
+    margin: 0;
+}
