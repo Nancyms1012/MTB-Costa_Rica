@@ -208,7 +208,12 @@ img { max-width: 100%; height: auto; }
     align-items: center;
     justify-content: space-between;
 }
-.nav-logo .logo-img { height: 45px; width: auto; }
+.nav-logo { position: relative; z-index: 1001; }
+.nav-logo .logo-img {
+    height: 110px; width: auto;
+    margin: -34px 0;          /* sobresale sin agrandar la barra del menú */
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.45));
+}
 .nav-menu { display: flex; list-style: none; gap: 5px; }
 .nav-link {
     color: var(--white);
@@ -1610,6 +1615,7 @@ img { max-width: 100%; height: auto; }
 
 /* Banner de inicio en móvil: overlay más compacto */
 @media (max-width: 768px) {
+    .nav-logo .logo-img { height: 64px; margin: -12px 0; }
     /* En celular el overlay NO va sobre la imagen: se apila DEBAJO */
     .next-event-overlay {
         position: static;
