@@ -221,9 +221,9 @@ img { max-width: 100%; height: auto; }
 }
 .nav-menu { display: flex; list-style: none; gap: 5px; }
 .nav-link {
-    color: var(--white);
+    color: #FAB900;
     font-family: var(--font-heading);
-    font-weight: 600;
+    font-weight: 800;
     font-size: 0.8rem;
     padding: 8px 12px;
     border-radius: 50px;
