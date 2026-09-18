@@ -1674,7 +1674,13 @@ body.en-inicio .navbar {
         padding: 18px 18px 20px;
     }
     .format-hero-text p { font-size: 0.9rem; }
-    .format-page-breadcrumb { padding-top: 10px !important; }
+    /* El breadcrumb (ruta) va DEBAJO del navbar, en su propio espacio (no sobre la foto) */
+    #page-format-xco, #page-format-xcc { padding-top: 76px; }
+    .format-page-breadcrumb {
+        position: static;
+        padding: 10px 16px !important;
+        background: var(--primary) !important;
+    }
     /* Mostrar la foto COMPLETA (sin recortar) en móvil */
     .format-page-hero-img { max-height: none; height: auto; object-fit: contain; width: 100%; }
 }
