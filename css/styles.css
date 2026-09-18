@@ -651,7 +651,7 @@ body.en-inicio .navbar {
 #page-resultado-detalle,
 #page-general-detalle,
 #page-campeones {
-    padding-top: 90px;
+    padding-top: 90px !important;
     background: var(--white);
 }
 #page-format-xcc .breadcrumb-bar { background: transparent; }
@@ -1674,7 +1674,7 @@ body.en-inicio .navbar {
     }
     .format-hero-text p { font-size: 0.9rem; }
     /* El breadcrumb (ruta) va DEBAJO del navbar, en su propio espacio (no sobre la foto) */
-    #page-format-xco, #page-format-xcc { padding-top: 76px; }
+    #page-format-xco, #page-format-xcc { padding-top: 90px !important; }
     .format-page-breadcrumb {
         position: static;
         padding: 10px 16px !important;
