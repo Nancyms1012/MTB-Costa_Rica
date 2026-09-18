@@ -331,14 +331,11 @@ img { max-width: 100%; height: auto; }
     position: relative;
     width: 100%;
     line-height: 0;
-    max-height: 340px;
-    overflow: hidden;
 }
 .inicio-banner-img {
     width: 100%;
     height: auto;
     display: block;
-    object-fit: cover;
 }
 /* Capa con info del evento (arriba) + crono (abajo), a la derecha, DENTRO de la imagen */
 .next-event-overlay {
@@ -1613,9 +1610,19 @@ img { max-width: 100%; height: auto; }
 
 /* Banner de inicio en móvil: overlay más compacto */
 @media (max-width: 768px) {
-    .next-event-overlay { right: 50%; transform: translate(50%, -50%); gap: 8px; width: 92%; }
-    .next-event-title { font-size: 1rem; }
-    .countdown { gap: 6px; }
-    .countdown-item { min-width: 44px; padding: 6px 8px; }
-    .countdown-item span { font-size: 1rem; }
+    /* En celular el overlay NO va sobre la imagen: se apila DEBAJO */
+    .next-event-overlay {
+        position: static;
+        transform: none;
+        right: auto; top: auto;
+        width: 100%;
+        gap: 12px;
+        padding: 20px 16px;
+        background: linear-gradient(90deg, #0b1120, #162a45, #1a3355);
+        text-shadow: none;
+    }
+    .next-event-title { font-size: 1.05rem; }
+    .countdown { gap: 8px; }
+    .countdown-item { min-width: 48px; padding: 8px 10px; }
+    .countdown-item span { font-size: 1.2rem; }
 }
