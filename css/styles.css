@@ -196,8 +196,12 @@ img { max-width: 100%; height: auto; }
     width: 100%;
     z-index: 1000;
     padding: 12px 0;
-    background: linear-gradient(180deg, rgba(11,17,32,0.85), rgba(11,17,32,0.15) 70%, transparent);
+    background: linear-gradient(90deg, #0b1120, #162a45, #1a3355);
     border-bottom: none;
+}
+/* Solo en Inicio el navbar es transparente (para ver el banner detrás) */
+body.en-inicio .navbar {
+    background: linear-gradient(180deg, rgba(11,17,32,0.85), rgba(11,17,32,0.15) 70%, transparent);
 }
 .navbar.scrolled { background: linear-gradient(180deg, #0b1120, #0f1b2d); padding: 10px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.5); }
 .nav-container {
@@ -296,6 +300,8 @@ img { max-width: 100%; height: auto; }
 /* ============ SPA PAGES ============ */
 .page { display: none; min-height: 100vh; }
 .page.active { display: block; }
+/* Todas las páginas dejan espacio para el navbar fijo, EXCEPTO Inicio (que lleva el banner detrás) */
+.page:not(#page-inicio) { padding-top: 90px; }
 
 /* Breadcrumb bar */
 .breadcrumb-bar {
