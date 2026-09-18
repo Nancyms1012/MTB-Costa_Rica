@@ -645,17 +645,15 @@ body.en-inicio .navbar {
     top: 0;
     left: 0;
     z-index: 2;
-    padding-top: 75px !important;
+    padding-top: 12px !important;
     background: transparent !important;
 }
 #page-format-xcc {
-    padding-top: 0;
     background: var(--white);
 }
 #page-format-xcc .breadcrumb-bar { background: transparent; }
 
 #page-format-xco {
-    padding-top: 0;
     background: var(--white);
 }
 #page-format-xco .breadcrumb-bar { background: transparent; }
@@ -1665,4 +1663,17 @@ body.en-inicio .navbar {
     padding: 11px 22px;
     font-size: 0.85rem;
     margin: 0;
+}
+
+
+/* Páginas de formato XCO/XCC en móvil: texto del hero DEBAJO de la imagen (no encima) */
+@media (max-width: 768px) {
+    .format-hero-text {
+        position: static;
+        background: var(--primary);
+        padding: 18px 18px 20px;
+    }
+    .format-hero-text p { font-size: 0.9rem; }
+    .format-page-breadcrumb { padding-top: 10px !important; }
+    .format-page-hero-img { max-height: 42vh; object-fit: cover; object-position: center; }
 }
