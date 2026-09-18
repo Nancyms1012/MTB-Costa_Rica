@@ -1631,10 +1631,10 @@ img { max-width: 100%; height: auto; }
 
 /* Banner de inicio en móvil: overlay más compacto */
 @media (max-width: 768px) {
-    .nav-logo .logo-img { height: 64px; margin: -12px 0; }
-    /* En Inicio + celular: mostrar el logo grande sobre el banner (alineado con LA COPA) y ocultar el del navbar */
-    body.en-inicio .nav-logo .logo-img { display: none; }
-    .inicio-banner-logo { display: block; }
+    .nav-logo .logo-img { height: 64px; margin: -12px 0; display: block; }
+    /* En celular: logo SOLO en el navbar (el grande del banner se oculta para no tapar) */
+    body.en-inicio .nav-logo .logo-img { display: block; }
+    .inicio-banner-logo { display: none; }
     /* En celular el overlay NO va sobre la imagen: se apila DEBAJO */
     .next-event-overlay {
         position: static;
