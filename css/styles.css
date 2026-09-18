@@ -300,8 +300,6 @@ body.en-inicio .navbar {
 /* ============ SPA PAGES ============ */
 .page { display: none; min-height: 100vh; }
 .page.active { display: block; }
-/* Todas las páginas dejan espacio para el navbar fijo, EXCEPTO Inicio (que lleva el banner detrás) */
-.page:not(#page-inicio) { padding-top: 90px; }
 
 /* Breadcrumb bar */
 .breadcrumb-bar {
@@ -648,14 +646,16 @@ body.en-inicio .navbar {
     padding-top: 12px !important;
     background: transparent !important;
 }
-#page-format-xcc {
+/* Páginas cuyo contenido inicia pegado arriba necesitan espacio para el navbar fijo */
+#page-format-xcc,
+#page-format-xco,
+#page-resultado-detalle,
+#page-general-detalle,
+#page-campeones {
+    padding-top: 90px;
     background: var(--white);
 }
 #page-format-xcc .breadcrumb-bar { background: transparent; }
-
-#page-format-xco {
-    background: var(--white);
-}
 #page-format-xco .breadcrumb-bar { background: transparent; }
 
 .format-hero-text {
