@@ -194,7 +194,7 @@ img { max-width: 100%; height: auto; }
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 1000;
     padding: 12px 0;
     background: linear-gradient(90deg, #0b1120, #162a45, #1a3355);
     border-bottom: none;
@@ -1579,9 +1579,10 @@ body.en-inicio .navbar {
 .inicio-visitas { 
     display: flex; 
     justify-content: center; 
-    padding: 16px 20px 0; 
+    padding: 16px 20px 0;
+    margin-top: 90px;
     position: relative;
-    z-index: 1000;
+    z-index: 10;
 }
 .visitas-contador {
     display: inline-flex; 
@@ -1594,7 +1595,7 @@ body.en-inicio .navbar {
     font-family: var(--font-heading); 
     font-weight: 600;
     position: relative;
-    z-index: 1000;
+    z-index: 10;
 }
 .visitas-contador i { margin-right: 4px; color: var(--secondary); }
 .contador-img { height: 22px; vertical-align: middle; border-radius: 4px; }
