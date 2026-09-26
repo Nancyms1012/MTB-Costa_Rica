@@ -1585,7 +1585,6 @@ body.en-inicio .navbar {
     left: 0;
     right: 0;
     z-index: 998;
-    background: linear-gradient(90deg, #0b1120, #162a45, #1a3355);
 }
 .visitas-contador {
     display: inline-flex; 
