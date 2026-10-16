@@ -694,6 +694,15 @@ body.en-inicio .navbar {
     .format-gallery-row { grid-template-columns: repeat(2, 1fr); }
     .format-gallery-row img { height: 240px; }
 }
+/* XCC: las fotos son verticales (500x750), se muestran completas sin recorte */
+#page-format-xcc .format-gallery-row img {
+    height: 420px;
+    object-fit: contain;
+    background: #0b1120;
+}
+@media (max-width: 768px) {
+    #page-format-xcc .format-gallery-row img { height: 300px; }
+}
 .format-gallery-single {
     grid-template-columns: 1fr;
 }
