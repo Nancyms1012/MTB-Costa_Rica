@@ -694,14 +694,12 @@ body.en-inicio .navbar {
     .format-gallery-row { grid-template-columns: repeat(2, 1fr); }
     .format-gallery-row img { height: 240px; }
 }
-/* XCC: las fotos son verticales (500x750), se muestran completas sin recorte */
+/* XCC: las fotos son verticales (500x750); el recuadro respeta esa proporción
+   para que se vean completas y sin bandas de fondo a los lados */
 #page-format-xcc .format-gallery-row img {
-    height: 420px;
-    object-fit: contain;
-    background: #0b1120;
-}
-@media (max-width: 768px) {
-    #page-format-xcc .format-gallery-row img { height: 300px; }
+    height: auto;
+    aspect-ratio: 500 / 750;
+    object-fit: cover;
 }
 .format-gallery-single {
     grid-template-columns: 1fr;
