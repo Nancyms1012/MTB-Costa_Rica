@@ -606,6 +606,7 @@ body.en-inicio .navbar {
 }
 .dot-xco { background: var(--accent); }
 .dot-xcc { background: var(--secondary); }
+.dot-cyclocross { background: #2e9e5b; }
 .dot-kids { background: #ff9800; }
 .format-calendar { display: none; }
 .format-calendar.active { display: block; }
