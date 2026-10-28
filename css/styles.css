@@ -1010,6 +1010,47 @@ body.en-inicio .navbar {
 .event-info h4 { font-size: 1rem; color: var(--primary); margin-bottom: 3px; }
 .event-info p { font-size: 0.85rem; color: var(--gray-600); }
 .event-info .event-badge { margin-top: 6px; }
+/* Escudo de la sede (ej. Sarapiquí) dentro de la tarjeta de evento */
+.event-sede-logo {
+    width: 54px;
+    height: 54px;
+    object-fit: contain;
+    float: right;
+    margin: 0 0 6px 12px;
+}
+/* Bloque de descarga de GPX en la tarjeta de la fecha activa */
+.event-gpx {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+    text-align: right;
+}
+.event-gpx-label {
+    font-size: 0.78rem;
+    color: var(--gray-600);
+    font-weight: 600;
+}
+.btn-gpx {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--secondary);
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: var(--transition);
+    white-space: nowrap;
+}
+.btn-gpx:hover { filter: brightness(1.1); transform: translateY(-1px); }
+@media (max-width: 768px) {
+    .event-gpx { align-items: flex-start; text-align: left; margin-top: 8px; }
+    .event-sede-logo { width: 44px; height: 44px; }
+}
 
 .event-badge {
     display: inline-block; padding: 3px 10px; border-radius: 50px;
@@ -1338,6 +1379,7 @@ body.en-inicio .navbar {
     .mega-link { padding: 10px 15px; font-size: 0.85rem; }
     .event-card { grid-template-columns: 70px 1fr; gap: 15px; }
     .event-card .btn-see-results { grid-column: 1 / -1; justify-self: start; }
+    .event-card .event-gpx { grid-column: 1 / -1; align-items: flex-start; }
     .hero h1 { font-size: 1.8rem; }
     .hero-subtitle { font-size: 1rem; }
     .hero-logo { width: 90px; height: 90px; }
