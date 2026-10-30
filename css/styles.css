@@ -1075,6 +1075,25 @@ body.en-inicio .navbar {
     .event-gpx { align-items: flex-start; text-align: left; margin-top: 8px; }
     .event-sede-logo { width: 44px; height: 44px; }
 }
+/* Imagen de horarios de salida (Eventos XCC / Cyclocross) */
+.horarios-salida {
+    max-width: 600px;
+    margin: 25px auto 0;
+    text-align: center;
+}
+.horarios-salida-title {
+    font-size: 1.1rem;
+    color: var(--primary);
+    margin-bottom: 14px;
+}
+.horarios-salida-title i { color: var(--secondary); margin-right: 6px; }
+.horarios-salida-img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    display: block;
+}
 
 .event-badge {
     display: inline-block; padding: 3px 10px; border-radius: 50px;
