@@ -147,9 +147,16 @@ document.addEventListener('DOMContentLoaded', () => {
             if (nowMin >= hhmmToMin(tandas[i].hora)) actual = tandas[i];
         }
 
+        // Margen tras la salida de la última tanda para considerar la carrera finalizada (minutos)
+        const MARGEN_FINAL = 75;
+        const finMin = hhmmToMin(tandas[tandas.length - 1].hora) + MARGEN_FINAL;
+
         if (!actual) {
             // Antes de la primera tanda
             el.textContent = 'La carrera inicia a las ' + tandas[0].hora;
+        } else if (nowMin >= finMin) {
+            // Después de la última tanda + margen
+            el.textContent = 'Carrera finalizada — ¡Gracias por participar!';
         } else {
             el.textContent = actual.hora + ' — ' + actual.categorias;
         }
