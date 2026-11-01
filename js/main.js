@@ -117,53 +117,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // ============ COUNTDOWN ============
-    // ============ TANDA ACTUAL (Carrera en vivo) ============
-    // Cronograma Gran Final - Domingo 1 Noviembre 2026 (hora local Costa Rica)
-    const tandas = [
-        { hora: '07:00', categorias: 'Máster A, B y Open Masculino' },
-        { hora: '08:15', categorias: 'Máster C, D, E Masculino · Máster A, B Femenino' },
-        { hora: '09:30', categorias: 'Infantil y Preinfantil Masculino · Infantil y Preinfantil Femenino' },
-        { hora: '10:30', categorias: 'Élite Masculino · Élite Femenino' },
-        { hora: '12:05', categorias: 'Juvenil Masculino · Juvenil Femenino' },
-        { hora: '13:25', categorias: 'Prejuvenil Masculino · Prejuvenil Femenino' }
-    ];
-
-    function hhmmToMin(hhmm) {
-        const [h, m] = hhmm.split(':').map(Number);
-        return h * 60 + m;
-    }
-
-    function updateTandaActual() {
-        const el = document.getElementById('tanda-actual');
-        if (!el) return;
-        // Hora actual en Costa Rica (UTC-6), independiente de la zona del dispositivo
-        const now = new Date();
-        const crNow = new Date(now.toLocaleString('en-US', { timeZone: 'America/Costa_Rica' }));
-        const nowMin = crNow.getHours() * 60 + crNow.getMinutes();
-
-        let actual = null;
-        for (let i = 0; i < tandas.length; i++) {
-            if (nowMin >= hhmmToMin(tandas[i].hora)) actual = tandas[i];
-        }
-
-        // Margen tras la salida de la última tanda para considerar la carrera finalizada (minutos)
-        const MARGEN_FINAL = 75;
-        const finMin = hhmmToMin(tandas[tandas.length - 1].hora) + MARGEN_FINAL;
-
-        if (!actual) {
-            // Antes de la primera tanda
-            el.textContent = 'La carrera inicia a las ' + tandas[0].hora;
-        } else if (nowMin >= finMin) {
-            // Después de la última tanda + margen
-            el.textContent = 'Carrera finalizada — ¡Gracias por participar!';
-        } else {
-            el.textContent = actual.hora + ' — ' + actual.categorias;
-        }
-    }
-
-    updateTandaActual();
-    setInterval(updateTandaActual, 30000);
 
     // ============ STATS COUNTER ============
     const statNumbers = document.querySelectorAll('.stat-number');

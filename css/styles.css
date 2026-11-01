@@ -451,6 +451,9 @@ body.en-inicio .navbar {
     transition: var(--transition);
 }
 .live-race-link:hover { transform: translateY(-2px); }
+/* Enlace inhabilitado: solo muestra el texto, sin ser clickeable */
+.live-race-disabled { cursor: default; }
+.live-race-disabled:hover { transform: none; }
 .live-race-title {
     font-family: var(--font-heading);
     font-size: 2rem;
