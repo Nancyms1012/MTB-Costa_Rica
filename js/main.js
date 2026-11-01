@@ -118,26 +118,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // ============ COUNTDOWN ============
-    const eventDate = new Date('2026-10-31T08:00:00');
+    // ============ TANDA ACTUAL (Carrera en vivo) ============
+    // Cronograma Gran Final - Domingo 1 Noviembre 2026 (hora local Costa Rica)
+    const tandas = [
+        { hora: '07:00', categorias: 'Máster A, B y Open Masculino' },
+        { hora: '08:15', categorias: 'Máster C, D, E Masculino · Máster A, B Femenino' },
+        { hora: '09:30', categorias: 'Infantil y Preinfantil Masculino · Infantil y Preinfantil Femenino' },
+        { hora: '10:30', categorias: 'Élite Masculino · Élite Femenino' },
+        { hora: '12:05', categorias: 'Juvenil Masculino · Juvenil Femenino' },
+        { hora: '13:25', categorias: 'Prejuvenil Masculino · Prejuvenil Femenino' }
+    ];
 
-    function updateCountdown() {
-        const now = new Date();
-        const diff = eventDate - now;
-        if (diff <= 0) return;
-
-        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-        document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
-        document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
-        document.getElementById('cd-minutes').textContent = String(minutes).padStart(2, '0');
-        document.getElementById('cd-seconds').textContent = String(seconds).padStart(2, '0');
+    function hhmmToMin(hhmm) {
+        const [h, m] = hhmm.split(':').map(Number);
+        return h * 60 + m;
     }
 
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
+    function updateTandaActual() {
+        const el = document.getElementById('tanda-actual');
+        if (!el) return;
+        // Hora actual en Costa Rica (UTC-6), independiente de la zona del dispositivo
+        const now = new Date();
+        const crNow = new Date(now.toLocaleString('en-US', { timeZone: 'America/Costa_Rica' }));
+        const nowMin = crNow.getHours() * 60 + crNow.getMinutes();
+
+        let actual = null;
+        for (let i = 0; i < tandas.length; i++) {
+            if (nowMin >= hhmmToMin(tandas[i].hora)) actual = tandas[i];
+        }
+
+        if (!actual) {
+            // Antes de la primera tanda
+            el.textContent = 'La carrera inicia a las ' + tandas[0].hora;
+        } else {
+            el.textContent = actual.hora + ' — ' + actual.categorias;
+        }
+    }
+
+    updateTandaActual();
+    setInterval(updateTandaActual, 30000);
 
     // ============ STATS COUNTER ============
     const statNumbers = document.querySelectorAll('.stat-number');
