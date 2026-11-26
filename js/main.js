@@ -222,10 +222,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Etiquetas legibles
-    const MOD_LABEL = { 'XCO': 'Cross-Country Olímpico', 'XCC': 'Short Track' };
-    const MOD_DOT = { 'XCO': 'dot-xco', 'XCC': 'dot-xcc' };
+    const MOD_LABEL = { 'XCO': 'Cross-Country Olímpico', 'XCC': 'Short Track', 'CX': 'Cyclo Cross' };
+    const MOD_DOT = { 'XCO': 'dot-xco', 'XCC': 'dot-xcc', 'CX': 'dot-xco' };
     // Nombre de modalidad para el encabezado estilo UCI
-    const MOD_TITULO = { 'XCO': 'CROSS-COUNTRY OLÍMPICO', 'XCC': 'SHORT TRACK' };
+    const MOD_TITULO = { 'XCO': 'CROSS-COUNTRY OLÍMPICO', 'XCC': 'SHORT TRACK', 'CX': 'CYCLO CROSS' };
 
     // ¿Alguna fila tiene puntos? (para decidir si mostrar la columna Points)
     function hayPuntos(rows) {
@@ -410,8 +410,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Cargar los JSON y enganchar la lista + botón general
     Promise.all([
-        fetch('data/resultados.json').then(r => r.json()).catch(() => null),
-        fetch('data/general.json').then(r => r.json()).catch(() => null)
+        fetch('data/resultados.json?v=69').then(r => r.json()).catch(() => null),
+        fetch('data/general.json?v=69').then(r => r.json()).catch(() => null)
     ]).then(([res, gen]) => {
         RESULTADOS = res; GENERAL = gen;
         renderFechaList();

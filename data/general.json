@@ -1,8 +1,7 @@
 {
   "label": "Clasificación General",
-  "sub": "Acumulado hasta VI Fecha · Finca Grupo Orosi",
-  "xlsx": "resultados-pdf/general-vi-fecha.xlsx",
-  "pdf": "resultados-pdf/general-vi-fecha.pdf",
+  "sub": "Acumulado hasta VII Fecha · Parque Recreativo Sarapiquí",
+  "xlsx": "resultados-pdf/general-vii-fecha.xlsx",
   "categorias": {
     "ELITE": {
       "M": [
@@ -14,15 +13,15 @@
         },
         {
           "pos": 2,
-          "name": "RAABE Fabricio",
-          "team": "COLONO BIKE STATION KOLBI",
-          "puntos": 654
+          "name": "RAMIREZ Federico",
+          "team": "MEGAMO MANZATÉ LA SELVA",
+          "puntos": 682
         },
         {
           "pos": 3,
-          "name": "GONZÁLEZ Adriano",
-          "team": "COLONO BIKE STATION KOLBI",
-          "puntos": 618
+          "name": "AZOFEIFA Daniel",
+          "team": "BOBBYS CYCLING TEAM",
+          "puntos": 657
         }
       ],
       "F": [
@@ -30,13 +29,13 @@
           "pos": 1,
           "name": "ROJAS Adriana",
           "team": "CBZ ASFALTOS- DEKRA- MAXXIS",
-          "puntos": 960
+          "puntos": 1160
         },
         {
           "pos": 2,
           "name": "GARCÍA Isabel",
           "team": "COLONO BIKE STATION KOLBI",
-          "puntos": 809
+          "puntos": 984
         },
         {
           "pos": 3,
@@ -56,15 +55,15 @@
         },
         {
           "pos": 2,
-          "name": "RAABE Fabricio",
-          "team": "COLONO BIKE STATION KOLBI",
-          "puntos": 870
+          "name": "AZOFEIFA Daniel",
+          "team": "BOBBYS CYCLING TEAM",
+          "puntos": 893
         },
         {
           "pos": 3,
-          "name": "VARGAS José David",
+          "name": "RAABE Fabricio",
           "team": "COLONO BIKE STATION KOLBI",
-          "puntos": 699
+          "puntos": 870
         }
       ],
       "F": [
@@ -72,13 +71,13 @@
           "pos": 1,
           "name": "GARCÍA Isabel",
           "team": "COLONO BIKE STATION KOLBI",
-          "puntos": 840
+          "puntos": 1265
         },
         {
           "pos": 2,
           "name": "NUÑEZ Alison",
           "team": "DESAMPARADOS BIKE CAFÉ",
-          "puntos": 682
+          "puntos": 822
         },
         {
           "pos": 3,
@@ -92,21 +91,21 @@
       "M": [
         {
           "pos": 1,
+          "name": "NARANJO Didier",
+          "team": "COLONO BIKE STATION KOLBI",
+          "puntos": 946
+        },
+        {
+          "pos": 2,
           "name": "ACUÑA Alejandro",
           "team": "BOBBYS CYCLING TEAM",
           "puntos": 941
         },
         {
-          "pos": 2,
+          "pos": 3,
           "name": "ULATE Joshua",
           "team": "MECATRONICS / MCT COMPONENTS",
           "puntos": 825
-        },
-        {
-          "pos": 3,
-          "name": "NARANJO Didier",
-          "team": "COLONO BIKE STATION KOLBI",
-          "puntos": 730
         }
       ],
       "F": [
@@ -114,19 +113,19 @@
           "pos": 1,
           "name": "MADRIGAL Maidelyn",
           "team": "ACISA",
-          "puntos": 1230
+          "puntos": 1455
         },
         {
           "pos": 2,
           "name": "BARQUERO Brenda",
           "team": "CCDR BUENOS AIRES",
-          "puntos": 717
+          "puntos": 883
         },
         {
           "pos": 3,
           "name": "ALVARADO Jimena",
           "team": "CCDR LIMÓN",
-          "puntos": 426
+          "puntos": 566
         }
       ]
     },
@@ -136,39 +135,39 @@
           "pos": 1,
           "name": "ARIAS Daniel",
           "team": "Ciclismo Belen",
-          "puntos": 940
+          "puntos": 1085
         },
         {
           "pos": 2,
           "name": "GARCÍA Miguel",
-          "team": "Colono Bike Station Kolbi",
-          "puntos": 772
+          "team": "Colono",
+          "puntos": 936
         },
         {
           "pos": 3,
           "name": "CAMPOS Isaac",
-          "team": "Colono Bike Station Kolbi",
-          "puntos": 645
+          "team": "Team Colono Bike Station Kolbi",
+          "puntos": 865
         }
       ],
       "F": [
         {
           "pos": 1,
-          "name": "JIMÉNEZ Briana",
-          "team": "Bobbys cycling team codea",
-          "puntos": 1230
+          "name": "JIMENEZ BRIANA",
+          "team": "BOBBYS CYCLING TEAM",
+          "puntos": 1455
         },
         {
           "pos": 2,
           "name": "AZOFEIFA SOFIA",
           "team": "BOBBYS CYCLING TEAM",
-          "puntos": 716
+          "puntos": 840
         },
         {
           "pos": 3,
           "name": "CASTRO Camila",
           "team": "CCDR Santa Ana",
-          "puntos": 664
+          "puntos": 830
         }
       ]
     },
@@ -178,39 +177,39 @@
           "pos": 1,
           "name": "RODRÍGUEZ Joaquín",
           "team": "CCDR SAN JOSÉ",
-          "puntos": 1156
+          "puntos": 1264
         },
         {
           "pos": 2,
           "name": "VALVERDE Liam",
           "team": "Asociación Ciclística Turrialbeña",
-          "puntos": 858
+          "puntos": 1028
         },
         {
           "pos": 3,
           "name": "CORDERO Iker Mattias",
           "team": "PZ CYCLING TEAM",
-          "puntos": 708
+          "puntos": 924
         }
       ],
       "F": [
         {
           "pos": 1,
           "name": "CALDERÓN Ariana",
-          "team": "Colono Bike Station Kolbi",
-          "puntos": 1280
+          "team": "Colono Bikestation Kolbi",
+          "puntos": 1494
         },
         {
           "pos": 2,
-          "name": "MARCHENA Shelly",
+          "name": "MARCHENA Shelly Yuliana",
           "team": "CCDRESCAZU",
-          "puntos": 791
+          "puntos": 966
         },
         {
           "pos": 3,
-          "name": "CRUZ Monica",
-          "team": "Scott Shimano Cycling Team",
-          "puntos": 760
+          "name": "TORRES Camila",
+          "team": "CCDRESCAZU",
+          "puntos": 884
         }
       ]
     },
@@ -220,19 +219,19 @@
           "pos": 1,
           "name": "ARAYA Emiliano",
           "team": "CCDR Santa Cruz- Team Costa Frut",
-          "puntos": 1095
+          "puntos": 1320
         },
         {
           "pos": 2,
           "name": "CÉSPEDES Anthony Luan",
-          "team": "Skala Monteverde/CCDR Monteverde",
-          "puntos": 731
+          "team": "Skala Tri / CCDR Monteverde",
+          "puntos": 895
         },
         {
           "pos": 3,
-          "name": "CESPEDES Santiago",
-          "team": "ACCIPAL CMS",
-          "puntos": 643
+          "name": "CERDAS Isaac",
+          "team": "Codea",
+          "puntos": 701
         }
       ],
       "F": [
@@ -240,19 +239,19 @@
           "pos": 1,
           "name": "JIMÉNEZ Mia",
           "team": "CCDR SAN JOSÉ",
-          "puntos": 1020
+          "puntos": 1155
         },
         {
           "pos": 2,
           "name": "HERNÁNDEZ Maripaz",
           "team": "HDZ / Santa Ana",
-          "puntos": 917
+          "puntos": 1083
         },
         {
           "pos": 3,
-          "name": "MONTEALEGRE María Paula",
-          "team": "CCDR SANTA CRUZ",
-          "puntos": 706
+          "name": "MORA Valentina",
+          "team": "CODEA - E - VEGA TRAINER",
+          "puntos": 714
         }
       ]
     },
@@ -262,19 +261,19 @@
           "pos": 1,
           "name": "MARTÍNEZ Andrés",
           "team": "Nosotros Dota",
-          "puntos": 1134
+          "puntos": 1274
         },
         {
           "pos": 2,
           "name": "ARTAVIA ENRIQUE",
-          "team": "BOBBYS/FOX/YETTI",
-          "puntos": 854
+          "team": "BOBBYS CYCLING TEAM",
+          "puntos": 1079
         },
         {
           "pos": 3,
           "name": "MORALES Allan",
-          "team": "Grupeta 5am Ciclo Morales",
-          "puntos": 843
+          "team": "Ciclo Morales G5am",
+          "puntos": 953
         }
       ],
       "F": [
@@ -303,28 +302,28 @@
         {
           "pos": 1,
           "name": "RAMÍREZ Federico",
-          "team": "Seven Card Willier",
-          "puntos": 975
+          "team": "Seven card Willier",
+          "puntos": 1125
         },
         {
           "pos": 2,
           "name": "HERRERA ELBER",
           "team": "BOBBYS CYCLING TEAM",
-          "puntos": 826
+          "puntos": 1051
         },
         {
           "pos": 3,
           "name": "MOLINA Hairo",
-          "team": "CCDR ESCAZU",
-          "puntos": 754
+          "team": "CCDRESCAZU",
+          "puntos": 880
         }
       ],
       "F": [
         {
           "pos": 1,
           "name": "LORIA Dilcen",
-          "team": "FISIONORTE/ JONATHANQUESADA.CYCLING",
-          "puntos": 1180
+          "team": "Fisionorte",
+          "puntos": 1405
         },
         {
           "pos": 2,
@@ -335,7 +334,7 @@
         {
           "pos": 3,
           "name": "DURÁN Anny",
-          "team": "INDEPENDIENTE",
+          "team": "Gavia 88",
           "puntos": 170
         }
       ]
@@ -344,21 +343,21 @@
       "M": [
         {
           "pos": 1,
-          "name": "AZPFEIFA MARCOS",
+          "name": "AZOFEIFA MARCOS",
           "team": "BOBBYS CYCLING TEAM",
-          "puntos": 920
+          "puntos": 1070
         },
         {
           "pos": 2,
-          "name": "MENDEZ Diego",
-          "team": "UT",
-          "puntos": 686
+          "name": "ELSEMAANI Jean Paul",
+          "team": "HATOVIEJO - MOMIA TS",
+          "puntos": 758
         },
         {
           "pos": 3,
-          "name": "CHACON Gonzalo",
-          "team": "TEAM GOCHA",
-          "puntos": 634
+          "name": "GARCÍA Jorge",
+          "team": "Grupeta 5am",
+          "puntos": 730
         }
       ]
     },
@@ -366,21 +365,21 @@
       "M": [
         {
           "pos": 1,
-          "name": "ARCE Alberth",
-          "team": "Tomatero",
-          "puntos": 805
+          "name": "MARIN Alonso",
+          "team": "Alonso",
+          "puntos": 944
         },
         {
           "pos": 2,
-          "name": "MARÍN Alonso",
-          "team": "Team Gocha",
-          "puntos": 744
+          "name": "ARCE Alberth",
+          "team": "Tomatero",
+          "puntos": 905
         },
         {
           "pos": 3,
           "name": "CARVAJAL JONATHAN",
           "team": "BOBBYS CYCLING TEAM",
-          "puntos": 733
+          "puntos": 859
         }
       ]
     },
@@ -395,14 +394,14 @@
         {
           "pos": 2,
           "name": "RODRÍGUEZ Luis Angel",
-          "team": "Quesada Jonathan.Cycling / Fisio Norte",
-          "puntos": 795
+          "team": "Quesada.Jonathan.cycling / Fisio Norte",
+          "puntos": 935
         },
         {
           "pos": 3,
           "name": "RUBI Luis",
           "team": "Duros Como Roca",
-          "puntos": 700
+          "puntos": 864
         }
       ]
     },
@@ -436,9 +435,9 @@
         },
         {
           "pos": 3,
-          "name": "ZAMORA José David",
-          "team": "VEINTE24",
-          "puntos": 625
+          "name": "MORENO Carlos",
+          "team": "Numucoaching",
+          "puntos": 694
         }
       ]
     },
@@ -447,20 +446,20 @@
         {
           "pos": 1,
           "name": "ALFARO Dany",
-          "team": "Servicio automotriz Dany NEO CICLYNG",
-          "puntos": 825
+          "team": "Servicio automotriz NEO Ciclyng",
+          "puntos": 950
         },
         {
           "pos": 2,
           "name": "JIMÉNEZ Roylan",
-          "team": "Skala-tri-Cyc Ciclo Fofo Taller Roy",
-          "puntos": 440
+          "team": "Skala Tri /Syc Ciclo Fofo",
+          "puntos": 520
         },
         {
           "pos": 3,
           "name": "VARGAS Omar",
           "team": "ANCM-Comi casi Endurero",
-          "puntos": 406
+          "puntos": 390
         }
       ]
     },
@@ -469,13 +468,13 @@
         {
           "pos": 1,
           "name": "GUZMAN Aaron",
-          "team": "Acisa",
+          "team": "ACISA",
           "puntos": 950
         },
         {
           "pos": 2,
           "name": "GUZMAN Alex",
-          "team": "Acisa",
+          "team": "ACISA",
           "puntos": 700
         },
         {
@@ -498,7 +497,7 @@
           "pos": 2,
           "name": "HERRERA Jeffrey",
           "team": "TEAM CORECO/MOMENTUM SPORTS",
-          "puntos": 260
+          "puntos": 370
         },
         {
           "pos": 3,
